@@ -93,7 +93,6 @@ maximum_width = 26
 [server]
 id = "frontier_main"
 rules_file = "FrontierRuleset"
-rules_header = "Правила"
 
 [infolinks]
 discord = "https://discord.gg/corvax-forge"
