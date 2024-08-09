@@ -235,6 +235,12 @@
       - SpeedLoaderMagnumEmpty
       - SpeedLoaderRifleHeavy # Frontier
       - SpeedLoaderRifleHeavyEmpty # Frontier
+      - MagazineVector22 #CorvaxFrontier
+      - MagazineVector22Empty #CorvaxFrontier
+      - MagazineVector45 #CorvaxFrontier
+      - MagazineVector45Empty #CorvaxFrontier
+      - MagazineBoxVector45 #CorvaxFrontier
+      - MagazineBoxVector22 #CorvaxFrontier
 
 - type: entity
   id: AutolatheHyperConvection
@@ -427,6 +433,14 @@
       - WeaponXrayCannon # Frontier
       - SpeedLoaderRifleHeavyIncendiary # Frontier
       - SpeedLoaderRifleHeavyUranium # Frontier
+      - MagazineBoxVector22Incendiary #CorvaxFrontier
+      - MagazineBoxVector22Uranium #CorvaxFrontier
+      - MagazineVector22Incendiary #CorvaxFrontier
+      - MagazineVector22Uranium #CorvaxFrontier
+      - MagazineBoxVector45Incendiary #CorvaxFrontier
+      - MagazineBoxVector45Uranium #CorvaxFrontier
+      - MagazineVector45Incendiary #CorvaxFrontier
+      - MagazineVector45Uranium #CorvaxFrontier
 
 - type: entity
   id: ProtolatheHyperConvection
@@ -827,6 +841,14 @@
       # Frontier End
       - WeaponLaserCarbinePractice
       - Zipties
+      #CorvaxFrontier Start
+      - MagazineBoxVector45
+      - MagazineBoxVector22
+      - MagazineVector45
+      - MagazineVector45Empty
+      - MagazineVector22
+      - MagazineVector22Empty
+      #CorvaxFrontier End
     dynamicRecipes:
       - BoxBeanbag
       - BoxShotgunIncendiary
@@ -883,6 +905,29 @@
       - WeaponLaserCannon
       - WeaponLaserCarbine
       - WeaponXrayCannon
+      #CorvaxFrontier Start
+      - MagazineBoxVector22Practice
+      - MagazineBoxVector22Incendiary
+      - MagazineBoxVector22Uranium
+      - MagazineVector22Practice
+      - MagazineVector22Incendiary
+      - MagazineVector22Uranium
+      - MagazineBoxVector45Practice
+      - MagazineBoxVector45Incendiary
+      - MagazineBoxVector45Uranium
+      - MagazineVector45Practice
+      - MagazineVector45Incendiary
+      - MagazineVector45Uranium
+      - ShuttleShotgunMachineCircuitboard
+      - ShuttleGunAntiMaterialMachineCircuitboard
+      - ShuttleLightRifleGunMachineCircuitboard
+      - ShuttleSMGRifleMachineCircuitboard
+      - ShuttleMagnumRifleMachineCircuitboard
+      - ShuttleShotgunShellsBox
+      - ShuttleSmgRifleAmmoBox
+      - ShuttleRifleAmmoBox
+      - ShuttleMagnumRifleAmmoBox
+      #CorvaxFrontier End
   - type: MaterialStorage
     whitelist:
       tags:
@@ -938,6 +983,12 @@
         - SpeedLoaderRifleHeavyEmpty # Frontier
         - 10roundmagazine #frontier by VividPups
         - 10roundmagazineempty #frontier by VividPups
+        - MagazineBoxVector45 #CorvaxFrontier
+        - MagazineBoxVector22 #CorvaxFrontier
+        - MagazineVector45 #CorvaxFrontier
+        - MagazineVector45Empty #CorvaxFrontier
+        - MagazineVector22 #CorvaxFrontier
+        - MagazineVector22Empty #CorvaxFrontier
     - type: MaterialStorage
       whitelist:
         tags:

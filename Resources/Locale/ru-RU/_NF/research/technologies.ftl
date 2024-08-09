@@ -9,3 +9,4 @@ research-technology-hardsuits-armored = Бронированные экзоко�
 research-technology-hardsuits-armored-advanced = Продвинутые бронированные экзокостюмы
 research-technology-hardsuits-experimental-rd = Экспериментальный научный экзокостюм
 research-technology-construction-bags = Строительные сумки
+research-technology-various-shuttle-weapons = Калиберное вооружение
