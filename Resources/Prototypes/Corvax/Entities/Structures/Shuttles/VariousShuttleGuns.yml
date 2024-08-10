@@ -5,7 +5,7 @@
   description: A stationary shuttle gun that fires a .50 caliber. Designed to suppress the enemy.
   components:
   - type: Sprite
-    sprite: _Corvax/Objects/Weapons/Guns/Shuttles/shotgunrifle.rsi
+    sprite: Corvax/Objects/Weapons/Guns/Shuttles/shotgunrifle.rsi
     layers:
     - state: shotgun
     - state: mag-1
@@ -33,11 +33,11 @@
     maxAngle: 17
     selectedMode: FullAuto
     soundGunshot:
-      path: /Audio/_Corvax/Weapons/Guns/Gunshots/shuttleshotgun.ogg
+      path: /Audio/Corvax/Weapons/Guns/Gunshots/shuttleshotgun.ogg
       params:
         pitch: 0.5
     soundEmpty:
-      path: /Audio/_Corvax/Weapons/Guns/Empty/EmptySHR.ogg
+      path: /Audio/Corvax/Weapons/Guns/Empty/EmptySHR.ogg
   - type: MagazineAmmoProvider
   - type: MagazineVisuals
     magState: mag
@@ -52,7 +52,7 @@
           tags:
           - ShuttleShotgunShellsBox
         insertSound:
-          path: /Audio/_Corvax/Weapons/Guns/MagIn/MagInSHR.ogg
+          path: /Audio/Corvax/Weapons/Guns/MagIn/MagInSHR.ogg
           params:
             pitch: 1
         ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
@@ -66,7 +66,7 @@
   description: An impressive - sized shuttle weapon, firing a large caliber .60. Breaks through most types of armored walls.
   components:
   - type: Sprite
-    sprite: _Corvax/Objects/Weapons/Guns/Shuttles/amrifle.rsi
+    sprite: Corvax/Objects/Weapons/Guns/Shuttles/amrifle.rsi
     layers:
     - state: amrifle
   - type: ContainerContainer
@@ -90,18 +90,18 @@
     minAngle: 0
     maxAngle: 6
     soundGunshot:
-      path: /Audio/_Corvax/Weapons/Guns/Gunshots/amrifle.ogg
+      path: /Audio/Corvax/Weapons/Guns/Gunshots/amrifle.ogg
       params:
         pitch: 0.5
     soundEmpty:
-      path: /Audio/_Corvax/Weapons/Guns/Empty/EmptySHR.ogg
+      path: /Audio/Corvax/Weapons/Guns/Empty/EmptySHR.ogg
   - type: BallisticAmmoProvider
     whitelist:
       tags:
         - CartridgeAntiMateriel
     capacity: 16
     soundInsert:
-      path: /Audio/_Corvax/Weapons/Guns/MagIn/Reload60Cartridge.ogg
+      path: /Audio/Corvax/Weapons/Guns/MagIn/Reload60Cartridge.ogg
       params:
         pitch: 0.91
   - type: Machine
@@ -114,7 +114,7 @@
   description: A stationary shuttle rifle on .30 rifle cartridges with a VERY large supply of ammunition.
   components:
   - type: Sprite
-    sprite: _Corvax/Objects/Weapons/Guns/Shuttles/arifle.rsi
+    sprite: Corvax/Objects/Weapons/Guns/Shuttles/arifle.rsi
     layers:
     - state: arifle
     - state: mag-1
@@ -141,11 +141,11 @@
     minAngle: 0
     maxAngle: 11
     soundGunshot:
-      path: /Audio/_Corvax/Weapons/Guns/Gunshots/LightSHR.ogg
+      path: /Audio/Corvax/Weapons/Guns/Gunshots/LightSHR.ogg
       params:
         pitch: 0.5
     soundEmpty:
-      path: /Audio/_Corvax/Weapons/Guns/Empty/EmptySHR.ogg
+      path: /Audio/Corvax/Weapons/Guns/Empty/EmptySHR.ogg
   - type: MagazineAmmoProvider
   - type: MagazineVisuals
     magState: mag
@@ -160,7 +160,7 @@
           tags:
           - ShuttleRifleAmmoBox
         insertSound:
-          path: /Audio/_Corvax/Weapons/Guns/MagIn/MagInSHR.ogg
+          path: /Audio/Corvax/Weapons/Guns/MagIn/MagInSHR.ogg
           params:
             pitch: 1
         ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
@@ -174,7 +174,7 @@
   description: A stationary small-caliber weapon with an increased rate of fire, unlike other shuttle`s weapons.
   components:
   - type: Sprite
-    sprite: _Corvax/Objects/Weapons/Guns/Shuttles/smgrifle.rsi
+    sprite: Corvax/Objects/Weapons/Guns/Shuttles/smgrifle.rsi
     layers:
     - state: smgrifle
     - state: mag-1
@@ -201,11 +201,11 @@
     minAngle: 0
     maxAngle: 12
     soundGunshot:
-      path: /Audio/_Corvax/Weapons/Guns/Gunshots/35SHR.ogg
+      path: /Audio/Corvax/Weapons/Guns/Gunshots/35SHR.ogg
       params:
         pitch: 0.5
     soundEmpty:
-      path: /Audio/_Corvax/Weapons/Guns/Empty/EmptySHR.ogg
+      path: /Audio/Corvax/Weapons/Guns/Empty/EmptySHR.ogg
   - type: MagazineAmmoProvider
   - type: MagazineVisuals
     magState: mag
@@ -220,7 +220,7 @@
           tags:
           - ShuttleSmgRifleAmmoBox
         insertSound:
-          path: /Audio/_Corvax/Weapons/Guns/MagIn/MagInSHR.ogg
+          path: /Audio/Corvax/Weapons/Guns/MagIn/MagInSHR.ogg
           params:
             pitch: 1
         ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
@@ -234,7 +234,7 @@
   description: The nightmare of the syndicate that liked to hide behind doors. Double-barreled .45 caliber gun.
   components:
   - type: Sprite
-    sprite: _Corvax/Objects/Weapons/Guns/Shuttles/magnumrifle.rsi
+    sprite: Corvax/Objects/Weapons/Guns/Shuttles/magnumrifle.rsi
     layers:
     - state: magnumrifle
     - state: mag-1
@@ -261,11 +261,11 @@
     minAngle: 1
     maxAngle: 10
     soundGunshot:
-      path: /Audio/_Corvax/Weapons/Guns/Gunshots/45SHR.ogg
+      path: /Audio/Corvax/Weapons/Guns/Gunshots/45SHR.ogg
       params:
         pitch: 0.5
     soundEmpty:
-      path: /Audio/_Corvax/Weapons/Guns/Empty/EmptySHR.ogg
+      path: /Audio/Corvax/Weapons/Guns/Empty/EmptySHR.ogg
   - type: MagazineAmmoProvider
   - type: MagazineVisuals
     magState: mag
@@ -280,7 +280,7 @@
           tags:
           - ShuttleMagnumRifleAmmoBox
         insertSound:
-          path: /Audio/_Corvax/Weapons/Guns/MagIn/MagInSHR.ogg
+          path: /Audio/Corvax/Weapons/Guns/MagIn/MagInSHR.ogg
           params:
             pitch: 1
         ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg

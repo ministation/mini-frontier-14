@@ -16,7 +16,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Corvax/Objects/Weapons/Guns/Ammunition/Boxes/Vector/Vector45.rsi
+    sprite: Corvax/Objects/Weapons/Guns/Ammunition/Boxes/Vector/Vector45.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -37,7 +37,7 @@
     proto: CartridgeVector45Incendiary
   - type: Sprite
     layers:
-    - state: base
+    - state: base  
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
@@ -106,7 +106,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Corvax/Objects/Weapons/Guns/Ammunition/Boxes/Vector/Vector22.rsi
+    sprite: Corvax/Objects/Weapons/Guns/Ammunition/Boxes/Vector/Vector22.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]

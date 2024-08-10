@@ -5,7 +5,7 @@
   description: Version of the legendary submachine gun for sport shooting. He might even be able to shoot a squirrel. Uses .22lr ammunition.
   components:
   - type: Sprite
-    sprite: _Corvax/Objects/Weapons/Guns/SMGs/vector22.rsi
+    sprite: Corvax/Objects/Weapons/Guns/SMGs/vector22.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
@@ -14,7 +14,7 @@
   - type: Item
     size: Huge
   - type: Clothing
-    sprite: _Corvax/Objects/Weapons/Guns/SMGs/vector22.rsi
+    sprite: Corvax/Objects/Weapons/Guns/SMGs/vector22.rsi
     quickEquip: false
     slots:
     - suitStorage
@@ -23,7 +23,7 @@
     fireRate: 18
     selectedMode: FullAuto
     soundGunshot:
-      path: /Audio/_Corvax/Weapons/Guns/Gunshots/Vector22.ogg
+      path: /Audio/Corvax/Weapons/Guns/Gunshots/Vector22.ogg
     availableModes:
     - FullAuto
   - type: ItemSlots
@@ -59,12 +59,12 @@
   description: A civilian version of the already legendary and forgotten submachine gun. Uses caliber cartridges .45 ACP. Automatic fire is not included in the package.
   components:
   - type: Sprite
-    sprite: _Corvax/Objects/Weapons/Guns/SMGs/vector45.rsi
+    sprite: Corvax/Objects/Weapons/Guns/SMGs/vector45.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
   - type: Clothing
-    sprite: _Corvax/Objects/Weapons/Guns/SMGs/vector45.rsi
+    sprite: Corvax/Objects/Weapons/Guns/SMGs/vector45.rsi
     quickEquip: false
     slots:
     - suitStorage
@@ -75,7 +75,7 @@
     fireRate: 4.2
     selectedMode: SemiAuto
     soundGunshot:
-      path: /Audio/_Corvax/Weapons/Guns/Gunshots/Vector45.ogg
+      path: /Audio/Corvax/Weapons/Guns/Gunshots/Vector45.ogg
     availableModes:
     - SemiAuto
   - type: ItemSlots

@@ -93,17 +93,3 @@
         Piercing: 6
         Blunt: 3
         Radiation: 14
-
-- type: entity
-  id: BulletVector45AP
-  name: bullet (.45 ACP AP)
-  parent: BaseBulletAP
-  noSpawn: true
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Piercing: 12
-        Blunt: 3        # 20% decrease
-    penetrationScore: 1
-    ignoreResistances: true

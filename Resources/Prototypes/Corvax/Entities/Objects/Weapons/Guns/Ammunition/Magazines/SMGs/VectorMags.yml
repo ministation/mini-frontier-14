@@ -20,7 +20,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Corvax/Objects/Weapons/Guns/Ammunition/Magazine/Vector/vector22mag.rsi
+    sprite: Corvax/Objects/Weapons/Guns/Ammunition/Magazine/Vector/vector22mag.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -108,7 +108,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Corvax/Objects/Weapons/Guns/Ammunition/Magazine/Vector/vector45mag.rsi
+    sprite: Corvax/Objects/Weapons/Guns/Ammunition/Magazine/Vector/vector45mag.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]

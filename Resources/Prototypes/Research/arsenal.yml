@@ -232,7 +232,7 @@
   id: VariousShuttleWeapons
   name: research-technology-various-shuttle-weapons
   icon:
-    sprite: _Corvax/Objects/Weapons/Guns/Ammunition/Magazine/rifle_cartridges.rsi
+    sprite: Corvax/Objects/Weapons/Guns/Ammunition/Magazine/rifle_cartridges.rsi
     state: 35base
   discipline: Arsenal
   tier: 3
