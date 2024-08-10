@@ -39,9 +39,10 @@
     requirePower: false
     shockDamage: 2
     shockTime: 2
+  - type: ElzuosaColor
   - type: PointLight
     enabled: true
-    radius: 2
+    radius: 2.3
   - type: InteractionPopup
     successChance: 1
     interactSuccessString: pat-success-elzuosa
