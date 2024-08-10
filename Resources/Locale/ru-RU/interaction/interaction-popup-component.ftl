@@ -86,3 +86,6 @@ fence-rattle-success = *бдзынь*
 hugging-success-generic-target = { CAPITALIZE($user) } обнимает вас.
 petting-success-tesla = Вы гладите { $target }, попутно нарушая законы природы и физики.
 petting-failure-tesla = Вы тянетесь погладить { $target }, но разряд заставляет вас отдёрнуть руку.
+pat-success-elzuosa = вы обнимаете { $target }, чувствуя, как по вам проходит высоковольтный ток.
+pat-success-elzuosa-others = { CAPITALIZE($user) } обнимает { $target },  наэлектризовываясь.
+pat-success-elzuosa-target = { CAPITALIZE($user) } обнимает вас.
