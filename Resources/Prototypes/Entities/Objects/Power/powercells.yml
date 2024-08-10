@@ -16,17 +16,12 @@
     sprite: Objects/Power/power_cells.rsi
   - type: SolutionContainerManager
     solutions:
-      food:
+      battery:
         maxVol: 5
-        reagents:
-        - ReagentId: Zinc
-          Quantity: 5
   - type: InjectableSolution
     solution: battery
   - type: DrawableSolution
     solution: battery
-  - type: Food # Corvax-Frontier
-    requiresSpecialDigestion: true
   - type: Extractable
     juiceSolution:
       reagents:
