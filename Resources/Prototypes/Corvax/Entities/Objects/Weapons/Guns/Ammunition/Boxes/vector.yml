@@ -74,21 +74,6 @@
     - state: uranium
 
 - type: entity #FrontierCorvax
-  parent: MagazineBoxVector45
-  id: MagazineBoxVector45AP
-  name: ammunition box (.45 ACP AP)
-  components:
-  - type: BallisticAmmoProvider
-    proto: CartridgeVector45AP
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: piercing
-
-- type: entity #FrontierCorvax
   parent: BaseItem
   id: MagazineBoxVector22
   name: ammunition box (.22 LR)

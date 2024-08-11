@@ -173,17 +173,3 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
-
-- type: entity #FrontierCorvax
-  id: MagazineVector45AP
-  name: magazine (.45 ACP AP)
-  parent: MagazineVector45
-  components:
-  - type: BallisticAmmoProvider
-    proto: CartridgeVector45AP
-  - type: Sprite
-    layers:
-    - state: piercing
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]

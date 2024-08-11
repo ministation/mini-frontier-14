@@ -111,18 +111,3 @@
       - state: tip
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#65fe08"
-
-- type: entity #FrontierCorvax
-  id: CartridgeVector45AP
-  name: cartridge (.45 ACP AP)
-  parent: CartridgeVector45
-  components:
-  - type: CartridgeAmmo
-    proto: BulletVector45AP
-  - type: Sprite
-    layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#330707"
