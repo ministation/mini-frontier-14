@@ -87,16 +87,6 @@
   noSpawn: true
   id: WeaponSubMachineGunDrozdExpedition
 
-- type: entity     #CorvaxFrontier
-  parent: [ WeaponSubMachineGunVector45, UnregisteredFirearmBase ]
-  noSpawn: true
-  id: WeaponSubMachineGunVector45Expedition
-
-- type: entity     #CorvaxFrontier
-  parent: [ WeaponSubMachineGunVector22, UnregisteredFirearmBase ]
-  noSpawn: true
-  id: WeaponSubMachineGunVector22Expedition
-
 # Energy
 - type: entity
   parent: [ WeaponLaserPistolNF, UnregisteredFirearmBase ]
@@ -149,3 +139,13 @@
   parent: [ Musket, UnregisteredFirearmBase ]
   noSpawn: true
   id: WeaponMusketExpedition
+
+- type: entity #Corvax-Frontier
+  parent: [ WeaponSubMachineGunVector45, UnregisteredFirearmBase ]
+  noSpawn: true
+  id: WeaponSubMachineGunVector45Expedition
+
+- type: entity #Corvax-Frontier
+  parent: [ WeaponSubMachineGunVector22, UnregisteredFirearmBase ]
+  noSpawn: true
+  id: WeaponSubMachineGunVector22Expedition

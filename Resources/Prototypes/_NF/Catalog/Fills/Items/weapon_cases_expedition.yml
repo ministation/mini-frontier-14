@@ -262,7 +262,7 @@
     - id: MagazineBoxPistol
       amount: 2
 
-- type: entity     #CorvaxFrontier
+- type: entity     #Corvax-Frontier
   parent: WeaponCaseLong
   id: WeaponCaseLongVector45Expedition
   suffix: Dungeon, SMG, Vector
@@ -275,7 +275,7 @@
     - id: MagazineVector45
       amount: 2
 
-- type: entity     #CorvaxFrontier
+- type: entity     #Corvax-Frontier
   parent: WeaponCaseLong
   id: WeaponCaseLongVector22Expedition
   suffix: Dungeon, SMG, Vector

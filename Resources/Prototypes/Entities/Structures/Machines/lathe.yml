@@ -235,12 +235,12 @@
       - SpeedLoaderMagnumEmpty
       - SpeedLoaderRifleHeavy # Frontier
       - SpeedLoaderRifleHeavyEmpty # Frontier
-      - MagazineVector22 #CorvaxFrontier
-      - MagazineVector22Empty #CorvaxFrontier
-      - MagazineVector45 #CorvaxFrontier
-      - MagazineVector45Empty #CorvaxFrontier
-      - MagazineBoxVector45 #CorvaxFrontier
-      - MagazineBoxVector22 #CorvaxFrontier
+      - MagazineVector22 #Corvax-Frontier
+      - MagazineVector22Empty #Corvax-Frontier
+      - MagazineVector45 #Corvax-Frontier
+      - MagazineVector45Empty #Corvax-Frontier
+      - MagazineBoxVector45 #Corvax-Frontier
+      - MagazineBoxVector22 #Corvax-Frontier
 
 - type: entity
   id: AutolatheHyperConvection
@@ -433,14 +433,14 @@
       - WeaponXrayCannon # Frontier
       - SpeedLoaderRifleHeavyIncendiary # Frontier
       - SpeedLoaderRifleHeavyUranium # Frontier
-      - MagazineBoxVector22Incendiary #CorvaxFrontier
-      - MagazineBoxVector22Uranium #CorvaxFrontier
-      - MagazineVector22Incendiary #CorvaxFrontier
-      - MagazineVector22Uranium #CorvaxFrontier
-      - MagazineBoxVector45Incendiary #CorvaxFrontier
-      - MagazineBoxVector45Uranium #CorvaxFrontier
-      - MagazineVector45Incendiary #CorvaxFrontier
-      - MagazineVector45Uranium #CorvaxFrontier
+      - MagazineBoxVector22Incendiary #Corvax-Frontier
+      - MagazineBoxVector22Uranium #Corvax-Frontier
+      - MagazineVector22Incendiary #Corvax-Frontier
+      - MagazineVector22Uranium #Corvax-Frontier
+      - MagazineBoxVector45Incendiary #Corvax-Frontier
+      - MagazineBoxVector45Uranium #Corvax-Frontier
+      - MagazineVector45Incendiary #Corvax-Frontier
+      - MagazineVector45Uranium #Corvax-Frontier
 
 - type: entity
   id: ProtolatheHyperConvection
@@ -841,14 +841,14 @@
       # Frontier End
       - WeaponLaserCarbinePractice
       - Zipties
-      #CorvaxFrontier Start
+      #Corvax-Frontier Start
       - MagazineBoxVector45
       - MagazineBoxVector22
       - MagazineVector45
       - MagazineVector45Empty
       - MagazineVector22
       - MagazineVector22Empty
-      #CorvaxFrontier End
+      #Corvax-Frontier End
     dynamicRecipes:
       - BoxBeanbag
       - BoxShotgunIncendiary
@@ -905,7 +905,7 @@
       - WeaponLaserCannon
       - WeaponLaserCarbine
       - WeaponXrayCannon
-      #CorvaxFrontier Start
+      #Corvax-Frontier Start
       - MagazineBoxVector22Practice
       - MagazineBoxVector22Incendiary
       - MagazineBoxVector22Uranium
@@ -927,7 +927,7 @@
       - ShuttleSmgRifleAmmoBox
       - ShuttleRifleAmmoBox
       - ShuttleMagnumRifleAmmoBox
-      #CorvaxFrontier End
+      #Corvax-Frontier End
   - type: MaterialStorage
     whitelist:
       tags:

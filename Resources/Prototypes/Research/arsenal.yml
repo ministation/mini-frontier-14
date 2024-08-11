@@ -228,7 +228,7 @@
   technologyPrerequisites:
   - BasicShuttleArmament
 
-- type: technology # Corvax-Frontier
+- type: technology #Corvax-Frontier
   id: VariousShuttleWeapons
   name: research-technology-various-shuttle-weapons
   icon:
