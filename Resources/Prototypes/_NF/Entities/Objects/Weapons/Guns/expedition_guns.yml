@@ -139,8 +139,9 @@
   parent: [ Musket, UnregisteredFirearmBase ]
   noSpawn: true
   id: WeaponMusketExpedition
-
-- type: entity #Corvax-Frontier
+  
+#Corvax-Frontier start
+- type: entity
   parent: [ WeaponSubMachineGunVector45, UnregisteredFirearmBase ]
   noSpawn: true
   id: WeaponSubMachineGunVector45Expedition
@@ -149,3 +150,4 @@
   parent: [ WeaponSubMachineGunVector22, UnregisteredFirearmBase ]
   noSpawn: true
   id: WeaponSubMachineGunVector22Expedition
+#Corvax-Frontier end
