@@ -2,7 +2,7 @@
   name: Vector (.22 LR)
   parent: BaseWeaponSubMachineGun
   id: WeaponSubMachineGunVector22
-  description: Version of the legendary submachine gun for sport shooting. He might even be able to shoot a squirrel. Uses .22lr ammunition.
+  description: An illegal version of the legendary submachine gun for sport shooting. He might even be able to shoot a squirrel. Uses .22lr ammunition.
   components:
   - type: Sprite
     sprite: Corvax/Objects/Weapons/Guns/SMGs/vector22.rsi
@@ -56,7 +56,7 @@
   name: Vector (.45 ACP)
   parent: BaseWeaponSubMachineGun
   id: WeaponSubMachineGunVector45
-  description: A civilian version of the already legendary and forgotten submachine gun. Uses caliber cartridges .45 ACP. Automatic fire is not included in the package.
+  description: A legal civilian version of the already legendary and forgotten submachine gun. Uses caliber cartridges .45 ACP. Automatic fire is not included in the package.
   components:
   - type: Sprite
     sprite: Corvax/Objects/Weapons/Guns/SMGs/vector45.rsi
