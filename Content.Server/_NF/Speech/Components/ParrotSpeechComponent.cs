@@ -15,13 +15,13 @@ public sealed partial class ParrotSpeechComponent : Component
     public int MaximumPhraseLength = 7;
 
     [DataField]
-    public int MaximumPhraseCount = 30; // Corvax 10 -> 30
+    public int MaximumPhraseCount = 10;
 
     [DataField]
-    public int MinimumWait = 30; // 120 / 60 = 2 minutes // Corvax 30 sec
+    public int MinimumWait = 120; // 120 / 60 = 2 minutes
 
     [DataField]
-    public int MaximumWait = 60; // 300 / 60 = 5 minutes // Corvax 1 min
+    public int MaximumWait = 300; // 300 / 60 = 5 minutes
 
     /// <summary>
     /// The probability that a parrot will learn from something an overheard phrase.
