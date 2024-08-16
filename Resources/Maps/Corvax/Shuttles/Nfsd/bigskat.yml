@@ -15903,7 +15903,7 @@ entities:
   - uid: 157
     components:
     - type: Transform
-      pos: -2.5,-0.5
+      pos: 3.5,1.5
       parent: 1
   - uid: 161
     components:
@@ -15913,7 +15913,7 @@ entities:
   - uid: 730
     components:
     - type: Transform
-      pos: -1.5,0.5
+      pos: -2.5,1.5
       parent: 1
   - uid: 785
     components:
@@ -16128,7 +16128,7 @@ entities:
   - uid: 1772
     components:
     - type: Transform
-      pos: 2.5,0.5
+      pos: -3.5,0.5
       parent: 1
   - uid: 1773
     components:
@@ -18164,6 +18164,41 @@ entities:
     components:
     - type: Transform
       pos: -57.5,-7.5
+      parent: 1
+  - uid: 9112
+    components:
+    - type: Transform
+      pos: -0.5,-0.5
+      parent: 1
+  - uid: 9113
+    components:
+    - type: Transform
+      pos: -1.5,-0.5
+      parent: 1
+  - uid: 9114
+    components:
+    - type: Transform
+      pos: 1.5,-0.5
+      parent: 1
+  - uid: 9115
+    components:
+    - type: Transform
+      pos: 2.5,-0.5
+      parent: 1
+  - uid: 9116
+    components:
+    - type: Transform
+      pos: -3.5,-0.5
+      parent: 1
+  - uid: 9117
+    components:
+    - type: Transform
+      pos: -3.5,-1.5
+      parent: 1
+  - uid: 9119
+    components:
+    - type: Transform
+      pos: -4.5,0.5
       parent: 1
 - proto: CableMV
   entities:
@@ -24638,6 +24673,14 @@ entities:
     components:
     - type: Transform
       pos: 9.5,-0.5
+      parent: 1
+- proto: ComputerPowerMonitoring
+  entities:
+  - uid: 9118
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -4.5,0.5
       parent: 1
 - proto: ComputerRadar
   entities:
@@ -40674,6 +40717,26 @@ entities:
       - 7582
     - type: AtmosPipeColor
       color: '#FF0000FF'
+- proto: GeneratorBasic15kW
+  entities:
+  - uid: 9110
+    components:
+    - type: Transform
+      pos: -1.5,-0.5
+      parent: 1
+    - type: PowerSupplier
+      supplyRampRate: 35000
+      supplyRampTolerance: 35000
+      supplyRate: 180000
+  - uid: 9111
+    components:
+    - type: Transform
+      pos: 2.5,-0.5
+      parent: 1
+    - type: PowerSupplier
+      supplyRampRate: 35000
+      supplyRampTolerance: 35000
+      supplyRate: 180000
 - proto: GlassBoxFrame
   entities:
   - uid: 1082
