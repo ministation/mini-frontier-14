@@ -6,12 +6,12 @@
   price: 34450
   category: Medium
   group: Civilian
-  shuttlePath: /Maps/CorvaxFrontier/Shuttles/Fang.yml
+  shuttlePath: /Maps/Corvax/Shuttles/Fang.yml
 
 - type: gameMap
   id: Fang
   mapName: 'NMS Клык'
-  mapPath: /Maps/CorvaxFrontier/Shuttles/Fang.yml
+  mapPath: /Maps/Corvax/Shuttles/Fang.yml
   minPlayers: 0
   stations:
     Fang:

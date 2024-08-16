@@ -865,61 +865,40 @@ entities:
     - type: Transform
       pos: 9.5,13.5
       parent: 2
-    - type: DeviceLinkSink
-      links:
-      - 268
   - uid: 261
     components:
     - type: Transform
       pos: 8.5,13.5
       parent: 2
-    - type: DeviceLinkSink
-      links:
-      - 268
   - uid: 262
     components:
     - type: Transform
       pos: 7.5,13.5
       parent: 2
-    - type: DeviceLinkSink
-      links:
-      - 268
   - uid: 264
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 12.5,15.5
       parent: 2
-    - type: DeviceLinkSink
-      links:
-      - 268
   - uid: 265
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 12.5,16.5
       parent: 2
-    - type: DeviceLinkSink
-      links:
-      - 268
   - uid: 266
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 4.5,15.5
       parent: 2
-    - type: DeviceLinkSink
-      links:
-      - 268
   - uid: 267
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 4.5,16.5
       parent: 2
-    - type: DeviceLinkSink
-      links:
-      - 268
 - proto: BoozeDispenser
   entities:
   - uid: 303
@@ -1339,10 +1318,9 @@ entities:
       parent: 2
 - proto: ComputerTabletopShuttle
   entities:
-  - uid: 358
+  - uid: 257
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
       pos: 6.5,10.5
       parent: 2
 - proto: ComputerTabletopStationRecords
@@ -1832,8 +1810,6 @@ entities:
     - type: Transform
       pos: 3.5,13.5
       parent: 2
-    - type: Thruster
-      originalPowerLoad: 1500
 - proto: HospitalCurtains
   entities:
   - uid: 299
@@ -1885,32 +1861,20 @@ entities:
     - type: Transform
       pos: 15.5,10.5
       parent: 2
-- proto: OreProcessor
-  entities:
-  - uid: 369
-    components:
-    - type: Transform
-      pos: 6.5,9.5
-      parent: 2
-- proto: PillCanister
+- proto: Medkit
   entities:
   - uid: 270
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 15.4801655,11.566172
+      pos: 15.544182,11.5469055
       parent: 2
-- proto: PlushieOrangeFox
+- proto: OreProcessor
   entities:
-  - uid: 367
+  - uid: 342
     components:
     - type: Transform
-      pos: 10.534722,11.517975
+      pos: 10.5,11.5
       parent: 2
-    missingComponents:
-    - Food
-    - Item
-    - Pullable
 - proto: PortableGeneratorPacman
   entities:
   - uid: 93
@@ -2147,13 +2111,6 @@ entities:
     - type: Transform
       pos: 1.5,11.5
       parent: 2
-- proto: SpawnDungeonLootKitsFirstAid
-  entities:
-  - uid: 342
-    components:
-    - type: Transform
-      pos: 15.5,11.5
-      parent: 2
 - proto: SpawnPointContractor
   entities:
   - uid: 361
@@ -2248,12 +2205,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 6.5,10.5
       parent: 2
-  - uid: 257
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 10.5,11.5
-      parent: 2
   - uid: 258
     components:
     - type: Transform
@@ -2278,76 +2229,56 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -0.5,10.5
       parent: 2
-    - type: Thruster
-      originalPowerLoad: 1500
   - uid: 304
     components:
     - type: Transform
       pos: 14.5,18.5
       parent: 2
-    - type: Thruster
-      originalPowerLoad: 1500
   - uid: 305
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -0.5,11.5
       parent: 2
-    - type: Thruster
-      originalPowerLoad: 1500
   - uid: 306
     components:
     - type: Transform
       pos: 13.5,18.5
       parent: 2
-    - type: Thruster
-      originalPowerLoad: 1500
   - uid: 307
     components:
     - type: Transform
       pos: 3.5,18.5
       parent: 2
-    - type: Thruster
-      originalPowerLoad: 1500
   - uid: 308
     components:
     - type: Transform
       pos: 2.5,18.5
       parent: 2
-    - type: Thruster
-      originalPowerLoad: 1500
   - uid: 310
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 7.5,4.5
       parent: 2
-    - type: Thruster
-      originalPowerLoad: 1500
   - uid: 311
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 9.5,4.5
       parent: 2
-    - type: Thruster
-      originalPowerLoad: 1500
   - uid: 371
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 17.5,11.5
       parent: 2
-    - type: Thruster
-      originalPowerLoad: 1500
   - uid: 372
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 17.5,10.5
       parent: 2
-    - type: Thruster
-      originalPowerLoad: 1500
 - proto: UnfinishedMachineFrame
   entities:
   - uid: 248

@@ -4754,6 +4754,8 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
+    - type: BecomesStation
+      id: Charlie
 - proto: AirlockExternalShuttleSyndicateLocked
   entities:
   - uid: 3218

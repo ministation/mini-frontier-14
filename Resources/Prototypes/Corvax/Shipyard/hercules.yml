@@ -5,12 +5,12 @@
   price: 39900
   category: Medium
   group: Civilian
-  shuttlePath: /Maps/CorvaxFrontier/Shuttles/hercules.yml
+  shuttlePath: /Maps/Corvax/Shuttles/hercules.yml
 
 - type: gameMap
   id: Hercules
   mapName: 'NCS Геркулес'
-  mapPath: /Maps/CorvaxFrontier/Shuttles/hercules.yml
+  mapPath: /Maps/Corvax/Shuttles/hercules.yml
   minPlayers: 0
   stations:
     Hercules:

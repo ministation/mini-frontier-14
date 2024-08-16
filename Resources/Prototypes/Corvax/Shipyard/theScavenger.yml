@@ -5,12 +5,12 @@
   price: 36450
   category: Medium
   group: Civilian
-  shuttlePath: /Maps/CorvaxFrontier/Shuttles/theScavenger.yml
+  shuttlePath: /Maps/Corvax/Shuttles/theScavenger.yml
 
 - type: gameMap
   id: theScavenger
   mapName: 'NMS Мусорщик'
-  mapPath: /Maps/CorvaxFrontier/Shuttles/theScavenger.yml
+  mapPath: /Maps/Corvax/Shuttles/theScavenger.yml
   minPlayers: 0
   stations:
     theScavenger:

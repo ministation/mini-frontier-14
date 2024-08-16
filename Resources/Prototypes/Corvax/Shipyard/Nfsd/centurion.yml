@@ -5,12 +5,13 @@
   price: 190030
   category: Large
   group: Security
-  shuttlePath: /Maps/CorvaxFrontier/Shuttles/Nfsd/centurion.yml
+  access: Bailiff
+  shuttlePath: /Maps/Corvax/Shuttles/Nfsd/centurion.yml
 
 - type: gameMap
   id: Centurion
   mapName: 'NSF Центурион'
-  mapPath: /Maps/CorvaxFrontier/Shuttles/Nfsd/centurion.yml
+  mapPath: /Maps/Corvax/Shuttles/Nfsd/centurion.yml
   minPlayers: 0
   stations:
     Centurion:
