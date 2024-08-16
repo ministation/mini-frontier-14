@@ -418,7 +418,7 @@ entities:
             2731: 47,14
             2732: 48,12
             2733: 49,10
-            2794: 38,19
+            2793: 38,19
         - node:
             color: '#790000FF'
             id: MiniTileCornerOverlayNW
@@ -476,7 +476,7 @@ entities:
             2591: -24,27
             2592: -23,28
             2593: -22,29
-            2774: 26,34
+            2773: 26,34
         - node:
             color: '#790000FF'
             id: MiniTileCornerOverlaySE
@@ -582,8 +582,8 @@ entities:
             2742: 18,31
             2743: 16,33
             2744: 14,35
-            2795: 40,16
-            2853: 36,14
+            2794: 40,16
+            2852: 36,14
         - node:
             color: '#790000FF'
             id: MiniTileEndOverlayE
@@ -599,8 +599,8 @@ entities:
           decals:
             2364: -19,25
             2746: 50,8
-            2773: 32,36
-            2796: 46,16
+            2772: 32,36
+            2795: 46,16
         - node:
             color: '#7D0000FF'
             id: MiniTileEndOverlayN
@@ -643,7 +643,7 @@ entities:
             2360: -39,21
             2361: -24,37
             2747: 30,19
-            2855: 34,15
+            2854: 34,15
         - node:
             color: '#790000FF'
             id: MiniTileInnerOverlayNE
@@ -681,35 +681,35 @@ entities:
             2555: -26,35
             2596: -34,21
             2626: -38,12
-            2785: 24,31
-            2810: 14,44
-            2811: 16,43
-            2812: 18,42
-            2813: 20,41
-            2814: 22,40
-            2815: 24,39
-            2816: 26,38
-            2817: 28,37
-            2818: 30,36
-            2821: 35,33
-            2822: 36,32
-            2823: 37,31
-            2824: 38,30
-            2825: 39,28
-            2826: 40,26
-            2827: 41,24
-            2828: 42,22
-            2829: 43,20
-            2830: 44,18
-            2831: 45,16
-            2832: 38,18
-            2843: 47,12
-            2844: 48,10
-            2845: 49,8
-            2846: 38,14
-            2859: 36,14
-            2949: 20,33
-            2953: 14,37
+            2784: 24,31
+            2809: 14,44
+            2810: 16,43
+            2811: 18,42
+            2812: 20,41
+            2813: 22,40
+            2814: 24,39
+            2815: 26,38
+            2816: 28,37
+            2817: 30,36
+            2820: 35,33
+            2821: 36,32
+            2822: 37,31
+            2823: 38,30
+            2824: 39,28
+            2825: 40,26
+            2826: 41,24
+            2827: 42,22
+            2828: 43,20
+            2829: 44,18
+            2830: 45,16
+            2831: 38,18
+            2842: 47,12
+            2843: 48,10
+            2844: 49,8
+            2845: 38,14
+            2858: 36,14
+            2948: 20,33
+            2952: 14,37
         - node:
             color: '#790000FF'
             id: MiniTileInnerOverlayNW
@@ -780,13 +780,13 @@ entities:
             2614: -28,22
             2615: -29,21
             2625: -35,12
-            2784: 26,31
-            2833: 40,18
-            2860: 36,15
-            2890: 24,35
-            2946: 24,31
-            2950: 19,33
-            2955: 27,37
+            2783: 26,31
+            2832: 40,18
+            2859: 36,15
+            2889: 24,35
+            2945: 24,31
+            2949: 19,33
+            2954: 27,37
         - node:
             color: '#790000FF'
             id: MiniTileInnerOverlaySE
@@ -861,12 +861,12 @@ entities:
             2605: -26,32
             2606: -25,33
             2624: -38,15
-            2783: 24,30
-            2819: 24,36
-            2834: 38,17
-            2867: 36,17
-            2951: 20,35
-            2952: 14,39
+            2782: 24,30
+            2818: 24,36
+            2833: 38,17
+            2866: 36,17
+            2950: 20,35
+            2951: 14,39
         - node:
             color: '#790000FF'
             id: MiniTileInnerOverlaySW
@@ -919,24 +919,24 @@ entities:
             2533: -32,21
             2556: -27,21
             2627: -35,15
-            2786: 26,30
-            2805: 16,35
-            2806: 18,33
-            2807: 20,31
-            2808: 22,29
-            2809: 24,27
-            2820: 28,23
-            2835: 40,17
-            2836: 32,19
-            2837: 34,17
-            2838: 40,11
-            2839: 42,9
-            2850: 38,14
-            2857: 36,15
-            2868: 36,17
-            2891: 24,37
-            2947: 24,33
-            2948: 19,35
+            2785: 26,30
+            2804: 16,35
+            2805: 18,33
+            2806: 20,31
+            2807: 22,29
+            2808: 24,27
+            2819: 28,23
+            2834: 40,17
+            2835: 32,19
+            2836: 34,17
+            2837: 40,11
+            2838: 42,9
+            2849: 38,14
+            2856: 36,15
+            2867: 36,17
+            2890: 24,37
+            2946: 24,33
+            2947: 19,35
         - node:
             color: '#790000FF'
             id: MiniTileLineOverlayE
@@ -1065,30 +1065,30 @@ entities:
             2595: -34,22
             2616: -38,13
             2617: -38,14
-            2765: 24,26
-            2766: 24,27
-            2767: 24,28
-            2768: 24,29
-            2769: 24,32
-            2770: 24,33
-            2771: 24,34
-            2772: 24,35
-            2791: 38,15
-            2797: 45,17
-            2798: 44,19
-            2799: 43,21
-            2800: 42,23
-            2801: 41,26
-            2802: 41,25
-            2803: 40,27
-            2804: 39,29
-            2840: 49,9
-            2841: 48,11
-            2842: 47,13
-            2858: 36,15
-            2862: 36,16
-            2942: 14,38
-            2943: 20,34
+            2764: 24,26
+            2765: 24,27
+            2766: 24,28
+            2767: 24,29
+            2768: 24,32
+            2769: 24,33
+            2770: 24,34
+            2771: 24,35
+            2790: 38,15
+            2796: 45,17
+            2797: 44,19
+            2798: 43,21
+            2799: 42,23
+            2800: 41,26
+            2801: 41,25
+            2802: 40,27
+            2803: 39,29
+            2839: 49,9
+            2840: 48,11
+            2841: 47,13
+            2857: 36,15
+            2861: 36,16
+            2941: 14,38
+            2942: 20,34
         - node:
             color: '#790000FF'
             id: MiniTileLineOverlayN
@@ -1293,46 +1293,46 @@ entities:
             2708: 19,42
             2709: 17,43
             2710: 15,44
-            2788: 25,31
-            2789: 39,18
-            2847: 38,14
-            2851: 37,14
-            2856: 35,15
-            2869: 14,35
-            2870: 15,35
-            2871: 16,35
-            2872: 17,35
-            2873: 18,35
-            2874: 19,35
-            2875: 20,35
-            2876: 22,35
-            2877: 21,35
-            2878: 23,35
-            2892: 16,33
-            2893: 17,33
-            2894: 18,33
-            2895: 21,33
-            2896: 22,33
-            2897: 23,33
-            2898: 24,33
-            2899: 23,31
-            2900: 22,31
-            2901: 21,31
-            2902: 19,31
-            2903: 18,31
-            2904: 20,31
-            2905: 15,37
-            2906: 16,37
-            2907: 17,37
-            2908: 18,37
-            2909: 19,37
-            2910: 20,37
-            2911: 22,37
-            2912: 21,37
-            2913: 23,37
-            2914: 25,37
-            2915: 26,37
-            2916: 24,37
+            2787: 25,31
+            2788: 39,18
+            2846: 38,14
+            2850: 37,14
+            2855: 35,15
+            2868: 14,35
+            2869: 15,35
+            2870: 16,35
+            2871: 17,35
+            2872: 18,35
+            2873: 19,35
+            2874: 20,35
+            2875: 22,35
+            2876: 21,35
+            2877: 23,35
+            2891: 16,33
+            2892: 17,33
+            2893: 18,33
+            2894: 21,33
+            2895: 22,33
+            2896: 23,33
+            2897: 24,33
+            2898: 23,31
+            2899: 22,31
+            2900: 21,31
+            2901: 19,31
+            2902: 18,31
+            2903: 20,31
+            2904: 15,37
+            2905: 16,37
+            2906: 17,37
+            2907: 18,37
+            2908: 19,37
+            2909: 20,37
+            2910: 22,37
+            2911: 21,37
+            2912: 23,37
+            2913: 25,37
+            2914: 26,37
+            2915: 24,37
         - node:
             color: '#790000FF'
             id: MiniTileLineOverlayS
@@ -1525,49 +1525,49 @@ entities:
             2676: 30,36
             2677: 29,36
             2678: 31,36
-            2787: 25,30
-            2790: 39,17
-            2852: 37,14
-            2854: 35,15
-            2863: 35,17
-            2864: 34,17
-            2865: 37,17
-            2866: 38,17
-            2879: 15,37
-            2880: 14,37
-            2881: 16,37
-            2882: 17,37
-            2883: 18,37
-            2884: 19,37
-            2885: 21,37
-            2886: 20,37
-            2887: 22,37
-            2888: 23,37
-            2917: 26,39
-            2918: 25,39
-            2919: 23,39
-            2920: 24,39
-            2921: 22,39
-            2922: 20,39
-            2923: 21,39
-            2924: 19,39
-            2925: 18,39
-            2926: 17,39
-            2927: 16,39
-            2928: 15,39
-            2929: 16,35
-            2930: 17,35
-            2931: 18,35
-            2932: 21,35
-            2933: 23,35
-            2934: 24,35
-            2935: 22,35
-            2936: 23,33
-            2937: 22,33
-            2938: 21,33
-            2939: 20,33
-            2940: 18,33
-            2941: 19,33
+            2786: 25,30
+            2789: 39,17
+            2851: 37,14
+            2853: 35,15
+            2862: 35,17
+            2863: 34,17
+            2864: 37,17
+            2865: 38,17
+            2878: 15,37
+            2879: 14,37
+            2880: 16,37
+            2881: 17,37
+            2882: 18,37
+            2883: 19,37
+            2884: 21,37
+            2885: 20,37
+            2886: 22,37
+            2887: 23,37
+            2916: 26,39
+            2917: 25,39
+            2918: 23,39
+            2919: 24,39
+            2920: 22,39
+            2921: 20,39
+            2922: 21,39
+            2923: 19,39
+            2924: 18,39
+            2925: 17,39
+            2926: 16,39
+            2927: 15,39
+            2928: 16,35
+            2929: 17,35
+            2930: 18,35
+            2931: 21,35
+            2932: 23,35
+            2933: 24,35
+            2934: 22,35
+            2935: 23,33
+            2936: 22,33
+            2937: 21,33
+            2938: 20,33
+            2939: 18,33
+            2940: 19,33
         - node:
             color: '#790000FF'
             id: MiniTileLineOverlayW
@@ -1691,31 +1691,31 @@ entities:
             2753: 20,30
             2754: 18,32
             2755: 16,34
-            2757: 14,37
-            2758: 14,38
-            2759: 14,39
-            2760: 14,40
-            2761: 14,41
-            2762: 14,42
-            2763: 14,43
-            2764: 14,44
-            2775: 26,33
-            2776: 26,32
-            2777: 26,29
-            2778: 26,28
-            2779: 26,27
-            2780: 26,25
-            2781: 26,26
-            2782: 26,24
-            2792: 40,19
-            2793: 40,20
-            2848: 38,12
-            2849: 38,13
-            2861: 36,16
-            2889: 24,36
-            2944: 19,34
-            2945: 24,32
-            2954: 27,38
+            2756: 14,37
+            2757: 14,38
+            2758: 14,39
+            2759: 14,40
+            2760: 14,41
+            2761: 14,42
+            2762: 14,43
+            2763: 14,44
+            2774: 26,33
+            2775: 26,32
+            2776: 26,29
+            2777: 26,28
+            2778: 26,27
+            2779: 26,25
+            2780: 26,26
+            2781: 26,24
+            2791: 40,19
+            2792: 40,20
+            2847: 38,12
+            2848: 38,13
+            2860: 36,16
+            2888: 24,36
+            2943: 19,34
+            2944: 24,32
+            2953: 27,38
         - node:
             color: '#D92828FF'
             id: MiniTileSteelCornerNe
@@ -4694,10 +4694,10 @@ entities:
         - volume: 2500
           temperature: 5000
           moles:
-          - 6666.982
+          - 66669.73
           - 0
           - 0
-          - 6666.982
+          - 66669.73
           - 0
           - 0
           - 0
@@ -4725,7 +4725,7 @@ entities:
           temperature: 293.15
           moles:
           - 0
-          - 6666.982
+          - 66669.73
           - 0
           - 0
           - 0
@@ -4739,7 +4739,7 @@ entities:
         - volume: 2500
           temperature: 293.15
           moles:
-          - 6666.982
+          - 66669.73
           - 0
           - 0
           - 0
@@ -4807,11 +4807,15 @@ entities:
     - type: Transform
       pos: 33.5,-1.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 7410
     components:
     - type: Transform
       pos: 33.5,-2.5
       parent: 2
+    missingComponents:
+    - Weldable
 - proto: AirlockHatchSyndicate
   entities:
   - uid: 6524
@@ -7066,6 +7070,8 @@ entities:
     - type: Transform
       pos: -24.5,-27.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 301
     components:
     - type: Transform
@@ -7308,6 +7314,8 @@ entities:
     - type: Transform
       pos: -24.5,-28.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 2630
     components:
     - type: Transform
@@ -7323,6 +7331,10 @@ entities:
         - DoorStatus: Open
         3262:
         - DoorStatus: Open
+    missingComponents:
+    - Construction
+    - Weldable
+    - Destructible
   - uid: 2661
     components:
     - type: Transform
@@ -7582,6 +7594,10 @@ entities:
         - DoorStatus: Open
         6781:
         - DoorStatus: Open
+    missingComponents:
+    - Construction
+    - Weldable
+    - Destructible
   - uid: 3126
     components:
     - type: Transform
@@ -7708,12 +7724,16 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -18.5,33.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 3690
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -18.5,30.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 3930
     components:
     - type: Transform
@@ -8158,180 +8178,276 @@ entities:
     - type: Transform
       pos: -3.5,-36.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 6873
     components:
     - type: Transform
       pos: -3.5,-35.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 6874
     components:
     - type: Transform
       pos: -3.5,-34.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 6875
     components:
     - type: Transform
       pos: -3.5,-33.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 6876
     components:
     - type: Transform
       pos: -3.5,-32.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 6877
     components:
     - type: Transform
       pos: -2.5,-32.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 6878
     components:
     - type: Transform
       pos: -1.5,-32.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 6879
     components:
     - type: Transform
       pos: -0.5,-32.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 6880
     components:
     - type: Transform
       pos: 0.5,-32.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 6881
     components:
     - type: Transform
       pos: 1.5,-32.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 6882
     components:
     - type: Transform
       pos: 2.5,-32.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 6883
     components:
     - type: Transform
       pos: 3.5,-32.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 6884
     components:
     - type: Transform
       pos: 4.5,-32.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 6885
     components:
     - type: Transform
       pos: 5.5,-32.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 6886
     components:
     - type: Transform
       pos: 6.5,-32.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 6887
     components:
     - type: Transform
       pos: 7.5,-32.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 6888
     components:
     - type: Transform
       pos: 8.5,-32.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 6889
     components:
     - type: Transform
       pos: 9.5,-32.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 6890
     components:
     - type: Transform
       pos: 9.5,-33.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 6891
     components:
     - type: Transform
       pos: 9.5,-34.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 6892
     components:
     - type: Transform
       pos: 9.5,-35.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 6893
     components:
     - type: Transform
       pos: 9.5,-36.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 7163
     components:
     - type: Transform
       pos: -0.5,-38.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 7164
     components:
     - type: Transform
       pos: -0.5,-39.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 7165
     components:
     - type: Transform
       pos: 6.5,-38.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 7166
     components:
     - type: Transform
       pos: 6.5,-39.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 7480
     components:
     - type: Transform
       pos: 33.5,-1.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 7481
     components:
     - type: Transform
       pos: 33.5,-2.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 7661
     components:
     - type: Transform
       pos: -32.5,21.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 7662
     components:
     - type: Transform
       pos: -29.5,21.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 7894
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 37.5,14.5
       parent: 2
+    - type: DeviceLinkSink
+      invokeCounter: 1
+    missingComponents:
+    - Construction
+    - Weldable
+    - Destructible
   - uid: 7895
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 36.5,16.5
       parent: 2
+    - type: DeviceLinkSource
+      linkedPorts:
+        7897:
+        - DoorStatus: Open
+        7894:
+        - DoorStatus: Close
+    missingComponents:
+    - Construction
+    - Weldable
+    - Destructible
   - uid: 7896
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 33.5,15.5
       parent: 2
+    - type: DeviceLinkSink
+      invokeCounter: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        7897:
+        - DoorStatus: Open
+    missingComponents:
+    - Weldable
   - uid: 7897
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 36.5,13.5
       parent: 2
+    - type: DeviceLinkSink
+      invokeCounter: 2
+    - type: DeviceLinkSource
+      linkedPorts:
+        7896:
+        - DoorStatus: Open
+    missingComponents:
+    - Construction
+    - Weldable
+    - Destructible
   - uid: 8034
     components:
     - type: Transform
       pos: 24.5,32.5
       parent: 2
+    missingComponents:
+    - Weldable
 - proto: BlastDoorOpen
   entities:
   - uid: 2851
@@ -18959,10 +19075,10 @@ entities:
         immutable: False
         temperature: 5000
         moles:
-        - 533.3585
+        - 5330.32
         - 0
         - 0
-        - 533.3585
+        - 5330.32
         - 0
         - 0
         - 0
@@ -19016,11 +19132,15 @@ entities:
           showEnts: False
           occludes: True
           ent: null
+    missingComponents:
+    - Weldable
   - uid: 7484
     components:
     - type: Transform
       pos: 34.5,-4.5
       parent: 2
+    missingComponents:
+    - Weldable
 - proto: CrateSyndicate
   entities:
   - uid: 2387
@@ -19034,10 +19154,10 @@ entities:
         immutable: False
         temperature: 4999.256
         moles:
-        - 533.4982
+        - 5330.32
         - 0.52545995
         - 0
-        - 533.3585
+        - 5330.32
         - 0
         - 0
         - 0
@@ -19074,10 +19194,10 @@ entities:
         immutable: False
         temperature: 5000
         moles:
-        - 533.3585
+        - 5330.32
         - 0
         - 0
-        - 533.3585
+        - 5330.32
         - 0
         - 0
         - 0
@@ -19149,10 +19269,10 @@ entities:
         immutable: False
         temperature: 5000
         moles:
-        - 533.3585
+        - 5330.32
         - 0
         - 0
-        - 533.3585
+        - 5330.32
         - 0
         - 0
         - 0
@@ -19186,10 +19306,10 @@ entities:
         immutable: False
         temperature: 4999.256
         moles:
-        - 533.4982
+        - 5330.32
         - 0.52545995
         - 0
-        - 533.3585
+        - 5330.32
         - 0
         - 0
         - 0
@@ -19301,11 +19421,15 @@ entities:
     - type: Transform
       pos: -28.5,26.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 7842
     components:
     - type: Transform
       pos: -22.5,30.5
       parent: 2
+    missingComponents:
+    - Weldable
 - proto: CrateTradeContrabandSecureDonkFilled
   entities:
   - uid: 322
@@ -19377,11 +19501,15 @@ entities:
     - type: Transform
       pos: -31.5,23.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 7840
     components:
     - type: Transform
       pos: -26.5,26.5
       parent: 2
+    missingComponents:
+    - Weldable
 - proto: CrateTradeContrabandSecureNormalFilled
   entities:
   - uid: 1333
@@ -19477,11 +19605,15 @@ entities:
     - type: Transform
       pos: -28.5,24.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 7841
     components:
     - type: Transform
       pos: -25.5,29.5
       parent: 2
+    missingComponents:
+    - Weldable
 - proto: CyberPen
   entities:
   - uid: 753
@@ -30754,21 +30886,29 @@ entities:
     - type: Transform
       pos: -0.5,-40.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 6926
     components:
     - type: Transform
       pos: 6.5,-40.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 6927
     components:
     - type: Transform
       pos: -0.5,-37.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 6928
     components:
     - type: Transform
       pos: 6.5,-37.5
       parent: 2
+    missingComponents:
+    - Weldable
 - proto: HighSecCentralCommandLocked
   entities:
   - uid: 184
@@ -31714,21 +31854,29 @@ entities:
     - type: Transform
       pos: 30.5,-3.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 7413
     components:
     - type: Transform
       pos: 30.5,-2.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 7414
     components:
     - type: Transform
       pos: 30.5,-1.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 7415
     components:
     - type: Transform
       pos: 30.5,-0.5
       parent: 2
+    missingComponents:
+    - Weldable
 - proto: LockerSyndicatePersonalFilled
   entities:
   - uid: 1603
@@ -33526,7 +33674,7 @@ entities:
       pos: 5.5,7.5
       parent: 2
     - type: DeadDrop
-      nextDrop: 7991.0016878
+      nextDrop: 1244.0423829
 - proto: PosterContrabandEnlistGorlexDD
   entities:
   - uid: 2395
@@ -33536,7 +33684,7 @@ entities:
       pos: -11.5,-13.5
       parent: 2
     - type: DeadDrop
-      nextDrop: 5014.0016878
+      nextDrop: 2390.0423829
 - proto: PosterContrabandKosmicheskayaStantsiyaDD
   entities:
   - uid: 2316
@@ -33546,7 +33694,7 @@ entities:
       pos: -16.5,5.5
       parent: 2
     - type: DeadDrop
-      nextDrop: 7670.0016878
+      nextDrop: 2460.0423829
 - proto: PosterContrabandMoth
   entities:
   - uid: 2995
@@ -33576,7 +33724,7 @@ entities:
       pos: -11.5,16.5
       parent: 2
     - type: DeadDrop
-      nextDrop: 7853.0016878
+      nextDrop: 2056.0423829
 - proto: PosterLegitHotDonkExplosion
   entities:
   - uid: 6324
@@ -38147,16 +38295,22 @@ entities:
     - type: Transform
       pos: 8.5,-34.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 6923
     components:
     - type: Transform
       pos: 8.5,-36.5
       parent: 2
+    missingComponents:
+    - Weldable
   - uid: 6977
     components:
     - type: Transform
       pos: 8.5,-35.5
       parent: 2
+    missingComponents:
+    - Weldable
 - proto: SyndicateComputerTabletopComms
   entities:
   - uid: 1416
