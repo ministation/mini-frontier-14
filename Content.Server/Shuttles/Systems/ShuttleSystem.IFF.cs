@@ -2,6 +2,7 @@ using Content.Server.Shuttles.Components;
 using Content.Shared.Shuttles.BUIStates;
 using Content.Shared.Shuttles.Components;
 using Content.Shared.Shuttles.Events;
+using Content.Shared.Tiles;
 
 namespace Content.Server.Shuttles.Systems;
 
@@ -22,20 +23,25 @@ public sealed partial class ShuttleSystem
             return;
         }
 
-///        if (!args.Show)
-///        {
-///            AddIFFFlag(xform.GridUid.Value, IFFFlags.HideLabel);
-///        }
-///        else
-///        {
-///            RemoveIFFFlag(xform.GridUid.Value, IFFFlags.HideLabel);
-///        }
+        if (!args.Show)
+        {
+            AddIFFFlag(xform.GridUid.Value, IFFFlags.HideLabel);
+        }
+        else
+        {
+            RemoveIFFFlag(xform.GridUid.Value, IFFFlags.HideLabel);
+        }
     }
 
     private void OnIFFShowVessel(EntityUid uid, IFFConsoleComponent component, IFFShowVesselMessage args)
     {
         if (!TryComp(uid, out TransformComponent? xform) || xform.GridUid == null ||
             (component.AllowedFlags & IFFFlags.Hide) == 0x0)
+        {
+            return;
+        }
+
+        if (HasComp<ProtectedGridComponent>(xform.GridUid.Value))
         {
             return;
         }
