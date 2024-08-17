@@ -22,14 +22,14 @@ public sealed partial class ShuttleSystem
             return;
         }
 
-        if (!args.Show)
-        {
-            AddIFFFlag(xform.GridUid.Value, IFFFlags.HideLabel);
-        }
-        else
-        {
-            RemoveIFFFlag(xform.GridUid.Value, IFFFlags.HideLabel);
-        }
+///        if (!args.Show)
+///        {
+///            AddIFFFlag(xform.GridUid.Value, IFFFlags.HideLabel);
+///        }
+///        else
+///        {
+///            RemoveIFFFlag(xform.GridUid.Value, IFFFlags.HideLabel);
+///        }
     }
 
     private void OnIFFShowVessel(EntityUid uid, IFFConsoleComponent component, IFFShowVesselMessage args)
