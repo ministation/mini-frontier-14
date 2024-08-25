@@ -18,11 +18,19 @@
       "directions": 4
     },
     {
-      "name": "equipped-HELMET-vox",
+      "name": "equipped-HELMET-resomi",
       "directions": 4
     },
     {
-      "name": "equipped-MASK",
+      "name": "mask-equipped-HELMET",
+      "directions": 4
+    },
+    {
+      "name": "mask-equipped-HELMET-resomi",
+      "directions": 4
+    },
+    {
+      "name": "equipped-HELMET-vox",
       "directions": 4
     },
     {
