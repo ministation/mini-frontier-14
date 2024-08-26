@@ -76,6 +76,10 @@
             "directions": 4
         },
         {
+            "name": "equipped-MASK-vulpkanin",
+            "directions": 4
+        },
+        {
             "name": "equipped-MASK",
             "directions": 4
         },

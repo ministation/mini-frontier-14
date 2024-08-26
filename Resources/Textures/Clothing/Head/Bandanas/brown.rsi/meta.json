@@ -26,6 +26,10 @@
       "directions": 4
     },
     {
+      "name": "equipped-MASK",
+      "directions": 4
+    },
+    {
       "name": "mask-equipped-HELMET-resomi",
       "directions": 4
     },
