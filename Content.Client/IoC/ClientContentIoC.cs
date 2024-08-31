@@ -1,3 +1,4 @@
+using Content.Client.Corvax.DiscordAuth;
 using Content.Client.Administration.Managers;
 using Content.Client.Changelog;
 using Content.Client.Chat.Managers;
@@ -50,6 +51,7 @@ namespace Content.Client.IoC
             collection.Register<ContentReplayPlaybackManager, ContentReplayPlaybackManager>();
             collection.Register<ISharedPlaytimeManager, JobRequirementsManager>();
             collection.Register<DebugMonitorManager>();
+            collection.Register<DiscordAuthManager>(); // Corvax-Auth (by Jerry)
         }
     }
 }

@@ -1,3 +1,6 @@
+using Content.Server.Corvax.Discord;
+using Content.Server.Corvax.Sponsors;
+using Content.Server.Corvax;
 using Content.Server._NF.Auth;
 using Content.Server.Administration;
 using Content.Server.Administration.Logs;
@@ -68,6 +71,8 @@ namespace Content.Server.IoC
             IoCManager.Register<JobWhitelistManager>();
             IoCManager.Register<PlayerRateLimitManager>();
             IoCManager.Register<MiniAuthManager>(); //Frontier
+            IoCManager.Register<DiscordAuthManager>();
+            IoCManager.Register<SponsorsManager>();
         }
     }
 }
