@@ -6,6 +6,8 @@ using Content.Server.Administration.Managers;
 using Content.Server.Afk;
 using Content.Server.Chat.Managers;
 using Content.Server.Connection;
+using Content.Server.Corvax.Discord;
+using Content.Server.Corvax.Sponsors;
 using Content.Server.Database;
 using Content.Server.EUI;
 using Content.Server.GameTicking;
@@ -107,6 +109,9 @@ namespace Content.Server.Entry
                 IoCManager.Resolve<ServerInfoManager>().Initialize();
                 IoCManager.Resolve<ServerApi>().Initialize();
                 IoCManager.Resolve<MiniAuthManager>();
+                IoCManager.Resolve<DiscordAuthManager>().Initialize();
+                IoCManager.Resolve<SponsorsManager>().Initialize();
+
 
                 _voteManager.Initialize();
                 _updateManager.Initialize();
