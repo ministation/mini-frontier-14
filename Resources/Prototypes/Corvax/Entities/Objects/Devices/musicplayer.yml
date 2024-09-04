@@ -6,7 +6,7 @@
   components:
   - type: Sprite
     sprite: /Textures/Corvax/Objects/Devices/musicplayer.rsi
-    state: item
+    state: icon
   - type: Appearance
   - type: Item
     size: Small
@@ -24,4 +24,4 @@
     key: enum.JukeboxUiKey.Key
   - type: CargoSellBlacklist
   - type: StaticPrice
-    price: 2500
+    price: 500
