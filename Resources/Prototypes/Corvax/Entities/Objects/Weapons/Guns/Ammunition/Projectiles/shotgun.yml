@@ -1,0 +1,27 @@
+- type: entity
+  id: PelletKS23Flashbang
+  name: pellet (.50 свутошумовая)
+  noSpawn: true
+  parent: BaseBullet
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: slug
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 28
+
+- type: entity
+  id: PelletKS23Smoke
+  name: pellet (.50 газовая)
+  noSpawn: true
+  parent: BaseBullet
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: slug
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 1
