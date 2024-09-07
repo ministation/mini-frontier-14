@@ -1,6 +1,6 @@
 - type: entity
   id: PelletKS23Flashbang
-  name: pellet (.50 свутошумовая)
+  name: pellet (.50 светошумовой)
   noSpawn: true
   parent: BaseBullet
   components:
@@ -10,11 +10,11 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 28
+        Piercing: 1
 
 - type: entity
   id: PelletKS23Smoke
-  name: pellet (.50 газовая)
+  name: pellet (.50 газовый)
   noSpawn: true
   parent: BaseBullet
   components:
