@@ -10,7 +10,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 1
+       Heat: 15
 
 - type: entity
   id: PelletKS23Smoke
@@ -24,4 +24,4 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 1
+        Blunt: 10
