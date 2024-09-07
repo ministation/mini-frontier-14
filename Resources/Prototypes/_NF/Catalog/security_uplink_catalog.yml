@@ -421,6 +421,26 @@
       whitelist:
         - Sheriff
 
+- type: listing
+  id: UplinkSecurityKS23
+  name:  uplink-security-ks23-name
+  description: uplink-security-ks23-desc
+  productEntity: WeaponShotgunKS23
+  icon: { sprite: /Textures/Corvax/Objects/Weapons/Guns/Shotguns/ks23.rsi, state: icon }
+  cost:
+    FrontierUplinkCoin: 4
+  categories:
+    - UplinkSecurityWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
 
 - type: listing
   id: UplinkSecurityHolo
