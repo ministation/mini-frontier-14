@@ -23,7 +23,7 @@
   id: PelletKS23Smoke
   name: pellet (.23 газовый)
   noSpawn: true
-  parent: BaseBullet
+  parent: [ BaseBullet, BaseBulletTrigger ]
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
@@ -37,7 +37,7 @@
         Quantity: 50
     spreadAmount: 1
   - type: ActiveTimerTrigger
-    timeRemaining: 0.2
+    timeRemaining: 0.3
   - type: DeleteOnTrigger
   - type: Projectile
     damage:
