@@ -5,7 +5,7 @@
   components:
   - type: Sprite
     sprite: /Textures/Corvax/Objects/Weapons/Guns/Shotguns/ks23.rsi
-    scale: 0.7, 0.7
+    scale: 0.8, 0.8
     state: icon
   - type: Item
     size: Normal

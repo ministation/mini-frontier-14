@@ -1,12 +1,19 @@
 - type: entity
   id: PelletKS23Flashbang
-  name: pellet (.50 светошумовой)
+  name: pellet (.23 светошумовой)
   noSpawn: true
-  parent: BaseBullet
+  parent: [ BaseBullet, BaseBulletTrigger ]
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     state: slug
+  - type: FlashOnTrigger
+    range: 3
+  - type: SpawnOnTrigger
+    proto: GrenadeFlashEffect
+  - type: ActiveTimerTrigger
+    timeRemaining: 0.3
+  - type: DeleteOnTrigger
   - type: Projectile
     damage:
       types:
@@ -14,13 +21,24 @@
 
 - type: entity
   id: PelletKS23Smoke
-  name: pellet (.50 газовый)
+  name: pellet (.23 газовый)
   noSpawn: true
   parent: BaseBullet
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     state: slug
+  - type: SmokeOnTrigger
+    duration: 5
+    smokePrototype: Smoke
+    solution:
+      reagents:
+      - ReagentId: TearGas
+        Quantity: 50
+    spreadAmount: 1
+  - type: ActiveTimerTrigger
+    timeRemaining: 0.2
+  - type: DeleteOnTrigger
   - type: Projectile
     damage:
       types:

@@ -428,7 +428,7 @@
   productEntity: WeaponShotgunKS23
   icon: { sprite: /Textures/Corvax/Objects/Weapons/Guns/Shotguns/ks23.rsi, state: icon }
   cost:
-    FrontierUplinkCoin: 4
+    FrontierUplinkCoin: 3
   categories:
     - UplinkSecurityWeapons
   conditions:
@@ -576,6 +576,38 @@
   icon: { sprite: Objects/Storage/boxes.rsi, state: box }
   cost:
     FrontierUplinkCoin: 1
+  categories:
+    - UplinkSecurityAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing
+  id: UplinkSecurityKS23Flashbang
+  name: uplink-security-magazineks23flashbang-name
+  description: uplink-security-magazineks23flashbang-desc
+  productEntity: BoxMagazineKS23Flashbang
+  icon: { sprite: Objects/Storage/boxes.rsi, state: box }
+  cost:
+    FrontierUplinkCoin: 2
+  categories:
+    - UplinkSecurityAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing
+  id: UplinkSecurityKS23Smoke
+  name: uplink-security-magazineks23smoke-name
+  description: uplink-security-magazineks23smoke-desc
+  productEntity: BoxMagazineKS23Smoke
+  icon: { sprite: Objects/Storage/boxes.rsi, state: box }
+  cost:
+    FrontierUplinkCoin: 2
   categories:
     - UplinkSecurityAmmo
   conditions:

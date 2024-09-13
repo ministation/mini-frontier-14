@@ -1,6 +1,6 @@
 - type: entity
   id: BaseShellKS23
-  name: shell (.50)
+  name: shell (.23)
   parent: BaseCartridge
   abstract: true
   components:
@@ -18,7 +18,7 @@
 
 - type: entity
   id: ShellKS23Flashbang
-  name: ружейный патрон (.50 светошумовой)
+  name: ружейный патрон (.23 светошумовой)
   parent: BaseShellKS23
   components:
   - type: Sprite
@@ -33,7 +33,7 @@
 
 - type: entity
   id: ShellKS23Smoke
-  name: ружейный патрон (.50 газовый)
+  name: ружейный патрон (.23 газовый)
   parent: BaseShellKS23
   components:
   - type: Sprite

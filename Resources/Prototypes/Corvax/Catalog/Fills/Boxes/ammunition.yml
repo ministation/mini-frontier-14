@@ -1,0 +1,21 @@
+- type: entity
+  name: Коробка со светошумовыми патронами (.23)
+  parent: BoxMagazine
+  id: BoxMagazineKS23Flashbang
+  description: Коробка с ружейными патронами для дробовика KS23. В ней находится 3 светошумовых патрона.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ShellKS23Flashbang
+        amount: 3
+
+- type: entity
+  name: Коробка с газовыми патронами (.23)
+  parent: BoxMagazine
+  id: BoxMagazineKS23Smoke
+  description: Коробка с ружейными патронами для дробовика KS23. В ней находится 3 гозовых патрона.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ShellKS23Smoke
+        amount: 3
