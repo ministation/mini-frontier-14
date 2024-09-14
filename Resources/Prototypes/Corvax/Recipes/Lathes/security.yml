@@ -1,0 +1,17 @@
+- type: latheRecipe
+  id: ShellKS23Flashbang
+  result: ShellKS23Flashbang
+  category: Ammo
+  completetime: 1
+  materials:
+    Steel: 10
+    Plastic: 10
+
+- type: latheRecipe
+  id: ShellKS23Smoke
+  result: ShellKS23Smoke
+  category: Ammo
+  completetime: 1
+  materials:
+    Steel: 10
+    Plastic: 10

@@ -434,6 +434,8 @@
       - WeaponXrayCannon # Frontier
       - SpeedLoaderRifleHeavyIncendiary # Frontier
       - SpeedLoaderRifleHeavyUranium # Frontier
+      - ShellKS23Smoke # Frontier
+      - ShellKS23Flashbang # Frontier
       - MagazineBoxVector22Incendiary #Corvax-Frontier
       - MagazineBoxVector22Uranium #Corvax-Frontier
       - MagazineVector22Incendiary #Corvax-Frontier
@@ -895,6 +897,8 @@
       - SpeedLoaderMagnumUranium
       - SpeedLoaderRifleHeavyIncendiary # Frontier
       - SpeedLoaderRifleHeavyUranium # Frontier
+      - ShellKS23Smoke # Frontier
+      - ShellKS23Flashbang # Frontier
       - TelescopicShield
       - TimerTrigger
       - Truncheon

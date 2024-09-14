@@ -592,6 +592,8 @@
       - MagazineBoxPistolRubber
       - MagazineBoxRifleRubber
       - MagazineShotgunBeanbag
+      - ShellKS23Smoke # Frontier
+      - ShellKS23Flashbang # Frontier
 
 - type: entity
   id: MercenaryTechFabHacked
