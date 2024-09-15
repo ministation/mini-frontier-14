@@ -391,7 +391,7 @@
   productEntity: ShuttleGunPirateCannonFlatpack
   icon: { sprite: Objects/Devices/flatpack.rsi, state: pirate-gun }
   cost:
-    Doubloon: 8
+    Doubloon: 10
   categories:
     - UplinkPirateWeapons
   conditions:
