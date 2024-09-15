@@ -383,3 +383,19 @@
       whitelist:
         tags:
           - PirateUplink
+
+- type: listing # Frontier
+  id: UplinkShuttleGunPirateCannonFlatpack
+  name:  uplink-pirate-shuttle-cannon-pirate-flatpack-name
+  description: uplink-pirate-shuttle-cannon-pirate-flatpack-desc
+  productEntity: ShuttleGunPirateCannonFlatpack
+  icon: { sprite: Objects/Devices/flatpack.rsi, state: pirate-gun }
+  cost:
+    Doubloon: 8
+  categories:
+    - UplinkPirateWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
