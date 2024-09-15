@@ -604,7 +604,7 @@
     - type: Sprite
       state: poster63_contraband
 
-- type: entity # Frontier
+- type: entity #  Corvax-Frontier
   parent: PosterBase
   id: PosterContrabandYesERP
   name: "Yes ERP"
