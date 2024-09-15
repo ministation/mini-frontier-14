@@ -436,6 +436,8 @@
       - SpeedLoaderRifleHeavyUranium # Frontier
       - ShellKS23Smoke # Frontier
       - ShellKS23Flashbang # Frontier
+      - ShellKS23Beanbag # Frontier
+      - ShellKS23Base # Frontier
       - MagazineBoxVector22Incendiary #Corvax-Frontier
       - MagazineBoxVector22Uranium #Corvax-Frontier
       - MagazineVector22Incendiary #Corvax-Frontier
@@ -830,6 +832,8 @@
       - SpeedLoaderMagnumEmpty
       - SpeedLoaderRifleHeavy # Frontier
       - SpeedLoaderRifleHeavyEmpty # Frontier
+      - ShellKS23Beanbag # Frontier
+      - ShellKS23Base # Frontier
       - Stunbaton
       - TargetClown
       - TargetHuman
@@ -985,6 +989,8 @@
         - SpeedLoaderMagnumEmpty
         - SpeedLoaderRifleHeavy # Frontier
         - SpeedLoaderRifleHeavyEmpty # Frontier
+        - ShellKS23Beanbag # Frontier
+        - ShellKS23Base # Frontier
         - 10roundmagazine #frontier by VividPups
         - 10roundmagazineempty #frontier by VividPups
         - MagazineBoxVector45 #CorvaxFrontier

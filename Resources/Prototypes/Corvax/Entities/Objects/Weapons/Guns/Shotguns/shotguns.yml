@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseWeaponShotgun
   id: WeaponShotgunKS23
-  name: Дробовик KS23
+  name: Shotgun KS23
   components:
   - type: Sprite
     sprite: /Textures/Corvax/Objects/Weapons/Guns/Shotguns/ks23.rsi
@@ -19,6 +19,5 @@
     whitelist:
       tags:
       - ShellKS23
-      - ShellShotgun
     capacity: 3
-    proto: 
+    proto: ShellKS23Base

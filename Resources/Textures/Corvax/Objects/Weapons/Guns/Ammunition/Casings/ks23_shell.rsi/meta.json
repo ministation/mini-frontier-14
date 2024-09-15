@@ -18,6 +18,18 @@
     },
     {
       "name": "smoke"
+    },
+    {
+      "name": "beanbag-spent"
+    },
+    {
+      "name": "beanbag"
+    },
+    {
+      "name": "base-spent"
+    },
+    {
+      "name": "base"
     }
   ]
 }

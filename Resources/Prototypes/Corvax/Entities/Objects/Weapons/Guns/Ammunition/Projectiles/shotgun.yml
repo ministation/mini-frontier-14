@@ -1,6 +1,6 @@
 - type: entity
   id: PelletKS23Flashbang
-  name: pellet (.90 светошумовой)
+  name: светошумовой (.90)
   noSpawn: true
   parent: [ BaseBullet, BaseBulletTrigger ]
   components:
@@ -21,7 +21,7 @@
 
 - type: entity
   id: PelletKS23Smoke
-  name: pellet (.90 газовый)
+  name: газовый (.90)
   noSpawn: true
   parent: [ BaseBullet, BaseBulletTrigger ]
   components:
@@ -43,3 +43,43 @@
     damage:
       types:
         Blunt: 10
+
+- type: entity
+  id: PelletKS23Base
+  name: картечь (.90)
+  noSpawn: true
+  parent: BaseBullet
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: buckshot
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 10
+
+- type: entity
+  id: PelletKS23BaseSpread
+  noSpawn: true
+  parent: PelletKS23Base
+  components:
+  - type: ProjectileSpread
+    proto: PelletKS23Base
+    count: 6
+    spread: 15
+
+- type: entity
+  id: PelletKS23Beanbag
+  name: травматический (.90)
+  noSpawn: true
+  parent: BaseBullet
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: buckshot
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 10
+  - type: StaminaDamageOnCollide
+    damage: 60

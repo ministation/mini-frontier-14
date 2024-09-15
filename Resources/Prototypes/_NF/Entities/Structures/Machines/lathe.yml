@@ -501,6 +501,8 @@
       - MagazineBoxLightRifle
       - MagazineBoxPistol
       - MagazineBoxRifle
+      - ShellKS23Beanbag # Frontier
+      - ShellKS23Base # Frontier
     ## Mags / Speedloaders / Clips
       - MagazineNovaliteC1Empty
       - MagazineNovaliteC1

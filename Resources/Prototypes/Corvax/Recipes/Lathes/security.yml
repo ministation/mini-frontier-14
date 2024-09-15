@@ -4,8 +4,9 @@
   category: Ammo
   completetime: 1
   materials:
-    Steel: 10
-    Plastic: 10
+    Steel: 40
+    Plastic: 40
+    Glass: 20
 
 - type: latheRecipe
   id: ShellKS23Smoke
@@ -13,5 +14,24 @@
   category: Ammo
   completetime: 1
   materials:
-    Steel: 10
+    Steel: 20
+    Plastic: 30
+    Glass: 20
+
+- type: latheRecipe
+  id: ShellKS23Beanbag
+  result: ShellKS23Beanbag
+  category: Ammo
+  completetime: 1
+  materials:
+    Steel: 30
+    Plastic: 20
+
+- type: latheRecipe
+  id: ShellKS23Base
+  result: ShellKS23Base
+  category: Ammo
+  completetime: 1
+  materials:
+    Steel: 20
     Plastic: 10

@@ -45,3 +45,33 @@
     proto: PelletKS23Smoke
   - type: SpentAmmoVisuals
     state: "smoke"
+
+- type: entity
+  id: ShellKS23Beanbag
+  name: ружейный патрон (.90 травматический)
+  parent: BaseShellKS23
+  components:
+  - type: Sprite
+    sprite: /Textures/Corvax/Objects/Weapons/Guns/Ammunition/Casings/ks23_shell.rsi
+    layers:
+      - state: beanbag
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: PelletKS23Beanbag
+  - type: SpentAmmoVisuals
+    state: "beanbag"
+
+- type: entity
+  id: ShellKS23Base
+  name: ружейный патрон (.90 картечь)
+  parent: BaseShellKS23
+  components:
+  - type: Sprite
+    sprite: /Textures/Corvax/Objects/Weapons/Guns/Ammunition/Casings/ks23_shell.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: PelletKS23BaseSpread
+  - type: SpentAmmoVisuals
+    state: "base"
