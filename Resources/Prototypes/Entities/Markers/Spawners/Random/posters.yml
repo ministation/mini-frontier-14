@@ -95,6 +95,7 @@
       - NFPosterContrabandLvhiStation # Frontier
       - NFPosterContrabandLvhiShuttle # Frontier
       - NFPosterContrabandLvhiSpace # Frontier
+      - PosterContrabandYesERP # Frontier
     chance: 1
 
 - type: entity
