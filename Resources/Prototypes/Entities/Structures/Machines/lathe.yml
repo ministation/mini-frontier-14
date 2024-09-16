@@ -434,10 +434,10 @@
       - WeaponXrayCannon # Frontier
       - SpeedLoaderRifleHeavyIncendiary # Frontier
       - SpeedLoaderRifleHeavyUranium # Frontier
-      - ShellKS23Smoke # Frontier
-      - ShellKS23Flashbang # Frontier
-      - ShellKS23Beanbag # Frontier
-      - ShellKS23Base # Frontier
+      - ShellKS23Smoke # Corvax-Frontier
+      - ShellKS23Flashbang # Corvax-Frontier
+      - ShellKS23Beanbag # Corvax-Frontier
+      - ShellKS23Base #  Corvax-Frontier
       - MagazineBoxVector22Incendiary #Corvax-Frontier
       - MagazineBoxVector22Uranium #Corvax-Frontier
       - MagazineVector22Incendiary #Corvax-Frontier
@@ -832,8 +832,6 @@
       - SpeedLoaderMagnumEmpty
       - SpeedLoaderRifleHeavy # Frontier
       - SpeedLoaderRifleHeavyEmpty # Frontier
-      - ShellKS23Beanbag # Frontier
-      - ShellKS23Base # Frontier
       - Stunbaton
       - TargetClown
       - TargetHuman
@@ -848,6 +846,8 @@
       - MagazineVector45Empty
       - MagazineVector22
       - MagazineVector22Empty
+      - ShellKS23Beanbag
+      - ShellKS23Base
       #Corvax-Frontier End
       - ThrusterSecurityMachineCircuitboard # Frontier
       - ClothingOuterSuitEmergency # Frontier
@@ -901,8 +901,6 @@
       - SpeedLoaderMagnumUranium
       - SpeedLoaderRifleHeavyIncendiary # Frontier
       - SpeedLoaderRifleHeavyUranium # Frontier
-      - ShellKS23Smoke # Frontier
-      - ShellKS23Flashbang # Frontier
       - TelescopicShield
       - TimerTrigger
       - Truncheon
@@ -935,6 +933,8 @@
       - ShuttleSmgRifleAmmoBox
       - ShuttleRifleAmmoBox
       - ShuttleMagnumRifleAmmoBox
+      - ShellKS23Smoke # Frontier
+      - ShellKS23Flashbang # Frontier
       #Corvax-Frontier End
   - type: MaterialStorage
     whitelist:
@@ -989,8 +989,8 @@
         - SpeedLoaderMagnumEmpty
         - SpeedLoaderRifleHeavy # Frontier
         - SpeedLoaderRifleHeavyEmpty # Frontier
-        - ShellKS23Beanbag # Frontier
-        - ShellKS23Base # Frontier
+        - ShellKS23Beanbag # Corvax-Frontier
+        - ShellKS23Base # Corvax-Frontier
         - 10roundmagazine #frontier by VividPups
         - 10roundmagazineempty #frontier by VividPups
         - MagazineBoxVector45 #CorvaxFrontier
