@@ -848,6 +848,9 @@
       - MagazineVector22Empty
       - ShellKS23Beanbag
       - ShellKS23Base
+      - ClothingOuterHardsuitSecurity
+      - ClothingOuterHardsuitWarden
+      - ClothingOuterHardsuitBrigmedic
       #Corvax-Frontier End
       - ThrusterSecurityMachineCircuitboard # Frontier
       - ClothingOuterSuitEmergency # Frontier
