@@ -501,8 +501,8 @@
       - MagazineBoxLightRifle
       - MagazineBoxPistol
       - MagazineBoxRifle
-      - ShellKS23Beanbag # Frontier
-      - ShellKS23Base # Frontier
+      - ShellKS23Beanbag # Corvax-Frontier
+      - ShellKS23Base # Corvax-Frontier
     ## Mags / Speedloaders / Clips
       - MagazineNovaliteC1Empty
       - MagazineNovaliteC1
@@ -594,8 +594,8 @@
       - MagazineBoxPistolRubber
       - MagazineBoxRifleRubber
       - MagazineShotgunBeanbag
-      - ShellKS23Smoke # Frontier
-      - ShellKS23Flashbang # Frontier
+      - ShellKS23Smoke # Corvax-Frontier
+      - ShellKS23Flashbang # Corvax-Frontier
 
 - type: entity
   id: MercenaryTechFabHacked
