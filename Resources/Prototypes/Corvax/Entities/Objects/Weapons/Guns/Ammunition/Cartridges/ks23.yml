@@ -18,7 +18,7 @@
 
 - type: entity
   id: ShellKS23Flashbang
-  name: ружейный патрон (.90 светошумовой)
+  name: shell (.90 flashbang)
   parent: BaseShellKS23
   components:
   - type: Sprite
@@ -33,7 +33,7 @@
 
 - type: entity
   id: ShellKS23Smoke
-  name: ружейный патрон (.90 газовый)
+  name: shell (.90 smoke)
   parent: BaseShellKS23
   components:
   - type: Sprite
@@ -48,7 +48,7 @@
 
 - type: entity
   id: ShellKS23Beanbag
-  name: ружейный патрон (.90 травматический)
+  name: shell (.90 beanbag)
   parent: BaseShellKS23
   components:
   - type: Sprite
@@ -63,7 +63,7 @@
 
 - type: entity
   id: ShellKS23Base
-  name: ружейный патрон (.90 картечь)
+  name: shell (.90)
   parent: BaseShellKS23
   components:
   - type: Sprite
