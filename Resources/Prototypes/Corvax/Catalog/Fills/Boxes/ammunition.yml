@@ -1,8 +1,8 @@
 - type: entity
-  name: Коробка со светошумовыми патронами (.23)
+  name: box of flash cartridges (.90)
   parent: BoxMagazine
   id: BoxMagazineKS23Flashbang
-  description: Коробка с ружейными патронами для дробовика KS23. В ней находится 3 светошумовых патрона.
+  description: Contains 3 flash cartridges for the KS 23 shotgun
   components:
   - type: StorageFill
     contents:
@@ -10,10 +10,10 @@
         amount: 3
 
 - type: entity
-  name: Коробка с газовыми патронами (.23)
+  name: box of tear gas cartridges (.90)
   parent: BoxMagazine
   id: BoxMagazineKS23Smoke
-  description: Коробка с ружейными патронами для дробовика KS23. В ней находится 3 гозовых патрона.
+  description: Contains 3 tear gas cartridges for the KS 23 shotgun
   components:
   - type: StorageFill
     contents:
