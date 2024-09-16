@@ -384,7 +384,7 @@
         tags:
           - PirateUplink
 
-- type: listing # Frontier
+- type: listing # Corvax-Frontier
   id: UplinkShuttleGunPirateCannonFlatpack
   name:  uplink-pirate-shuttle-cannon-pirate-flatpack-name
   description: uplink-pirate-shuttle-cannon-pirate-flatpack-desc
