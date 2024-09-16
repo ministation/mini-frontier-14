@@ -217,7 +217,7 @@
   - type: Flatpack
     entity: FaxMachineBase
 
-- type: entity
+- type: entity # Corvax-Frontier
   parent: BaseFlatpack
   id: ShuttleGunPirateCannonFlatpack
   name: pirate shuttle gun flatpack
