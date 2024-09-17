@@ -846,8 +846,8 @@
       - MagazineVector45Empty
       - MagazineVector22
       - MagazineVector22Empty
-      - ShellKS23Beanbag
-      - ShellKS23Base
+      - ShellKS23Beanbag # Corvax-Frontier
+      - ShellKS23Base # Corvax-Frontier
       - ClothingOuterHardsuitSecurity
       - ClothingOuterHardsuitWarden
       - ClothingOuterHardsuitBrigmedic
@@ -936,8 +936,8 @@
       - ShuttleSmgRifleAmmoBox
       - ShuttleRifleAmmoBox
       - ShuttleMagnumRifleAmmoBox
-      - ShellKS23Smoke # Frontier
-      - ShellKS23Flashbang # Frontier
+      - ShellKS23Smoke #  Corvax-Frontier
+      - ShellKS23Flashbang # Corvax-Frontier
       #Corvax-Frontier End
   - type: MaterialStorage
     whitelist:
