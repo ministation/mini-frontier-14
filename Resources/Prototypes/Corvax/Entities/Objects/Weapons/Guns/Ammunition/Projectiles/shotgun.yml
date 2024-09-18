@@ -12,7 +12,7 @@
   - type: SpawnOnTrigger
     proto: GrenadeFlashEffect
   - type: ActiveTimerTrigger
-    timeRemaining: 0.3
+    timeRemaining: 1
   - type: DeleteOnTrigger
   - type: Projectile
     damage:
@@ -37,7 +37,7 @@
         Quantity: 50
     spreadAmount: 1
   - type: ActiveTimerTrigger
-    timeRemaining: 0.3
+    timeRemaining: 1
   - type: DeleteOnTrigger
   - type: Projectile
     damage:
