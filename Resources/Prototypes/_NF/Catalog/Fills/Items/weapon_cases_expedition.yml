@@ -54,6 +54,19 @@
     - id: MagazineBoxCaselessRifle10x24
       amount: 1
 
+- type: entity
+  parent: WeaponCaseShort
+  id: WeaponCaseShortDeckard
+  suffix: Dungeon, Deckard
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRevolverDeckard
+      amount: 1
+    - id: CartridgeMagnum
+      amount: 2
+
 # Revolvers
 - type: entity
   parent: WeaponCaseShort
