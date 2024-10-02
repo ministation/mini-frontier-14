@@ -70,19 +70,6 @@
 
 - type: entity
   parent: WeaponCaseShort
-  id: WeaponCaseShortDeckardExpedition
-  suffix: Dungeon, Deckard
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: StorageFill
-    contents:
-    - id: WeaponRevolverDeckardExpedition
-      amount: 1
-    - id: SpeedLoaderMagnum
-      amount: 2
-
-- type: entity
-  parent: WeaponCaseShort
   id: WeaponCaseShortPython
   suffix: Dungeon, Python
   categories: [ HideSpawnMenu ]
@@ -365,7 +352,7 @@
     - id: WeaponSVT
       amount: 1
     - id: 10roundmagazine
-      amount: 2 
+      amount: 2
 
 # Energy
 - type: entity

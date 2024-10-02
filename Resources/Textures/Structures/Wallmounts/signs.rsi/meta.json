@@ -23,9 +23,6 @@
             "name": "anomaly"
         },
         {
-            "name": "anomaly2"
-        },
-        {
             "name": "arcade"
         },
         {
@@ -36,9 +33,6 @@
         },
         {
             "name": "ass"
-        },
-        {
-            "name": "atmominsky"
         },
         {
             "name": "atmos"
@@ -273,13 +267,13 @@
             "name": "hydro"
         },
         {
-            "name": "hydro"
-        },
-        {
             "name": "hydro1"
         },
         {
             "name": "hydro2"
+        },
+        {
+            "name": "hydro3"
         },
         {
             "name": "interrogation"
@@ -309,9 +303,6 @@
             "name": "memetic"
         },
         {
-            "name": "miner_dock"
-        },
-        {
             "name": "monkey_painting"
         },
         {
@@ -331,9 +322,6 @@
         },
         {
             "name": "drama3"
-        },
-        {
-            "name": "drones"
         },
         {
             "name": "restroom"
@@ -402,12 +390,6 @@
             "name": "shock"
         },
         {
-            "name": "something-old1"
-        },
-        {
-            "name": "something-old2"
-        },
-        {
             "name": "space"
         },
         {
@@ -415,9 +397,6 @@
         },
         {
             "name": "toxins"
-        },
-        {
-            "name": "toxins2"
         },
         {
             "name": "virology"
@@ -543,7 +522,10 @@
             "name": "ntmining"
         },
         {
-            "name": "shield"
+            "name": "something-old1"
+        },
+        {
+            "name": "something-old2"
         }
     ]
 }
