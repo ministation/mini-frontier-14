@@ -638,20 +638,6 @@
     - id: C4
       amount: 2
 
-# Turrets
-- type: entity
-  parent: WeaponCaseHeavy
-  id: WeaponCaseHeavyAsmgt
-  suffix: packed ASMGT
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: StorageFill
-    contents:
-    - id: WeaponTurretAsmgtHostileUniversallyPacked
-      amount: 1
-    - id: MagazineAsmgtUniversalPistol
-      amount: 4
-
 # Ammo
 ## .20 rifle
 - type: entity
