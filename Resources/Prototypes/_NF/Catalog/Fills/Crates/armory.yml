@@ -24,7 +24,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: WeaponSubMachineGunWt550Expedition
+      - id: WeaponSubMachineGunWt550
         amount: 2
       - id: MagazinePistolSubMachineGunTopMounted
         amount: 4

@@ -2,20 +2,20 @@
 # Pistols
 - type: entity
   parent: WeaponCaseShort
-  id: WeaponCaseShortMk58Expedition
+  id: WeaponCaseShortMk58
   suffix: Dungeon, Mk58
   categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
-    - id: WeaponPistolMk58Expedition
+    - id: WeaponPistolMk58
       amount: 1
     - id: MagazinePistol
       amount: 2
 
 - type: entity
   parent: WeaponCaseShort
-  id: WeaponCaseShortN1984Expedition
+  id: WeaponCaseShortN1984
   suffix: Dungeon, N1984
   categories: [ HideSpawnMenu ]
   components:
@@ -57,13 +57,13 @@
 # Revolvers
 - type: entity
   parent: WeaponCaseShort
-  id: WeaponCaseShortArgentiExpedition
+  id: WeaponCaseShortArgenti
   suffix: Dungeon, Argenti
   categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
-    - id: WeaponRevolverArgentiExpedition
+    - id: WeaponRevolverArgenti
       amount: 1
     - id: SpeedLoaderRifleHeavy
       amount: 2
@@ -89,7 +89,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: WeaponRevolverMatebaExpedition
+    - id: WeaponRevolverMateba
       amount: 1
     - id: SpeedLoaderMagnum
       amount: 2
@@ -102,7 +102,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: WeaponRevolverPirateExpedition
+    - id: WeaponRevolverPirate
       amount: 1
     - id: SpeedLoaderMagnum
       amount: 2
@@ -110,65 +110,65 @@
 # Shotguns
 - type: entity
   parent: WeaponCaseShort
-  id: WeaponCaseShortHandmadeExpedition
+  id: WeaponCaseShortHandmade
   suffix: Dungeon, Handmade Pistol
   categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
-    - id: WeaponShotgunHandmadeExpedition
+    - id: WeaponShotgunHandmade
       amount: 1
     - id: BoxLethalshot
       amount: 1
 
 - type: entity
   parent: WeaponCaseLong
-  id: WeaponCaseLongShotgunDoubleBarreledExpedition
+  id: WeaponCaseLongShotgunDoubleBarreled
   suffix: Dungeon, Double Barreled
   categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
-    - id: WeaponShotgunDoubleBarreledExpedition
+    - id: WeaponShotgunDoubleBarreled
       amount: 1
     - id: BoxLethalshot
       amount: 2
 
 - type: entity
   parent: WeaponCaseShort
-  id: WeaponCaseShortSawnExpedition
+  id: WeaponCaseShortSawn
   suffix: Dungeon, Sawn-off
   categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
-    - id: WeaponShotgunSawnExpedition
+    - id: WeaponShotgunSawn
       amount: 1
     - id: BoxLethalshot
       amount: 1
 
 - type: entity
   parent: WeaponCaseLong
-  id: WeaponCaseLongKammererExpedition
+  id: WeaponCaseLongKammerer
   suffix: Dungeon, Kammerer
   categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
-    - id: WeaponShotgunKammererExpedition
+    - id: WeaponShotgunKammerer
       amount: 1
     - id: BoxLethalshot
       amount: 2
 
 - type: entity
   parent: WeaponCaseLong
-  id: WeaponCaseLongEnforcerExpedition
+  id: WeaponCaseLongEnforcer
   suffix: Dungeon, Enforcer
   categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
-    - id: WeaponShotgunEnforcerExpedition
+    - id: WeaponShotgunEnforcer
       amount: 1
     - id: BoxLethalshot
       amount: 2
@@ -191,13 +191,13 @@
 # SMGs
 - type: entity
   parent: WeaponCaseLong
-  id: WeaponCaseLongWT550Expedition
+  id: WeaponCaseLongWT550
   suffix: Dungeon, WT550
   categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
-    - id: WeaponSubMachineGunWt550Expedition
+    - id: WeaponSubMachineGunWt550
       amount: 1
     - id: MagazinePistolSubMachineGunTopMounted
       amount: 2
@@ -206,13 +206,13 @@
 
 - type: entity
   parent: WeaponCaseLong
-  id: WeaponCaseLongAtreidesExpedition
+  id: WeaponCaseLongAtreides
   suffix: Dungeon, Atreides
   categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
-    - id: WeaponSubMachineGunAtreidesExpedition
+    - id: WeaponSubMachineGunAtreides
       amount: 1
     - id: MagazinePistolSubMachineGun
       amount: 2
@@ -221,13 +221,13 @@
 
 - type: entity
   parent: WeaponCaseLong
-  id: WeaponCaseLongDrozdExpedition
+  id: WeaponCaseLongDrozd
   suffix: Dungeon, Drozd
   categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
-    - id: WeaponSubMachineGunDrozdExpedition
+    - id: WeaponSubMachineGunDrozd
       amount: 1
     - id: MagazinePistolSubMachineGun
       amount: 2
@@ -251,24 +251,24 @@
 
 - type: entity     #Corvax-Frontier
   parent: WeaponCaseLong
-  id: WeaponCaseLongVector45Expedition
+  id: WeaponCaseLongVector45
   suffix: Dungeon, SMG, Vector
   components:
   - type: StorageFill
     contents:
-    - id: WeaponSubMachineGunVector45Expedition
+    - id: WeaponSubMachineGunVector45
       amount: 1
     - id: MagazineVector45
       amount: 2
 
 - type: entity     #Corvax-Frontier
   parent: WeaponCaseLong
-  id: WeaponCaseLongVector22Expedition
+  id: WeaponCaseLongVector22
   suffix: Dungeon, SMG, Vector
   components:
   - type: StorageFill
     contents:
-    - id: WeaponSubMachineGunVector22Expedition
+    - id: WeaponSubMachineGunVector22
       amount: 1
     - id: MagazineVector22
       amount: 2
@@ -276,7 +276,7 @@
 # Rifles
 - type: entity
   parent: WeaponCaseLong
-  id: WeaponCaseLongGestioExpedition
+  id: WeaponCaseLongGestio
   suffix: Dungeon, Gestio
   categories: [ HideSpawnMenu ]
   components:
@@ -289,20 +289,20 @@
 
 - type: entity
   parent: WeaponCaseLong
-  id: WeaponCaseLongWeaponRifleNovaliteC1Expedition
+  id: WeaponCaseLongWeaponRifleNovaliteC1
   suffix: Dungeon, NovaliteC1
   categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
-    - id: WeaponRifleNovaliteC1Expedition
+    - id: WeaponRifleNovaliteC1
       amount: 1
     - id: MagazineNovaliteC1
       amount: 2
 
 - type: entity
   parent: WeaponCaseLong
-  id: WeaponCaseLongLecterExpedition
+  id: WeaponCaseLongLecter
   suffix: Dungeon, Lecter
   categories: [ HideSpawnMenu ]
   components:
@@ -315,7 +315,7 @@
 
 - type: entity
   parent: WeaponCaseLong
-  id: WeaponCaseLongAkExpedition
+  id: WeaponCaseLongAk
   suffix: Dungeon, AKMS
   categories: [ HideSpawnMenu ]
   components:
@@ -328,7 +328,7 @@
 
 - type: entity
   parent: WeaponCaseLong
-  id: WeaponCaseLongM90Expedition
+  id: WeaponCaseLongM90
   suffix: Dungeon, M-90gl
   categories: [ HideSpawnMenu ]
   components:
@@ -341,7 +341,7 @@
 
 - type: entity
   parent: WeaponCaseLong
-  id: WeaponCaseLongSVTExpedition
+  id: WeaponCaseLongSVT
   suffix: Dungeon, SVT
   categories: [ HideSpawnMenu ]
   components:
@@ -355,100 +355,100 @@
 # Energy
 - type: entity
   parent: WeaponCaseShort
-  id: WeaponCaseShortLaserGunExpedition
+  id: WeaponCaseShortLaserGun
   suffix: Dungeon, Retro Laser
   categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
-    - id: WeaponLaserGunExpedition
+    - id: WeaponLaserGun
       amount: 2
 
 - type: entity
   parent: WeaponCaseShort
-  id: WeaponCaseShortSvalinnExpedition
+  id: WeaponCaseShortSvalinn
   suffix: Dungeon, Svalinn
   categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
-    - id: WeaponLaserSvalinnExpedition
+    - id: WeaponLaserSvalinn
       amount: 1
     - id: PowerCellHigh
       amount: 2
 
 - type: entity
   parent: WeaponCaseLong
-  id: WeaponCaseLongLaserCarbineExpedition
+  id: WeaponCaseLongLaserCarbine
   suffix: Dungeon, Laser Carbine
   categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
-    - id: WeaponLaserCarbineExpedition
+    - id: WeaponLaserCarbine
       amount: 1
 
 - type: entity
   parent: WeaponCaseLong
-  id: WeaponCaseLongEnergyGunExpedition
+  id: WeaponCaseLongEnergyGun
   suffix: Dungeon, Energy Gun
   categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
-    - id: WeaponEnergyGunExpedition
+    - id: WeaponEnergyGun
       amount: 1
 
 - type: entity
   parent: WeaponCaseShort
-  id: WeaponCaseShortAdvancedLaserExpedition
+  id: WeaponCaseShortAdvancedLaser
   suffix: Dungeon, Advanced Laser
   categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
-    - id: WeaponAdvancedLaserExpedition
+    - id: WeaponAdvancedLaser
       amount: 1
 
 - type: entity
   parent: WeaponCaseLong
-  id: WeaponCaseLongLaserCannonExpedition
+  id: WeaponCaseLongLaserCannon
   suffix: Dungeon, Laser Cannon
   categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
-    - id: WeaponLaserCannonExpedition
+    - id: WeaponLaserCannon
       amount: 1
 
 - type: entity
   parent: WeaponCaseLong
-  id: WeaponCaseLongXrayCannonExpedition
+  id: WeaponCaseLongXrayCannon
   suffix: Dungeon, Xray Cannon
   categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
-    - id: WeaponXrayCannonExpedition
+    - id: WeaponXrayCannon
       amount: 1
 
 # Sniper
 - type: entity
   parent: WeaponCaseLong
-  id: WeaponCaseLongMosinExpedition
+  id: WeaponCaseLongMosin
   suffix: Dungeon, Mosin
   categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
-    - id: WeaponSniperMosinExpedition
+    - id: WeaponSniperMosin
       amount: 1
     - id: MagazineBoxLightRifle
       amount: 2
 
 - type: entity
   parent: WeaponCaseLong
-  id: WeaponCaseLongHristovExpedition
+  id: WeaponCaseLongHristov
   suffix: Dungeon, Hristov
   categories: [ HideSpawnMenu ]
   components:
@@ -461,7 +461,7 @@
 
 - type: entity
   parent: WeaponCaseLong
-  id: WeaponCaseLongRepeaterExpedition
+  id: WeaponCaseLongRepeater
   suffix: Dungeon, Repeater
   categories: [ HideSpawnMenu ]
   components:
@@ -474,13 +474,13 @@
 
 - type: entity
   parent: WeaponCaseLong
-  id: WeaponCaseLongMusketExpedition
+  id: WeaponCaseLongMusket
   suffix: Dungeon, Musket
   categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
-    - id: WeaponMusketExpedition
+    - id: WeaponMusket
       amount: 1
     - id: MagazineBoxAntiMateriel
       amount: 2
@@ -488,7 +488,7 @@
 # Launchers
 - type: entity
   parent: WeaponCaseLong
-  id: WeaponCaseLongLauncherRocketExpedition
+  id: WeaponCaseLongLauncherRocket
   suffix: Dungeon, RPG
   categories: [ HideSpawnMenu ]
   components:
@@ -529,7 +529,7 @@
 # Melee
 - type: entity
   parent: WeaponCaseShort
-  id: WeaponCaseShortEnergyShieldExpedition
+  id: WeaponCaseShortEnergyShield
   suffix: Dungeon, Energy Shield
   categories: [ HideSpawnMenu ]
   components:
@@ -540,7 +540,7 @@
 
 - type: entity
   parent: WeaponCaseShort
-  id: WeaponCaseShortEnergySwordExpedition
+  id: WeaponCaseShortEnergySword
   suffix: Dungeon, Energy Sword
   categories: [ HideSpawnMenu ]
   components:
@@ -551,7 +551,7 @@
 
 - type: entity
   parent: WeaponCaseShort
-  id: WeaponCaseShortEnergyDaggerExpedition
+  id: WeaponCaseShortEnergyDagger
   suffix: Dungeon, Energy Dagger
   categories: [ HideSpawnMenu ]
   components:
@@ -562,7 +562,7 @@
 
 - type: entity
   parent: WeaponCaseShort
-  id: WeaponCaseShortEnergyCutlassExpedition
+  id: WeaponCaseShortEnergyCutlass
   suffix: Dungeon, Energy Cutlass
   categories: [ HideSpawnMenu ]
   components:
@@ -573,7 +573,7 @@
 
 - type: entity
   parent: WeaponCaseShort
-  id: WeaponCaseShortEnergySwordDoubleExpedition
+  id: WeaponCaseShortEnergySwordDouble
   suffix: Dungeon, Energy Sword Double
   categories: [ HideSpawnMenu ]
   components:
@@ -641,8 +641,8 @@
 # Turrets
 - type: entity
   parent: WeaponCaseHeavy
-  id: WeaponCaseHeavyAsmgtExpeditions
-  suffix: packed ASMGT, Expeditions
+  id: WeaponCaseHeavyAsmgt
+  suffix: packed ASMGT
   categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
