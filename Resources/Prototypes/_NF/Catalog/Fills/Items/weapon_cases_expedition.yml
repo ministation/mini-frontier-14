@@ -253,7 +253,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongVector45Expedition
   suffix: Dungeon, SMG, Vector
-  noSpawn: true
   components:
   - type: StorageFill
     contents:
@@ -266,7 +265,6 @@
   parent: WeaponCaseLong
   id: WeaponCaseLongVector22Expedition
   suffix: Dungeon, SMG, Vector
-  noSpawn: true
   components:
   - type: StorageFill
     contents:
