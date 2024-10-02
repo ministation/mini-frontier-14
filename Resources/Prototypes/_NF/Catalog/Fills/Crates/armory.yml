@@ -12,23 +12,6 @@
       - id: MagazineLightRifleLowCapacity
         amount: 6
 
-# Contraband (unregistered) weaponry crates for expeditions
-- type: entity
-  id: CrateArmorySMG
-  parent:
-  - BaseC2ExpeditionContraband
-  - CrateFirearmsSecure
-  name: SMG crate
-  description: Contains two high-powered, SMGs with four mags. Requires Armory access to open. Unregistered.
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: StorageFill
-    contents:
-      - id: WeaponSubMachineGunWt550
-        amount: 2
-      - id: MagazinePistolSubMachineGunTopMounted
-        amount: 4
-
 - type: entity
   id: CrateArmoryShotgun
   parent:
