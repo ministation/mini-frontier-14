@@ -510,7 +510,6 @@
     - CircuitImprinterMachineCircuitboard
     - BiogeneratorMachineCircuitboard
     - OreProcessorMachineCircuitboard
-    - MaterialReclaimerMachineCircuitboard
     - ElectrolysisUnitMachineCircuitboard
     - CentrifugeMachineCircuitboard
     - CondenserMachineCircuitBoard
@@ -581,8 +580,6 @@
       - PortableGeneratorPacmanMachineCircuitboard
       - PortableGeneratorSuperPacmanMachineCircuitboard
       - PortableGeneratorJrPacmanMachineCircuitboard
-      - WallmountGeneratorElectronics
-      - WallmountGeneratorAPUElectronics
       - WallmountSubstationElectronics
       - PowerCageRechargerCircuitboard
       - EmitterCircuitboard

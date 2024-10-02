@@ -86,13 +86,13 @@
       color: red
   - type: RandomSpawner
     prototypes:
-    - WeaponCaseShortMk58Expedition
-    - WeaponCaseShortArgentiExpedition
-    - WeaponCaseShortLaserGunExpedition
-    #- WeaponCaseShortHandmadeExpedition
-    #- WeaponCaseLongShotgunDoubleBarreledExpedition
-    - WeaponCaseShortSawnExpedition
-    - WeaponCaseLongMosinExpedition
+    - WeaponCaseShortMk58
+    - WeaponCaseShortArgenti
+    - WeaponCaseShortLaserGun
+    #- WeaponCaseShortHandmade
+    #- WeaponCaseLongShotgunDoubleBarreled
+    - WeaponCaseShortSawn
+    - WeaponCaseLongMosin
     chance: 1.0
     offset: 0.0
     rarePrototypes:
@@ -175,15 +175,15 @@
   - type: RandomSpawner
     prototypes:
     - WeaponCaseShortViper
-    - WeaponCaseShortDeckardExpedition
+    - WeaponCaseShortDeckard
     - WeaponCaseShortRevolverPirate
     - WeaponCaseShortPython
-    - WeaponCaseLongGestioExpedition
-    - WeaponCaseLongWeaponRifleNovaliteC1Expedition
-    - WeaponCaseLongKammererExpedition
-    - WeaponCaseLongEnergyGunExpedition
-    - WeaponCaseLongRepeaterExpedition
-    - WeaponCaseLongSVTExpedition
+    - WeaponCaseLongGestio
+    - WeaponCaseLongWeaponRifleNovaliteC1
+    - WeaponCaseLongKammerer
+    - WeaponCaseLongEnergyGun
+    - WeaponCaseLongRepeater
+    - WeaponCaseLongSVT
     chance: 1.0
     offset: 0.0
     rarePrototypes:
@@ -238,7 +238,7 @@
     - Cutlass
     - Claymore
     - Truncheon
-    - WeaponCaseShortEnergyDaggerExpedition
+    - WeaponCaseShortEnergyDagger
     chance: 1.0
     offset: 0.0
     rarePrototypes:
@@ -265,15 +265,15 @@
     prototypes:
     - WeaponCaseShortMateba
     - WeaponCaseShortCobra
-    - WeaponCaseLongWT550Expedition
-    - WeaponCaseLongDrozdExpedition
-    - WeaponCaseLongLecterExpedition
-    - WeaponCaseLongLaserCarbineExpedition
-    - WeaponCaseLongHristovExpedition
-    - WeaponCaseShortSvalinnExpedition
-    - WeaponCaseShortAdvancedLaserExpedition
-    #- WeaponCaseLongMusketExpedition
-    - WeaponCaseLongVector22Expedition #Corvax-Frontier
+    - WeaponCaseLongWT550
+    - WeaponCaseLongDrozd
+    - WeaponCaseLongLecter
+    - WeaponCaseLongLaserCarbine
+    - WeaponCaseLongHristov
+    - WeaponCaseShortSvalinn
+    - WeaponCaseShortAdvancedLaser
+    #- WeaponCaseLongMusket
+    - WeaponCaseLongVector22 #Corvax-Frontier
     chance: 1.0
     offset: 0.0
     rarePrototypes:
@@ -327,8 +327,8 @@
     - Katana
     - CaptainSabre
     - SecBreachingHammer
-    - WeaponCaseShortEnergySwordExpedition
-    - WeaponCaseShortEnergyCutlassExpedition
+    - WeaponCaseShortEnergySword
+    - WeaponCaseShortEnergyCutlass
     chance: 1.0
     offset: 0.0
     rarePrototypes:
@@ -353,13 +353,13 @@
       color: red
   - type: RandomSpawner
     prototypes:
-    - WeaponCaseShortN1984Expedition
-    - WeaponCaseLongM90Expedition
+    - WeaponCaseShortN1984
+    - WeaponCaseLongM90
     - WeaponCaseLongC20r
-    - WeaponCaseLongAkExpedition
-    - WeaponCaseHeavyAsmgtExpeditions
-    - WeaponCaseLongEnforcerExpedition
-    - WeaponCaseLongLaserCannonExpedition
+    - WeaponCaseLongAk
+    - WeaponCaseHeavyAsmgt
+    - WeaponCaseLongEnforcer
+    - WeaponCaseLongLaserCannon
     chance: 1.0
     offset: 0.0
     rarePrototypes:
@@ -410,7 +410,7 @@
       color: red
   - type: RandomSpawner
     prototypes:
-    - WeaponCaseShortEnergySwordDoubleExpedition
+    - WeaponCaseShortEnergySwordDouble
     chance: 1.0
     offset: 0.0
 
@@ -433,12 +433,12 @@
   - type: RandomSpawner
     prototypes:
     - WeaponCaseLongBulldog
-    - WeaponCaseLongAtreidesExpedition
-    - WeaponCaseLongLauncherRocketExpedition
+    - WeaponCaseLongAtreides
+    - WeaponCaseLongLauncherRocket
     - WeaponCaseLongLauncherChinaLake
     - WeaponCaseLongLightMachineGunL6
-    - WeaponCaseHeavyAsmgtExpeditions
-    - WeaponCaseLongXrayCannonExpedition
+    - WeaponCaseHeavyAsmgt
+    - WeaponCaseLongXrayCannon
     chance: 1.0
     offset: 0.0
 

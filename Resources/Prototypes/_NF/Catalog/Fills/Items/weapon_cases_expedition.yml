@@ -480,7 +480,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: WeaponMusket
+    - id: Musket
       amount: 1
     - id: MagazineBoxAntiMateriel
       amount: 2

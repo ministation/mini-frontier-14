@@ -107,7 +107,7 @@
     - id: SpawnDungeonLootPartsEngi
       amount: 3
       prob: 0.35
-    - id: WeaponCaseShortMk58Expedition
+    - id: WeaponCaseShortMk58
       amount: 1
       prob: 0.55
     - id: HoloGraffitiProjectorEmpty
@@ -151,7 +151,7 @@
     - id: DrinkWhiskeyBottleFull
       prob: 0.15
       amount: 1
-    - id: WeaponCaseLongKammererExpedition
+    - id: WeaponCaseLongKammerer
       amount: 1
       prob: 0.55
     - id: SpawnDungeonLootPartsEngi
@@ -209,7 +209,7 @@
     - id: DrinkWhiskeyBottleFull
       prob: 0.35
       amount: 1
-    - id: WeaponCaseLongDrozdExpedition
+    - id: WeaponCaseLongDrozd
       amount: 1
       prob: 0.55
     - id: HoloGraffitiProjector
