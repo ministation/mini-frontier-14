@@ -96,6 +96,9 @@
       - NFPosterContrabandLvhiShuttle # Frontier
       - NFPosterContrabandLvhiSpace # Frontier
       - PosterContrabandYesERP #  Corvax-Frontier
+      - NFPosterContrabandFsbLogo # Frontier
+      - NFPosterContrabandFsbStasis # Frontier
+      - NFPosterContrabandFsbApothecary # Frontier
     chance: 1
 
 - type: entity
