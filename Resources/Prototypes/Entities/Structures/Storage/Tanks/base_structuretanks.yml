@@ -65,7 +65,7 @@
   - type: ReagentTank
   - type: Transform
     noRot: true
-  - type: Drink
+  - type: Drink # Corvax-Frontier
     delay: 8
 
 # For highcap tanks

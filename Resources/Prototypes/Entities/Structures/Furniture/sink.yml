@@ -65,7 +65,7 @@
     range: 8
     sound:
       path: /Audio/Ambience/Objects/drain.ogg
-  - type: Drink
+  - type: Drink # Corvax-Frontier
     delay: 4
 
 
