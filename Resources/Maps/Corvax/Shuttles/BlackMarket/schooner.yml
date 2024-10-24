@@ -1593,6 +1593,21 @@ entities:
     - type: Transform
       pos: -0.5,10.5
       parent: 1
+  - uid: 642
+    components:
+    - type: Transform
+      pos: -1.5,10.5
+      parent: 1
+  - uid: 643
+    components:
+    - type: Transform
+      pos: -1.5,9.5
+      parent: 1
+  - uid: 644
+    components:
+    - type: Transform
+      pos: -0.5,9.5
+      parent: 1
 - proto: CableMV
   entities:
   - uid: 72
@@ -3143,7 +3158,7 @@ entities:
       pos: -0.5,-0.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -3709.3918
+      secondsUntilStateChange: -3807.1746
       state: Opening
 - proto: IngotGold1
   entities:
