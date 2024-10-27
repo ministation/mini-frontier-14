@@ -24,7 +24,7 @@
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'NC Аврора {1}'
+          mapNameTemplate: 'Аврора {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
