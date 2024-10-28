@@ -7,6 +7,7 @@ from typing import Iterable
 
 PUBLISH_TOKEN = os.environ["PUBLISH_TOKEN"]
 VERSION = os.environ["GITHUB_SHA"]
+FORK_ID = "frontier"
 
 RELEASE_DIR = "release"
 
@@ -15,7 +16,6 @@ RELEASE_DIR = "release"
 # Forks should change these to publish to their own infrastructure.
 #
 ROBUST_CDN_URL = "https://cdn.station14.ru/"
-FORK_ID = os.environ["FORK_ID"]
 
 def main():
     session = requests.Session()
