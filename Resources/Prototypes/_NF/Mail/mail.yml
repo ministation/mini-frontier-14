@@ -2152,3 +2152,13 @@
   - type: Mail
     contents:
     - id: FoodBoxDonut
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseMail
+  id: MailNFPockyPack
+  suffix: chocopocky
+  components:
+  - type: Mail
+    contents:
+    - id: ChocolatePockyPack #CorvaxFrontier
