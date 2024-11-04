@@ -39,6 +39,7 @@
   description: You like that colors, don't you?
   components:
   - type: Item
+    size: Small
     storedRotation: -90
   - type: FlavorProfile
     flavors:
@@ -72,6 +73,7 @@
   description: Rice sweetness that beckons
   components:
   - type: Item
+    size: Small
     storedRotation: -90
   - type: FlavorProfile
     flavors:
@@ -102,6 +104,7 @@
     flavors:
       - meaty
   - type: Item
+    size: Small
     storedRotation: -90
   - type: Food
   - type: Sprite
