@@ -17,7 +17,7 @@
   id: Recipehanamidango
   name: dango hanami recipe
   result: hanamidango
-  time: 15
+  time: 10
   reagents:
     GreenTea: 5
     JuiceWatermelon: 5
@@ -29,7 +29,7 @@
   id: Recipemitarashidango
   name: dango mitarashi recipe
   result: mitarashidango
-  time: 15
+  time: 10
   reagents:
     Soysauce: 5
     Sugar: 5
