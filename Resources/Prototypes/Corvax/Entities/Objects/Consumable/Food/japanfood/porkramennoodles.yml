@@ -4,23 +4,29 @@
   id: porkramennoodles
   description: Ah, I See You're a Man of Culture As Well...
   components:
+  - type: FlavorProfile
+    flavors:
+      - oily
   - type: Item
   - type: Food
+    utensil: Fork
   - type: Sprite
     sprite: Corvax/Objects/Consumable/Food/japanfood.rsi
     state: porkramen
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 30
+        maxVol: 35
         reagents:
-          - ReagentId: Nutriment
-            Quantity: 10
+          - ReagentId: Nutriment    
+            Quantity: 20
           - ReagentId: Protein
-            Quantity: 3
+            Quantity: 5
           - ReagentId: Flavorol
             Quantity: 5
           - ReagentId: Soysauce
+            Quantity: 2
+          - ReagentId: CapsaicinOil
             Quantity: 2
   - type: Tag
     tags:

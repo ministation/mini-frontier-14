@@ -4,20 +4,25 @@
   id: spicyporkramennoodles
   description: So hot and so cute!
   components:
+  - type: FlavorProfile
+    flavors:
+      - spicy
+      - oily
   - type: Item
   - type: Food
+    utensil: Fork
   - type: Sprite
     sprite: Corvax/Objects/Consumable/Food/japanfood.rsi
     state: spicyporkramen
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 30
+        maxVol: 40
         reagents:
           - ReagentId: Nutriment
-            Quantity: 10
+            Quantity: 25
           - ReagentId: Protein
-            Quantity: 3
+            Quantity: 5
           - ReagentId: Flavorol
             Quantity: 5        
           - ReagentId: CapsaicinOil

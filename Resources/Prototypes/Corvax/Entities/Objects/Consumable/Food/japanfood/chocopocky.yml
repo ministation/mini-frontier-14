@@ -4,6 +4,9 @@
   id: chocopocky
   description: Don't forget to play the game with your date...
   components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
   - type: Item
     storedRotation: -90
   - type: Food
