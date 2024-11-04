@@ -1,5 +1,5 @@
 - type: reaction
-  id: CreateDangoDough
+  id: CreateRawDangoDough
   impact: Low
   quantized: true
   conserveEnergy: false
@@ -12,7 +12,7 @@
       amount: 5
   effects:
     - !type:CreateEntityReactionEffect
-      entity: Doughdangoball
+      entity: rawdoughdangoball
 
 - type: reaction
   id: CreateRawRamen
