@@ -12,7 +12,7 @@
       amount: 5
   effects:
     - !type:CreateEntityReactionEffect
-      entity: rawdoughdangoball
+      entity: RawDoughDangoBall
 
 - type: reaction
   id: createrawramen
@@ -32,4 +32,4 @@
       amount: 5
   effects:
     - !type:CreateEntityReactionEffect
-      entity: rawramennoodles
+      entity: RawRamenNoodles
