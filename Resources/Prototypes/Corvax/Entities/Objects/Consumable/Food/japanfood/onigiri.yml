@@ -19,13 +19,13 @@
         maxVol: 35
         reagents:
           - ReagentId: Nutriment
-            Quantity: 20
+            Quantity: 20 
+          - ReagentId: Rice
+            Quantity: 5
           - ReagentId: Protein
             Quantity: 5
           - ReagentId: Mayo
             Quantity: 2
-          - ReagentId: Rice
-            Quantity: 3
           - ReagentId: Flavorol
             Quantity: 5
   - type: Tag
