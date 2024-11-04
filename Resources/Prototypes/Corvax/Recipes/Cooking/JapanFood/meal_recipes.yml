@@ -2,7 +2,7 @@
   id: Recipeporkramen
   name: pork ramen recipe
   result: porkramennoodles
-  time: 15
+  time: 30
   solids:
     FoodMeatCutlet: 3
     FoodBowlBig: 1
@@ -17,7 +17,7 @@
   id: Recipehanamidango
   name: dango hanami recipe
   result: hanamidango
-  time: 10
+  time: 15
   reagents:
     GreenTea: 5
     JuiceWatermelon: 5
@@ -29,7 +29,7 @@
   id: Recipemitarashidango
   name: dango mitarashi recipe
   result: mitarashidango
-  time: 10
+  time: 15
   reagents:
     Soysauce: 5
     Sugar: 5
@@ -44,17 +44,17 @@
   time: 15
   reagents:
     Mayo: 5
-    Rice: 10
     OilOlive: 5
   solids:
     FoodMeatChickenCutletCooked: 3
+    FoodRiceBoiled: 1
   recipeType: Oven # Frontier
 
 - type: microwaveMealRecipe
   id: Recipespicyramen
   name: spicy ramen recipe
   result: spicyporkramennoodles
-  time: 20
+  time: 30
   solids:
     FoodMeatCutlet: 3
     FoodBowlBig: 1
