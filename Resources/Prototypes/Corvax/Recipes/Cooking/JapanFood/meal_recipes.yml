@@ -22,8 +22,8 @@
     GreenTea: 5
     JuiceWatermelon: 5
   solids:
-    Doughdangoball: 3
-  recipeType: Oven # Frontier	
+    boileddoughdangoball: 3
+  recipeType: Assembler # Frontier	
 
 - type: microwaveMealRecipe
   id: Recipemitarashidango
@@ -34,8 +34,8 @@
     Soysauce: 5
     Sugar: 5
   solids:
-    Doughdangoball: 3
-  recipeType: Oven # Frontier
+    boileddoughdangoball: 3
+  recipeType: Assembler # Frontier
 
 - type: microwaveMealRecipe
   id: Recipeonigiri
@@ -67,3 +67,13 @@
     Hotsauce: 5
   recipeType: Oven # Frontier
 
+- type: microwaveMealRecipe
+  id: Recipboileddoughdangoball
+  name: boiled dough dango ball recipe
+  result: boileddoughdangoball
+  time: 10
+  solids:
+    rawdoughdangoball: 1
+  reagents:
+    Water: 5
+  recipeType: Oven # Frontier	
