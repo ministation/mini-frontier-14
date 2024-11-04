@@ -7,7 +7,7 @@
     FoodMeatCutlet: 3
     FoodBowlBig: 1
     FoodGarlic: 1
-    rawramennoodles: 1
+    RawRamenNoodles: 1
   reagents:
     Water: 15
     Egg: 6
@@ -22,7 +22,7 @@
     GreenTea: 5
     JuiceWatermelon: 5
   solids:
-    boileddoughdangoball: 3
+    BoiledDoughDangoBall: 3
   recipeType: Assembler # Frontier	
 
 - type: microwaveMealRecipe
@@ -34,7 +34,7 @@
     Soysauce: 5
     Sugar: 5
   solids:
-    boileddoughdangoball: 3
+    BoiledDoughDangoBall: 3
   recipeType: Assembler # Frontier
 
 - type: microwaveMealRecipe
@@ -59,7 +59,7 @@
     FoodMeatCutlet: 3
     FoodBowlBig: 1
     FoodGarlic: 1
-    rawramennoodles: 1
+    RawRamenNoodles: 1
     FoodChiliPepper: 1
   reagents:
     Water: 15
@@ -73,7 +73,7 @@
   result: BoiledDoughDangoBall
   time: 10
   solids:
-    rawdoughdangoball: 1
+    RawDoughDangoBall: 1
   reagents:
     Water: 10
   recipeType: Oven # Frontier	
