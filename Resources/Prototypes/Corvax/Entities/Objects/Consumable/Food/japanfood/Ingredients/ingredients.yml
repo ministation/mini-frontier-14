@@ -1,7 +1,7 @@
 - type: entity
   name: Boiled Dough Dango Ball
   parent: FoodBakingBase
-  id: BoiledDoughDangoBall
+  id: boileddoughdangoball
   description: A boiled ball of dough.
   components:
   - type: FlavorProfile
@@ -21,7 +21,7 @@
 - type: entity
   name: Raw Dough Dango Ball
   parent: FoodBakingBase
-  id: RawDoughDangoBall
+  id: rawdoughdangoball
   description: A raw ball of dough.
   components:
   - type: FlavorProfile
@@ -41,7 +41,7 @@
 - type: entity
   name: Raw Ramen Noodles
   parent: FoodBakingBase
-  id: RawRamenNoodles
+  id: rawramennoodles
   description: A raw ramen.
   components:
   - type: FlavorProfile
