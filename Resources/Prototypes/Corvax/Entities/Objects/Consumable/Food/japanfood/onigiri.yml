@@ -4,6 +4,9 @@
   id: onigiri
   description: Best fried geometric shape in the galaxy
   components:
+  - type: FlavorProfile
+    flavors:
+      - meaty
   - type: Item
     storedRotation: -90
   - type: Food
@@ -13,7 +16,18 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 25
+        maxVol: 35
         reagents:
           - ReagentId: Nutriment
             Quantity: 20
+          - ReagentId: Protein
+            Quantity: 5
+          - ReagentId: Mayo
+            Quantity: 2
+          - ReagentId: Rice
+            Quantity: 3
+          - ReagentId: Flavorol
+            Quantity: 5
+  - type: Tag
+    tags:
+    - Meat
