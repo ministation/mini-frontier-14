@@ -41,12 +41,13 @@
   id: Recipeonigiri
   name: onigiri recipe
   result: onigiri
-  time: 20
+  time: 15
   reagents:
     Mayo: 5
     Rice: 10
+    OilOlive: 5
   solids:
-    FoodMeatChicken: 1
+    FoodMeatChickenCutletCooked: 3
   recipeType: Oven # Frontier
 
 - type: microwaveMealRecipe
