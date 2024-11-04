@@ -8,3 +8,10 @@
   - type: Sprite
     sprite: Corvax/Objects/Consumable/Food/ingredients.rsi
     state: rawramennoodles
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 1
