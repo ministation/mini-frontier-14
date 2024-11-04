@@ -1,0 +1,19 @@
+- type: entity
+  name: Raw Dough Dango Ball
+  parent: FoodBakingBase
+  id: rawdoughdangoball
+  description: A raw ball of dough.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - dough
+  - type: Sprite
+    sprite: Corvax/Objects/Consumable/Food/ingredients.rsi
+    state: rawdoughdangoball
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 1

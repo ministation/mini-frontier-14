@@ -1,0 +1,19 @@
+- type: entity
+  name: Boiled Dough Dango Ball
+  parent: FoodBakingBase
+  id: boileddoughdangoball
+  description: A boiled ball of dough.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - dough
+  - type: Sprite
+    sprite: Corvax/Objects/Consumable/Food/ingredients.rsi
+    state: boileddoughdangoball
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
