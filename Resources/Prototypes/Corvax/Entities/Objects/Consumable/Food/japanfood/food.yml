@@ -1,7 +1,7 @@
 - type: entity
   name: Chocolate Pocky
   parent: FoodBakedBase
-  id: ChocoPocky
+  id: chocopocky
   description: Don't forget to play the game with your date...
   components:
   - type: FlavorProfile
@@ -35,7 +35,7 @@
 - type: entity
   name: Tricolor Dango
   parent: FoodBakedBase
-  id: HanamiDango
+  id: hanamidango
   description: You like that colors, don't you?
   components:
   - type: Item
@@ -68,7 +68,7 @@
 - type: entity
   name: Mitarashi Dango
   parent: FoodBakedBase
-  id: MitarashiDango
+  id: mitarashidango
   description: Rice sweetness that beckons
   components:
   - type: Item
@@ -95,7 +95,7 @@
 - type: entity
   name: Onigiri
   parent: FoodBakedBase
-  id: Onigiri
+  id: onigiri
   description: Best fried geometric shape in the galaxy
   components:
   - type: FlavorProfile
@@ -129,7 +129,7 @@
 - type: entity
   name: Pork Ramen
   parent: FoodBowlBase
-  id: PorkRamenNoodles
+  id: porkramennoodles
   description: Ah, I See You're a Man of Culture As Well...
   components:
   - type: FlavorProfile
@@ -164,7 +164,7 @@
 - type: entity
   name: Spicy Ramen
   parent: FoodBowlBase
-  id: SpicyPorkRamenNoodles
+  id: spicyporkramennoodles
   description: So hot and so cute!
   components:
   - type: FlavorProfile
