@@ -75,5 +75,5 @@
   solids:
     rawdoughdangoball: 1
   reagents:
-    Water: 5
+    Water: 10
   recipeType: Oven # Frontier	
