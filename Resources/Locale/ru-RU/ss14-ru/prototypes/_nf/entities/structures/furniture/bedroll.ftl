@@ -14,6 +14,7 @@ ent-NFBedrollStained = { ent-NFBedroll }
     .desc = В мои дни глэмпинг выглядел по-другому.
 ent-McHoboBedsRandom = спавнер спальника
     .suffix = Рандом
+	.desc = { ent-NFBedroll.desc }
 ent-NFBedrollStainedFolded = { ent-NFBedrollStained }
     .suffix = Сложенный, запятнанный
     .desc = { ent-NFBedrollStained.desc }
