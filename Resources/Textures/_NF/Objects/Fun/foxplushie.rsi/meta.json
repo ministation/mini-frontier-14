@@ -1,38 +1,41 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from Paradise Station",
+  "copyright": "Taken from Paradise Station, Holy fox created by FireFoxPhoenix",
   "size": {
     "x": 32,
     "y": 32
   },
-    "states": [
-        {
-            "name": "black"
-        },
-        {
-            "name": "blue"
-        },
-        {
-            "name": "coffee"
-        },
-        {
-            "name": "crimson"
-        },
-        {
-            "name": "marble"
-        },
-        {
-            "name": "orange"
-        },
-        {
-            "name": "pink"
-        },
-        {
-            "name": "purple"
-        },
-        {
-            "name": "red"
-        }
-    ]
+  "states": [
+    {
+      "name": "black"
+    },
+    {
+      "name": "blue"
+    },
+    {
+      "name": "coffee"
+    },
+    {
+      "name": "crimson"
+    },
+    {
+      "name": "marble"
+    },
+    {
+      "name": "orange"
+    },
+    {
+      "name": "pink"
+    },
+    {
+      "name": "purple"
+    },
+    {
+      "name": "red"
+    },
+    {
+      "name": "holy"
+    }
+  ]
 }
