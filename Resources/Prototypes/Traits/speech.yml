@@ -10,7 +10,7 @@
   - type: Accentless
     removes:
     - type: LizardAccent
-    - type: OwOAccent
+    - type: OwOAccent #CorvaxFrontier
     - type: MothAccent
     - type: ReplacementAccent
       accent: dwarf
