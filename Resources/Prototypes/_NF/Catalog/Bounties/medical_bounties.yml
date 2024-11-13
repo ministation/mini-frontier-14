@@ -5,14 +5,14 @@
     Blunt:
       min: 150
       max: 400
-      value: 10
-      penalty: 10
+      value: 20
+      penalty: 100
     Asphyxiation:
       min: 50
       max: 200
       value: 10
-      penalty: 10
-  baseReward: 2000 # 4K-8K
+      penalty: 100
+  baseReward: 2000 # 5500-12000
 
 - type: medicalBounty
   id: MurderedPierce
@@ -20,14 +20,14 @@
     Piercing:
       min: 150
       max: 400
-      value: 10
-      penalty: 10
+      value: 20
+      penalty: 100
     Bloodloss:
       min: 50
       max: 200
-      value: 10
-      penalty: 10
-  baseReward: 2000 # 4K-8K
+      value: 15
+      penalty: 100
+  baseReward: 2000 # 5750-13000
 
 - type: medicalBounty
   id: MurderedSlash
@@ -35,14 +35,14 @@
     Slash:
       min: 150
       max: 400
-      value: 10
-      penalty: 10
+      value: 20
+      penalty: 100
     Bloodloss:
       min: 50
       max: 200
-      value: 10
-      penalty: 10
-  baseReward: 2000 # 4K-8K
+      value: 15
+      penalty: 100
+  baseReward: 2000 # 5750-13000
 
 - type: medicalBounty
   id: MildBruteMix
@@ -50,24 +50,24 @@
     Blunt:
       min: 75
       max: 150
-      value: 10
-      penalty: 10
+      value: 20
+      penalty: 100
     Piercing:
       min: 75
       max: 150
-      value: 10
-      penalty: 10
+      value: 20
+      penalty: 100
     Slash:
       min: 75
       max: 150
-      value: 10
-      penalty: 10
+      value: 20
+      penalty: 100
     Bloodloss:
       min: 75
       max: 150
-      value: 10
-      penalty: 10
-  baseReward: 2000 # 5K-8K
+      value: 15
+      penalty: 100
+  baseReward: 2000 # 7625-13250
 
 - type: medicalBounty
   id: Suffocated
@@ -76,13 +76,13 @@
       min: 150
       max: 400
       value: 10
-      penalty: 10
+      penalty: 100
     Bloodloss:
       min: 50
       max: 200
-      value: 10
-      penalty: 10
-  baseReward: 2000 # 4K-8K
+      value: 15
+      penalty: 100
+  baseReward: 2000 # 4250-9000
 
 - type: medicalBounty
   id: PlasmaFire
@@ -90,9 +90,9 @@
     Heat:
       min: 1000
       max: 3000
-      value: 10
-      penalty: 10
-  baseReward: 2000 # 10K-32K
+      value: 20
+      penalty: 100
+  baseReward: 2000 # 20K-60K
 
 - type: medicalBounty
   id: Spaced
@@ -100,24 +100,24 @@
     Blunt:
       min: 50
       max: 100
-      value: 10
-      penalty: 10
+      value: 20
+      penalty: 100
     Piercing:
       min: 50
       max: 100
-      value: 10
-      penalty: 10
+      value: 20
+      penalty: 100
     Slash:
       min: 50
       max: 100
-      value: 10
-      penalty: 10
+      value: 20
+      penalty: 100
     Cold:
       min: 600
       max: 2000
-      value: 10
-      penalty: 10
-  baseReward: 1000 # 8500-24K
+      value: 20
+      penalty: 100
+  baseReward: 1000 # 16K-47K
 
 - type: medicalBounty
   id: MildBurnMix
@@ -125,24 +125,24 @@
     Heat:
       min: 50
       max: 150
-      value: 10
-      penalty: 10
+      value: 20
+      penalty: 100
     Cold:
       min: 50
       max: 150
-      value: 10
-      penalty: 10
+      value: 20
+      penalty: 100
     Shock:
       min: 50
       max: 150
-      value: 10
-      penalty: 10
+      value: 20
+      penalty: 100
     Caustic:
       min: 50
       max: 150
-      value: 10
-      penalty: 10
-  baseReward: 2000 # 4K-8K
+      value: 30
+      penalty: 100
+  baseReward: 2000 # 6500-15500
 
 - type: medicalBounty
   id: Insuls
@@ -150,14 +150,14 @@
     Heat:
       min: 200
       max: 400
-      value: 10
-      penalty: 10
+      value: 20
+      penalty: 100
     Shock:
       min: 400
       max: 600
-      value: 10
-      penalty: 10
-  baseReward: 1500 # 7500-11500
+      value: 20
+      penalty: 100
+  baseReward: 1500 # 13500-21500
 
 - type: medicalBounty
   id: AcidSlimes
@@ -165,9 +165,9 @@
     Caustic:
       min: 300
       max: 500
-      value: 20
-      penalty: 20
-  baseReward: 2000 # 8K-12K
+      value: 30
+      penalty: 100
+  baseReward: 2000 # 11K-17K
 
 - type: medicalBounty
   id: SpiderAttackMild
@@ -175,19 +175,19 @@
     Poison:
       min: 100
       max: 200
-      value: 15
-      penalty: 15
+      value: 30
+      penalty: 100
     Asphyxiation:
       min: 100
       max: 200
       value: 10
-      penalty: 10
+      penalty: 100
   reagents:
     Mechanotoxin:
       min: 30
       max: 50
       value: 20
-  baseReward: 3500 # 6600-10500
+  baseReward: 3500 # 7500-11500
 
 - type: medicalBounty
   id: SpiderAttack
@@ -195,14 +195,14 @@
     Poison:
       min: 200
       max: 400
-      value: 15
-      penalty: 15
+      value: 30
+      penalty: 100
   reagents:
     Mechanotoxin:
       min: 30
       max: 50
       value: 20
-  baseReward: 3500 # 7100-10500
+  baseReward: 3500 # 9500-15500
 
 - type: medicalBounty
   id: DeliciousMushroom
@@ -210,13 +210,13 @@
     Poison:
       min: 100
       max: 200
-      value: 15
-      penalty: 15
+      value: 30
+      penalty: 100
     Asphyxiation:
       min: 100
       max: 200
       value: 10
-      penalty: 10
+      penalty: 100
   reagents:
     Amatoxin:
       min: 30
@@ -230,19 +230,19 @@
     Radiation:
       min: 150
       max: 800
-      value: 15
-      penalty: 15
+      value: 30
+      penalty: 100
     Cellular:
       min: 60
       max: 140
-      value: 25
-      penalty: 25
+      value: 50
+      penalty: 100
     Asphyxiation:
       min: 100
       max: 200
       value: 10
-      penalty: 10
-  baseReward: 1500 # ~6250-19K
+      penalty: 100
+  baseReward: 1500 # 10000-31700
 
 - type: medicalBounty
   id: AsphyxAndCellular
@@ -251,13 +251,13 @@
       min: 200
       max: 400
       value: 10
-      penalty: 10
+      penalty: 100
     Cellular:
       min: 60
       max: 140
-      value: 25
-      penalty: 25
-  baseReward: 2000 # 5500-9500
+      value: 50
+      penalty: 100
+  baseReward: 2000 # 7K-13K
 
 - type: medicalBounty
   id: DeliciousUranium
@@ -265,18 +265,18 @@
     Radiation:
       min: 50
       max: 300
-      value: 15
-      penalty: 15
+      value: 30
+      penalty: 100
     Cellular:
       min: 60
       max: 100
-      value: 25
-      penalty: 25
+      value: 50
+      penalty: 100
     Asphyxiation: # Value padding
       min: 100
       max: 200
       value: 10
-      penalty: 10
+      penalty: 100
   reagents:
     Uranium:
       min: 30
@@ -286,4 +286,4 @@
       min: 30
       max: 50
       value: 25
-  baseReward: 1500 # 5300-13500
+  baseReward: 1500 # 7000-17500
