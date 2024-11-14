@@ -5,14 +5,14 @@
     Blunt:
       min: 150
       max: 400
-      value: 20
-      penalty: 100
+      value: 20 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
     Asphyxiation:
       min: 50
       max: 200
       value: 10
-      penalty: 100
-  baseReward: 2000 # 5500-12000
+      penalty: 100 # Corvax-Frontier
+  baseReward: 2000 # 5500-12000 # Corvax-Frontier
 
 - type: medicalBounty
   id: MurderedPierce
@@ -20,14 +20,14 @@
     Piercing:
       min: 150
       max: 400
-      value: 20
-      penalty: 100
+      value: 20 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
     Bloodloss:
       min: 50
       max: 200
-      value: 15
-      penalty: 100
-  baseReward: 2000 # 5750-13000
+      value: 15 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
+  baseReward: 2000 # 5750-13000 # Corvax-Frontier
 
 - type: medicalBounty
   id: MurderedSlash
@@ -35,14 +35,14 @@
     Slash:
       min: 150
       max: 400
-      value: 20
-      penalty: 100
+      value: 20 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
     Bloodloss:
       min: 50
       max: 200
-      value: 15
-      penalty: 100
-  baseReward: 2000 # 5750-13000
+      value: 15 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
+  baseReward: 2000 # 5750-13000 # Corvax-Frontier
 
 - type: medicalBounty
   id: MildBruteMix
@@ -50,24 +50,24 @@
     Blunt:
       min: 75
       max: 150
-      value: 20
-      penalty: 100
+      value: 20 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
     Piercing:
       min: 75
       max: 150
-      value: 20
-      penalty: 100
+      value: 20 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
     Slash:
       min: 75
       max: 150
-      value: 20
-      penalty: 100
+      value: 20 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
     Bloodloss:
       min: 75
       max: 150
-      value: 15
-      penalty: 100
-  baseReward: 2000 # 7625-13250
+      value: 15 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
+  baseReward: 2000 # 7625-13250 # Corvax-Frontier
 
 - type: medicalBounty
   id: Suffocated
@@ -76,13 +76,13 @@
       min: 150
       max: 400
       value: 10
-      penalty: 100
+      penalty: 100 # Corvax-Frontier
     Bloodloss:
       min: 50
       max: 200
-      value: 15
-      penalty: 100
-  baseReward: 2000 # 4250-9000
+      value: 15 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
+  baseReward: 2000 # 4250-9000 # Corvax-Frontier
 
 - type: medicalBounty
   id: PlasmaFire
@@ -90,9 +90,9 @@
     Heat:
       min: 1000
       max: 3000
-      value: 20
-      penalty: 100
-  baseReward: 2000 # 20K-60K
+      value: 20 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
+  baseReward: 2000 # 20K-60K # Corvax-Frontier
 
 - type: medicalBounty
   id: Spaced
@@ -100,24 +100,24 @@
     Blunt:
       min: 50
       max: 100
-      value: 20
-      penalty: 100
+      value: 20 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
     Piercing:
       min: 50
       max: 100
-      value: 20
-      penalty: 100
+      value: 20 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
     Slash:
       min: 50
       max: 100
-      value: 20
-      penalty: 100
+      value: 20 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
     Cold:
       min: 600
       max: 2000
-      value: 20
-      penalty: 100
-  baseReward: 1000 # 16K-47K
+      value: 20 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
+  baseReward: 1000 # 16K-47K # Corvax-Frontier
 
 - type: medicalBounty
   id: MildBurnMix
@@ -125,24 +125,24 @@
     Heat:
       min: 50
       max: 150
-      value: 20
-      penalty: 100
+      value: 20 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
     Cold:
       min: 50
       max: 150
-      value: 20
-      penalty: 100
+      value: 20 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
     Shock:
       min: 50
       max: 150
-      value: 20
-      penalty: 100
+      value: 20 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
     Caustic:
       min: 50
       max: 150
-      value: 30
-      penalty: 100
-  baseReward: 2000 # 6500-15500
+      value: 30 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
+  baseReward: 2000 # 6500-15500 # Corvax-Frontier
 
 - type: medicalBounty
   id: Insuls
@@ -150,14 +150,14 @@
     Heat:
       min: 200
       max: 400
-      value: 20
-      penalty: 100
+      value: 20 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
     Shock:
       min: 400
       max: 600
-      value: 20
-      penalty: 100
-  baseReward: 1500 # 13500-21500
+      value: 20 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
+  baseReward: 1500 # 13500-21500 # Corvax-Frontier
 
 - type: medicalBounty
   id: AcidSlimes
@@ -165,9 +165,9 @@
     Caustic:
       min: 300
       max: 500
-      value: 30
-      penalty: 100
-  baseReward: 2000 # 11K-17K
+      value: 30 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
+  baseReward: 2000 # 11K-17K # Corvax-Frontier
 
 - type: medicalBounty
   id: SpiderAttackMild
@@ -175,19 +175,19 @@
     Poison:
       min: 100
       max: 200
-      value: 30
-      penalty: 100
+      value: 30 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
     Asphyxiation:
       min: 100
       max: 200
       value: 10
-      penalty: 100
+      penalty: 100 # Corvax-Frontier
   reagents:
     Mechanotoxin:
       min: 30
       max: 50
       value: 20
-  baseReward: 3500 # 7500-11500
+  baseReward: 3500 # 7500-11500 # Corvax-Frontier
 
 - type: medicalBounty
   id: SpiderAttack
@@ -195,14 +195,14 @@
     Poison:
       min: 200
       max: 400
-      value: 30
-      penalty: 100
+      value: 30 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
   reagents:
     Mechanotoxin:
       min: 30
       max: 50
       value: 20
-  baseReward: 3500 # 9500-15500
+  baseReward: 3500 # 9500-15500 # Corvax-Frontier
 
 - type: medicalBounty
   id: DeliciousMushroom
@@ -210,19 +210,19 @@
     Poison:
       min: 100
       max: 200
-      value: 30
-      penalty: 100
+      value: 30 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
     Asphyxiation:
       min: 100
       max: 200
       value: 10
-      penalty: 100
+      penalty: 100 # Corvax-Frontier
   reagents:
     Amatoxin:
       min: 30
       max: 50
       value: 30
-  baseReward: 3000 # 6400-10500
+  baseReward: 3000 # 6400-10500 # Corvax-Frontier
 
 - type: medicalBounty
   id: HyperpacmanGoneWrong
@@ -230,19 +230,19 @@
     Radiation:
       min: 150
       max: 800
-      value: 30
-      penalty: 100
+      value: 30 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
     Cellular:
       min: 60
       max: 140
-      value: 50
-      penalty: 100
+      value: 50 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
     Asphyxiation:
       min: 100
       max: 200
       value: 10
-      penalty: 100
-  baseReward: 1500 # 10000-31700
+      penalty: 100 # Corvax-Frontier
+  baseReward: 1500 # 10000-31700 # Corvax-Frontier
 
 - type: medicalBounty
   id: AsphyxAndCellular
@@ -251,13 +251,13 @@
       min: 200
       max: 400
       value: 10
-      penalty: 100
+      penalty: 100 # Corvax-Frontier
     Cellular:
       min: 60
       max: 140
-      value: 50
-      penalty: 100
-  baseReward: 2000 # 7K-13K
+      value: 50 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
+  baseReward: 2000 # 7K-13K # Corvax-Frontier
 
 - type: medicalBounty
   id: DeliciousUranium
@@ -265,18 +265,18 @@
     Radiation:
       min: 50
       max: 300
-      value: 30
-      penalty: 100
+      value: 30 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
     Cellular:
       min: 60
       max: 100
-      value: 50
-      penalty: 100
+      value: 50 # Corvax-Frontier
+      penalty: 100 # Corvax-Frontier
     Asphyxiation: # Value padding
       min: 100
       max: 200
       value: 10
-      penalty: 100
+      penalty: 100 # Corvax-Frontier
   reagents:
     Uranium:
       min: 30
@@ -286,4 +286,4 @@
       min: 30
       max: 50
       value: 25
-  baseReward: 1500 # 7000-17500
+  baseReward: 1500 # 7000-17500 # Corvax-Frontier
