@@ -24,6 +24,9 @@
   - type: Tag
     tags:
     - ColiseumMagazineGrenade
+  - type: CargoSellBlacklist
+  - type: StaticPrice
+    price: 400
 
 - type: entity
   id: ColiseumMagazineGrenadeEMP
@@ -38,6 +41,9 @@
   - type: Tag
     tags:
     - ColiseumMagazineGrenade
+  - type: CargoSellBlacklist
+  - type: StaticPrice
+    price: 800
 
 - type: entity
   id: ColiseumMagazineGrenadeFlash
@@ -52,6 +58,9 @@
   - type: Tag
     tags:
     - ColiseumMagazineGrenade
+  - type: CargoSellBlacklist
+  - type: StaticPrice
+    price: 400
 
 - type: entity
   id: ColiseumMagazineGrenadeBlast
@@ -66,6 +75,9 @@
   - type: Tag
     tags:
     - ColiseumMagazineGrenade
+  - type: CargoSellBlacklist
+  - type: StaticPrice
+    price: 400
 
 - type: entity
   id: ColiseumMagazineGrenadeBaton
@@ -80,3 +92,6 @@
   - type: Tag
     tags:
     - ColiseumMagazineGrenade
+  - type: CargoSellBlacklist
+  - type: StaticPrice
+    price: 400

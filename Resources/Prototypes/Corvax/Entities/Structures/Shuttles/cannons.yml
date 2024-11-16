@@ -97,7 +97,7 @@
 
 - type: entity
   id: ColiseumShuttleGunFriendship
-  parent: ShuttleGunFriendship
+  parent: [ShuttleGunFriendship, BaseStructureDisableToolUse]
   name: Coliseum EXP-320g "Friendship"
   description: A small stationary grenade launcher that holds 2 grenades.
   suffix: Coliseum
@@ -109,7 +109,7 @@
 
 - type: entity
   id: ColiseumShuttleGunDuster
-  parent: ShuttleGunDuster
+  parent: [ShuttleGunDuster, BaseStructureDisableToolUse]
   name: Coliseum EXP-2100g "Duster"
   description: A powerful stationary grenade launcher. A cartridge is required for use.
   suffix: Coliseum

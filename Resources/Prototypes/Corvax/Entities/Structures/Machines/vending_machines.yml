@@ -1,0 +1,24 @@
+- type: entity
+  id: ColiseumVendingMachine
+  parent: [BaseStructureDisableAnchoring, VendingMachine]
+  name: ColiseumMate
+  description: Buy items for a beautiful battle in the coliseum!
+  components:
+  - type: VendingMachine
+    pack: ColiseumVendingMachineInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+  - type: SpeakOnUIClosed
+    pack: GenericVendGoodbyes
+  - type: Speech
+  - type: Sprite
+    sprite: Structures/Machines/VendingMachines/ammo.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
