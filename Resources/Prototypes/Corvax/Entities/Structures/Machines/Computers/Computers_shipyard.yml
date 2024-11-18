@@ -1,0 +1,25 @@
+- type: entity
+  id: ComputerShipyardKolizey
+  parent: [BaseStructureDisableToolUse, BaseStructureIndestructible, ComputerShipyardBase]
+  name: Консоль Колизеи
+  description: Купи шаттл и в бой!
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Machines/computers.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: shipyard_security
+    - map: ["computerLayerKeys"]
+      state: telesci_key
+  - type: ActivatableUI
+    key: enum.ShipyardConsoleUiKey.Kolizey
+  - type: UserInterface
+    interfaces:
+      enum.ShipyardConsoleUiKey.Kolizey:
+        type: ShipyardConsoleBoundUserInterface
+  - type: ShipyardConsole
+    newJobTitle: Captain
