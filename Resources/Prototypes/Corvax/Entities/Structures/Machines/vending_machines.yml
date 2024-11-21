@@ -9,11 +9,12 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
+    denyState: deny-unshaded
   - type: SpeakOnUIClosed
     pack: GenericVendGoodbyes
   - type: Speech
   - type: Sprite
-    sprite: Structures/Machines/VendingMachines/ammo.rsi
+    sprite: Corvax/Structures/Machines/coliseumvending.rsi
     layers:
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]
