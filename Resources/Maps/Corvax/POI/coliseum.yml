@@ -7718,6 +7718,18 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -38.5,-144.5
       parent: 2
+- proto: ColiseumExchanger
+  entities:
+  - uid: 1725
+    components:
+    - type: Transform
+      pos: -25.5,-123.5
+      parent: 2
+  - uid: 1726
+    components:
+    - type: Transform
+      pos: 8.5,-125.5
+      parent: 2
 - proto: ColiseumVendingMachine
   entities:
   - uid: 940

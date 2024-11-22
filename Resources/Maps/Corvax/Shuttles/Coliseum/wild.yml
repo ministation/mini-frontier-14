@@ -3036,7 +3036,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 9.5,16.5
       parent: 1
-- proto: ShuttleWindowDiagonal
+- proto: ReinforcedWindowDiagonal
   entities:
   - uid: 52
     components:
@@ -3302,7 +3302,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 7.5,1.5
       parent: 1
-- proto: ToyFigurineNukie
+- proto: ColiseumCoinBlocked
   entities:
   - uid: 342
     components:

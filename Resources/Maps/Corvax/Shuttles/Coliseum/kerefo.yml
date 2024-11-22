@@ -881,6 +881,13 @@ entities:
       rot: 3.141592653589793 rad
       pos: 9.5,14.5
       parent: 1
+- proto: ColiseumCoinBlocked
+  entities:
+  - uid: 287
+    components:
+    - type: Transform
+      pos: 9.131875,14.89949
+      parent: 1
 - proto: ColiseumShuttleGunFriendship
   entities:
   - uid: 268

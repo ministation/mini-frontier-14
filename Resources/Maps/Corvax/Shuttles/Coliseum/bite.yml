@@ -1716,15 +1716,13 @@ entities:
     - type: Transform
       pos: 0.30756855,2.8582897
       parent: 1
-- proto: FaxMachineBase
+- proto: ColiseumCoinBlocked
   entities:
   - uid: 135
     components:
     - type: Transform
       pos: 0.5,10.5
       parent: 1
-    - type: FaxMachine
-      name: NT-SEC "Утро"
 - proto: FirelockEdge
   entities:
   - uid: 448

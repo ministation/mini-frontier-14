@@ -618,22 +618,12 @@ entities:
     - type: Transform
       pos: 3.5,-3.5
       parent: 1
-- proto: DrinkPwrGameCan
+- proto: ColiseumCoinBlocked
   entities:
   - uid: 60
     components:
     - type: Transform
       pos: 4.383404,-3.260765
-      parent: 1
-  - uid: 61
-    components:
-    - type: Transform
-      pos: 4.4960938,-3.4955235
-      parent: 1
-  - uid: 62
-    components:
-    - type: Transform
-      pos: 4.633404,-3.260765
       parent: 1
 - proto: FirelockEdge
   entities:

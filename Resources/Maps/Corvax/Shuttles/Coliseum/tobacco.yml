@@ -1254,15 +1254,13 @@ entities:
     - type: Transform
       pos: 7.68488,7.544444
       parent: 1
-- proto: FaxMachineBase
+- proto: ColiseumCoinBlocked
   entities:
   - uid: 337
     components:
     - type: Transform
       pos: 9.5,16.5
       parent: 1
-    - type: FaxMachine
-      name: Шаттл ДСБФ
 - proto: FireAlarm
   entities:
   - uid: 366

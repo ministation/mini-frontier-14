@@ -1770,6 +1770,13 @@ entities:
     - type: Transform
       pos: 10.5,7.5
       parent: 1
+- proto: ColiseumCoinBlocked
+  entities:
+  - uid: 565
+    components:
+    - type: Transform
+      pos: 9.453125,10.527829
+      parent: 1
 - proto: ColiseumShuttleGunFriendship
   entities:
   - uid: 234
