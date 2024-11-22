@@ -33,3 +33,6 @@
 
 - type: Tag
   id: ColiseumMagazineGrenade
+
+- type: Tag
+  id: ColiseumCoin
