@@ -1589,6 +1589,13 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -0.5,-19.5
       parent: 1
+- proto: Bucket
+  entities:
+  - uid: 1391
+    components:
+    - type: Transform
+      pos: 2.3790305,-18.597761
+      parent: 1
 - proto: CableApcExtension
   entities:
   - uid: 697
@@ -4690,6 +4697,20 @@ entities:
       parent: 1
     - type: Fixtures
       fixtures: {}
+  - uid: 1389
+    components:
+    - type: Transform
+      pos: -1.5,-18.5
+      parent: 1
+    - type: Fixtures
+      fixtures: {}
+  - uid: 1392
+    components:
+    - type: Transform
+      pos: 4.5,-15.5
+      parent: 1
+    - type: Fixtures
+      fixtures: {}
 - proto: FoodKebabSkewer
   entities:
   - uid: 1073
@@ -7461,8 +7482,12 @@ entities:
   - uid: 1171
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -2.5,-20.5
+      pos: -2.5,-18.5
+      parent: 1
+  - uid: 1393
+    components:
+    - type: Transform
+      pos: 0.5,-18.5
       parent: 1
 - proto: Rack
   entities:
@@ -7867,6 +7892,16 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -3.5,-25.5
       parent: 1
+- proto: SinkStemlessWater
+  entities:
+  - uid: 1390
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -2.5,-20.5
+      parent: 1
+    - type: Drink
+      solution: tank
 - proto: SinkWide
   entities:
   - uid: 1045
