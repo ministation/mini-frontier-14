@@ -1,0 +1,41 @@
+# Author Info
+# GitHub: SergeantEcho
+# Discord: SergeantEcho
+
+# Maintainer Info
+# GitHub: ???
+# Discord: ???
+
+# Shuttle Notes:
+# 
+- type: vessel
+  id: Venera
+  name: NC Венера
+  description: Бывшая баржа, переделанная под длительные экспедиции. Рекомендуется для команды из 6-8 человек.
+  price: 95000
+  category: Medium
+  group: Shipyard
+  shuttlePath: /Maps/Corvax/Shuttles/Civilian/venera.yml
+  class:
+  - Cargo
+  - Civilian
+  
+- type: gameMap
+  id: Venera
+  mapName: 'NC Venera'
+  mapPath: /Maps/Corvax/Shuttles/Civilian/venera.yml
+  minPlayers: 0
+  stations: 
+    Venera:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Венера {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]
