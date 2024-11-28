@@ -4289,6 +4289,15 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+- proto: ElectricRangeMachineCircuitboard
+  entities:
+  - uid: 272
+    components:
+    - type: Transform
+      parent: 985
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: EmergencyLight
   entities:
   - uid: 1324
@@ -6911,6 +6920,29 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 1.5,-19.5
       parent: 1
+- proto: HydroponicsTrayEmptyFlatpack
+  entities:
+  - uid: 603
+    components:
+    - type: Transform
+      parent: 985
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 895
+    components:
+    - type: Transform
+      parent: 985
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 896
+    components:
+    - type: Transform
+      parent: 985
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: JetpackMiniFilled
   entities:
   - uid: 949
@@ -6987,12 +7019,31 @@ entities:
     - type: Transform
       pos: 4.5,-0.5
       parent: 1
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14923
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
     - type: ContainerContainer
       containers:
         entity_storage: !type:Container
           showEnts: False
           occludes: True
           ents:
+          - 272
           - 996
           - 995
           - 994
@@ -7001,9 +7052,12 @@ entities:
           - 991
           - 990
           - 989
-          - 988
           - 987
           - 986
+          - 988
+          - 603
+          - 895
+          - 896
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -7376,23 +7430,21 @@ entities:
       parent: 1
 - proto: PoweredLightPostSmallRed
   entities:
-  - uid: 272
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -4.5,-4.5
-      parent: 1
-  - uid: 603
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 9.5,-4.5
-      parent: 1
   - uid: 677
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 0.5,-35.5
+      parent: 1
+  - uid: 897
+    components:
+    - type: Transform
+      pos: -4.5,-4.5
+      parent: 1
+  - uid: 898
+    components:
+    - type: Transform
+      pos: 9.5,-4.5
       parent: 1
   - uid: 980
     components:
@@ -7424,11 +7476,6 @@ entities:
       parent: 1
 - proto: PoweredlightRed
   entities:
-  - uid: 929
-    components:
-    - type: Transform
-      pos: 5.5,-8.5
-      parent: 1
   - uid: 1169
     components:
     - type: Transform
@@ -7437,6 +7484,11 @@ entities:
       parent: 1
 - proto: PoweredSmallLight
   entities:
+  - uid: 902
+    components:
+    - type: Transform
+      pos: 5.5,-8.5
+      parent: 1
   - uid: 1137
     components:
     - type: Transform
