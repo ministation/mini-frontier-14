@@ -54,6 +54,8 @@
   - type: Appearance
   - type: Clothing
     sprite: DeltaV/Objects/Weapons/Guns/Rifles/vulcan.rsi
+  - type: StaticPrice
+    price: 1300
 
 - type: entity
   name: ceremonial rifle

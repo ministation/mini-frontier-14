@@ -8,6 +8,10 @@
     WeaponRifleNovaliteC1: 1 
     WeaponShotgunDoubleBarreled: 1
     WeaponRevolverArgenti: 1 
+    WeaponPistolPollock: 3 # Corvax-Frontier
+    WeaponRifleVulcan: 3 # Corvax-Frontier
+    WeaponRevolverFitz: 3 # Corvax-Frontier
+    WeaponRevolverFaith: 3 # Corvax-Frontier
     BoxShotgunSlug: 1
     BoxLethalshot: 1
     BoxBeanbag: 1
@@ -35,6 +39,10 @@
     WeaponRifleNovaliteC1: 4294967295
     WeaponShotgunDoubleBarreled: 4294967295
     WeaponRevolverArgenti: 4294967295
+    WeaponPistolPollock: 4294967295  # Corvax-Frontier
+    WeaponRifleVulcan: 4294967295 # Corvax-Frontier
+    WeaponRevolverFitz: 4294967295 # Corvax-Frontier
+    WeaponRevolverFaith: 4294967295 # Corvax-Frontier
     BoxShotgunSlug: 4294967295
     BoxLethalshot: 4294967295
     BoxBeanbag: 4294967295
