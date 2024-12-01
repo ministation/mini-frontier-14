@@ -43,7 +43,7 @@
       gun_chamber: !type:ContainerSlot
 
 - type: entity
-  name: Pollock
+  name: pollock
   parent: BaseWeaponPistol
   id: WeaponPistolPollock
   description: A compact and mass-produced combat pistol. Uses .35 auto ammo.
