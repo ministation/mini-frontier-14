@@ -59,7 +59,7 @@
 
 - type: entity
   name: ceremonial rifle
-  parent: BaseWeaponSniper
+  parent: [BaseWeaponSniper, BaseC2ExpeditionContraband]
   id: WeaponSniperCeremonial
   description: A ceremonial variant of the Mark 1 Rifle, in tasteful blue and white. Uses .30 rifle ammo.
   components:
@@ -84,7 +84,7 @@
 
 - type: entity
   name: CAWS-25 Jackdaw
-  parent: [BaseWeaponRifle, BaseGunWieldable]
+  parent: [BaseWeaponRifle, BaseGunWieldable, BaseC3Contraband]
   id: WeaponRifleJackdaw
   description: The beginning of the end is heralded by the song of a Jackdaw. Uses .25 caseless ammo.
   components:

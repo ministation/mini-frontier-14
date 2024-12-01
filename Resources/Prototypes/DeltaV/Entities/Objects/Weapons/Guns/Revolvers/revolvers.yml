@@ -1,6 +1,6 @@
 - type: entity
   name: fitz special
-  parent: BaseWeaponRevolver
+  parent: [BaseWeaponRevolver, BaseC1Contraband]
   id: WeaponRevolverFitz
   description: A compact and concealable self defence snub revolver. Uses .38 special ammo.
   components:
@@ -23,7 +23,7 @@
 
 - type: entity
   name: faith
-  parent: BaseWeaponRevolver
+  parent: [BaseWeaponRevolver, BaseC1Contraband]
   id: WeaponRevolverFaith
   description: Delivers blessings in bullet form. Uses .38 special ammo.
   components:
@@ -46,7 +46,7 @@
 
 - type: entity
   name: lucky 37
-  parent: BaseWeaponRevolver
+  parent: [BaseWeaponRevolver, BaseC1Contraband]
   id: WeaponRevolverLucky
   description: Luck always beats skill, ya weasel. Uses .38 special ammo.
   components:
