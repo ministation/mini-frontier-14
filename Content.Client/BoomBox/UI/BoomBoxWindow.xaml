@@ -24,3 +24,5 @@
         <Slider Name="PlaybackSlider" HorizontalExpand="True"/>
     </BoxContainer>
 </DefaultWindow>
+
+
