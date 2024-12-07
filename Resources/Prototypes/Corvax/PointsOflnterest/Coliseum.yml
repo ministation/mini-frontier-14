@@ -20,7 +20,7 @@
       stationProto: StandardFrontierOutpost
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Синдикатовcкий аванпост Чарли'
+          mapNameTemplate: 'Колизей'
         - type: StationJobs
           availableJobs: {}
         - type: StationDeadDropHintExempt
