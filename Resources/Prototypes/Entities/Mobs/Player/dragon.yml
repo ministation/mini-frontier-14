@@ -121,12 +121,12 @@
     spawned:
     - id: FoodMeatDragon
       amount: 2
-    - id: HeadSkeleton
+    - id: HeadSkeleton # Corvax
       amount: 1
-    - id: WeaponCrusher
+    - id: WeaponCrusher # Corvax
       amount: 1
       prob: 0.6
-    - id: MobRandomCargoCorpse
+    - id: MobRandomCargoCorpse # Corvax
       amount: 1
       prob: 0.25
   - type: InteractionPopup
