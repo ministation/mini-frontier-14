@@ -6,6 +6,9 @@
   components:
   - type: InflationCargoCrate
     isInflated: false
+  components:
+  - type: InflationCargoCrate
+    isInflated: false
 
 - type: entity
   id: CrateTradeSecureHighFilled

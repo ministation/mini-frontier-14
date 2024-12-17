@@ -35,6 +35,9 @@ namespace Content.Client.Cargo.BUI
         [ViewVariables]
         public int OrderCount { get; private set; }
 
+        [ViewVariables]
+        public string? TradeCrateCount { get; private set; } // Corvax - Frontier
+
         /// <summary>
         /// Currently selected product
         /// </summary>
@@ -55,12 +58,20 @@ namespace Content.Client.Cargo.BUI
             var localPlayer = dependencies.Resolve<IPlayerManager>().LocalEntity;
             var description = new FormattedMessage();
 
+            string cratesAmount; //Corvax-Frontier
             string orderRequester;
 
             if (EntMan.TryGetComponent<MetaDataComponent>(localPlayer, out var metadata))
                 orderRequester = Identity.Name(localPlayer.Value, EntMan);
             else
                 orderRequester = string.Empty;
+
+            //Corvax-Frontier start
+            if (EntMan.TryGetComponent<CrateLimitComponent>(localPlayer, out var crateLimit))
+                cratesAmount = crateLimit.OwnedCrates.ToString();
+            else
+                cratesAmount = string.Empty;
+            //Corvax-Frontier end
 
             _orderMenu = new CargoConsoleOrderMenu();
 
@@ -118,12 +129,13 @@ namespace Content.Client.Cargo.BUI
             OrderCapacity = cState.Capacity;
             OrderCount = cState.Count;
             BankBalance = cState.Balance;
-
+            TradeCrateCount = cState.TradeCrateCount;
             AccountName = cState.Name;
 
             Populate(cState.Orders);
             _menu?.UpdateCargoCapacity(OrderCount, OrderCapacity);
             _menu?.UpdateBankData(AccountName, BankBalance);
+            _menu?.UpdateOwnedCratesData(TradeCrateCount);
         }
 
         protected override void Dispose(bool disposing)

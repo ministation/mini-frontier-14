@@ -17,6 +17,12 @@
                    Text="-" /> <!-- Frontier: "$0"<"-" -->
         </BoxContainer>
         <BoxContainer Orientation="Horizontal">
+            <Label Text="{Loc 'cargo-console-menu-tradecrates-label'}"
+                   StyleClasses="LabelKeyText" />
+            <Label Name="TradeCratesLabel"
+                   Text="-" /> <!-- Frontier: "$0"<"-" -->
+        </BoxContainer>
+        <BoxContainer Orientation="Horizontal">
             <Label Text="{Loc 'cargo-console-menu-order-capacity-label'}"
                    StyleClasses="LabelKeyText" />
             <Label Name="ShuttleCapacityLabel"
