@@ -14,7 +14,6 @@
   name: 'Аномальная Жеода'
   minimumDistance: 2100
   maximumDistance: 3800
-  IFFColor: "#ffa600" #yellorange for nuetral civillian
   spawnGroup: ScienceLab
   gridPath: /Maps/_NF/POI/anomalousgeode.yml
 

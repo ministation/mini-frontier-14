@@ -14,7 +14,6 @@
   name: "Казино Чокнутого Джерри"
   minimumDistance: 3250
   maximumDistance: 5600
-  IFFColor: "#ffa600" #yellorange for faction style
   gridPath: /Maps/_NF/POI/caseyscasino.yml
 
 - type: gameMap
