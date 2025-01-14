@@ -1,5 +1,6 @@
 - type: entity
   id: StandardFrontierStation
+  suffix: DEBUG # TODO: Fix this, its here to stop PrototypeSaveTest fail
   parent:
   - BaseStation
   - BaseStationCargo
@@ -13,6 +14,7 @@
   - BaseStationDampening
   - BaseStationDeadDropHintExempt # No hints
   - BaseStationRenameWarpPoints
+  - BaseStationColiseum # Corvax-Frontier
   categories: [ HideSpawnMenu ]
   components:
   - type: Transform
