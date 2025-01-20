@@ -1,10 +1,10 @@
-# # Author Info
-# # GitHub: Actualcatmoment (https://github.com/Actualcatmoment)
-# # Discord: @iNoahGuy
+# Author Info
+# GitHub: Actualcatmoment (https://github.com/Actualcatmoment)
+# Discord: @iNoahGuy
 
-# # Maintainer Info
-# # GitHub: dustylens
-# # Discord: dustylens
+# Maintainer Info
+# GitHub: dustylens
+# Discord: dustylens
 
 # # Shuttle Notes:
 # #
@@ -27,7 +27,7 @@
   # mapName: 'FSB Spirit'
   # mapPath: /Maps/_NF/Shuttles/spirit.yml
   # minPlayers: 0
-  # stations: 
+  # stations:
     # Spirit:
       # stationProto: StandardFrontierVessel
       # components:

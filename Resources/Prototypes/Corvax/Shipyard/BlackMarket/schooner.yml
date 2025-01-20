@@ -1,5 +1,6 @@
 - type: vessel
   id: Schooner
+  parent: BaseVessel
   name: Шхуна
   description: Среднегабаритный пиратский шаттл. Рекомендованный состав команды 2-4 человека.
   price: 60000

@@ -19,7 +19,7 @@
   # mapName: 'NT Bison'
   # mapPath: /Maps/_NF/Shuttles/Scrap/bison.yml
   # minPlayers: 0
-  # stations: 
+  # stations:
     # Bison:
       # stationProto: StandardFrontierVessel
       # components:

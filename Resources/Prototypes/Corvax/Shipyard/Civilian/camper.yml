@@ -10,9 +10,10 @@
 
 - type: vessel
   id: Camper
+  parent: BaseVessel
   name: SSS Кемпер
   description: Персональный малогабаритный шаттл на 1 человека.
-  price: 12000
+  price: 15000
   category: Small
   group: Shipyard
   shuttlePath: /Maps/Corvax/Shuttles/Civilian/camper.yml

@@ -10,6 +10,7 @@
 #
 # - type: vessel
   # id: WaveShot
+  # parent: BaseVessel
   # name: NC Цунами
   # description: Малогабаритный новостной шаттл. Рекомендованный состав команды 1+ человек.
   # price: 37500 # 15% markup +4890
@@ -25,7 +26,7 @@
   # mapName: 'NC Цунами'
   # mapPath: /Maps/Corvax/Shuttles/Civilian/waveshot.yml
   # minPlayers: 0
-  # stations: 
+  # stations:
     # WaveShot:
       # stationProto: StandardFrontierVessel
       # components:

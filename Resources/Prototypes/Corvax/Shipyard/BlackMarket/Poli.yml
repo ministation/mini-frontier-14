@@ -1,5 +1,6 @@
 - type: vessel
   id: Poli
+  parent: BaseVessel
   name: Полюс
   description: Среднегабаритный пиратский шаттл. Рекомендованный состав команды 2-8 человека.
   price: 100000

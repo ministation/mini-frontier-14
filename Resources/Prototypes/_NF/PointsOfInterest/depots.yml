@@ -10,25 +10,31 @@
 # Basic Cargo Depot selling point for economy and great wealth
 - type: pointOfInterest
   id: CargoDepot
+  parent: BasePOI
   name: Грузовое Депо
-  rangeMin: 4500
-  rangeMax: 6000
-  IFFColor: "#37C837" #green like the color of money
+  minimumDistance: 4500
+  maximumDistance: 6000
   spawnGroup: CargoDepot
   gridPath: /Maps/_NF/POI/cargodepot.yml
-  gridProtection:
-    - ArtifactTriggers
+  addComponents:
+  - type: IFF
+    color: "#37C837"
+  - type: ProtectedGrid
+    preventArtifactTriggers: true
 
 - type: pointOfInterest
   id: CargoDepotAlt
+  parent: BasePOI
   name: Грузовое Депо
-  rangeMin: 4500
-  rangeMax: 6000
-  IFFColor: "#37C837" #green like the color of money
+  minimumDistance: 4500
+  maximumDistance: 6000
   spawnGroup: CargoDepot
   gridPath: /Maps/_NF/POI/cargodepotalt.yml
-  gridProtection:
-    - ArtifactTriggers
+  addComponents:
+  - type: IFF
+    color: "#37C837"
+  - type: ProtectedGrid
+    preventArtifactTriggers: true
 
 - type: gameMap
   id: CargoDepot
@@ -53,4 +59,3 @@
       components:
         - type: StationNameSetup
           mapNameTemplate: 'Грузовое Депо' # Has a letter appended in NfAdventureSystem
-  

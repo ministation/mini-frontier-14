@@ -197,6 +197,8 @@
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
+  - type: PirateBountyItem
+    id: CampaignHat
 
 - type: entity
   parent: ClothingHeadHatNfsdCampaign
@@ -222,6 +224,8 @@
   - type: Clothing
     sprite: _NF/Clothing/Head/Hats/nfsd_campaign_small.rsi
   - type: CatWearable
+  - type: PirateBountyItem
+    id: CampaignHat
 
 - type: entity
   parent: ClothingHeadHatHopcap
@@ -258,3 +262,9 @@
   - type: Clothing
     sprite: _NF/Clothing/Head/Hats/stc_cap.rsi
   - type: HamsterWearable
+    
+- type: entity
+  parent: ClothingHeadHatBeretHoS
+  id: ClothingHeadHatBeretCommander
+  name: commander's beret
+  description: A black beret with a commander's rank emblem.

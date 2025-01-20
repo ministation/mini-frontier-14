@@ -1,10 +1,10 @@
-# # Author Info
-# # GitHub: Kesiath (https://github.com/Kesiath)
-# # Discord: @kesiath
+# Author Info
+# GitHub: Kesiath (https://github.com/Kesiath)
+# Discord: @kesiath
 
-# # Maintainer Info
-# # GitHub: ???
-# # Discord: ???
+# Maintainer Info
+# GitHub: ???
+# Discord: ???
 
 # # Shuttle Notes:
 # #
@@ -27,7 +27,7 @@
   # mapName: 'KC Pathfinder'
   # mapPath: /Maps/_NF/Shuttles/Expedition/pathfinder.yml
   # minPlayers: 0
-  # stations: 
+  # stations:
     # Pathfinder:
       # stationProto: StandardFrontierExpeditionVessel
       # components:

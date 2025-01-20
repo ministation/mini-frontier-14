@@ -1,10 +1,10 @@
-# # Author Info
-# # GitHub: erhardsteinhauer
-# # Discord: erhardsteinhauer
+# Author Info
+# GitHub: erhardsteinhauer
+# Discord: erhardsteinhauer
 
-# # Maintainer Info
-# # GitHub: erhardsteinhauer
-# # Discord: erhardsteinhauer
+# Maintainer Info
+# GitHub: erhardsteinhauer
+# Discord: erhardsteinhauer
 
 # # Shuttle Notes:
 # #
@@ -27,7 +27,7 @@
   # mapName: 'Brigand'
   # mapPath: /Maps/_NF/Shuttles/Expedition/brigand.yml
   # minPlayers: 0
-  # stations: 
+  # stations:
     # Brigand:
       # stationProto: StandardFrontierExpeditionVessel
       # components:

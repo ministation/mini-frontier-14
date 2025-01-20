@@ -31,9 +31,14 @@
         - type: Shuttle
           angularDamping: 999999
           linearDamping: 999999
+        - type: LinkedLifecycleGridParent
+        - type: ProtectedGrid
+          preventArtifactTriggers: true
+        - type: PreventPilot
         paths:
-        - /Maps/_NF/Bluespace/cache.yml
-    nfsdRewardFactor: 1
+        - /Maps/Corvax/Bluespace/cache.yml #Corvax-Frontier
+    rewardAccounts:
+      Nfsd: 1.0
 
 - type: entity
   id: BluespaceVaultError
@@ -68,9 +73,14 @@
         - type: Shuttle
           angularDamping: 999999
           linearDamping: 999999
+        - type: LinkedLifecycleGridParent
+        - type: ProtectedGrid
+          preventArtifactTriggers: true
+        - type: PreventPilot
         paths:
-        - /Maps/_NF/Bluespace/vault.yml
-    nfsdRewardFactor: 1
+        - /Maps/Corvax/Bluespace/vault.yml #Corvax-Frontier
+    rewardAccounts:
+      Nfsd: 1.0
 
 - type: entity
   id: BluespaceVaultSmallError
@@ -106,9 +116,14 @@
         - type: Shuttle
           angularDamping: 999999
           linearDamping: 999999
+        - type: LinkedLifecycleGridParent
+        - type: ProtectedGrid
+          preventArtifactTriggers: true
+        - type: PreventPilot
         paths:
-        - /Maps/_NF/Bluespace/vaultsmall.yml
-    nfsdRewardFactor: 1
+        - /Maps/Corvax/Bluespace/vaultsmall.yml #Corvax-Frontier
+    rewardAccounts:
+      Nfsd: 1.0
 
 - type: entity
   id: BluespaceSyndicateFTLInterception
@@ -142,8 +157,12 @@
         - type: Shuttle
           angularDamping: 999999
           linearDamping: 999999
+        - type: LinkedLifecycleGridParent
+        - type: ProtectedGrid
+          preventArtifactTriggers: true
+        - type: PreventPilot
         paths:
-        - /Maps/_NF/Bluespace/syndieftlintercept.yml
+        - /Maps/Corvax/Bluespace/syndieftlintercept.yml #Corvax-Frontier
 
 - type: entity
   id: BluespaceWizardFederationScout
@@ -177,8 +196,12 @@
         - type: Shuttle
           angularDamping: 999999
           linearDamping: 999999
+        - type: LinkedLifecycleGridParent
+        - type: ProtectedGrid
+          preventArtifactTriggers: true
+        - type: PreventPilot
         paths:
-        - /Maps/_NF/Bluespace/wizardprobealt.yml
+        - /Maps/Corvax/Bluespace/wizardprobealt.yml #Corvax-Frontier
 
 - type: entity
   id: BluespaceBloodMoon
@@ -212,8 +235,12 @@
         - type: Shuttle
           angularDamping: 999999
           linearDamping: 999999
+        - type: LinkedLifecycleGridParent
+        - type: ProtectedGrid
+          preventArtifactTriggers: true
+        - type: PreventPilot
         paths:
-        - /Maps/_NF/Bluespace/bloodmoon.yml
+        - /Maps/Corvax/Bluespace/bloodmoon.yml #Corvax-Frontier
 
 - type: entity
   id: BluespaceCave
@@ -245,8 +272,12 @@
         - type: Shuttle
           angularDamping: 999999
           linearDamping: 999999
+        - type: LinkedLifecycleGridParent
+        - type: ProtectedGrid
+          preventArtifactTriggers: true
+        - type: PreventPilot
         paths:
-        - /Maps/_NF/Bluespace/cave.yml
+        - /Maps/Corvax/Bluespace/cave.yml #Corvax-Frontier
 
 - type: entity
   id: BluespaceBrokenMcDelivery
@@ -275,5 +306,9 @@
         maximumDistance: 2500
         addComponents:
         - type: IFF
+        - type: LinkedLifecycleGridParent
+        - type: ProtectedGrid
+          preventArtifactTriggers: true
+        - type: PreventPilot
         paths:
-        - /Maps/_NF/Bluespace/mcevent.yml
+        - /Maps/Corvax/Bluespace/mcevent.yml #Corvax-Frontier

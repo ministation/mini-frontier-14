@@ -1,10 +1,10 @@
-# # Author Info
-# # GitHub: Shodhans
-# # Discord: ???
+# Author Info
+# GitHub: Shodhans
+# Discord: ???
 
-# # Maintainer Info
-# # GitHub: ???
-# # Discord: ???
+# Maintainer Info
+# GitHub: ???
+# Discord: ???
 
 # # Shuttle Notes:
 # #
@@ -28,7 +28,7 @@
   # mapName: 'NT Comet'
   # mapPath: /Maps/_NF/Shuttles/comet.yml
   # minPlayers: 0
-  # stations: 
+  # stations:
     # Comet:
       # stationProto: StandardFrontierVessel
       # components:

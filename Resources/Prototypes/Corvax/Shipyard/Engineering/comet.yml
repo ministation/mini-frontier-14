@@ -10,6 +10,7 @@
 #
 - type: vessel
   id: Comet
+  parent: BaseVessel
   name: NT Комета
   description: Среднегабаритный инженерный шаттл. Рекомендованный размер команды 3-6 человек.
   price: 55000
@@ -26,7 +27,7 @@
   mapName: 'NT Комета'
   mapPath: /Maps/Corvax/Shuttles/Engineering/comet.yml
   minPlayers: 0
-  stations: 
+  stations:
     Comet:
       stationProto: StandardFrontierVessel
       components:

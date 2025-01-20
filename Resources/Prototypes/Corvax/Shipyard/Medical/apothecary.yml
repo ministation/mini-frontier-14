@@ -10,9 +10,10 @@
 #
 - type: vessel
   id: Apothecary
+  parent: BaseVessel
   name: NM Апотекарий
   description: Малогабаритный медицинский шаттл. Рекомендованный состав команды 1-2 человека.
-  price: 45000 
+  price: 45000
   category: Small
   group: Shipyard
   shuttlePath: /Maps/Corvax/Shuttles/Medical/apothecary.yml

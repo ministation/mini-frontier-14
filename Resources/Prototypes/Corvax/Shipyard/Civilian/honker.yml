@@ -1,5 +1,6 @@
 - type: vessel
   id: Honker
+  parent: BaseVessel
   name: NT ХОНКЕР
   description: ХОНК ХОНК ХОНК ХОНК ХОНК ХОНК
   price: 22500

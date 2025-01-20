@@ -10,13 +10,16 @@
 # Provides higher end expeditionary ships and a space for vets to spawn in away from potential frontier shenanigans
 - type: pointOfInterest
   id: Lodge
+  parent: BasePOI
   name: 'Экспедиционная База'
-  rangeMin: 1650
-  rangeMax: 3400
-  IFFColor: "#3737C8" #blue the color of NT
+  minimumDistance: 1650
+  maximumDistance: 3400
   spawnGroup: Required
   gridPath: /Maps/_NF/POI/lodge.yml
-  busStop: true
+  addComponents:
+  - type: IFF
+    color: "#3737C8"
+  - type: StationTransit
 
 - type: gameMap
   id: Lodge

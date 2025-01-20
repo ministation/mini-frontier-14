@@ -66,6 +66,15 @@
     <GuideEntityEmbed Entity="MobCarp" Caption=""/>
   </Box>
 
+  Космические драконы — это гигантские внеизмеренные рыбы, которые [color=cyan]создают разломы и пожирают экипаж.[/color]
+  - Драконы обладают мощными челюстями, позволяющими [bold]поглощать[/bold] инфраструктуру, такую как двери, окна и стены.
+  - Ваш [color=orange]драконий огонь[/color] — это огненный снаряд, летящий по прямой траектории, взрывающийся несколько раз и поджигающий всё на своём пути. Будьте осторожны, ваши карпы не застрахованы от этого!
+  - У вас есть способность вызывать [bold]разломы карпов[/bold], из которых периодически появляются [bold]космические карпы[/bold]. Одновременно может быть активно до 3 разломов.
+  - Разломы накапливают энергию в течение 5 минут и в этот период остаются [bold]уязвимыми[/bold]. После 5 минут они становятся неуязвимыми и продолжают призывать карпов, пока дракон остаётся в живых.
+  - Если один из ваших разломов будет уничтожен до завершения зарядки, вы испытаете [bold]временный ослабляющий откат[/bold].
+  - Если пройдёт 5 минут с момента вашего появления или с последней зарядки разлома, [bold]вы исчезнете.[/bold]
+  - Драконы, имеющие 3 полностью заряженных разлома, [bold]никогда не исчезнут[/bold], но остаются смертными.
+
   # Slimes and Spiders
 
   <Box>
@@ -74,6 +83,6 @@
   </Box>
 
   Slimes and spiders have no remarkable features, but will [color=cyan]infest the station[/color] from time to time regardless. Both will give chase and attack anything they see.
-  - Slimes may deal extra [bold]cellular or posion damage[/bold], based upon their color. Water hurts them just as it would hurt a slime person.
-  - Spiders can lay [bold]webs[/bold], which non-spiders have a hard time moving through. They can easily be destroyed with a blade.
+  - Slimes may [bold]deal extra cellular or poison damage[/bold], based upon their color. Water hurts them just as it would hurt a slime person.
+  - Spiders have a venomous bite and can [bold]create webs[/bold] that are hard to move though. Webs are easily destroyed with a blade. They can also pry open airlocks.
 </Document>

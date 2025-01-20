@@ -25,6 +25,7 @@
     tags:
     - Ointment
   - type: Sprite
+    sprite: Objects/Specific/Medical/medical.rsi
     layers:
     - state: ointment
       map: ["base"]
@@ -382,8 +383,6 @@
   - type: Stack
     stackType: AloeCream
     baseLayer: base
-    layerStates:
-    - cream
     count: 10
 
 - type: entity

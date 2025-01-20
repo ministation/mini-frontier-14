@@ -10,6 +10,7 @@
 #
 - type: vessel
   id: Pathfinder
+  parent: BaseVessel
   name: KC Следопыт
   description: Малогабаритный экспедиционный шаттл. Рекомендуемый состав команды 2-4 человека.
   price: 52920
@@ -19,13 +20,13 @@
   guidebookPage: ShipyardPathfinder
   class:
   - Expedition
-  
+
 - type: gameMap
   id: Pathfinder
   mapName: 'KC Следопыт'
   mapPath: /Maps/Corvax/Shuttles/Expedition/pathfinder.yml
   minPlayers: 0
-  stations: 
+  stations:
     Pathfinder:
       stationProto: StandardFrontierExpeditionVessel
       components:

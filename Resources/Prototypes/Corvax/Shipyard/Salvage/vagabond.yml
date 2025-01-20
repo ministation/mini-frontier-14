@@ -7,10 +7,11 @@
 # Discord: 159375107855351808
 
 # Shuttle Notes:
-# 
+#
 
 - type: vessel
   id: Vagabond
+  parent: BaseVessel
   name: NT Бродяга
   description: Среднегабаритный добывающий-грузовой шаттл. Рекомендуемый состав команды 3-6 человек.
   price: 60000

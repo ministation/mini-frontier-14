@@ -10,6 +10,7 @@
 #
 - type: vessel
   id: Bocakillo
+  parent: BaseVessel
   name: Сэндвич
   description: Малогабаритный пиратский шаттл. Рекомендованный размер команды 2-3 человека.
   price: 35000 #Cheap

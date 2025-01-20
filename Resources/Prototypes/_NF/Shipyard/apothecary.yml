@@ -1,10 +1,10 @@
-# # Author Info
-# # GitHub: dustylens (https://github.com/dustylens)
-# # Discord: dustylens
+# Author Info
+# GitHub: dustylens (https://github.com/dustylens)
+# Discord: dustylens
 
-# # Maintainer Info
-# # GitHub: dustylens (https://github.com/dustylens)
-# # Discord: dustylens
+# Maintainer Info
+# GitHub: dustylens (https://github.com/dustylens)
+# Discord: dustylens
 
 # # Shuttle Notes:
 # #
@@ -28,7 +28,7 @@
   # mapName: 'FSB Apothecary'
   # mapPath: /Maps/_NF/Shuttles/apothecary.yml
   # minPlayers: 0
-  # stations: 
+  # stations:
     # Apothecary:
       # stationProto: StandardFrontierVessel
       # components:

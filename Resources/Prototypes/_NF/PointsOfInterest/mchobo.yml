@@ -11,12 +11,15 @@
 # Based on the McCargo built by Dvir01 (https://github.com/dvir001) and ruined with drunken pride by Tych0.
 - type: pointOfInterest
   id: McHobo
+  parent: BasePOI
   name: Заброшенный МакХобольдс
-  rangeMin: 3250
-  rangeMax: 5600
-  IFFColor: "#ffa600" #yellorange for faction style
+  minimumDistance: 3250
+  maximumDistance: 5600
   spawnGroup: Scrapyard
   gridPath: /Maps/_NF/POI/mchobo.yml
+  addComponents:
+  - type: IFF
+    color: "#ffa600"
 
 - type: gameMap
   id: McHobo

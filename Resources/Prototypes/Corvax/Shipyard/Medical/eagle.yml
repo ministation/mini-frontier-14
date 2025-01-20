@@ -10,9 +10,10 @@
 #
 - type: vessel
   id: Eagle
+  parent: BaseVessel
   name: NM Орлан
   description: Среднегабаритный медико-инженерный шаттл. Рекомендованный размер команды 3-5 человек.
-  price: 67950 
+  price: 67950
   category: Medium
   group: Shipyard
   shuttlePath: /Maps/Corvax/Shuttles/Medical/eagle.yml

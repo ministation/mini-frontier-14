@@ -3,13 +3,14 @@
 # Discord: SergeantEcho
 
 # Maintainer Info
-# GitHub: 
-# Discord: 
+# GitHub:
+# Discord:
 
 # Shuttle Notes:
 #
 - type: vessel
   id: Venera
+  parent: BaseVessel
   name: NC Венера
   description: Среднегабаритная экспедиционная баржа. Рекомендованный размер команды 6-8 человек.
   price: 106000

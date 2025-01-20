@@ -3,13 +3,14 @@
 # Discord: wolfhauler
 
 # Maintainer Info
-# GitHub: ThatOneGoblin25 
+# GitHub: ThatOneGoblin25
 # Discord: thedaarkgoblin
 
 # Shuttle Notes:
 #
 - type: vessel
   id: Spectre
+  parent: BaseVessel
   name: NR Спектр
   description: Крупногабаритный научный шаттл. Рекомендованный состав команды 4-5 человек.
   price: 185000

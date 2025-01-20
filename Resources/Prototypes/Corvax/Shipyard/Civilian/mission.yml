@@ -10,6 +10,7 @@
 #
 # - type: vessel
   # id: Mission
+  # parent: BaseVessel
   # name: NC Мессия
   # description: Малогабаритный шаттл-церковь. Рекомендованный состав команды 1-2 человека.
   # price: 19000
@@ -25,7 +26,7 @@
   # mapName: 'NC Мессия'
   # mapPath: /Maps/Corvax/Shuttles/Civilian/mission.yml
   # minPlayers: 0
-  # stations: 
+  # stations:
     # Mission:
       # stationProto: StandardFrontierVessel
       # components:

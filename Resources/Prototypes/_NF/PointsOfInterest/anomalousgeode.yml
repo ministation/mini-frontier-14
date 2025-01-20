@@ -1,5 +1,5 @@
 # Author Info
-# GitHub: 
+# GitHub:
 # Discord: Checkraze
 
 # Maintainer Info
@@ -10,17 +10,24 @@
 # The local Science lab
 - type: pointOfInterest
   id: AnomalousGeode
+  parent: BasePOI
   name: 'Аномальная Жеода'
-  rangeMin: 2100
-  rangeMax: 3800
-  IFFColor: "#ffa600" #yellorange for nuetral civillian
+  minimumDistance: 2100
+  maximumDistance: 3800
   spawnGroup: ScienceLab
   gridPath: /Maps/_NF/POI/anomalousgeode.yml
+  addComponents:
+  - type: IFF
+    color: "#ffa600"
+    readOnly: true
+  - type: Shuttle
+    angularDamping: 999999
+    linearDamping: 999999
 
 - type: gameMap
   id: AnomalousGeode
   mapName: 'Аномальная Жеода'
-  mapPath: /Maps/_NF/POI/anomalouslab.yml
+  mapPath: /Maps/_NF/POI/anomalousgeode.yml
   minPlayers: 0
   stations:
     AnomalousGeode:

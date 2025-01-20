@@ -7,7 +7,7 @@
   fallbacks:
   - SheriffClothingUniformJumpsuitSheriff
   - SheriffClothingUniformJumpskirtSheriff
-  
+
 - type: loadoutGroup
   id: SheriffOuterClothing
   name: loadout-group-contractor-outerclothing
@@ -28,9 +28,12 @@
 - type: loadoutGroup
   id: SheriffNeck
   name: loadout-group-contractor-neck
-  minLimit: 0
   loadouts:
+  - SheriffClothingNeckNfsdBadgeSheriff
   - SheriffClothingNeckMantleSheriff
+  - SheriffClothingNeckCloakSheriff
+  fallbacks:
+  - SheriffClothingNeckNfsdBadgeSheriff
 
 - type: loadoutGroup
   id: SheriffPDA

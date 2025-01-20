@@ -10,15 +10,19 @@
 # Byarr
 - type: pointOfInterest
   id: Cove
+  parent: BasePOI
   name: Пиратская Бухта
-  rangeMin: 10000
-  rangeMax: 15000
-  IFFColor: "#C83737" #red the color of ebil
-  IFFFlags: [HideLabel]
-  allowIFFChanges: true
-  hideWarp: true
+  minimumDistance: 10000
+  maximumDistance: 15000
+  spawnGamePreset: [ NFPirate ]
   spawnGroup: Required
   gridPath: /Maps/_NF/POI/cove.yml
+  hideWarp: true
+  addComponents:
+  - type: IFF
+    color: "#C83737"
+    flags: [HideLabel]
+    readOnly: false
 
 - type: gameMap
   id: Cove
