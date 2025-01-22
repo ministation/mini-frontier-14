@@ -1,5 +1,6 @@
 ﻿- type: vessel
   id: Fly
+  parent: BaseVessel
   name: COL Муха
   price: 25000
   category: Small

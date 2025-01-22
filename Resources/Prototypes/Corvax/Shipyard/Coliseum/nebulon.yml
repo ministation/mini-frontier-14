@@ -1,5 +1,6 @@
 ﻿- type: vessel
   id: Nebulon
+  parent: BaseVessel
   name: COL Небулон
   price: 25000
   category: Small

@@ -1,5 +1,6 @@
 ﻿- type: vessel
   id: Crater
+  parent: BaseVessel
   name: COL Кратер
   price: 25000
   category: Small

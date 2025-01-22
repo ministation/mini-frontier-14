@@ -1,5 +1,6 @@
 ﻿- type: vessel
   id: Wild
+  parent: BaseVessel
   name: COL Дикий
   price: 25000
   category: Small

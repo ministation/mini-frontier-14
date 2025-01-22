@@ -1,5 +1,6 @@
 ﻿- type: vessel
   id: Bite
+  parent: BaseVessel
   name: COL Укус
   price: 25000
   category: Small

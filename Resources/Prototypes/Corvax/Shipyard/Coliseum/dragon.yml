@@ -1,5 +1,6 @@
 ﻿- type: vessel
   id: Dragon
+  parent: BaseVessel
   name: COL Дракон
   price: 25000
   category: Small

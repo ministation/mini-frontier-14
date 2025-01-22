@@ -1,5 +1,6 @@
 ﻿- type: vessel
   id: Kerefo
+  parent: BaseVessel
   name: COL Керефо
   price: 25000
   category: Small

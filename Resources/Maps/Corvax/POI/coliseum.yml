@@ -18,26 +18,13 @@ tilemap:
 entities:
 - proto: ""
   entities:
-  - uid: 1
+  - uid: 2
     components:
     - type: MetaData
       name: Coliseum
     - type: Transform
-    - type: Map
-      mapPaused: True
-    - type: PhysicsMap
-    - type: GridTree
-    - type: MovedGrids
-    - type: Broadphase
-    - type: OccluderTree
-    - type: LoadedMap
-  - uid: 2
-    components:
-    - type: MetaData
-      name: Колизей
-    - type: Transform
       pos: -0.53125,-0.5
-      parent: 1
+      parent: invalid
     - type: MapGrid
       chunks:
         0,0:

@@ -1,5 +1,6 @@
 ﻿- type: vessel
   id: Tobacco
+  parent: BaseVessel
   name: COL Табак
   price: 25000
   category: Small

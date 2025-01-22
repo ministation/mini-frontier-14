@@ -1,5 +1,6 @@
 ﻿- type: vessel
   id: Wound
+  parent: BaseVessel
   name: COL Рана
   price: 25000
   category: Small

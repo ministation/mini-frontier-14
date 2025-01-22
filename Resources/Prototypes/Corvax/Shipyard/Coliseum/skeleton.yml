@@ -1,5 +1,6 @@
 ﻿- type: vessel
   id: Sceleton
+  parent: BaseVessel
   name: COL Скелет
   price: 25000
   category: Small

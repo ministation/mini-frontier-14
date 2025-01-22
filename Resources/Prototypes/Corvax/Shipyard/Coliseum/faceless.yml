@@ -1,5 +1,6 @@
 ﻿- type: vessel
   id: Faceless
+  parent: BaseVessel
   name: COL Безликий
   price: 25000
   category: Small
