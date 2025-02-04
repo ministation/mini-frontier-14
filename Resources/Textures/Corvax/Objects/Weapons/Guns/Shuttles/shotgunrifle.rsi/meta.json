@@ -7,11 +7,11 @@
         "y": 64
     },
     "states": [
-    {
-        "name": "shotgun"
-    },
-    {
-        "name": "mag-1"
-    }
+        {
+            "name": "shotgun"
+        },
+        {
+            "name": "mag-1"
+        }
     ]
 }

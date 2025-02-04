@@ -1,6 +1,59 @@
 - type: entity
+  id: VShuttleGunBase
+  name: shuttle gun
+  abstract: true
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Appearance
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Anchorable
+  - type: Pullable
+  - type: Rotatable
+  - type: Physics
+    bodyType: Static
+  - type: Gun
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 450
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Electronic
+  - type: Transform
+    anchored: true
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSink
+    ports:
+    - Trigger
+    - Toggle
+    - On
+    - Off
+  - type: AutoShootGun
+  - type: GunSignalControl
+  - type: StaticPrice
+    price: 1500
+  - type: Repairable # Frontier
+    doAfterDelay: 3 # Frontier
+
+- type: entity
   id: ShuttleShotgun
-  parent: [ShuttleGunBase, ConstructibleMachine]
+  parent: [VShuttleGunBase, ConstructibleMachine]
   name: Trophy-50
   description: A stationary shuttle gun that fires a .50 caliber. Designed to suppress the enemy.
   components:
@@ -31,18 +84,19 @@
     angleDecay: 45
     minAngle: 0
     maxAngle: 17
-    selectedMode: FullAuto
     soundGunshot:
       path: /Audio/Corvax/Weapons/Guns/Gunshots/shuttleshotgun.ogg
       params:
         pitch: 0.5
     soundEmpty:
       path: /Audio/Corvax/Weapons/Guns/Empty/EmptySHR.ogg
-  - type: MagazineAmmoProvider
-  - type: MagazineVisuals
-    magState: mag
-    steps: 2
-    zeroVisible: false
+  #- type: MagazineAmmoProvider
+  #- type: MagazineVisuals
+    #magState: mag
+    #steps: 2
+    #zeroVisible: false
+  - type: Machine
+    board: ShuttleShotgunMachineCircuitboard
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -56,12 +110,10 @@
           params:
             pitch: 1
         ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
-  - type: Machine
-    board: ShuttleShotgunMachineCircuitboard
 
 - type: entity
   id: ShuttleGunAntiMaterial
-  parent: [ShuttleGunBase, ConstructibleMachine]
+  parent: [VShuttleGunBase, ConstructibleMachine]
   name: BOFROG-60/B
   description: An impressive - sized shuttle weapon, firing a large caliber .60. Breaks through most types of armored walls.
   components:
@@ -95,6 +147,8 @@
         pitch: 0.5
     soundEmpty:
       path: /Audio/Corvax/Weapons/Guns/Empty/EmptySHR.ogg
+  - type: Machine
+    board: ShuttleGunAntiMaterialMachineCircuitboard
   - type: BallisticAmmoProvider
     whitelist:
       tags:
@@ -104,12 +158,10 @@
       path: /Audio/Corvax/Weapons/Guns/MagIn/Reload60Cartridge.ogg
       params:
         pitch: 0.91
-  - type: Machine
-    board: ShuttleGunAntiMaterialMachineCircuitboard
 
 - type: entity
   id: ShuttleLightRifleGun
-  parent: [ShuttleGunBase, ConstructibleMachine]
+  parent: [VShuttleGunBase, ConstructibleMachine]
   name: АК-6.30
   description: A stationary shuttle rifle on .30 rifle cartridges with a VERY large supply of ammunition.
   components:
@@ -123,7 +175,7 @@
     containers:
       machine_board: !type:Container
       machine_parts: !type:Container
-      ballistic-ammo: !type:Container
+      gun_magazine: !type:ContainerSlot
   - type: Destructible
     thresholds:
     - trigger:
@@ -151,6 +203,8 @@
     magState: mag
     steps: 2
     zeroVisible: false
+  - type: Machine
+    board: ShuttleLightRifleGunMachineCircuitboard
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -164,12 +218,10 @@
           params:
             pitch: 1
         ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
-  - type: Machine
-    board: ShuttleLightRifleGunMachineCircuitboard
 
 - type: entity
   id: ShuttleSMGRifle
-  parent: [ShuttleGunBase, ConstructibleMachine]
+  parent: [VShuttleGunBase, ConstructibleMachine]
   name: NVT-35
   description: A stationary small-caliber weapon with an increased rate of fire, unlike other shuttle`s weapons.
   components:
@@ -183,7 +235,7 @@
     containers:
       machine_board: !type:Container
       machine_parts: !type:Container
-      ballistic-ammo: !type:Container
+      gun_magazine: !type:ContainerSlot
   - type: Destructible
     thresholds:
     - trigger:
@@ -211,6 +263,8 @@
     magState: mag
     steps: 2
     zeroVisible: false
+  - type: Machine
+    board: ShuttleSMGRifleMachineCircuitboard
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -224,12 +278,10 @@
           params:
             pitch: 1
         ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
-  - type: Machine
-    board: ShuttleSMGRifleMachineCircuitboard
 
 - type: entity
   id: ShuttleMagnumRifle
-  parent: [ShuttleGunBase, ConstructibleMachine]
+  parent: [VShuttleGunBase, ConstructibleMachine]
   name: 2А42-45
   description: The nightmare of the syndicate that liked to hide behind doors. Double-barreled .45 caliber gun.
   components:
@@ -243,7 +295,7 @@
     containers:
       machine_board: !type:Container
       machine_parts: !type:Container
-      ballistic-ammo: !type:Container
+      gun_magazine: !type:ContainerSlot
   - type: Destructible
     thresholds:
     - trigger:
@@ -271,6 +323,8 @@
     magState: mag
     steps: 2
     zeroVisible: false
+  - type: Machine
+    board: ShuttleMagnumRifleMachineCircuitboard
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -284,5 +338,3 @@
           params:
             pitch: 1
         ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
-  - type: Machine
-    board: ShuttleMagnumRifleMachineCircuitboard

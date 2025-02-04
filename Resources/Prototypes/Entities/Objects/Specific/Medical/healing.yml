@@ -376,13 +376,16 @@
   id: AloeCream
   components:
   - type: Sprite
-    sprite: Objects/Specific/Hydroponics/aloe.rsi
+    sprite: Objects/Specific/Medical/medical.rsi
     layers:
     - state: cream
-      map: ["base"]
+      map: ["cream"]
   - type: Stack
     stackType: AloeCream
-    baseLayer: base
+    baseLayer: cream
+    layerStates:
+    - cream
+    - cream_1
     count: 10
 
 - type: entity
@@ -1093,7 +1096,7 @@
   id: SyringeStimulants
   components:
   - type: Label
-    currentLabel: reagent-name-hyperzine
+    currentLabel: reagent-name-stimulants
   - type: SolutionContainerManager
     solutions:
       injector:

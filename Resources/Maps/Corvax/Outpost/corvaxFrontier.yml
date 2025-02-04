@@ -5955,8 +5955,13 @@ entities:
       id: corvaxFrontier
     - type: StationTransit
     - type: ProtectedGrid
-      hostileMobKillSound: !type:SoundPathSpecifier
-        path: /Audio/Effects/holy.ogg
+      preventArtifactTriggers: True
+      preventExplosions: True
+      preventEmpEvents: True
+      preventRCDUse: True
+      preventFloorPlacement: True
+      preventFloorRemoval: True
+      killHostileMobs: True
     - type: IFF
   - uid: 7410
     components:
@@ -18404,11 +18409,6 @@ entities:
     components:
     - type: Transform
       pos: -10.5,4.5
-      parent: 1
-  - uid: 248
-    components:
-    - type: Transform
-      pos: -14.5,4.5
       parent: 1
   - uid: 282
     components:
@@ -42709,7 +42709,7 @@ entities:
       powerLoad: 60
     - type: DamageOnInteract
       isDamageActive: False
-- proto: PresentRandomAsh
+- proto: PresentRandomCoal
   entities:
   - uid: 2147
     components:
