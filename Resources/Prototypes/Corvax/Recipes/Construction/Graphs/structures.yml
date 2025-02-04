@@ -19,7 +19,7 @@
         completed:
         - !type:SpawnPrototype
               prototype: SheetSteel
-              amount: 10
+              amount: 5
         - !type:DeleteEntity {}
         steps:
           - tool: Welding

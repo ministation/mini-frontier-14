@@ -4821,6 +4821,10 @@ entities:
     - type: RadiationGridResistance
     - type: BecomesStation
       id: Charlie
+    - type: ProtectedGrid
+      preventRCDUse: True
+      preventFloorPlacement: True
+      preventFloorRemoval: True
 - proto: AirlockExternalShuttleSyndicateLocked
   entities:
   - uid: 3218
