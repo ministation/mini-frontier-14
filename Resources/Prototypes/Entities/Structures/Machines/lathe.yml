@@ -971,6 +971,10 @@
         - SpeedLoaderRifleHeavyEmpty # Frontier
         - BoxBeanbagKS23 #CorvaxFrontier
         - BoxLethalshotKS23 #CorvaxFrontier
+        - MagazineBoxVector22 # Corvax-Frontier
+        - MagazineBoxVector45 # Corvax-Frontier
+        - MagazineVector45 # Corvax-Frontier
+        - MagazineVector22 # Corvax-Frontier
     - type: MaterialStorage
       whitelist:
         tags:

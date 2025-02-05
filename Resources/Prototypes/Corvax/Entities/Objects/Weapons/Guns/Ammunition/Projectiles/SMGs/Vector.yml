@@ -6,7 +6,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 5
+        Piercing: 7
         Blunt: 4
 
 - type: entity #FrontierCorvax
@@ -17,8 +17,8 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 3
-        Heat: 3
+        Blunt: 1
+        Heat: 1
 
 - type: entity #FrontierCorvax
   id: BulletVector22Practice
@@ -38,9 +38,9 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 3
-        Blunt: 3
-        Radiation: 8
+        Piercing: 1
+        Blunt: 1
+        Radiation: 1
 
 - type: entity #FrontierCorvax
   id: BulletVector45
@@ -61,8 +61,8 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 3
-        Heat: 11
+        Blunt: 1
+        Heat: 1
 
 - type: entity #FrontierCorvax
   id: BulletVector45Practice
@@ -72,7 +72,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 3
+        Blunt: 1
 
 - type: entity #FrontierCorvax
   id: BulletVector45Uranium
@@ -82,6 +82,6 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 6
-        Blunt: 3
-        Radiation: 14
+        Piercing: 1
+        Blunt: 1
+        Radiation: 1
