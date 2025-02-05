@@ -13,7 +13,6 @@
   - BaseStationDampening
   - BaseStationDeadDropHintExempt # No hints
   - BaseStationRenameWarpPoints
-  - BaseStationColiseum # Corvax-Frontier
   categories: [ HideSpawnMenu ]
   components:
   - type: Transform

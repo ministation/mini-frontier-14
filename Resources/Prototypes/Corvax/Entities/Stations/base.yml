@@ -1,5 +1,0 @@
-- type: entity
-  id: BaseStationColiseum
-  abstract: true
-  components:
-    - type: StationColiseum

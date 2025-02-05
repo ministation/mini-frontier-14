@@ -106,7 +106,7 @@
 
 - type: entity
   id: PortalAutoLinkBlue
-  parent: PortalRed
+  parent: PortalBlue
   suffix: Autolink
   components:
   - type: Portal
