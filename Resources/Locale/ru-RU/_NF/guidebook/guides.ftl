@@ -1,11 +1,11 @@
 # Base entries
-guide-entry-nf14 = Frontier Guide
-guide-entry-bank = NT Galactic Bank
-guide-entry-piloting = Piloting
-guide-entry-hiring = Hiring Crew
-guide-entry-expeditions = Expeditions
-guide-entry-shipyard = Shipyard
-guide-entry-frontier-rules = Server Rules
+guide-entry-nf14 = Руководство Фронтира
+guide-entry-bank = NT Галактический банк
+guide-entry-piloting = Пилотирование
+guide-entry-hiring = Наём экипажа
+guide-entry-expeditions = Экспедиции
+guide-entry-shipyard = Верфи
+guide-entry-frontier-rules = Правила сервера
 # Expedition faction entries
 guide-entry-expedition-aberrant-flesh = Aberrant Flesh
 guide-entry-expedition-argocytes = Argocytes

@@ -48,3 +48,6 @@ ent-AnomalyShadow = { ent-BaseAnomaly }
 ent-AnomalyTech = { ent-BaseAnomaly }
     .suffix = Тех
     .desc = { ent-BaseAnomaly.desc }
+ent-AnomalySanta = { ent-BaseAnomaly }
+    .suffix = Санта
+    .desc = { ent-BaseAnomaly.desc }
