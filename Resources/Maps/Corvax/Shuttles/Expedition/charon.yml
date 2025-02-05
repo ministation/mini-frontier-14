@@ -2636,6 +2636,13 @@ entities:
     - type: Transform
       pos: 1.3028102,-1.328778
       parent: 1
+- proto: CargoPallet
+  entities:
+  - uid: 894
+    components:
+    - type: Transform
+      pos: -10.5,11.5
+      parent: 1
 - proto: CarpetPurple
   entities:
   - uid: 1010
@@ -6831,6 +6838,8 @@ entities:
     - type: Transform
       pos: -5.5,11.5
       parent: 1
+    - type: Drink
+      solution: tank
 - proto: SinkWide
   entities:
   - uid: 785
@@ -6839,6 +6848,8 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -3.5,9.5
       parent: 1
+    - type: Drink
+      solution: tank
 - proto: SMESBasic
   entities:
   - uid: 187
@@ -8259,6 +8270,8 @@ entities:
     - type: Transform
       pos: 3.5,-11.5
       parent: 1
+    - type: Drink
+      solution: tank
 - proto: Window
   entities:
   - uid: 18

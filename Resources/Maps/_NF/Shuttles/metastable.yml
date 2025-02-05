@@ -3727,18 +3727,6 @@ entities:
     - type: Transform
       pos: 10.168591,-8.385403
       parent: 2
-- proto: ComputerAnalysisConsole
-  entities:
-  - uid: 246
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -9.5,-4.5
-      parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        248:
-        - ArtifactAnalyzerSender: ArtifactAnalyzerReceiver
 - proto: ComputerCloningConsole
   entities:
   - uid: 183

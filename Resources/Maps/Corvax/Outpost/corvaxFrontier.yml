@@ -18410,11 +18410,6 @@ entities:
     - type: Transform
       pos: -10.5,4.5
       parent: 1
-  - uid: 248
-    components:
-    - type: Transform
-      pos: -14.5,4.5
-      parent: 1
   - uid: 282
     components:
     - type: Transform
@@ -42714,7 +42709,7 @@ entities:
       powerLoad: 60
     - type: DamageOnInteract
       isDamageActive: False
-- proto: PresentRandomAsh
+- proto: PresentRandomCoal
   entities:
   - uid: 2147
     components:

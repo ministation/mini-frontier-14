@@ -4,7 +4,7 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Structures/Specific/Anomalies/Cores/electric_core.rsi  
+    sprite: Structures/Specific/Anomalies/Cores/electric_core.rsi
   - type: Gibbable
   - type: Electrified
     requirePower: false
@@ -18,9 +18,7 @@
   description: "The source of incredible, unending intelligence. Honk."
   components:
   - type: Sprite
-    layer:
-      - state: core
-      - state: pulse
+    state: core
   - type: Organ
   - type: Input
     context: "ghost"
@@ -86,9 +84,7 @@
   description: "I feel bad for the heartless bastard who lost this."
   components:
   - type: Sprite
-    layer:
-      - state: core
-      - state: pulse
+    state: core
   - type: Metabolizer
     maxReagents: 2
     metabolizerTypes: [Human]
