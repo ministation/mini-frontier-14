@@ -93,3 +93,23 @@
     sprite: Structures/stairs.rsi
     state: stairs_stage_wood
     drawdepth: FloorTiles
+
+- type: entity
+  id: PortalAutoLinkRed
+  parent: PortalRed
+  suffix: Autolink
+  components:
+  - type: Portal
+    canTeleportToOtherMaps: true
+    randomTeleport: false
+  - type: PortalAutoLink
+
+- type: entity
+  id: PortalAutoLinkBlue
+  parent: PortalRed
+  suffix: Autolink
+  components:
+  - type: Portal
+    canTeleportToOtherMaps: true
+    randomTeleport: false
+  - type: PortalAutoLink

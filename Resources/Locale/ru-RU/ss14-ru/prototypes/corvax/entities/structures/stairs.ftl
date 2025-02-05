@@ -22,3 +22,7 @@ ent-StairWoodPortal = { ent-Stairs }
 ent-StairStageWoodPortal = { ent-Stairs }
     .suffix = Деревянный, Одна ступень, Портал
     .desc = { ent-Stairs.desc }
+ent-PortalAutoLinkRed = оранжевый портал
+	.suffix = Автолинк
+ent-PortalAutoLinkBlue = синий портал
+	.suffix = Автолинк
