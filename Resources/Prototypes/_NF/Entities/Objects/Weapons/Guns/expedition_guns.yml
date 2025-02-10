@@ -131,6 +131,13 @@
   categories: [ HideSpawnMenu ]
   id: WeaponRifleVulcanExpedition
 
+- type: entity #CorvaxFrontier
+  parent:
+  - BaseC3ExpeditionContraband
+  - WeaponSubMachineGunVector22
+  categories: [ HideSpawnMenu ]
+  id: SubMachineGunVector22Expedition #CorvaxFrontier
+
 # SMGs
 - type: entity
   parent:

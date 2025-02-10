@@ -10,3 +10,4 @@ admin-player-spawn-failed = Не удалось найти подходящие 
 admin-player-actions-clone = Клонировать
 admin-player-actions-follow = Следовать
 admin-player-actions-confirm = Вы уверены?
+admin-player-actions-player-panel = Открыть Меню Действий

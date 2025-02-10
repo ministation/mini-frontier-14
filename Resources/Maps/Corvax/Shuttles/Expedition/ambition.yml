@@ -8496,17 +8496,26 @@ entities:
   - uid: 76
     components:
     - type: Transform
-      pos: 2.5,18.5
+      rot: -1.5707963267948966 rad
+      pos: 12.5,-4.5
       parent: 1
-  - uid: 1392
+  - uid: 213
     components:
     - type: Transform
-      pos: 0.5,18.5
+      rot: -1.5707963267948966 rad
+      pos: -11.5,-4.5
       parent: 1
-  - uid: 1393
+  - uid: 214
     components:
     - type: Transform
-      pos: -1.5,18.5
+      rot: -1.5707963267948966 rad
+      pos: 11.5,24.5
+      parent: 1
+  - uid: 240
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -10.5,24.5
       parent: 1
 - proto: GaslockFrame
   entities:
@@ -12374,16 +12383,6 @@ entities:
     - type: Transform
       pos: 0.5,34.5
       parent: 1
-  - uid: 2518
-    components:
-    - type: Transform
-      pos: -11.5,-4.5
-      parent: 1
-  - uid: 2519
-    components:
-    - type: Transform
-      pos: 12.5,-4.5
-      parent: 1
 - proto: NitrogenCanister
   entities:
   - uid: 770
@@ -15542,16 +15541,6 @@ entities:
     - type: Transform
       pos: 10.5,-4.5
       parent: 1
-  - uid: 213
-    components:
-    - type: Transform
-      pos: 12.5,-4.5
-      parent: 1
-  - uid: 214
-    components:
-    - type: Transform
-      pos: -11.5,-4.5
-      parent: 1
   - uid: 215
     components:
     - type: Transform
@@ -15636,11 +15625,6 @@ entities:
     components:
     - type: Transform
       pos: -8.5,20.5
-      parent: 1
-  - uid: 240
-    components:
-    - type: Transform
-      pos: 11.5,24.5
       parent: 1
   - uid: 241
     components:
@@ -16366,11 +16350,6 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -9.5,26.5
-      parent: 1
-  - uid: 2498
-    components:
-    - type: Transform
-      pos: -10.5,24.5
       parent: 1
 - proto: WallReinforcedDiagonal
   entities:

@@ -26,3 +26,21 @@ ghost-role-information-clugg-name = Умник
 ghost-role-information-clugg-description = 	Угг! Умник обожает есть мясо. Найди новый дом неподалеку от космического астероида и отправляйся на большую охоту.
 ghost-role-information-yipyip-name = Ип-Ип
 ghost-role-information-yipyip-description = Печально известный лаунж-ящер и бармен в ресторане Мамины Багамы. Этот кобольд-выпивоха живёт, чтобы обслуживать своих клиентов.
+ghost-role-information-aberrant-flesh-horror-dungeon-name = Аномальная плоть
+ghost-role-information-aberrant-flesh-horror-dungeon-description = Защищайте этот комплекс вместе с другими чудовищами из плоти и крови!
+ghost-role-information-explorer-captain-dungeon-name = Капитан-исследователь
+ghost-role-information-explorer-captain-dungeon-description = Вы добрались до этого объекта первыми! Защищайте этот комплекс и свою добычу вместе с другими исследователями!
+ghost-role-information-punk-boss-dungeon-name = Лидер панк-банды
+ghost-role-information-punk-boss-dungeon-description = Защищайте этот комплекс и свою добычу вместе с другими панками!
+ghost-role-information-syndie-boss-dungeon-name = Командир Синдиката
+ghost-role-information-syndie-boss-dungeon-description = Вы - Командир отряда Синдиката. Защищайте это место от незваных гостей из NT. Покажите, кто тут БОСС.
+ghost-role-information-dungeon-boss-rules = Вы — [color=red][bold]командный антагонист[/bold][/color] для всех монстров этой экспедиции.
+                                        Сражайтесь с игроками в комплексе, защищая свой комплекс.
+                                        Обратите внимание, что [color=yellow]все правила сервера по-прежнему применяются к вам.[/color] Кроме того:
+                                        - [color=red]НЕ[/color] повреждайте шаттлы игроков или их содержимое.
+                                        - [color=red]НЕ[/color] прячьтесь от игроков, чтобы растянуть время экспедиции.
+                                        - [color=red]НЕ[/color] разрывайте игроков на части. Когда они умрут, оставьте их в покое.
+                                        - [color=red]НЕ[/color] уничтожайте и не прячьте ценную добычу в подземелье.
+                                        - [color=red]НЕ[/color] покидайте планету.
+
+nf-ghost-role-information-derelict-cyborg-description = Вы — киборг, который много лет провёл на месте крушения, подвергаясь воздействию бесчисленных ионных бурь.
