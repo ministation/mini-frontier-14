@@ -33,3 +33,6 @@ ent-ComputerPirateBountyRedemption = консоль пиратских возн�
     .desc = Вернулся из плавания? Обменивай здесь свои награды, дружище.
 ent-ComputerShuttleAntag = { ent-ComputerShuttleAntagEmpty }
     .desc = { ent-ComputerShuttleAntagEmpty.desc }
+
+ent-GasSaleConsole = консоль продажи газа
+    .desc = Продаёт газ, закачанный в связанный порт/пункт продажи газа.

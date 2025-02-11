@@ -11,11 +11,11 @@
 - type: pointOfInterest
   id: Medical
   parent: BasePOI
-  name: 'Medical Dispatch'
+  name: 'Госпиталь' #CorvaxFrontier
   minimumDistance: 1650
   maximumDistance: 3400
   spawnGroup: Required
-  gridPath: /Maps/_NF/POI/medical.yml
+  gridPath: /Maps/Corvax/POI/medical.yml #CorvaxFrontier
   addComponents:
   - type: IFF
     color: "#00b7eb"
@@ -24,7 +24,7 @@
 - type: gameMap
   id: Medical
   mapName: 'Medical Dispatch'
-  mapPath: /Maps/_NF/POI/medical.yml
+  mapPath: /Maps/Corvax/POI/medical.yml #CorvaxFrontier
   minPlayers: 0
   stations:
     Medical:

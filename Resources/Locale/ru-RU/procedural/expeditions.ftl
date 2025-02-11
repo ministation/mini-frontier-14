@@ -61,7 +61,7 @@ salvage-expedition-completed = Экспедиция окончена.
 salvage-light-mod-daylight = Дневной
 salvage-light-mod-evening = Вечерний
 salvage-light-mod-night = Ночной
-salvage-temperature-mod-room-temperature = Комнатная температура
+salvage-temperature-mod-room-temperature = Стандартная температура
 salvage-temperature-mod-hot = Жарко
 salvage-temperature-mod-high-temperature = Высокая температура
 salvage-temperature-mod-extreme-heat = Экстремально жарко
@@ -73,3 +73,9 @@ salvage-air-mod-breathable-atmosphere = Пригодная для дыхания
 salvage-air-mod-dangerous-atmosphere = Опасная атмосфера
 salvage-air-mod-toxic-atmosphere = Токсичная атмосфера
 salvage-air-mod-volatile-atmosphere = Нестабильная атмосфера
+
+# Биомы экспедиций
+salvage-biome-mod-caves = Пещеры
+salvage-biome-mod-grasslands = Луга
+salvage-biome-mod-snow = Снежная тайга
+salvage-biome-mod-lava = Вулкан

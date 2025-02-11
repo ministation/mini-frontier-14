@@ -411,3 +411,17 @@ ent-WallRockSandBluespace = { ent-WallRockSand }
 ent-WallRockSnowBluespace = { ent-WallRockSnow }
     .suffix = Блюспейс руда
     .desc = Рудная жила, содержащая в себе блюспейс руду.
+
+ent-WallRockScrapPile = груда металлолома
+    .suffix = Лом
+    .desc = Огромная груда металлолома.
+
+ent-WallRockScrapPileBot = { ent-WallRockScrapPile }
+    .desc = { ent-WallRockScrapPile.desc }
+
+ent-WallRockScrapPileCoal = { ent-WallRockScrapPile }
+    .suffix = Уголь
+    .desc = Рудная жила с углем.
+
+ent-WallRockScrapPileCoalBot = { ent-WallRockScrapPile }
+    .desc = { ent-WallRockScrapPileCoal.desc }

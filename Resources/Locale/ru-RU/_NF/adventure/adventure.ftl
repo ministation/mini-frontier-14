@@ -8,7 +8,9 @@ adventure-webhook-list-high = Больше всего заработали:
 adventure-webhook-list-low = Больше всего потратили:
 adventure-webhook-top-profit = Прибыль составила: {$amount}.
 adventure-webhook-top-loss = Убыток составил: {$amount}.
+
 adventure-title = Исследование Фронтира
+
 adventure-description = Исследуйте неизведанные уголки космоса, проводите научные исследования, занимайтесь спасательными операциями или транспортировкой грузов и прокладывайте свой путь к богатству!
 currency = Кредиты
 shipyard-rules-default1 =
@@ -26,3 +28,4 @@ multiauth-already-connected = Уже подключены к серверу Фр
 public-transit-departure = Транспорт направляется в { $destination }. Ориентировочное время в пути: { $flytime } секунд.
 public-transit-arrival = Благодарим за выбор общественного транспорта NT. Следующий шаттл до { $destination } отправляется через { $waittime } секунд.
 shuttle-ftl-too-many = Слишком много активных экспедиций!
+adventure-webhook-ledger-start = Бухгалтерский учёт
