@@ -8661,25 +8661,6 @@ entities:
     - type: Transform
       pos: -24.67899,-2.8323464
       parent: 2
-- proto: BriefcaseBrownFilled
-  entities:
-  - uid: 7783
-    components:
-    - type: Transform
-      pos: -34.58761,28.591845
-      parent: 2
-    - type: Storage
-      storedItems:
-        7784:
-          position: 0,0
-          _rotation: South
-    - type: ContainerContainer
-      containers:
-        storagebase: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 7784
 - proto: CableApcExtension
   entities:
   - uid: 335
@@ -19821,7 +19802,7 @@ entities:
   - uid: 2429
     components:
     - type: Transform
-      pos: -15.36052,0.8850652
+      pos: -15.541844,0.779741
       parent: 2
 - proto: EnergySwordDouble
   entities:
@@ -26793,15 +26774,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 42.5,0.5
       parent: 2
-- proto: SpaceCash10000
-  entities:
-  - uid: 300
-    components:
-    - type: Transform
-      pos: 2.898749,-2.5320826
-      parent: 2
-    - type: Stack
-      count: 100000
 - proto: SpaceCash20000
   entities:
   - uid: 2990
@@ -26822,70 +26794,12 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-  - uid: 7784
-    components:
-    - type: Transform
-      parent: 7783
-    - type: Stack
-      count: 60000
-    - type: Physics
-      canCollide: False
 - proto: SpaceCash5000
   entities:
-  - uid: 2157
-    components:
-    - type: Transform
-      pos: 0.3578241,35.653656
-      parent: 2
   - uid: 2186
     components:
     - type: Transform
       pos: 0.3994906,33.757824
-      parent: 2
-  - uid: 2192
-    components:
-    - type: Transform
-      pos: 0.3890741,34.195324
-      parent: 2
-  - uid: 2198
-    components:
-    - type: Transform
-      pos: 0.37865734,35.153656
-      parent: 2
-  - uid: 2200
-    components:
-    - type: Transform
-      pos: 0.7119906,34.92449
-      parent: 2
-  - uid: 2201
-    components:
-    - type: Transform
-      pos: 0.7328241,35.872406
-      parent: 2
-  - uid: 2203
-    components:
-    - type: Transform
-      pos: 0.40990734,34.653656
-      parent: 2
-  - uid: 2204
-    components:
-    - type: Transform
-      pos: 0.7015741,35.414074
-      parent: 2
-  - uid: 2206
-    components:
-    - type: Transform
-      pos: 0.7432407,35.89324
-      parent: 2
-  - uid: 2207
-    components:
-    - type: Transform
-      pos: 5.324888,35.803223
-      parent: 2
-  - uid: 2208
-    components:
-    - type: Transform
-      pos: 0.7640741,34.414074
       parent: 2
   - uid: 2209
     components:
@@ -26896,41 +26810,6 @@ entities:
     components:
     - type: Transform
       pos: 0.65990734,33.48699
-      parent: 2
-  - uid: 2211
-    components:
-    - type: Transform
-      pos: 5.6582212,35.501137
-      parent: 2
-  - uid: 2213
-    components:
-    - type: Transform
-      pos: 5.4394712,35.313637
-      parent: 2
-  - uid: 2214
-    components:
-    - type: Transform
-      pos: 5.606138,35.084473
-      parent: 2
-  - uid: 2215
-    components:
-    - type: Transform
-      pos: 5.335305,34.907387
-      parent: 2
-  - uid: 2216
-    components:
-    - type: Transform
-      pos: 5.606138,34.605305
-      parent: 2
-  - uid: 2217
-    components:
-    - type: Transform
-      pos: 5.387388,34.396973
-      parent: 2
-  - uid: 2218
-    components:
-    - type: Transform
-      pos: 5.637388,34.167805
       parent: 2
   - uid: 2219
     components:
@@ -26946,11 +26825,6 @@ entities:
     components:
     - type: Transform
       pos: 5.3144712,33.594887
-      parent: 2
-  - uid: 2222
-    components:
-    - type: Transform
-      pos: 5.616555,33.459473
       parent: 2
 - proto: SpawnContrabandCrate
   entities:
@@ -27134,140 +27008,70 @@ entities:
       parent: 2
 - proto: SpawnDungeonLootSpesos
   entities:
-  - uid: 2197
-    components:
-    - type: Transform
-      pos: -24.578543,0.22692966
-      parent: 2
   - uid: 7786
     components:
     - type: Transform
       pos: -45.536854,7.4071927
-      parent: 2
-  - uid: 7787
-    components:
-    - type: Transform
-      pos: -44.573696,7.352155
       parent: 2
   - uid: 7788
     components:
     - type: Transform
       pos: -43.638054,7.4071927
       parent: 2
-  - uid: 7789
-    components:
-    - type: Transform
-      pos: -45.536854,4.517715
-      parent: 2
   - uid: 7790
     components:
     - type: Transform
       pos: -44.546177,4.462677
-      parent: 2
-  - uid: 7791
-    components:
-    - type: Transform
-      pos: -43.610535,4.4901958
       parent: 2
   - uid: 7792
     components:
     - type: Transform
       pos: -45.50934,3.4169612
       parent: 2
-  - uid: 7793
-    components:
-    - type: Transform
-      pos: -44.49114,3.3894424
-      parent: 2
   - uid: 7794
     components:
     - type: Transform
       pos: -43.52798,3.44448
-      parent: 2
-  - uid: 7795
-    components:
-    - type: Transform
-      pos: -45.564373,0.4076463
       parent: 2
   - uid: 7796
     components:
     - type: Transform
       pos: -44.381065,0.4076463
       parent: 2
-  - uid: 7797
-    components:
-    - type: Transform
-      pos: -43.58302,0.49020302
-      parent: 2
   - uid: 7798
     components:
     - type: Transform
       pos: -45.48182,-0.47295654
-      parent: 2
-  - uid: 7799
-    components:
-    - type: Transform
-      pos: -44.601215,-0.5279943
       parent: 2
   - uid: 7800
     components:
     - type: Transform
       pos: -43.72061,-0.5279943
       parent: 2
-  - uid: 7801
-    components:
-    - type: Transform
-      pos: -45.48182,-3.500029
-      parent: 2
   - uid: 7802
     components:
     - type: Transform
       pos: -44.49114,-3.5275478
-      parent: 2
-  - uid: 7803
-    components:
-    - type: Transform
-      pos: -43.5555,-3.4725103
       parent: 2
   - uid: 7804
     components:
     - type: Transform
       pos: -43.638054,-4.5732636
       parent: 2
-  - uid: 7805
-    components:
-    - type: Transform
-      pos: -44.49114,-4.5732636
-      parent: 2
   - uid: 7806
     components:
     - type: Transform
       pos: -45.536854,-4.5732636
-      parent: 2
-  - uid: 7807
-    components:
-    - type: Transform
-      pos: -45.48182,-7.5917735
       parent: 2
   - uid: 7808
     components:
     - type: Transform
       pos: -44.49114,-7.6192927
       parent: 2
-  - uid: 7809
-    components:
-    - type: Transform
-      pos: -43.665573,-7.536736
-      parent: 2
   - uid: 7810
     components:
     - type: Transform
       pos: -43.50046,-8.775084
-      parent: 2
-  - uid: 7811
-    components:
-    - type: Transform
-      pos: -44.49114,-8.582452
       parent: 2
   - uid: 7812
     components:
@@ -27278,11 +27082,6 @@ entities:
     components:
     - type: Transform
       pos: -45.61941,-11.416892
-      parent: 2
-  - uid: 7814
-    components:
-    - type: Transform
-      pos: -44.408585,-11.499449
       parent: 2
   - uid: 7815
     components:
@@ -29835,6 +29634,170 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 46.5,-5.5
       parent: 2
+- proto: StructureGunRack
+  entities:
+  - uid: 300
+    components:
+    - type: Transform
+      pos: 0.5,-33.5
+      parent: 2
+    - type: ContainerContainer
+      containers:
+        weapon1: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 2157
+        weapon2: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 2192
+        weapon3: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 2197
+        weapon4: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        weapon5: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+  - uid: 2198
+    components:
+    - type: Transform
+      pos: 1.5,-33.5
+      parent: 2
+    - type: ContainerContainer
+      containers:
+        weapon1: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 2200
+        weapon2: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 2201
+        weapon3: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 2203
+        weapon4: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        weapon5: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+  - uid: 2204
+    components:
+    - type: Transform
+      pos: 2.5,-33.5
+      parent: 2
+    - type: ContainerContainer
+      containers:
+        weapon1: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 2206
+        weapon2: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 2207
+        weapon3: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 2208
+        weapon4: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        weapon5: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+  - uid: 2211
+    components:
+    - type: Transform
+      pos: 3.5,-33.5
+      parent: 2
+    - type: ContainerContainer
+      containers:
+        weapon1: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 2213
+        weapon2: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 2214
+        weapon3: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 2215
+        weapon4: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        weapon5: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+  - uid: 2216
+    components:
+    - type: Transform
+      pos: 4.5,-33.5
+      parent: 2
+    - type: ContainerContainer
+      containers:
+        weapon1: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 2217
+        weapon2: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 2218
+        weapon3: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 2222
+        weapon4: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        weapon5: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+  - uid: 3082
+    components:
+    - type: Transform
+      pos: 5.5,-33.5
+      parent: 2
+    - type: ContainerContainer
+      containers:
+        weapon1: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 3083
+        weapon2: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 3084
+        weapon3: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 3085
+        weapon4: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        weapon5: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
 - proto: SubstationBasic
   entities:
   - uid: 1307
@@ -41788,6 +41751,120 @@ entities:
     - type: Transform
       pos: 36.5,-4.5
       parent: 2
+- proto: WeaponRifleM90GrenadeLauncher
+  entities:
+  - uid: 2192
+    components:
+    - type: Transform
+      parent: 300
+    - type: Physics
+      canCollide: False
+  - uid: 2201
+    components:
+    - type: Transform
+      parent: 2198
+    - type: Physics
+      canCollide: False
+  - uid: 2207
+    components:
+    - type: Transform
+      parent: 2204
+    - type: Physics
+      canCollide: False
+  - uid: 2214
+    components:
+    - type: Transform
+      parent: 2211
+    - type: Physics
+      canCollide: False
+  - uid: 2218
+    components:
+    - type: Transform
+      parent: 2216
+    - type: Physics
+      canCollide: False
+  - uid: 3084
+    components:
+    - type: Transform
+      parent: 3082
+    - type: Physics
+      canCollide: False
+- proto: WeaponSniperHristov
+  entities:
+  - uid: 2157
+    components:
+    - type: Transform
+      parent: 300
+    - type: Physics
+      canCollide: False
+  - uid: 2200
+    components:
+    - type: Transform
+      parent: 2198
+    - type: Physics
+      canCollide: False
+  - uid: 2206
+    components:
+    - type: Transform
+      parent: 2204
+    - type: Physics
+      canCollide: False
+  - uid: 2213
+    components:
+    - type: Transform
+      parent: 2211
+    - type: Physics
+      canCollide: False
+  - uid: 2217
+    components:
+    - type: Transform
+      parent: 2216
+    - type: Physics
+      canCollide: False
+  - uid: 3083
+    components:
+    - type: Transform
+      parent: 3082
+    - type: Physics
+      canCollide: False
+- proto: WeaponSniperMosin
+  entities:
+  - uid: 2197
+    components:
+    - type: Transform
+      parent: 300
+    - type: Physics
+      canCollide: False
+  - uid: 2203
+    components:
+    - type: Transform
+      parent: 2198
+    - type: Physics
+      canCollide: False
+  - uid: 2208
+    components:
+    - type: Transform
+      parent: 2204
+    - type: Physics
+      canCollide: False
+  - uid: 2215
+    components:
+    - type: Transform
+      parent: 2211
+    - type: Physics
+      canCollide: False
+  - uid: 2222
+    components:
+    - type: Transform
+      parent: 2216
+    - type: Physics
+      canCollide: False
+  - uid: 3085
+    components:
+    - type: Transform
+      parent: 3082
+    - type: Physics
+      canCollide: False
 - proto: WindoorSecure
   entities:
   - uid: 5936

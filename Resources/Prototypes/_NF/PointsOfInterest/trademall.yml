@@ -15,7 +15,7 @@
   minimumDistance: 1500
   maximumDistance: 2500
   spawnGroup: MarketStation
-  gridPath: /Maps/_NF/POI/trademall.yml
+  gridPath: /Maps/Corvax/POI/trademall.yml # СorvaxFrontier
   addComponents:
   - type: IFF
     color: "#37C837"
@@ -26,7 +26,7 @@
 - type: gameMap
   id: TradeMall
   mapName: 'Торговая Станция' #CorvaxFrontier
-  mapPath: /Maps/_NF/POI/trademall.yml
+  mapPath: /Maps/Corvax/POI/trademall.yml # СorvaxFrontier
   minPlayers: 0
   stations:
     TradeMall:

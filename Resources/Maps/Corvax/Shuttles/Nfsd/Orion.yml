@@ -733,6 +733,8 @@ entities:
           - 0
         chunkSize: 4
     - type: GasTileOverlay
+    - type: BecomesStation
+      id: Orion
 - proto: AirAlarm
   entities:
   - uid: 500
