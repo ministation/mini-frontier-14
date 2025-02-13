@@ -18,7 +18,7 @@
 - type: gameMap
   id: MiningBase
   mapName: 'База Шахтёров'
-  mapPath: /MapsCorvax/POI/MiningBase.yml
+  mapPath: /Maps/Corvax/POI/MiningBase.yml
   minPlayers: 0
   stations:
     MiningBase:
@@ -27,9 +27,9 @@
         - type: StationNameSetup
           mapNameTemplate: 'База Шахтёров'
         - type: ExtraStationInformation
-          iconPath: /Textures/_NF/Markers/jobs.rsi/mercenary.png
-          stationSubtext: 'frontier-lobby-exped-subtext'
-          stationDescription: 'frontier-lobby-exped-description'
+          iconPath: /Textures/Objects/Weapons/Melee/pickaxe.rsi/pickaxe.png
+          stationSubtext: 'frontier-lobby-mining-subtext'
+          stationDescription: 'frontier-lobby-mining-description'
           lobbySortOrder: 3
         - type: StationJobs
           availableJobs:
