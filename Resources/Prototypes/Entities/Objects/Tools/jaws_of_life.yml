@@ -86,5 +86,5 @@
     damage:
       types:
         Blunt: 14
-  - type: StaticPrice
+  - type: StaticPrice #CorvaxFrontier
     price: 200

@@ -441,7 +441,7 @@
     transferAmount: 30
     onlyAffectsMobs: false
     injectOnly: true
-  - type: StaticPrice
+  - type: StaticPrice #CorvaxFrontier
     price: 300
   - type: Tag
     tags: []

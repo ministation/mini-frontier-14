@@ -102,8 +102,8 @@
         startingItem: CartridgeLightRifle
         priority: 1
         whitelist:
-          tags:
-            - CartridgeLightRifleLow
+          tags: 
+            - CartridgeLightRifleLow  #CorvaxFrontier
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

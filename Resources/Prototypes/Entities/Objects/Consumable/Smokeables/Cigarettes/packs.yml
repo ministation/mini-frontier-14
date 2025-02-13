@@ -194,7 +194,7 @@
     contents:
     - id: CigaretteSyndicate
       amount: 10
-  - type: StaticPrice
+  - type: StaticPrice #CorvaxFrontier
     price: 100
 
 - type: entity

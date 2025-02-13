@@ -47,5 +47,5 @@
       state: powersink
     - type: WarpPoint
       location: powersink
-    - type: StaticPrice
+    - type: StaticPrice #CorvaxFrontier
       price: 200
