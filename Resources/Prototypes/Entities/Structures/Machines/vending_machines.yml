@@ -2162,7 +2162,7 @@
     - Chemicals
     - Chemist
   - type: MarketModifier #CorvaxFrontier
-    mod: 100 #CorvaxFrontier
+    mod: 30 #CorvaxFrontier
 
 - type: entity
   parent: VendingMachineChemicals

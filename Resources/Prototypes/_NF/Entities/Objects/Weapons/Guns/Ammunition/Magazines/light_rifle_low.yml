@@ -16,9 +16,7 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
-    - type: Tag #CorvaxFrontier
-      tags:
-      - CartridgeLightRifleLow
+
 
 - type: entity
   id: MagazineLightRifleLowCapacity
@@ -37,9 +35,7 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
-    - type: Tag #CorvaxFrontier
-      tags:
-      - CartridgeLightRifleLow
+
       
 - type: entity
   id: MagazineLightRifleLowCapacityPractice
@@ -57,9 +53,7 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
-    - type: Tag #CorvaxFrontier
-      tags:
-      - CartridgeLightRifleLow
+
       
 - type: entity
   id: MagazineLightRifleLowCapacityRubber
@@ -77,9 +71,7 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
-    - type: Tag #CorvaxFrontier
-      tags:
-      - CartridgeLightRifleLow
+
       
 - type: entity
   id: MagazineLightRifleLowCapacityUranium
@@ -97,7 +89,5 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
-    - type: Tag #CorvaxFrontier
-      tags:
-      - CartridgeLightRifleLow
+
       
