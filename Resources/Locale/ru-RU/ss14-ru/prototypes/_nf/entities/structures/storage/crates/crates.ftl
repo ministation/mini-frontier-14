@@ -36,3 +36,16 @@ ent-CrateFirearmsSecure = защищённый оружейный ящик
     .desc = { ent-CrateWeaponSecure.desc }
 ent-CrateWoodCage = деревянная клетка
     .desc = Похоже, что она была сделана кустарным способом, с использованием самых разных материалов.
+ent-CrateTradeBaseSecureContraband = Ящик с контрабандой синдиката
+    .desc = Содержит товары, произведенные в вторичном секторе, готовые к отправке контрабандой на грузовой склад для получения прибыли. УБЕДИТЕСЬ, ЧТО ЯЩИК ЦЕЛ.
+ent-CrateTradeContrabandSecure1 = { ent-CrateTradeBaseSecureContraband }
+    .desc = { ent-CrateTradeBaseSecureContraband.desc }
+ent-CrateTradeContrabandSecure2 = { ent-CrateTradeBaseSecureContraband }
+    .desc = { ent-CrateTradeBaseSecureContraband.desc }
+ent-CrateTradeContrabandSecure3 = { ent-CrateTradeBaseSecureContraband }
+    .desc = { ent-CrateTradeBaseSecureContraband.desc }
+ent-CrateTradeContrabandSecure4 = Ящик с контрабандой Donk Co.
+    .desc = { ent-CrateTradeBaseSecureContraband.desc }
+ent-CrateTradeContrabandSecure5 = { ent-CrateTradeBaseSecureContraband }
+    .desc = { ent-CrateTradeBaseSecureContraband.desc }
+
