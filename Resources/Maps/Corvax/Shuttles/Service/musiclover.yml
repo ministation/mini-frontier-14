@@ -1098,6 +1098,8 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
+    - type: BecomesStation
+      id: musiclover
   - uid: 3
     components:
     - type: MetaData

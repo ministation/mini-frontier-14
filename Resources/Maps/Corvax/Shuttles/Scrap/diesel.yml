@@ -1226,6 +1226,8 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: NavMap
+    - type: BecomesStation
+      id: diesel
   - uid: 4
     components:
     - type: MetaData
