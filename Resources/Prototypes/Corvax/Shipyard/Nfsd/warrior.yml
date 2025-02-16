@@ -1,3 +1,15 @@
+# Author Info
+# GitHub: -
+# Discord: docs.unity3d.com
+# License: CC-BY-NC-ND-3.0
+# Corvax_frontier
+
+# Maintainer Info
+# GitHub: https://github.com/mersen-tyn
+# Discord: mersen
+
+# Shuttle Notes:
+
 - type: vessel
   id: Warrior
   parent: BaseVessel
