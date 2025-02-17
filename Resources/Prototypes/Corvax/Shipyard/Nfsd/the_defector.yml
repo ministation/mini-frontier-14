@@ -1,4 +1,13 @@
-# taken from the official developers
+# Author Info
+# GitHub: -
+# Discord: charodey0167
+# License: CC-BY-NC-ND-3.0
+# Corvax_frontier
+
+# Maintainer Info
+# GitHub: https://github.com/mersen-tyn
+# Discord: mersen
+
 - type: vessel
   id: the_defector
   parent: BaseVessel
