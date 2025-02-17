@@ -8,6 +8,7 @@
 
 # Notes:
 # just a little loot n shoot POI. Pretty much the second POI to even exist
+
 - type: pointOfInterest
   id: Charlie
   name: 'Синдикатовcкий аванпост Чарли'
