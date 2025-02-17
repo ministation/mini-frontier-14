@@ -23,3 +23,58 @@ shipyard-console-sale-unknown-reason = Шаттл не может быть пр�
 shipyard-console-deed-label = Зарегистрированный шаттл:
 shipyard-console-appraisal-label = Оценочная стоимость шаттла:{ " " }
 shipyard-console-no-voucher-redemptions = Все ваучеры использованы.
+
+shipyard-console-engine-All = Все
+shipyard-console-engine-AME = ДАМ
+shipyard-console-engine-TEG = ТЭГ
+shipyard-console-engine-Supermatter = Суперматерия
+shipyard-console-engine-Tesla = Тесла
+shipyard-console-engine-Singularity = Сингулярность
+shipyard-console-engine-Solar = Сол. Панели
+shipyard-console-engine-RTG = РИТЕГ
+shipyard-console-engine-APU = ВСУ
+shipyard-console-engine-Welding = Топливо
+shipyard-console-engine-Plasma = Плазма
+shipyard-console-engine-Uranium = Уран
+shipyard-console-engine-Bananium = Бананиум
+
+shipyard-console-class-Capital = Авианосец
+shipyard-console-class-Detainment = Тюремный
+shipyard-console-class-Detective = Конвоирный
+shipyard-console-class-Fighter = Штурмовой
+shipyard-console-class-Patrol = Патрульный
+shipyard-console-class-Pursuit = Перехватчик
+
+shipyard-console-class-Syndicate = Синдикат
+shipyard-console-class-Pirate = Пиратский
+
+shipyard-console-class-All = Все
+shipyard-console-class-Expedition = Экспедиционный
+shipyard-console-class-Scrapyard = Полуразрушенный
+shipyard-console-class-Salvage = Шахтёрский
+shipyard-console-class-Science = Исследовательский
+shipyard-console-class-Cargo = Торговый
+shipyard-console-class-Chemistry = Химический
+shipyard-console-class-Botany = Ботанический
+shipyard-console-class-Engineering = Инженерный
+shipyard-console-class-Atmospherics = Газодобывающий
+shipyard-console-class-Medical = Медицинский
+shipyard-console-class-Civilian = Гражданский
+shipyard-console-class-Kitchen = Сервисный
+
+shipyard-console-category-All = Все
+shipyard-console-category-Micro = Мини
+shipyard-console-category-Small = Маленький
+shipyard-console-category-Medium = Средний
+shipyard-console-category-Large = Большой
+
+shipyard-console-menu-size-label = Размер:{" "}
+shipyard-console-menu-class-label = Тип:{" "}
+shipyard-console-menu-engine-label = Питание:{" "}
+
+shipyard-console-purchase-available = Приобрести
+shipyard-console-guidebook = Документация
+
+shipyard-console-contraband-onboard = На борту обнаружена контрабанда.
+shipyard-console-station-resources = На борту обнаружены жизненно важные ресурсы станции.
+shipyard-console-dangerous-materials = На борту обнаружены опасные материалы.
