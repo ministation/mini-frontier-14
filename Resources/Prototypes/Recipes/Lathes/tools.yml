@@ -80,7 +80,7 @@
   result: Pickaxe
   completetime: 4
   materials:
-    Steel: 1000
+    Steel: 700
     Wood: 500
 
 - type: latheRecipe
