@@ -13,7 +13,7 @@
   parent: BasePOI
   name: 'Госпиталь' #CorvaxFrontier
   minimumDistance: 1650
-  maximumDistance: 3400
+  maximumDistance: 2400 #CorvaxFrontier
   spawnGroup: Required
   gridPath: /Maps/Corvax/POI/medical.yml #CorvaxFrontier
   addComponents:

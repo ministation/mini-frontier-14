@@ -1,21 +1,9 @@
-# Author Info
-# GitHub: -
-# Discord: autsaider_m
-# License: CC-BY-NC-ND-3.0
-# Corvax_frontier
-
-# Maintainer Info
-# GitHub: https://github.com/mersen-tyn
-# Discord: mersen
-
-# Notes:
-
 - type: pointOfInterest
-  id: Oblomok
-  name: Обломок
+  id: Arcadia
+  name: База Аркадии
   minimumDistance: 4500
   maximumDistance: 6500
-  gridPath: /Maps/Corvax/POI/Oblomok.yml
+  gridPath: /Maps/Corvax/POI/Arcadia.yml
   addComponents:
   - type: IFF
     color: "#850d09"
@@ -26,16 +14,16 @@
     linearDamping: 999999
 
 - type: gameMap
-  id: Oblomok
-  mapName: Обломок
-  mapPath: /Maps/Corvax/POI/Oblomok.yml
+  id: Arcadia
+  mapName: База Аркадии
+  mapPath: /Maps/Corvax/POI/Arcadia.yml
   minPlayers: 0
   stations:
-    Oblomok:
+    Arcadia:
       stationProto: StandardFrontierOutpost
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Обломок'
+          mapNameTemplate: 'База Аркадии'
         - type: StationJobs
           availableJobs: {}
         - type: StationDeadDropHintExempt

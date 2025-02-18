@@ -17,6 +17,7 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
 
+
 - type: entity
   id: MagazineLightRifleLowCapacity
   name: "low cap magazine (.30 rifle)"
@@ -35,6 +36,7 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
 
+      
 - type: entity
   id: MagazineLightRifleLowCapacityPractice
   name: "low cap magazine (.30 rifle practice)"
@@ -52,6 +54,7 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
 
+      
 - type: entity
   id: MagazineLightRifleLowCapacityRubber
   name: "low cap magazine (.30 rifle rubber)"
@@ -69,6 +72,7 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
 
+      
 - type: entity
   id: MagazineLightRifleLowCapacityUranium
   name: "low cap magazine (.30 rifle uranium)"
@@ -85,3 +89,5 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
+
+      

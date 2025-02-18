@@ -102,7 +102,7 @@
         startingItem: CartridgeLightRifle
         priority: 1
         whitelist:
-          tags:
+          tags: 
             - CartridgeLightRifle
   - type: ContainerContainer
     containers:
