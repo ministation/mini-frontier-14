@@ -23,7 +23,7 @@ entities:
   - uid: 1
     components:
     - type: MetaData
-      name: Coliseum
+      name: coliseum
     - type: Transform
       pos: -0.53125,-0.5
       parent: invalid
@@ -1130,7 +1130,7 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: BecomesStation
-      id: Coliseum
+      id: coliseum
     - type: RadiationGridResistance
 - proto: AirlockAtmosphericsGlass
   entities:
