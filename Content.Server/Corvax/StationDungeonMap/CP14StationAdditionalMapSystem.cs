@@ -30,38 +30,6 @@ public sealed partial class CP14StationAdditionalMapSystem : EntitySystem
         base.Initialize();
         SubscribeLocalEvent<CP14StationAdditionalMapComponent, StationPostInitEvent>(OnStationPostInit);
     }
-
-    public void InitializeStation(MapId mapUid, CP14StationAdditionalMapComponent proto, Vector2 offset, out EntityUid? gridUid, string? overrideName = null)
-    {
-        gridUid = null;
-
-        foreach (var mapPath in proto.MapPaths)
-        {
-            if (_mapLoader.TryLoad(mapUid, mapPath.ToString(), out var mapUids, // Используем конкретный путь
-                new MapLoadOptions
-                {
-                    Offset = offset,
-                    Rotation = _random.NextAngle()
-                }))
-            {
-                string stationName = string.IsNullOrEmpty(overrideName) ? proto.Name : overrideName;
-
-                EntityUid? stationUid = null;
-                if (_proto.TryIndex<GameMapPrototype>(proto.ID, out var stationProto))
-                {
-                    stationUid = _station.InitializeNewStation(stationProto.Stations[proto.ID], mapUids, stationName);
-                }
-
-                foreach (var grid in mapUids)
-                {
-                    var meta = EnsureComp<MetaDataComponent>(grid);
-                    _meta.SetEntityName(grid, stationName, meta);
-                    EntityManager.AddComponents(grid, proto.AddComponents);
-                }
-            }
-        }
-
-    }
     private void OnStationPostInit(Entity<CP14StationAdditionalMapComponent> addMap, ref StationPostInitEvent args)
     {
         if (!TryComp(addMap, out StationDataComponent? dataComp))

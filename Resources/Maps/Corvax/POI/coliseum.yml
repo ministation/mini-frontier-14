@@ -1131,7 +1131,6 @@ entities:
     - type: GasTileOverlay
     - type: BecomesStation
       id: coliseum
-    - type: RadiationGridResistance
 - proto: AirlockAtmosphericsGlass
   entities:
   - uid: 2

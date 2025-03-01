@@ -15,14 +15,4 @@ public sealed partial class CP14StationAdditionalMapComponent : Component
     [DataField(required: true)]
     public List<ResPath> MapPaths = new();
 
-    [IdDataField]
-    public string ID { get; private set; } = default!;
-
-    [DataField(required: true)]
-    public string Name { get; private set; } = "";
-
-    [DataField]
-    [AlwaysPushInheritance]
-    public ComponentRegistry AddComponents { get; set; } = new();
-
 }
