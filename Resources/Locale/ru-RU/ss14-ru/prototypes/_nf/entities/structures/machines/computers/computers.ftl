@@ -36,3 +36,7 @@ ent-ComputerShuttleAntag = { ent-ComputerShuttleAntagEmpty }
 
 ent-GasSaleConsole = консоль продажи газа
     .desc = Продаёт газ, закачанный в связанный порт/пункт продажи газа.
+ent-ComputerShuttleTradeOutpostLocal = консоль трафика Торговой Станции
+    .desc = Следит за движением транспорта вокруг Торгового аванпоста.
+ent-ComputerShuttleTradeOutpostRemote = консоль трафика Торговой Станции
+    .desc = Следит за движением транспорта вокруг Торгового аванпоста.

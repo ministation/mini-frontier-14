@@ -48,6 +48,9 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
     - type: Shuttle
+    - type: IFF
+      color: '#FFC000FF'
+      flags: HideLabel
     - type: GridPathfinding
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
@@ -216,6 +219,8 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
+    - type: BecomesStation
+      id: Menace
 - proto: AirlockExternalGlass
   entities:
   - uid: 8

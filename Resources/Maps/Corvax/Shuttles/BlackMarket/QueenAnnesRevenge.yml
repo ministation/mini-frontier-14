@@ -1426,6 +1426,9 @@ entities:
     - type: RadiationGridResistance
     - type: BecomesStation
       id: QueenAnnesRevenge
+    - type: IFF
+      color: '#FFC000FF'
+      flags: HideLabel
 - proto: AirAlarm
   entities:
   - uid: 2

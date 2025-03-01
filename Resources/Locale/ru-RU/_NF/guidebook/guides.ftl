@@ -7,17 +7,17 @@ guide-entry-expeditions = Экспедиции
 guide-entry-shipyard = Верфи
 guide-entry-frontier-rules = Правила сервера
 # Expedition faction entries
-guide-entry-expedition-aberrant-flesh = Aberrant Flesh
-guide-entry-expedition-argocytes = Argocytes
-guide-entry-expedition-blood-cultists = Blood Cultists
-guide-entry-expedition-carps = Carps
-guide-entry-expedition-dinosaurs = Dinosaurs
-guide-entry-expedition-explorers = Explorers
-guide-entry-expedition-mercenaries = Mercenaries
-guide-entry-expedition-gangers = Punks
-guide-entry-expedition-silicons = Rogue Silicons
-guide-entry-expedition-syndicate-naval-forces = Syndicate Naval Forces
-guide-entry-expedition-xenos = Xenos
+guide-entry-expedition-aberrant-flesh = Аномальная плоть
+guide-entry-expedition-argocytes = Аргоциты
+guide-entry-expedition-blood-cultists = Культисты
+guide-entry-expedition-carps = Карпы
+guide-entry-expedition-dinosaurs = Динозавры
+guide-entry-expedition-explorers = Исследователи
+guide-entry-expedition-mercenaries = Наёмники
+guide-entry-expedition-gangers = Панки
+guide-entry-expedition-silicons = Мятежные ИИ
+guide-entry-expedition-syndicate-naval-forces = Синдикат
+guide-entry-expedition-xenos = Ксеносы
 # Shipyard entries
 guide-entry-shipyard-ambition = Ambition
 guide-entry-shipyard-apothecary = Apothecary
@@ -62,3 +62,13 @@ guide-entry-frontier-rule-9 = 9. Security
 guide-entry-frontier-rule-10 = 10. Command
 guide-entry-frontier-rule-11 = 11. Escalation
 guide-entry-frontier-rule-12 = 12. PVP
+
+# Reference entries
+guide-entry-medicalrecipes = Медицинские рецепты
+
+# Medical entries
+guide-entry-medical-bounties = Медицинские премии
+guide-entry-medical-doc = Менеджер Медицинских Операций
+
+# Security entries
+guide-entry-nfsd-smuggling = Контрабанда

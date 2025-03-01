@@ -23,7 +23,8 @@ public enum ShipyardConsoleUiKey : byte
     Custom,
     Coliseum, // Corvax-Frontier
     Mercenary, // Corvax-Frontier
-    Salvage // Corvax-Frontier
+    Salvage, // Corvax-Frontier
+	Debug // Corvax-Frontier
 }
 
 public abstract class SharedShipyardSystem : EntitySystem

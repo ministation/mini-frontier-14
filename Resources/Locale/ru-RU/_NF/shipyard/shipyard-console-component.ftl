@@ -73,6 +73,7 @@ shipyard-console-menu-class-label = Тип:{" "}
 shipyard-console-menu-engine-label = Питание:{" "}
 
 shipyard-console-purchase-available = Приобрести
+shipyard-console-sell-button = Продать
 shipyard-console-guidebook = Документация
 
 shipyard-console-contraband-onboard = На борту обнаружена контрабанда.

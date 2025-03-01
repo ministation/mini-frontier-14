@@ -346,6 +346,8 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
+    - type: BecomesStation
+      id: Falcon
 - proto: AirlockCaptainGlassLocked
   entities:
   - uid: 271

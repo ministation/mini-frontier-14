@@ -51,6 +51,11 @@
   parent: [BaseStructureDisableToolUse, BaseStructureIndestructible, BaseComputer]
   name: coliseum shipyard console
   description: Buy a shuttle and go into battle!
+  id: ComputerShipyardDebug
+  parent: [BaseStructureDisableToolUse, BaseStructureIndestructible, ComputerShipyardBase]
+  name: centcom shipyard console
+  description: Shipyard console with all shuttles.
+  suffix: Debug
   components:
   - type: Sprite
     sprite: _NF/Structures/Machines/computers.rsi
@@ -89,3 +94,17 @@
       ShipyardConsole-targetId: !type:ContainerSlot
   - type: Computer
     board: Null
+      state: computer_sr
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: shipyard_sr
+    - map: ["computerLayerKeys"]
+      state: telesci_key
+  - type: ActivatableUI
+    key: enum.ShipyardConsoleUiKey.Debug
+    adminOnly: true
+  - type: UserInterface
+    interfaces:
+      enum.ShipyardConsoleUiKey.Debug:
+       type: ShipyardConsoleBoundUserInterface

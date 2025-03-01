@@ -524,7 +524,7 @@
   productEntity: BoxT3SuperCapacitor
   icon: { sprite: Objects/Storage/boxes.rsi, state: box}
   cost:
-    FrontierUplinkCoin: 4
+    FrontierUplinkCoin: 5 # CorvaxFrontier
   categories:
     - UplinkSecurityBundles
   conditions:
@@ -1300,7 +1300,7 @@
   productEntity: ClothingBackpackDuffelNfsdTrackingBundle
   icon: { sprite: _NF/Clothing/Back/Duffels/nfsd_brown.rsi, state: icon }
   cost:
-    FrontierUplinkCoin: 4
+    FrontierUplinkCoin: 8 #CorvaxFrontier
   categories:
     - UplinkSecurityBundles
   conditions:
@@ -1316,7 +1316,7 @@
   productEntity: ClothingBackpackDuffelNfsdEmpBundle
   icon: { sprite: _NF/Clothing/Back/Duffels/nfsd_brown.rsi, state: icon }
   cost:
-    FrontierUplinkCoin: 4
+    FrontierUplinkCoin: 8 #CorvaxFrontier
   categories:
     - UplinkSecurityBundles
   conditions:
@@ -1353,7 +1353,7 @@
   productEntity: BoxEmpGrenadesAmmo
   icon: { sprite: Objects/Storage/boxes.rsi, state: box }
   cost:
-    FrontierUplinkCoin: 1
+    FrontierUplinkCoin: 2 #CorvaxFrontier
   categories:
     - UplinkSecurityAmmo
   conditions:

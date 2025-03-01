@@ -151,6 +151,8 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
+    - type: BecomesStation
+      id: Rogue
 - proto: AirlockExternalGlassNfsdLocked
   entities:
   - uid: 19

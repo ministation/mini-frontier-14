@@ -793,8 +793,6 @@ entities:
       pos: 4.5,20.5
       parent: 2
     - type: DeviceList
-      configurators:
-      - invalid
       devices:
       - 1230
       - 1231

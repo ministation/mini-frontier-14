@@ -270,8 +270,8 @@ entities:
       type: GridAtmosphere
     - type: GasTileOverlay
     - type: RadiationGridResistance
-    - id: Trident
-      type: BecomesStation
+    - type: BecomesStation
+      id: Trident
     - nextUpdate: 0
       type: SpreaderGrid
 - proto: AirlockBrigGlassLocked

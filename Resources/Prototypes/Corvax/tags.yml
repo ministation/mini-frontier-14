@@ -39,3 +39,7 @@
   
 - type: Tag
   id: SolarAssemblyFlatpack
+
+- type: Tag
+  id: Jetpack
+  
