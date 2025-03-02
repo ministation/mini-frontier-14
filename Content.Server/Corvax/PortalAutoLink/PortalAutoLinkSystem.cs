@@ -1,7 +1,7 @@
 using Content.Shared.Interaction;
 using Content.Shared.Teleportation.Systems;
 
-namespace Content.Server._N14.PortalAutoLink
+namespace Content.Server.Corvax.PortalAutoLink
 {
     public sealed partial class PortalAutoLinkSystem : EntitySystem
     {
