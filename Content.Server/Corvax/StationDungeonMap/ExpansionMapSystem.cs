@@ -1,3 +1,5 @@
+// Port from Nuclear 14 Corvax
+
 using Content.Server._NF.GameRule;
 using Content.Server.GameTicking;
 using Content.Server.Maps;
@@ -13,9 +15,9 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using System.Numerics;
 
-namespace Content.Server._CP14.StationDungeonMap;
+namespace Content.Server.Corvax.StationDungeonMap;
 
-public sealed partial class CP14StationAdditionalMapSystem : EntitySystem
+public sealed partial class ExpansionMapSystem : EntitySystem
 {
     [Dependency] private readonly IPrototypeManager _proto = default!;
     [Dependency] private readonly MapSystem _map = default!;
@@ -28,9 +30,9 @@ public sealed partial class CP14StationAdditionalMapSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeLocalEvent<CP14StationAdditionalMapComponent, StationPostInitEvent>(OnStationPostInit);
+        SubscribeLocalEvent<ExpansionMapComponent, StationPostInitEvent>(OnStationPostInit);
     }
-    private void OnStationPostInit(Entity<CP14StationAdditionalMapComponent> addMap, ref StationPostInitEvent args)
+    private void OnStationPostInit(Entity<ExpansionMapComponent> addMap, ref StationPostInitEvent args)
     {
         if (!TryComp(addMap, out StationDataComponent? dataComp))
             return;
@@ -38,7 +40,7 @@ public sealed partial class CP14StationAdditionalMapSystem : EntitySystem
         foreach (var path in addMap.Comp.MapPaths)
         {
             var mapUid = _map.CreateMap(out var mapId);
-            Log.Info($"Created map {mapId} for StationAdditionalMap system");
+            Log.Info($"Created map {mapId} for ExpansionMap system");
             var options = new MapLoadOptions { LoadMap = true };
             if (!_mapLoader.TryLoad(mapId, path.ToString(), out var roots, options))
             {
