@@ -409,7 +409,7 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: BecomesStation
-      id: Sart
+      id: Point
 - proto: ActionToggleInternals
   entities:
   - uid: 157

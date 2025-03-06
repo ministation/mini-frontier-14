@@ -214,9 +214,9 @@ entities:
           - 0
         chunkSize: 4
     - type: GasTileOverlay
+    - type: RadiationGridResistance
     - type: BecomesStation
       id: Drozd
-    - type: RadiationGridResistance
 - proto: AirlockGlassShuttle
   entities:
   - uid: 2

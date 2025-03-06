@@ -575,7 +575,7 @@ entities:
       type: GridAtmosphere
     - type: GasTileOverlay
     - type: RadiationGridResistance
-    - id: svtide
+    - id: Tide
       type: BecomesStation
 - proto: Airlock
   entities:

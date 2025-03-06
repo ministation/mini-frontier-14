@@ -411,6 +411,8 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
+    - type: BecomesStation
+      id: Wendigo
 - proto: AirlockEngineering
   entities:
   - uid: 162

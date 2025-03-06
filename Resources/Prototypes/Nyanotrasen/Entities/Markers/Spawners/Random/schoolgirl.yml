@@ -25,6 +25,7 @@
         - ClothingUniformJumpskirtGreenElegantDress #Corvax-Frontier
       chance: 0.85
       rarePrototypes:
+        - ClothingUniformJumpskirtSchool #Corvax-Frontier
         - ClothingOuterSuitShrineMaiden
         - ClothingUniformJumpskirtElegantMaid #Corvax-Frontier
         - ClothingBackpackDuffelWitchBundle #Corvax-Frontier

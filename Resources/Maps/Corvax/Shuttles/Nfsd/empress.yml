@@ -1329,6 +1329,8 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
+    - type: BecomesStation
+      id: Empress
 - proto: AirAlarm
   entities:
   - uid: 1779

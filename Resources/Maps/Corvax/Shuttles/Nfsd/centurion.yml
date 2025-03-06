@@ -19,6 +19,7 @@ entities:
       name: Центурион
     - type: Transform
       pos: -0.5,-0.5
+      parent: invalid
     - type: BecomesStation
       id: Centurion
     - type: MapGrid
@@ -762,49 +763,47 @@ entities:
           -1,3:
             0: 35566
           0,4:
-            1: 1
-            0: 34
-            2: 51328
+            0: 35
+            1: 51328
           1,0:
             0: 511
-            2: 57344
+            1: 57344
           1,2:
             0: 4368
-            2: 52422
+            1: 52422
           1,-1:
-            0: 61932
-            3: 2
+            0: 61934
           1,1:
-            2: 26222
+            1: 26222
           1,3:
-            2: 9830
+            1: 9830
           1,4:
-            2: 307
+            1: 307
           2,0:
             0: 43681
-            4: 17486
+            2: 17486
           2,1:
-            4: 270
+            2: 8462
             0: 224
           2,-1:
             0: 57463
           2,2:
-            4: 1026
+            2: 3266
           3,0:
-            4: 1
+            2: 1
             0: 16
-          3,2:
-            4: 1
           3,1:
-            4: 2
+            2: 4098
+          3,2:
+            2: 1
           3,-1:
-            4: 8208
+            2: 8208
           0,-4:
             0: 32576
-            2: 128
+            1: 128
           -1,-4:
             0: 52800
-            2: 304
+            1: 304
           0,-3:
             0: 32762
           -1,-3:
@@ -812,84 +811,85 @@ entities:
           0,-2:
             0: 6015
           -1,-2:
-            0: 3279
-            5: 16
+            0: 3295
           -1,-1:
             0: 49134
           1,-4:
-            2: 816
+            1: 816
             0: 51336
           1,-3:
-            0: 14463
-            1: 32768
+            0: 47231
           1,-2:
-            0: 60475
-            1: 128
+            0: 60603
           1,-5:
             0: 32836
           2,-4:
             0: 16191
           2,-3:
-            0: 4867
-            1: 8192
-            4: 8
+            0: 13059
+            2: 8
           2,-2:
-            0: 30483
-            1: 32
-            4: 8
+            0: 30515
+            2: 8
           2,-5:
             0: 13107
-            4: 2048
+            2: 2048
           3,-4:
-            0: 257
+            0: 771
+            2: 8192
+          3,-5:
+            2: 8192
           -4,-1:
-            4: 32768
+            2: 32768
           -3,0:
-            4: 17487
+            2: 17487
             0: 43696
           -4,1:
-            4: 8
+            2: 8
           -3,1:
-            4: 14
+            2: 36878
             0: 224
           -3,2:
-            4: 1033
+            2: 1641
           -3,-1:
             0: 57548
-            4: 1
+            2: 1
           -2,0:
             0: 239
-            2: 57344
+            1: 57344
           -2,1:
-            4: 256
-            2: 52430
+            2: 256
+            1: 52430
           -2,-1:
             0: 58623
           -2,2:
-            2: 26220
+            1: 26220
           -2,3:
-            2: 36044
+            1: 36044
           -2,4:
-            2: 136
+            1: 136
           -1,4:
-            2: 25393
+            1: 25393
             0: 136
+          -4,-4:
+            0: 2056
+            2: 32768
+          -4,-5:
+            2: 32768
           -3,-4:
             0: 36751
           -3,-3:
-            4: 2
-            0: 8
-            1: 32768
-            6: 2048
+            2: 2
+            0: 34824
           -3,-2:
-            4: 2
+            2: 2
             0: 52360
           -3,-5:
             0: 34952
-            4: 512
+            2: 512
           -2,-4:
             0: 29491
-            2: 2176
+            1: 2176
           -2,-3:
             0: 46031
           -2,-2:
@@ -897,32 +897,32 @@ entities:
           -2,-5:
             0: 12629
           0,5:
-            2: 127
+            1: 127
           -1,5:
-            2: 206
+            1: 206
           1,-7:
-            2: 52360
+            1: 52360
           1,-6:
-            2: 76
+            1: 76
             0: 16384
           1,-8:
-            2: 32768
+            1: 32768
           2,-7:
-            2: 13073
+            1: 13073
           2,-6:
-            2: 71
+            1: 71
             0: 4368
           -3,-6:
-            2: 76
+            1: 76
           -3,-7:
-            2: 34816
+            1: 34816
           -2,-7:
-            2: 30515
+            1: 30515
           -2,-6:
-            2: 71
+            1: 71
             0: 20752
           -2,-8:
-            2: 8192
+            1: 8192
         uniqueMixes:
         - volume: 2500
           temperature: 293.15
@@ -940,40 +940,10 @@ entities:
           - 0
           - 0
         - volume: 2500
-          temperature: 293.14996
-          moles:
-          - 20.078888
-          - 75.53487
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
           temperature: 293.15
           moles:
           - 0
           - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.15
-          moles:
-          - 21.6852
-          - 81.57766
           - 0
           - 0
           - 0
@@ -989,36 +959,6 @@ entities:
           moles:
           - 0
           - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.15
-          moles:
-          - 20.078888
-          - 75.53487
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.14984
-          moles:
-          - 18.472576
-          - 69.49208
           - 0
           - 0
           - 0
@@ -4382,16 +4322,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 0.5,-13.5
       parent: 1
-    - type: ContainerContainer
-      containers:
-        ShipyardConsole-targetId: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        board: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
 - proto: ChairOfficeLight
   entities:
   - uid: 599
@@ -4688,20 +4618,6 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: ColoredLightTubeRed
-  entities:
-  - uid: 630
-    components:
-    - type: Transform
-      parent: 629
-    - type: Physics
-      canCollide: False
-  - uid: 632
-    components:
-    - type: Transform
-      parent: 631
-    - type: Physics
-      canCollide: False
 - proto: ComputerId
   entities:
   - uid: 633
@@ -4809,6 +4725,7 @@ entities:
   - uid: 580
     components:
     - type: Transform
+      rot: -1.5707963267948966 rad
       pos: -3.5,-4.5
       parent: 1
 - proto: EmergencyOxygenTankFilled
@@ -6820,12 +6737,12 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 853
-          - 852
-          - 855
-          - 854
-          - 856
           - 857
+          - 856
+          - 854
+          - 855
+          - 852
+          - 853
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -6859,14 +6776,14 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 860
-          - 859
-          - 862
-          - 861
-          - 864
-          - 863
-          - 866
           - 865
+          - 866
+          - 863
+          - 864
+          - 861
+          - 862
+          - 859
+          - 860
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -6962,6 +6879,20 @@ entities:
     - type: Transform
       pos: -6.5,-9.5
       parent: 1
+- proto: LightTubeCrystalRed
+  entities:
+  - uid: 630
+    components:
+    - type: Transform
+      parent: 629
+    - type: Physics
+      canCollide: False
+  - uid: 632
+    components:
+    - type: Transform
+      parent: 631
+    - type: Physics
+      canCollide: False
 - proto: LockerNfsdBrigmedic
   entities:
   - uid: 911
@@ -6998,6 +6929,14 @@ entities:
     components:
     - type: Transform
       pos: -1.5,-6.5
+      parent: 1
+- proto: M_Emp
+  entities:
+  - uid: 597
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -3.5,10.5
       parent: 1
 - proto: MachineElectrolysisUnit
   entities:
@@ -7181,13 +7120,6 @@ entities:
     - type: Transform
       pos: -6.1619387,-8.779635
       parent: 1
-- proto: MedkitCombatFilled
-  entities:
-  - uid: 916
-    components:
-    - type: Transform
-      pos: -6.1619387,-8.362968
-      parent: 1
 - proto: Multitool
   entities:
   - uid: 904
@@ -7287,6 +7219,23 @@ entities:
     - type: Transform
       pos: 0.5,-7.5
       parent: 1
+- proto: PowerCageHigh
+  entities:
+  - uid: 593
+    components:
+    - type: Transform
+      parent: 922
+    - type: Physics
+      canCollide: False
+- proto: PowerCageMediumEmpty
+  entities:
+  - uid: 591
+    components:
+    - type: Transform
+      parent: 917
+    - type: Physics
+      canCollide: False
+    - type: Charging
 - proto: PowerCageRecharger
   entities:
   - uid: 917
@@ -7296,6 +7245,20 @@ entities:
       parent: 1
     - type: PointLight
       enabled: False
+    - type: ContainerContainer
+      containers:
+        charger_slot: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 591
+        machine_board: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
+        machine_parts: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
   - uid: 918
     components:
     - type: Transform
@@ -7345,8 +7308,34 @@ entities:
       parent: 1
     - type: PointLight
       enabled: False
+    - type: ContainerContainer
+      containers:
+        charger_slot: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 593
+        machine_board: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
+        machine_parts: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
 - proto: PowerCageSmall
   entities:
+  - uid: 595
+    components:
+    - type: Transform
+      parent: 987
+    - type: Physics
+      canCollide: False
+  - uid: 596
+    components:
+    - type: Transform
+      parent: 989
+    - type: Physics
+      canCollide: False
   - uid: 919
     components:
     - type: Transform
@@ -7484,7 +7473,37 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 1.5,16.5
       parent: 1
-- proto: PoweredlightColoredRed
+- proto: PoweredLightPostSmallRed
+  entities:
+  - uid: 629
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 7.5,-28.5
+      parent: 1
+    - type: ContainerContainer
+      containers:
+        light_bulb: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 630
+    - type: ApcPowerReceiver
+      powerLoad: 25
+  - uid: 631
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -6.5,-28.5
+      parent: 1
+    - type: ContainerContainer
+      containers:
+        light_bulb: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 632
+    - type: ApcPowerReceiver
+      powerLoad: 25
+- proto: PoweredlightRed
   entities:
   - uid: 936
     components:
@@ -7590,36 +7609,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -11.5,-13.5
       parent: 1
-- proto: PoweredLightPostSmallRed
-  entities:
-  - uid: 629
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 7.5,-28.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        light_bulb: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 630
-    - type: ApcPowerReceiver
-      powerLoad: 25
-  - uid: 631
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -6.5,-28.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        light_bulb: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 632
-    - type: ApcPowerReceiver
-      powerLoad: 25
 - proto: PoweredSmallLight
   entities:
   - uid: 954
@@ -7852,6 +7841,20 @@ entities:
       rot: 3.141592653589793 rad
       pos: 1.5,17.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        machine_board: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
+        machine_parts: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
+        gun_magazine: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 595
     missingComponents:
     - Anchorable
     - Construction
@@ -7870,6 +7873,20 @@ entities:
       rot: 3.141592653589793 rad
       pos: -2.5,14.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        machine_board: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
+        machine_parts: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
+        gun_magazine: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 596
     missingComponents:
     - Anchorable
     - Construction
@@ -8362,11 +8379,6 @@ entities:
     components:
     - type: Transform
       pos: 4.5,10.5
-      parent: 1
-  - uid: 591
-    components:
-    - type: Transform
-      pos: -3.5,10.5
       parent: 1
   - uid: 634
     components:
@@ -10365,7 +10377,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 5.5,-1.5
       parent: 1
-- proto: WarpPointShip
+- proto: WarpPoint
   entities:
   - uid: 1408
     components:

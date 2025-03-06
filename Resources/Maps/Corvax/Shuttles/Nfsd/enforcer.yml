@@ -197,8 +197,8 @@ entities:
       type: GridAtmosphere
     - type: GasTileOverlay
     - type: RadiationGridResistance
-    - id: Enforcer
-      type: BecomesStation
+    - type: BecomesStation
+      id: Enforcer
     - nextUpdate: 0
       type: SpreaderGrid
 - proto: AirlockBrigGlassLocked

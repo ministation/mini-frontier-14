@@ -545,6 +545,8 @@ entities:
       shakeTimes: 10
     - type: GasTileOverlay
     - type: SpreaderGrid
+    - type: BecomesStation
+      id: Infiltrator
     - type: GridPathfinding
 - proto: ActionToggleLight
   entities:
