@@ -1,6 +1,6 @@
 - type: entity # Port From SS14 Corvax-Next
   id: ExecutionChair
-  parent: BaseStructureDynamic
+  parent: BaseStructure
   name: execution chair
   description: Looks comfy.
   components:
