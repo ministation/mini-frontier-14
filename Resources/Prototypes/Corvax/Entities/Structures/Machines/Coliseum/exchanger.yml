@@ -41,6 +41,7 @@
     runningState: icon
     staticRecipes:
       - ColiseumCoinExchangerRecipe
+      - HolyPlushieOrangeFoxRecipe
   - type: MaterialStorage
     whitelist:
       tags:

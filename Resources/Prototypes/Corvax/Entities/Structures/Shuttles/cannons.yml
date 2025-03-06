@@ -102,6 +102,10 @@
   description: A small stationary grenade launcher that holds 2 grenades.
   suffix: Coliseum
   components:
+  - type: Sprite
+    sprite: Corvax/Objects/Weapons/Guns/Shuttles/launcher.rsi
+    layers:
+    - state: exp-320g
   - type: BallisticAmmoProvider
     whitelist:
       tags:
@@ -114,6 +118,10 @@
   description: A powerful stationary grenade launcher. A cartridge is required for use.
   suffix: Coliseum
   components:
+  - type: Sprite
+    sprite: Corvax/Objects/Weapons/Guns/Shuttles/launcher.rsi
+    layers:
+    - state: exp-2100g
   - type: ItemSlots
     slots:
       gun_magazine:

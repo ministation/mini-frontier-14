@@ -2,6 +2,6 @@
   id: ColiseumCoin
   stackEntity: ColiseumCoin
   name: materials-coliseum-coin
-  icon: { sprite: _NF/Objects/Specific/Security/frontieruplinkcoin.rsi, state: frontieruplinkcoin }
+  icon: { sprite: Corvax/Objects/Materials/Coliseum/coliseum_coin.rsi, state: coin }
   color: "#a8ccd7"
   price: 0.075

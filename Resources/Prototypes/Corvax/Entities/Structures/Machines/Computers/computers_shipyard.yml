@@ -60,9 +60,9 @@
     - map: ["computerLayerKeyboard"]
       state: generic_keyboard
     - map: ["computerLayerScreen"]
-      state: shipyard_security
+      state: shipyard_coliseum
     - map: ["computerLayerKeys"]
-      state: telesci_key
+      state: generic_keys
   - type: ShipyardConsole
     targetIdSlot:
       name: id-card-console-target-id

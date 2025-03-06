@@ -1,6 +1,6 @@
 - type: stack
   id: ColiseumCoin
   name: coliseum coin
-  icon: { sprite: _NF/Objects/Specific/Security/frontieruplinkcoin.rsi, state: frontieruplinkcoin }
+  icon: { sprite: Corvax/Objects/Materials/Coliseum/coliseum_coin.rsi, state: coin }
   spawn: ColiseumCoin
   maxCount: 10
