@@ -23,6 +23,7 @@ entities:
     - type: MovedGrids
     - type: Broadphase
     - type: OccluderTree
+    - type: LoadedMap
   - uid: 2
     components:
     - type: MetaData
@@ -169,40 +170,40 @@ entities:
         tiles:
           0,0:
             0: 4927
-            2: 34816
+            1: 34816
           0,-1:
             0: 45619
-            2: 2056
-            1: 128
+            1: 2056
+            2: 128
           -1,0:
             0: 2191
-            1: 16
-            2: 8704
+            2: 16
+            1: 8704
           0,1:
             0: 819
-            1: 16384
-            2: 2176
+            2: 16384
+            1: 2176
           -1,1:
             0: 2184
-            2: 544
-            1: 16384
+            1: 544
+            2: 16384
           1,0:
             0: 1
-            1: 16
+            2: 16
           -1,-1:
             0: 41096
-            2: 771
-            1: 48
+            1: 771
+            2: 48
           -1,-2:
-            1: 16
-            2: 2112
+            2: 16
+            1: 2112
           0,-2:
-            2: 832
+            1: 832
           1,-2:
-            1: 16
+            2: 16
           1,-1:
-            2: 257
-            1: 16
+            1: 257
+            2: 16
         uniqueMixes:
         - volume: 2500
           temperature: 293.15
@@ -220,7 +221,7 @@ entities:
           - 0
           - 0
         - volume: 2500
-          immutable: True
+          temperature: 293.15
           moles:
           - 0
           - 0
@@ -235,7 +236,7 @@ entities:
           - 0
           - 0
         - volume: 2500
-          temperature: 293.15
+          immutable: True
           moles:
           - 0
           - 0
@@ -2337,5 +2338,12 @@ entities:
     components:
     - type: Transform
       pos: -0.5,3.5
+      parent: 2
+- proto: WarpPoint
+  entities:
+  - uid: 309
+    components:
+    - type: Transform
+      pos: 0.5,0.5
       parent: 2
 ...
