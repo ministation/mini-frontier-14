@@ -255,7 +255,7 @@ entities:
       pos: 1.5,-0.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -553.71136
+      secondsUntilStateChange: -620.3144
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -483,6 +483,16 @@ entities:
     - type: Transform
       pos: 2.5,9.5
       parent: 2
+  - uid: 29
+    components:
+    - type: Transform
+      pos: 0.5,0.5
+      parent: 2
+  - uid: 30
+    components:
+    - type: Transform
+      pos: 0.5,-1.5
+      parent: 2
   - uid: 55
     components:
     - type: Transform
@@ -572,6 +582,71 @@ entities:
     components:
     - type: Transform
       pos: 0.5,7.5
+      parent: 2
+  - uid: 269
+    components:
+    - type: Transform
+      pos: 0.5,-0.5
+      parent: 2
+  - uid: 270
+    components:
+    - type: Transform
+      pos: -0.5,-1.5
+      parent: 2
+  - uid: 271
+    components:
+    - type: Transform
+      pos: -0.5,-2.5
+      parent: 2
+  - uid: 272
+    components:
+    - type: Transform
+      pos: -0.5,-3.5
+      parent: 2
+  - uid: 273
+    components:
+    - type: Transform
+      pos: -1.5,-2.5
+      parent: 2
+  - uid: 274
+    components:
+    - type: Transform
+      pos: 1.5,10.5
+      parent: 2
+  - uid: 275
+    components:
+    - type: Transform
+      pos: 2.5,10.5
+      parent: 2
+  - uid: 276
+    components:
+    - type: Transform
+      pos: 2.5,11.5
+      parent: 2
+  - uid: 277
+    components:
+    - type: Transform
+      pos: 3.5,11.5
+      parent: 2
+  - uid: 278
+    components:
+    - type: Transform
+      pos: 2.5,1.5
+      parent: 2
+  - uid: 279
+    components:
+    - type: Transform
+      pos: 2.5,2.5
+      parent: 2
+  - uid: 280
+    components:
+    - type: Transform
+      pos: 2.5,3.5
+      parent: 2
+  - uid: 281
+    components:
+    - type: Transform
+      pos: 2.5,4.5
       parent: 2
 - proto: CableHV
   entities:
@@ -945,20 +1020,6 @@ entities:
     components:
     - type: Transform
       pos: 1.5,11.5
-      parent: 2
-- proto: CurtainsBlackOpen
-  entities:
-  - uid: 29
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 0.5,8.5
-      parent: 2
-  - uid: 30
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 0.5,3.5
       parent: 2
 - proto: DefibrillatorCabinetFilled
   entities:

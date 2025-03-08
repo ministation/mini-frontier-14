@@ -531,7 +531,7 @@ entities:
   - uid: 15
     components:
     - type: Transform
-      pos: 1.4037349,-2.5816512
+      pos: 1.2770476,-0.4926232
       parent: 201
   - uid: 17
     components:
@@ -541,7 +541,7 @@ entities:
   - uid: 20
     components:
     - type: Transform
-      pos: 1.1433182,-2.321054
+      pos: 1.6364226,-0.2738732
       parent: 201
 - proto: CannonBallGlassshot
   entities:
@@ -549,6 +549,12 @@ entities:
     components:
     - type: Transform
       pos: 1.7579015,-2.602499
+      parent: 201
+  - uid: 273
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 1.6676726,-0.6762389
       parent: 201
 - proto: CarpetBlack
   entities:
@@ -1346,6 +1352,12 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 1.5,-2.5
       parent: 201
+  - uid: 272
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 1.5,-0.5
+      parent: 201
 - proto: ReinforcedWindow
   entities:
   - uid: 4
@@ -1521,10 +1533,8 @@ entities:
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
-      pos: 1.5,-0.5
+      pos: 2.5,-0.5
       parent: 201
-    missingComponents:
-    - Anchorable
   - uid: 229
     components:
     - type: Transform
@@ -1705,58 +1715,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -5.5,-4.5
       parent: 201
-- proto: WallMining
-  entities:
-  - uid: 114
-    components:
-    - type: Transform
-      pos: -4.5,1.5
-      parent: 201
-  - uid: 115
-    components:
-    - type: Transform
-      pos: -3.5,4.5
-      parent: 201
-  - uid: 131
-    components:
-    - type: Transform
-      pos: -1.5,1.5
-      parent: 201
-  - uid: 134
-    components:
-    - type: Transform
-      pos: -1.5,0.5
-      parent: 201
-  - uid: 136
-    components:
-    - type: Transform
-      pos: -0.5,4.5
-      parent: 201
-  - uid: 139
-    components:
-    - type: Transform
-      pos: 0.5,0.5
-      parent: 201
-  - uid: 144
-    components:
-    - type: Transform
-      pos: -3.5,1.5
-      parent: 201
-  - uid: 151
-    components:
-    - type: Transform
-      pos: 2.5,0.5
-      parent: 201
-  - uid: 152
-    components:
-    - type: Transform
-      pos: 2.5,4.5
-      parent: 201
-  - uid: 200
-    components:
-    - type: Transform
-      pos: -3.5,2.5
-      parent: 201
 - proto: WallWood
   entities:
   - uid: 10
@@ -1769,6 +1727,48 @@ entities:
     - type: Transform
       pos: -6.5,-2.5
       parent: 201
+  - uid: 114
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -4.5,1.5
+      parent: 201
+  - uid: 115
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -3.5,4.5
+      parent: 201
+  - uid: 131
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -1.5,1.5
+      parent: 201
+  - uid: 134
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -1.5,0.5
+      parent: 201
+  - uid: 136
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -0.5,4.5
+      parent: 201
+  - uid: 139
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 0.5,0.5
+      parent: 201
+  - uid: 144
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -3.5,1.5
+      parent: 201
   - uid: 146
     components:
     - type: Transform
@@ -1778,6 +1778,18 @@ entities:
     components:
     - type: Transform
       pos: -6.5,1.5
+      parent: 201
+  - uid: 151
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 2.5,0.5
+      parent: 201
+  - uid: 152
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 2.5,4.5
       parent: 201
   - uid: 155
     components:
@@ -1828,6 +1840,12 @@ entities:
     components:
     - type: Transform
       pos: -1.5,-3.5
+      parent: 201
+  - uid: 200
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -3.5,2.5
       parent: 201
   - uid: 204
     components:

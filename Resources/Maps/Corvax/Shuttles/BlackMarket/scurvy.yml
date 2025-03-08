@@ -1197,7 +1197,7 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: BecomesStation
-      id: scurvy
+      id: Apothecary
     - type: NavMap
     - type: SalvageMobRestrictionsGrid
       mobsToKill: []
@@ -1243,17 +1243,17 @@ entities:
     - type: Transform
       pos: 6.5,-1.5
       parent: 1
-- proto: AirlockGlassShuttle
+- proto: AirlockGlassShuttleSyndicate
   entities:
   - uid: 9
     components:
     - type: Transform
-      pos: 1.5,-4.5
+      pos: -0.5,-4.5
       parent: 1
-  - uid: 405
+  - uid: 59
     components:
     - type: Transform
-      pos: -0.5,-4.5
+      pos: 1.5,-4.5
       parent: 1
 - proto: AirlockMining
   entities:
@@ -1327,165 +1327,165 @@ entities:
       parent: 1
 - proto: AtmosFixBlockerMarker
   entities:
-  - uid: 4
-    components:
-    - type: Transform
-      pos: -3.5,2.5
-      parent: 1
-  - uid: 59
-    components:
-    - type: Transform
-      pos: -4.5,3.5
-      parent: 1
-  - uid: 165
-    components:
-    - type: Transform
-      pos: -4.5,7.5
-      parent: 1
-  - uid: 425
-    components:
-    - type: Transform
-      pos: -3.5,10.5
-      parent: 1
-  - uid: 426
-    components:
-    - type: Transform
-      pos: 0.5,10.5
-      parent: 1
-  - uid: 427
-    components:
-    - type: Transform
-      pos: 1.5,8.5
-      parent: 1
-  - uid: 428
-    components:
-    - type: Transform
-      pos: 2.5,8.5
-      parent: 1
-  - uid: 429
-    components:
-    - type: Transform
-      pos: 3.5,8.5
-      parent: 1
-  - uid: 430
-    components:
-    - type: Transform
-      pos: 4.5,8.5
-      parent: 1
-  - uid: 431
-    components:
-    - type: Transform
-      pos: 5.5,7.5
-      parent: 1
-  - uid: 432
-    components:
-    - type: Transform
-      pos: 5.5,3.5
-      parent: 1
-  - uid: 433
-    components:
-    - type: Transform
-      pos: 4.5,2.5
-      parent: 1
-  - uid: 434
-    components:
-    - type: Transform
-      pos: 5.5,1.5
-      parent: 1
-  - uid: 435
-    components:
-    - type: Transform
-      pos: 7.5,1.5
-      parent: 1
-  - uid: 436
-    components:
-    - type: Transform
-      pos: 6.5,1.5
-      parent: 1
-  - uid: 437
-    components:
-    - type: Transform
-      pos: 7.5,-0.5
-      parent: 1
-  - uid: 438
-    components:
-    - type: Transform
-      pos: 7.5,-1.5
-      parent: 1
-  - uid: 439
-    components:
-    - type: Transform
-      pos: 7.5,-2.5
-      parent: 1
-  - uid: 440
-    components:
-    - type: Transform
-      pos: 7.5,-4.5
-      parent: 1
-  - uid: 441
-    components:
-    - type: Transform
-      pos: 6.5,-4.5
-      parent: 1
-  - uid: 442
-    components:
-    - type: Transform
-      pos: 5.5,-4.5
-      parent: 1
-  - uid: 443
-    components:
-    - type: Transform
-      pos: 4.5,-4.5
-      parent: 1
-  - uid: 444
-    components:
-    - type: Transform
-      pos: -3.5,-4.5
-      parent: 1
-  - uid: 445
-    components:
-    - type: Transform
-      pos: -4.5,-4.5
-      parent: 1
-  - uid: 446
-    components:
-    - type: Transform
-      pos: -5.5,-4.5
-      parent: 1
-  - uid: 447
-    components:
-    - type: Transform
-      pos: -6.5,-4.5
-      parent: 1
-  - uid: 448
-    components:
-    - type: Transform
-      pos: -6.5,-2.5
-      parent: 1
-  - uid: 449
+  - uid: 25
     components:
     - type: Transform
       pos: -6.5,-1.5
       parent: 1
-  - uid: 450
+  - uid: 39
+    components:
+    - type: Transform
+      pos: -6.5,-4.5
+      parent: 1
+  - uid: 48
+    components:
+    - type: Transform
+      pos: -6.5,-2.5
+      parent: 1
+  - uid: 139
     components:
     - type: Transform
       pos: -6.5,-0.5
       parent: 1
-  - uid: 451
+  - uid: 165
     components:
     - type: Transform
       pos: -6.5,1.5
       parent: 1
-  - uid: 452
+  - uid: 273
     components:
     - type: Transform
       pos: -5.5,1.5
       parent: 1
-  - uid: 453
+  - uid: 321
     components:
     - type: Transform
       pos: -4.5,1.5
+      parent: 1
+  - uid: 405
+    components:
+    - type: Transform
+      pos: -3.5,2.5
+      parent: 1
+  - uid: 425
+    components:
+    - type: Transform
+      pos: -4.5,3.5
+      parent: 1
+  - uid: 426
+    components:
+    - type: Transform
+      pos: -5.5,-4.5
+      parent: 1
+  - uid: 427
+    components:
+    - type: Transform
+      pos: -4.5,-4.5
+      parent: 1
+  - uid: 428
+    components:
+    - type: Transform
+      pos: -3.5,-4.5
+      parent: 1
+  - uid: 429
+    components:
+    - type: Transform
+      pos: 4.5,-4.5
+      parent: 1
+  - uid: 430
+    components:
+    - type: Transform
+      pos: 5.5,-4.5
+      parent: 1
+  - uid: 431
+    components:
+    - type: Transform
+      pos: 6.5,-4.5
+      parent: 1
+  - uid: 432
+    components:
+    - type: Transform
+      pos: 7.5,-4.5
+      parent: 1
+  - uid: 433
+    components:
+    - type: Transform
+      pos: 7.5,-2.5
+      parent: 1
+  - uid: 434
+    components:
+    - type: Transform
+      pos: 7.5,-1.5
+      parent: 1
+  - uid: 435
+    components:
+    - type: Transform
+      pos: 7.5,-0.5
+      parent: 1
+  - uid: 436
+    components:
+    - type: Transform
+      pos: 7.5,1.5
+      parent: 1
+  - uid: 437
+    components:
+    - type: Transform
+      pos: 6.5,1.5
+      parent: 1
+  - uid: 438
+    components:
+    - type: Transform
+      pos: 5.5,1.5
+      parent: 1
+  - uid: 439
+    components:
+    - type: Transform
+      pos: 4.5,2.5
+      parent: 1
+  - uid: 440
+    components:
+    - type: Transform
+      pos: 5.5,3.5
+      parent: 1
+  - uid: 441
+    components:
+    - type: Transform
+      pos: -4.5,7.5
+      parent: 1
+  - uid: 442
+    components:
+    - type: Transform
+      pos: -3.5,10.5
+      parent: 1
+  - uid: 443
+    components:
+    - type: Transform
+      pos: 0.5,10.5
+      parent: 1
+  - uid: 444
+    components:
+    - type: Transform
+      pos: 1.5,8.5
+      parent: 1
+  - uid: 445
+    components:
+    - type: Transform
+      pos: 2.5,8.5
+      parent: 1
+  - uid: 446
+    components:
+    - type: Transform
+      pos: 3.5,8.5
+      parent: 1
+  - uid: 447
+    components:
+    - type: Transform
+      pos: 4.5,8.5
+      parent: 1
+  - uid: 448
+    components:
+    - type: Transform
+      pos: 5.5,7.5
       parent: 1
 - proto: BarSignEmergencyRumParty
   entities:
@@ -1883,50 +1883,33 @@ entities:
   - uid: 26
     components:
     - type: Transform
-      pos: 4.5,6.5
-      parent: 1
+      parent: 402
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
   - uid: 35
     components:
     - type: Transform
-      pos: 4.5,6.5
-      parent: 1
+      parent: 402
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
   - uid: 43
     components:
     - type: Transform
-      pos: 4.5,6.5
-      parent: 1
+      parent: 402
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: CannonBallEmp
   entities:
   - uid: 24
     components:
     - type: Transform
-      pos: 4.5,6.5
-      parent: 1
-  - uid: 25
-    components:
-    - type: Transform
-      pos: 4.5,6.5
-      parent: 1
-  - uid: 39
-    components:
-    - type: Transform
-      pos: 4.5,6.5
-      parent: 1
-  - uid: 48
-    components:
-    - type: Transform
-      pos: 4.5,6.5
-      parent: 1
-  - uid: 139
-    components:
-    - type: Transform
-      pos: 4.5,6.5
-      parent: 1
-  - uid: 273
-    components:
-    - type: Transform
-      pos: 4.5,6.5
-      parent: 1
+      parent: 402
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: CardBoxBlack
   entities:
   - uid: 403
@@ -2133,16 +2116,6 @@ entities:
     - type: Transform
       pos: -0.5,9.5
       parent: 1
-- proto: ComputerWallmountWithdrawBankATM
-  entities:
-  - uid: 321
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 2.5,-0.5
-      parent: 1
-    - type: WiresPanel
-      open: True
 - proto: CrateChemistryD
   entities:
   - uid: 163
@@ -2150,6 +2123,24 @@ entities:
     - type: Transform
       pos: 3.5,-2.5
       parent: 1
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14923
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
 - proto: CrateChemistryP
   entities:
   - uid: 362
@@ -2157,6 +2148,24 @@ entities:
     - type: Transform
       pos: 5.5,-2.5
       parent: 1
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14923
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
 - proto: CrateFreezer
   entities:
   - uid: 334
@@ -3747,6 +3756,24 @@ entities:
     - type: Transform
       pos: 3.5,0.5
       parent: 1
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14923
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
 - proto: TableCounterWood
   entities:
   - uid: 54
@@ -3855,6 +3882,13 @@ entities:
       parent: 1
     - type: WiresPanel
       open: True
+- proto: VendingMachineTankDispenserEVAPOI
+  entities:
+  - uid: 4
+    components:
+    - type: Transform
+      pos: 0.5,-3.5
+      parent: 1
 - proto: WallMining
   entities:
   - uid: 41
@@ -4314,32 +4348,14 @@ entities:
     - type: Transform
       pos: 4.5,6.5
       parent: 1
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape: !type:PolygonShape
-            radius: 0.01
-            vertices:
-            - -0.2,-0.3
-            - 0.2,-0.3
-            - 0.2,0.4
-            - -0.2,0.4
-          mask:
-          - Impassable
-          - LowImpassable
-          layer:
-          - BulletImpassable
-          - Opaque
-          density: 150
-          hard: True
-          restitution: 0
-          friction: 0.4
     - type: EntityStorage
       air:
         volume: 200
         immutable: False
         temperature: 293.14923
         moles:
+        - 1.7459903
+        - 6.568249
         - 0
         - 0
         - 0
@@ -4350,10 +4366,18 @@ entities:
         - 0
         - 0
         - 0
-        - 0
-        - 0
-      open: True
-      removedMasks: 20
-    - type: PlaceableSurface
-      isPlaceable: True
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 26
+          - 43
+          - 35
+          - 24
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
 ...
