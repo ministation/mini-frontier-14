@@ -9,5 +9,5 @@ public sealed partial class NFAdventureRuleComponent : Component
     public List<EntityUid> RequiredPois = new();
     public List<EntityUid> OptionalPois = new();
     public List<EntityUid> UniquePois = new();
-    public List<EntityUid> ColiseiPois = new(); /// Corvax-Frontier
+    public List<EntityUid> ColiseiPois = new(); // Corvax-Frontier
 }
