@@ -10,7 +10,13 @@
   - type: IFF
     color: "#8e6444"
   - type: ProtectedGrid
-    preventEmpEvents: true
+    preventArtifactTriggers: True
+    preventExplosions: True
+    preventEmpEvents: True
+    preventRCDUse: True
+    preventFloorPlacement: True
+    preventFloorRemoval: True
+    killHostileMobs: True
 
 
 - type: gameMap

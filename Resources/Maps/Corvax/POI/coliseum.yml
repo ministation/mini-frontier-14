@@ -104,8 +104,8 @@ entities:
     - type: Broadphase
     - type: Physics
       bodyStatus: InAir
-      angularDamping: 0.05
-      linearDamping: 0.05
+      angularDamping: 999999
+      linearDamping: 999999
       fixedRotation: False
       bodyType: Dynamic
     - type: Fixtures
@@ -113,6 +113,8 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
     - type: Shuttle
+      angularDamping: 999999
+      linearDamping: 999999
     - type: GridPathfinding
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
@@ -1263,6 +1265,16 @@ entities:
     - type: BecomesStation
       id: coliseum
     - type: RadiationGridResistance
+    - type: ProtectedGrid
+      hostileMobKillSound: !type:SoundPathSpecifier
+        path: /Audio/Effects/holy.ogg
+      killHostileMobs: True
+      preventArtifactTriggers: True
+      preventExplosions: True
+      preventEmpEvents: True
+      preventRCDUse: True
+      preventFloorPlacement: True
+      preventFloorRemoval: True
 - proto: AirAlarm
   entities:
   - uid: 2812
@@ -1751,208 +1763,316 @@ entities:
     - type: Transform
       pos: 45.5,-1.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 64
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 15.5,29.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 69
     components:
     - type: Transform
       pos: 47.5,-1.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 164
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 15.5,28.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 1249
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 47.5,6.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 1345
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 18.5,32.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 1470
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 46.5,6.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 1478
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 50.5,3.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 1541
     components:
     - type: Transform
       pos: 46.5,-1.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2649
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 50.5,1.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2650
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 50.5,2.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2651
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 45.5,6.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2656
     components:
     - type: Transform
       pos: -8.5,-1.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2657
     components:
     - type: Transform
       pos: -7.5,-1.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2658
     components:
     - type: Transform
       pos: -6.5,-1.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2659
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -11.5,2.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2660
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -11.5,3.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2661
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -11.5,1.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2662
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -8.5,6.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2663
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -7.5,6.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2664
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -6.5,6.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2830
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 20.5,32.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2831
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 15.5,27.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2833
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 23.5,29.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2835
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 23.5,28.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2869
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 19.5,32.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2873
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 23.5,27.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2909
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 15.5,-24.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2910
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 15.5,-25.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2911
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 15.5,-26.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2912
     components:
     - type: Transform
       pos: 18.5,-29.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2913
     components:
     - type: Transform
       pos: 19.5,-29.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2914
     components:
     - type: Transform
       pos: 20.5,-29.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2915
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 23.5,-26.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2916
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 23.5,-25.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible
   - uid: 2917
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 23.5,-24.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Destructible 
 - proto: AirlockHatchMaintenance
   entities:
   - uid: 41
