@@ -120,25 +120,6 @@
           - PirateUplink
 
 - type: listing
-  id: UplinkPirateHoverbike
-  name:  uplink-pirate-hoverbike-name
-  description: uplink-pirate-hoverbike-desc
-  productEntity: VehicleHoverbikePirateKey
-  icon: { sprite: _NF/Objects/Vehicles/hoverbike.rsi, state: keys }
-  cost:
-    Doubloon: 10
-  categories:
-    - UplinkPirateUtility
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - PirateUplink
-    - !type:BuyerJobCondition
-      whitelist:
-        - PirateCaptain
-
-- type: listing
   id: UplinkPirateBlunderbuss
   name:  uplink-pirate-blunderbuss-name
   description: uplink-pirate-blunderbuss-desc

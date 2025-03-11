@@ -433,7 +433,7 @@ entities:
           -1,0:
             0: 61006
           0,1:
-            0: 59967
+            0: 59455
           -1,1:
             0: 57998
           0,2:
@@ -468,9 +468,9 @@ entities:
             0: 51200
             1: 256
           0,-2:
-            0: 51711
+            0: 49663
           -1,-2:
-            0: 25326
+            0: 24814
           -1,-1:
             0: 58606
           1,-3:
@@ -579,40 +579,25 @@ entities:
       parent: 1
 - proto: AirlockHatch
   entities:
-  - uid: 438
+  - uid: 356
     components:
     - type: Transform
       pos: -1.5,1.5
       parent: 1
-  - uid: 439
-    components:
-    - type: Transform
-      pos: -1.5,-1.5
-      parent: 1
-  - uid: 454
+  - uid: 358
     components:
     - type: Transform
       pos: 2.5,-1.5
       parent: 1
-  - uid: 455
+  - uid: 401
     components:
     - type: Transform
-      pos: -2.5,-5.5
+      pos: -1.5,-1.5
       parent: 1
-  - uid: 458
+  - uid: 402
     components:
     - type: Transform
       pos: 2.5,1.5
-      parent: 1
-  - uid: 459
-    components:
-    - type: Transform
-      pos: 1.5,6.5
-      parent: 1
-  - uid: 471
-    components:
-    - type: Transform
-      pos: 3.5,-5.5
       parent: 1
 - proto: APCBasic
   entities:
@@ -2252,48 +2237,25 @@ entities:
       parent: 1
 - proto: CurtainsBlackOpen
   entities:
-  - uid: 644
-    components:
-    - type: Transform
-      pos: -1.5,-1.5
-      parent: 1
-  - uid: 645
+  - uid: 371
     components:
     - type: Transform
       pos: -1.5,1.5
       parent: 1
-  - uid: 646
-    components:
-    - type: Transform
-      pos: 2.5,1.5
-      parent: 1
-  - uid: 647
+  - uid: 378
     components:
     - type: Transform
       pos: 2.5,-1.5
       parent: 1
-  - uid: 648
+  - uid: 380
     components:
     - type: Transform
-      pos: 1.5,6.5
+      pos: 2.5,1.5
       parent: 1
-  - uid: 649
+  - uid: 403
     components:
     - type: Transform
-      pos: -2.5,-5.5
-      parent: 1
-  - uid: 650
-    components:
-    - type: Transform
-      pos: 3.5,-5.5
-      parent: 1
-- proto: DefibrillatorCabinetFilled
-  entities:
-  - uid: 202
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 1.5,-4.5
+      pos: -1.5,-1.5
       parent: 1
 - proto: DresserFilled
   entities:
@@ -3843,11 +3805,6 @@ entities:
     - type: Transform
       pos: -0.5,2.5
       parent: 1
-  - uid: 380
-    components:
-    - type: Transform
-      pos: 2.5,10.5
-      parent: 1
   - uid: 381
     components:
     - type: Transform
@@ -3864,6 +3821,11 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 0.5,2.5
+      parent: 1
+  - uid: 647
+    components:
+    - type: Transform
+      pos: 2.5,10.5
       parent: 1
 - proto: TableWood
   entities:
@@ -3967,178 +3929,6 @@ entities:
     components:
     - type: Transform
       pos: 2.5,-4.5
-      parent: 1
-- proto: WallMining
-  entities:
-  - uid: 356
-    components:
-    - type: Transform
-      pos: -4.5,-1.5
-      parent: 1
-  - uid: 358
-    components:
-    - type: Transform
-      pos: -4.5,-5.5
-      parent: 1
-  - uid: 371
-    components:
-    - type: Transform
-      pos: -3.5,-5.5
-      parent: 1
-  - uid: 372
-    components:
-    - type: Transform
-      pos: -3.5,-1.5
-      parent: 1
-  - uid: 378
-    components:
-    - type: Transform
-      pos: -4.5,1.5
-      parent: 1
-  - uid: 379
-    components:
-    - type: Transform
-      pos: -3.5,1.5
-      parent: 1
-  - uid: 401
-    components:
-    - type: Transform
-      pos: -4.5,5.5
-      parent: 1
-  - uid: 402
-    components:
-    - type: Transform
-      pos: -3.5,5.5
-      parent: 1
-  - uid: 403
-    components:
-    - type: Transform
-      pos: 4.5,5.5
-      parent: 1
-  - uid: 404
-    components:
-    - type: Transform
-      pos: 5.5,5.5
-      parent: 1
-  - uid: 405
-    components:
-    - type: Transform
-      pos: 4.5,1.5
-      parent: 1
-  - uid: 406
-    components:
-    - type: Transform
-      pos: 5.5,1.5
-      parent: 1
-  - uid: 407
-    components:
-    - type: Transform
-      pos: 4.5,-1.5
-      parent: 1
-  - uid: 408
-    components:
-    - type: Transform
-      pos: 5.5,-1.5
-      parent: 1
-  - uid: 409
-    components:
-    - type: Transform
-      pos: 4.5,-5.5
-      parent: 1
-  - uid: 410
-    components:
-    - type: Transform
-      pos: 5.5,-5.5
-      parent: 1
-  - uid: 411
-    components:
-    - type: Transform
-      pos: -3.5,-8.5
-      parent: 1
-  - uid: 412
-    components:
-    - type: Transform
-      pos: -2.5,-8.5
-      parent: 1
-  - uid: 413
-    components:
-    - type: Transform
-      pos: -2.5,-9.5
-      parent: 1
-  - uid: 414
-    components:
-    - type: Transform
-      pos: 3.5,-9.5
-      parent: 1
-  - uid: 415
-    components:
-    - type: Transform
-      pos: 3.5,-8.5
-      parent: 1
-  - uid: 416
-    components:
-    - type: Transform
-      pos: 4.5,-8.5
-      parent: 1
-  - uid: 417
-    components:
-    - type: Transform
-      pos: 4.5,9.5
-      parent: 1
-  - uid: 418
-    components:
-    - type: Transform
-      pos: 3.5,9.5
-      parent: 1
-  - uid: 419
-    components:
-    - type: Transform
-      pos: 3.5,10.5
-      parent: 1
-  - uid: 422
-    components:
-    - type: Transform
-      pos: -2.5,10.5
-      parent: 1
-  - uid: 423
-    components:
-    - type: Transform
-      pos: -2.5,9.5
-      parent: 1
-  - uid: 424
-    components:
-    - type: Transform
-      pos: -3.5,9.5
-      parent: 1
-  - uid: 425
-    components:
-    - type: Transform
-      pos: -1.5,-9.5
-      parent: 1
-  - uid: 426
-    components:
-    - type: Transform
-      pos: 2.5,-9.5
-      parent: 1
-  - uid: 433
-    components:
-    - type: Transform
-      pos: -2.5,-1.5
-      parent: 1
-  - uid: 434
-    components:
-    - type: Transform
-      pos: -2.5,1.5
-      parent: 1
-  - uid: 435
-    components:
-    - type: Transform
-      pos: 3.5,1.5
-      parent: 1
-  - uid: 436
-    components:
-    - type: Transform
-      pos: 3.5,-1.5
       parent: 1
 - proto: WallWood
   entities:
@@ -4317,6 +4107,178 @@ entities:
     - type: Transform
       pos: 0.5,9.5
       parent: 1
+- proto: WallWoodForced
+  entities:
+  - uid: 405
+    components:
+    - type: Transform
+      pos: -4.5,-1.5
+      parent: 1
+  - uid: 406
+    components:
+    - type: Transform
+      pos: -4.5,-5.5
+      parent: 1
+  - uid: 407
+    components:
+    - type: Transform
+      pos: -3.5,-5.5
+      parent: 1
+  - uid: 408
+    components:
+    - type: Transform
+      pos: -3.5,-1.5
+      parent: 1
+  - uid: 409
+    components:
+    - type: Transform
+      pos: -4.5,1.5
+      parent: 1
+  - uid: 410
+    components:
+    - type: Transform
+      pos: -3.5,1.5
+      parent: 1
+  - uid: 411
+    components:
+    - type: Transform
+      pos: -4.5,5.5
+      parent: 1
+  - uid: 412
+    components:
+    - type: Transform
+      pos: -3.5,5.5
+      parent: 1
+  - uid: 413
+    components:
+    - type: Transform
+      pos: 4.5,5.5
+      parent: 1
+  - uid: 414
+    components:
+    - type: Transform
+      pos: 5.5,5.5
+      parent: 1
+  - uid: 415
+    components:
+    - type: Transform
+      pos: 4.5,1.5
+      parent: 1
+  - uid: 416
+    components:
+    - type: Transform
+      pos: 5.5,1.5
+      parent: 1
+  - uid: 417
+    components:
+    - type: Transform
+      pos: 4.5,-1.5
+      parent: 1
+  - uid: 418
+    components:
+    - type: Transform
+      pos: 5.5,-1.5
+      parent: 1
+  - uid: 419
+    components:
+    - type: Transform
+      pos: 4.5,-5.5
+      parent: 1
+  - uid: 422
+    components:
+    - type: Transform
+      pos: 5.5,-5.5
+      parent: 1
+  - uid: 423
+    components:
+    - type: Transform
+      pos: -3.5,-8.5
+      parent: 1
+  - uid: 424
+    components:
+    - type: Transform
+      pos: -2.5,-8.5
+      parent: 1
+  - uid: 425
+    components:
+    - type: Transform
+      pos: -2.5,-9.5
+      parent: 1
+  - uid: 426
+    components:
+    - type: Transform
+      pos: 3.5,-9.5
+      parent: 1
+  - uid: 433
+    components:
+    - type: Transform
+      pos: 3.5,-8.5
+      parent: 1
+  - uid: 434
+    components:
+    - type: Transform
+      pos: 4.5,-8.5
+      parent: 1
+  - uid: 435
+    components:
+    - type: Transform
+      pos: 4.5,9.5
+      parent: 1
+  - uid: 436
+    components:
+    - type: Transform
+      pos: 3.5,9.5
+      parent: 1
+  - uid: 438
+    components:
+    - type: Transform
+      pos: 3.5,10.5
+      parent: 1
+  - uid: 439
+    components:
+    - type: Transform
+      pos: -2.5,10.5
+      parent: 1
+  - uid: 454
+    components:
+    - type: Transform
+      pos: -2.5,9.5
+      parent: 1
+  - uid: 455
+    components:
+    - type: Transform
+      pos: -3.5,9.5
+      parent: 1
+  - uid: 458
+    components:
+    - type: Transform
+      pos: -1.5,-9.5
+      parent: 1
+  - uid: 459
+    components:
+    - type: Transform
+      pos: 2.5,-9.5
+      parent: 1
+  - uid: 471
+    components:
+    - type: Transform
+      pos: -2.5,-1.5
+      parent: 1
+  - uid: 644
+    components:
+    - type: Transform
+      pos: -2.5,1.5
+      parent: 1
+  - uid: 645
+    components:
+    - type: Transform
+      pos: 3.5,1.5
+      parent: 1
+  - uid: 646
+    components:
+    - type: Transform
+      pos: 3.5,-1.5
+      parent: 1
 - proto: WarpPoint
   entities:
   - uid: 470
@@ -4415,5 +4377,22 @@ entities:
     components:
     - type: Transform
       pos: 1.5,13.5
+      parent: 1
+- proto: WoodDoor
+  entities:
+  - uid: 372
+    components:
+    - type: Transform
+      pos: 1.5,6.5
+      parent: 1
+  - uid: 379
+    components:
+    - type: Transform
+      pos: -2.5,-5.5
+      parent: 1
+  - uid: 404
+    components:
+    - type: Transform
+      pos: 3.5,-5.5
       parent: 1
 ...

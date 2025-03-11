@@ -880,7 +880,7 @@ entities:
     - type: Transform
       pos: 6.5,-1.5
       parent: 1
-- proto: DefibrillatorCabinetFilled
+- proto: DefibrillatorCabinetOpen
   entities:
   - uid: 89
     components:

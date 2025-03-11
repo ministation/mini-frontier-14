@@ -4991,6 +4991,8 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -3.5,-4.5
       parent: 1
+    missingComponents:
+    - Anchorable
 - proto: ComputerPalletConsoleNFHighMarket
   entities:
   - uid: 560
@@ -5016,6 +5018,8 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -8.5,-4.5
       parent: 1
+    missingComponents:
+    - Anchorable
 - proto: ComputerPowerMonitoring
   entities:
   - uid: 76
@@ -5043,6 +5047,8 @@ entities:
     - type: Transform
       pos: -6.5,10.5
       parent: 1
+    missingComponents:
+    - Anchorable
 - proto: ComputerTabletopRadar
   entities:
   - uid: 51
@@ -5050,6 +5056,8 @@ entities:
     - type: Transform
       pos: -8.5,1.5
       parent: 1
+    missingComponents:
+    - Anchorable
 - proto: ComputerTabletopStationRecords
   entities:
   - uid: 2083
@@ -5057,6 +5065,8 @@ entities:
     - type: Transform
       pos: -5.5,10.5
       parent: 1
+    missingComponents:
+    - Anchorable
 - proto: ComputerTabletopSurveillanceCameraMonitor
   entities:
   - uid: 1082
@@ -5064,6 +5074,8 @@ entities:
     - type: Transform
       pos: -7.5,10.5
       parent: 1
+    missingComponents:
+    - Anchorable
 - proto: ComputerWallmountBlackMarketBankATM
   entities:
   - uid: 61
@@ -5141,13 +5153,6 @@ entities:
           showEnts: False
           occludes: True
           ent: null
-- proto: CrateFunHoverbikeNFPirate
-  entities:
-  - uid: 684
-    components:
-    - type: Transform
-      pos: 0.5,11.5
-      parent: 1
 - proto: CrateFunParty
   entities:
   - uid: 125
