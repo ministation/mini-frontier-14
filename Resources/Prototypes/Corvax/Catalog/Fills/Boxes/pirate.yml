@@ -2,7 +2,7 @@
   name: набор для улучшения двигателей
   parent: BoxCardboard
   id: BoxT2SuperCapacitor
-  description: Коробка улудшеных конденсаторов.
+  description: Коробка модифицированных конденсаторов.
   components:
   - type: StorageFill
     contents:
