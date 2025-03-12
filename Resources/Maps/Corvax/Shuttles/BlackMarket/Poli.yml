@@ -1500,16 +1500,6 @@ entities:
     - type: Transform
       pos: 3.5,-11.5
       parent: 1
-- proto: AmmoTechFab
-  entities:
-  - uid: 120
-    components:
-    - type: Transform
-      pos: -2.5,1.5
-      parent: 1
-    missingComponents:
-    - Anchorable
-    - Construction
 - proto: APCBasic
   entities:
   - uid: 121
@@ -4408,6 +4398,17 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -3.5,12.5
       parent: 1
+- proto: ComputerContrabandPalletConsolePirate
+  entities:
+  - uid: 1044
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 3.5,-5.5
+      parent: 1
+    missingComponents:
+    - Construction
+    - Anchorable
 - proto: ComputerIFF
   entities:
   - uid: 618
@@ -4424,6 +4425,9 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -6.5,-10.5
       parent: 1
+    missingComponents:
+    - Construction
+    - Anchorable
 - proto: ComputerPowerMonitoring
   entities:
   - uid: 620
@@ -4653,7 +4657,7 @@ entities:
       pos: 4.5,-0.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -10118.146
+      secondsUntilStateChange: -10260.392
       state: Opening
 - proto: CurtainsPurple
   entities:
@@ -7237,6 +7241,13 @@ entities:
       rot: 3.141592653589793 rad
       pos: -6.5,-8.5
       parent: 1
+- proto: Protolathe
+  entities:
+  - uid: 120
+    components:
+    - type: Transform
+      pos: -2.5,1.5
+      parent: 1
 - proto: Rack
   entities:
   - uid: 964
@@ -7857,56 +7868,6 @@ entities:
     - type: Transform
       pos: -2.5,0.5
       parent: 1
-    - type: ContainerContainer
-      containers:
-        storagebase: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        weapon1_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 1044
-        weapon2_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 1045
-        weapon3_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 1046
-        weapon4_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 1047
-        weapon5_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 1048
-        weapon6_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        weapon1: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 1051
-        weapon2: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 1065
-        weapon3: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 1283
-        weapon4: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 1284
-        weapon5: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 1285
 - proto: SubstationBasic
   entities:
   - uid: 1049
@@ -9508,68 +9469,6 @@ entities:
     - type: Transform
       pos: 6.572636,10.698942
       parent: 1
-- proto: WeaponShotgunBlunderbuss
-  entities:
-  - uid: 1044
-    components:
-    - type: Transform
-      parent: 1043
-    - type: Physics
-      canCollide: False
-  - uid: 1045
-    components:
-    - type: Transform
-      parent: 1043
-    - type: Physics
-      canCollide: False
-  - uid: 1046
-    components:
-    - type: Transform
-      parent: 1043
-    - type: Physics
-      canCollide: False
-  - uid: 1047
-    components:
-    - type: Transform
-      parent: 1043
-    - type: Physics
-      canCollide: False
-  - uid: 1048
-    components:
-    - type: Transform
-      parent: 1043
-    - type: Physics
-      canCollide: False
-  - uid: 1051
-    components:
-    - type: Transform
-      parent: 1043
-    - type: Physics
-      canCollide: False
-  - uid: 1065
-    components:
-    - type: Transform
-      parent: 1043
-    - type: Physics
-      canCollide: False
-  - uid: 1283
-    components:
-    - type: Transform
-      parent: 1043
-    - type: Physics
-      canCollide: False
-  - uid: 1284
-    components:
-    - type: Transform
-      parent: 1043
-    - type: Physics
-      canCollide: False
-  - uid: 1285
-    components:
-    - type: Transform
-      parent: 1043
-    - type: Physics
-      canCollide: False
 - proto: WindoorSecure
   entities:
   - uid: 1267
@@ -9609,7 +9508,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -11933.872
+      secondsUntilStateChange: -12076.117
       state: Opening
 - proto: WindowReinforcedDirectional
   entities:
