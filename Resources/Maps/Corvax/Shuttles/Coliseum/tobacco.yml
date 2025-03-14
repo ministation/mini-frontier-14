@@ -22,7 +22,7 @@ entities:
   - uid: 1
     components:
     - type: MetaData
-      name: people5
+      name: grid
     - type: Transform
       pos: -9,-9
       parent: invalid
