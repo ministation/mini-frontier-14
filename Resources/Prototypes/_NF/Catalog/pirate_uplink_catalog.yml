@@ -443,24 +443,24 @@
         tags:
           - PirateUplink
 
-- type: listing #CorvaxFrontier
-  id: UplinkPiratSpeedLoaderMagnumAP
-  name:  Спидлоадер Бронебойных Патрон
-  description: Спидлоадер с шестью бронебойными патронами 45 калибра если необходимо пробить что по крепче шкур корпоративных крыс.
-  productEntity: SpeedLoaderMagnumAP
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi, state: icon}
-  cost:
-    Doubloon: 5
-  categories:
-    - UplinkPirateAmmo
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - PirateUplink
-    - !type:BuyerJobCondition
-      whitelist:
-        - PirateCaptain 
+#- type: listing #CorvaxFrontier
+#  id: UplinkPiratSpeedLoaderMagnumAP
+#  name:  Спидлоадер Бронебойных Патрон
+#  description: Спидлоадер с шестью бронебойными патронами 45 калибра если необходимо пробить что по крепче шкур корпоративных крыс.
+#  productEntity: SpeedLoaderMagnumAP
+#  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi, state: icon}
+#  cost:
+#    Doubloon: 5
+#  categories:
+#    - UplinkPirateAmmo
+#  conditions:
+#    - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#          - PirateUplink
+#    - !type:BuyerJobCondition
+#      whitelist:
+#        - PirateCaptain 
 
 - type: listing #CorvaxFrontier
   id: UplinkPiratBoxT2SuperCapacitor
