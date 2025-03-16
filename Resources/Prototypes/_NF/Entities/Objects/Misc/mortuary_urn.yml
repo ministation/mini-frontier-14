@@ -47,8 +47,8 @@
           Invoice: { state: paper }
   - type: PaperLabel
     labelSlot:
-      insertVerbText: hand-labeler-add-label-text #Corvax-Frontier
-      ejectVerbText: hand-labeler-remove-label-text #Corvax-Frontier
+      insertVerbText: comp-paper-label-insert
+      ejectVerbText: comp-paper-label-eject
       whitelist:
         components:
         - Paper

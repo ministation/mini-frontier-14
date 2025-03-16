@@ -15,7 +15,7 @@
   parent: BaseVessel
   name: SLI Кудза
   description: Среднегабаритный грузовой шаттл. Рекомендованный состав команды 1-4 человек.
-  price: 80000
+  price: 88000
   category: Medium
   group: Shipyard
   shuttlePath: /Maps/Corvax/Shuttles/Civilian/Kudzu.yml

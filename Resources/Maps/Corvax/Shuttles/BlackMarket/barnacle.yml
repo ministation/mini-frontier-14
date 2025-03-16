@@ -48,9 +48,6 @@ entities:
       bodyType: Dynamic
     - type: Fixtures
       fixtures: {}
-    - type: IFF
-      color: '#FFC000FF'
-      flags: HideLabel
     - type: OccluderTree
     - type: Shuttle
     - type: GridPathfinding
@@ -171,7 +168,7 @@ entities:
       - 227
       - 213
       - 215
-- proto: AirlockExternalGlass
+- proto: AirlockExternalGlassPirateLocked
   entities:
   - uid: 142
     components:
@@ -183,7 +180,7 @@ entities:
     - type: Transform
       pos: -4.5,0.5
       parent: 201
-- proto: AirlockGlassShuttle
+- proto: AirlockGlassShuttleSyndicatePirateLocked
   entities:
   - uid: 18
     components:
@@ -499,34 +496,44 @@ entities:
       parent: 201
 - proto: CannonBall
   entities:
-  - uid: 72
-    components:
-    - type: Transform
-      pos: 1.4037349,-2.3940208
-      parent: 201
-- proto: CannonBallEmp
-  entities:
   - uid: 15
     components:
     - type: Transform
-      pos: 1.4037349,-2.5816512
+      rot: 1.5707963267948966 rad
+      pos: 1.8835673,-2.403088
       parent: 201
+  - uid: 19
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 1.6648173,-2.262463
+      parent: 201
+  - uid: 72
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 1.6023173,-2.512463
+      parent: 201
+- proto: CannonBallGlassshot
+  entities:
   - uid: 17
     components:
     - type: Transform
-      pos: 1.6433182,-2.362749
+      rot: 1.5707963267948966 rad
+      pos: 1.3054423,-2.449963
       parent: 201
   - uid: 20
     components:
     - type: Transform
-      pos: 1.1433182,-2.321054
+      rot: 1.5707963267948966 rad
+      pos: 1.4616923,-2.137463
       parent: 201
-- proto: CannonBallGlassshot
+- proto: CannonBallGrapeshot
   entities:
-  - uid: 19
+  - uid: 76
     components:
     - type: Transform
-      pos: 1.7579015,-2.602499
+      pos: 1.5241923,-2.309338
       parent: 201
 - proto: CarpetBlack
   entities:
@@ -1145,6 +1152,13 @@ entities:
     - type: Transform
       pos: -4.5,2.5
       parent: 201
+- proto: HandLabeler
+  entities:
+  - uid: 238
+    components:
+    - type: Transform
+      pos: -0.38987,3.5138426
+      parent: 201
 - proto: LockerWallMaterialsFuelPlasmaFilled
   entities:
   - uid: 120
@@ -1167,6 +1181,13 @@ entities:
     components:
     - type: Transform
       pos: 1.6783751,-4.3457556
+      parent: 201
+- proto: NFHolopadShipAntag
+  entities:
+  - uid: 229
+    components:
+    - type: Transform
+      pos: -0.5,1.5
       parent: 201
 - proto: NitrogenCanister
   entities:
@@ -1287,6 +1308,11 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 1.5,-2.5
+      parent: 201
+  - uid: 225
+    components:
+    - type: Transform
+      pos: -0.5,3.5
       parent: 201
 - proto: ReinforcedWindow
   entities:
@@ -1660,7 +1686,7 @@ entities:
     - type: Transform
       pos: 0.5,-3.5
       parent: 201
-- proto: WarpPointShip
+- proto: WarpPoint
   entities:
   - uid: 199
     components:

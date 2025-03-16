@@ -60,3 +60,5 @@ ent-BoxDarts = коробка дротиков
     .desc = Коробка, наполненная разноцветными дротиками.
 ent-BoxEnvelope = коробка конвертов
     .desc = Коробка, наполненная конвертами.
+ent-BoxLighttubeHoliday = коробка праздничных лампочек
+  .desc = { ent-BoxLightbulb.desc }

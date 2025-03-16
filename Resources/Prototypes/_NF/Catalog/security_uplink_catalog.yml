@@ -353,6 +353,69 @@
         - Sheriff
 
 - type: listing
+  id: UplinkSecurityWeaponLightMachineGunL2RPK
+  name:  uplink-security-WeaponLightMachineGunL2RPK-name
+  description: uplink-security-WeaponLightMachineGunL2RPK-desc
+  productEntity: WeaponLightMachineGunL2RPK
+  icon: { sprite: Corvax/Objects/Weapons/Guns/LMGs/L2RPK.rsi, state: base }
+  cost:
+    FrontierUplinkCoin: 20
+  categories:
+    - UplinkSecurityWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: UplinkSecurityWeaponSubMachineGunScorpion
+  name:  uplink-security-WeaponSubMachineGunScorpion-name
+  description: uplink-security-WeaponSubMachineGunScorpion-desc
+  productEntity: WeaponSubMachineGunScorpion
+  icon: { sprite: Corvax/Objects/Weapons/Guns/SMGs/scorpion.rsi, state: base }
+  cost:
+    FrontierUplinkCoin: 3
+  categories:
+    - UplinkSecurityWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: UplinkSecurityWeaponRifleScar12
+  name:  uplink-security-WeaponRifleScar12-name
+  description: uplink-security-WeaponRifleScar12-desc
+  productEntity: WeaponRifleScar12
+  icon: { sprite: Corvax/Objects/Weapons/Guns/Rifles/scar12.rsi, state: base }
+  cost:
+    FrontierUplinkCoin: 7
+  categories:
+    - UplinkSecurityWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
   id: UplinkSecurityEnergyGun
   name:  uplink-security-energygun-name
   description: uplink-security-energygun-desc
@@ -751,7 +814,7 @@
   name:  uplink-security-medkit-name
   description: uplink-security-medkit-desc
   productEntity: MedkitCombatFilled
-  icon: { sprite: Objects/Specific/Medical/firstaidkits.rsi, state: blackkit }
+  icon: { sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi, state: blackkit } # Frontier: _NF prefix
   cost:
     FrontierUplinkCoin: 2
   categories:
@@ -1366,7 +1429,7 @@
   id: UplinkSecurityTrackingDartsAmmo
   name:  uplink-security-trackingdart-ammo-name
   description: uplink-security-trackingdart-ammo-desc
-  productEntity: BoxTrackingDartsAmmo
+  productEntity: NFBoxDartsTracking
   icon: { sprite: Objects/Storage/boxes.rsi, state: box }
   cost:
     FrontierUplinkCoin: 1

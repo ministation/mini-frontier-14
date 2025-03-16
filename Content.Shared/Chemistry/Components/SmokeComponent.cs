@@ -17,7 +17,7 @@ public sealed partial class SmokeComponent : Component
     /// The solution on the entity with touch and ingestion reactions.
     /// </summary>
     [ViewVariables]
-    public Entity<SolutionComponent>? Solution;
+    public Entity<SolutionComponent>? Solution = null;
 
     /// <summary>
     /// The max amount of tiles this smoke cloud can spread to.

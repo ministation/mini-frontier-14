@@ -4,6 +4,9 @@
   id: WeaponTurretSyndicateAntiMateriel
   suffix: Синдикат .60калибр
   components:
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
     - type: NpcFactionMember
       factions:
         - SyndicateNF
@@ -16,13 +19,16 @@
     - type: BallisticAmmoProvider
       proto: CartridgeAntiMateriel
       capacity: 500
-      
+
 - type: entity
   parent: BaseWeaponTurret
   name: баллистическая турель
   id: WeaponTurretSyndicateMagnumAP
-  suffix: Синдикат .45калибрББ 
+  suffix: Синдикат .45калибрББ
   components:
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
     - type: NpcFactionMember
       factions:
         - SyndicateNF
@@ -42,6 +48,9 @@
   id: WeaponTurretSyndicateShotgun
   suffix: Синдикат .50дробь
   components:
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
     - type: NpcFactionMember
       factions:
         - SyndicateNF
@@ -54,4 +63,4 @@
     - type: BallisticAmmoProvider
       proto: ShellShotgun
       capacity: 500
-      
+

@@ -1,9 +1,10 @@
 - type: entity
-  parent: FoodBreadBaguette
+  parent: [FoodBreadBaguette, BaseC3Contraband] #Corvax-Frontier КБ
   id: WeaponBaguette
   suffix: Weapon
   components:
   - type: MeleeWeapon
+    attackRate: 1.4
     wideAnimationRotation: -120
     damage:
       types:

@@ -24,6 +24,8 @@ entities:
     components:
     - type: MetaData
       name: Akupara
+    - type: BecomesStation
+      id: Akupara
     - type: Transform
       pos: -1.6066288,-0.53125
       parent: invalid
@@ -1583,9 +1585,6 @@ entities:
           hard: False
           restitution: 0
           friction: 0.4
-    - type: ThrownItem
-      thrownTime: 1533.0722333
-      animate: False
 - proto: ChairOfficeDark
   entities:
   - uid: 183
@@ -1608,12 +1607,26 @@ entities:
       rot: 3.141592653589793 rad
       pos: 5.5,12.5
       parent: 1
+- proto: ChemDispenser
+  entities:
+  - uid: 186
+    components:
+    - type: Transform
+      pos: 6.5,9.5
+      parent: 1
 - proto: ChemistryHotplate
   entities:
   - uid: 198
     components:
     - type: Transform
       pos: 7.5,7.5
+      parent: 1
+- proto: ChemMaster
+  entities:
+  - uid: 187
+    components:
+    - type: Transform
+      pos: 7.5,9.5
       parent: 1
 - proto: CigaretteSpent
   entities:
@@ -1730,6 +1743,14 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+- proto: DefibrillatorCabinetFilled
+  entities:
+  - uid: 202
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 6.5,11.5
+      parent: 1
 - proto: DisposalBend
   entities:
   - uid: 203

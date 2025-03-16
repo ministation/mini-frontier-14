@@ -5802,7 +5802,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -14.5,-37.5
       parent: 2
-- proto: BarSignMaltroach
+- proto: BarSignNFMaltroach
   entities:
   - uid: 2094
     components:
