@@ -9,7 +9,8 @@ using Content.Server.Station.Events;
 using Content.Server.Station.Systems;
 using Content.Shared.Teleportation.Systems;
 using Robust.Server.GameObjects;
-using Robust.Server.Maps;
+using Robust.Shared.EntitySerialization;
+using Robust.Shared.EntitySerialization.Systems;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
@@ -41,13 +42,7 @@ public sealed partial class ExpansionMapSystem : EntitySystem
         {
             var mapUid = _map.CreateMap(out var mapId);
             Log.Info($"Created map {mapId} for ExpansionMap system");
-            var options = new MapLoadOptions { LoadMap = true };
-            if (!_mapLoader.TryLoad(mapId, path.ToString(), out var roots, options))
-            {
-                Log.Error($"Failed to load map from {path}!");
-                Del(mapUid);
-                return;
-            }
+            var options = new MapLoadOptions();
         }
     }
 }

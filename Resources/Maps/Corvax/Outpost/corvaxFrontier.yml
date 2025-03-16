@@ -1,6 +1,17 @@
 meta:
-  format: 6
-  postmapinit: false
+  format: 7
+  category: Map
+  engineVersion: 247.2.0
+  forkId: ""
+  forkVersion: ""
+  time: 03/16/2025 19:06:54
+  entityCount: 8374
+maps:
+- 51
+grids:
+- 1
+orphans: []
+nullspace: []
 tilemap:
   0: Space
   36: FloorAstroGrass
@@ -6886,13 +6897,15 @@ entities:
       id: corvaxFrontier
     - type: StationTransit
     - type: ProtectedGrid
+      hostileMobKillSound: !type:SoundPathSpecifier
+        path: /Audio/Effects/holy.ogg
+      killHostileMobs: True
       preventArtifactTriggers: True
       preventExplosions: True
       preventEmpEvents: True
       preventRCDUse: True
       preventFloorPlacement: True
       preventFloorRemoval: True
-      killHostileMobs: True
     - type: IFF
       readOnly: True
   - uid: 51
@@ -6907,7 +6920,6 @@ entities:
     - type: MovedGrids
     - type: Broadphase
     - type: OccluderTree
-    - type: LoadedMap
   - uid: 7410
     components:
     - type: MetaData
@@ -7496,7 +7508,7 @@ entities:
       pos: -8.5,17.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -11202.298
+      secondsUntilStateChange: -13828.543
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -7979,12 +7991,18 @@ entities:
       parent: 1
     - type: Docking
       name: БРИГ
+      highlightedRadarColor: '#B22222FF'
+      radarColor: '#B22222FF'
   - uid: 195
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 25.5,-8.5
       parent: 1
+    - type: Docking
+      name: Почтарь
+      highlightedRadarColor: '#D4D4D496'
+      radarColor: '#D4D4D496'
   - uid: 196
     components:
     - type: Transform
@@ -7993,12 +8011,18 @@ entities:
       parent: 1
     - type: Docking
       name: ПОЧ
+      highlightedRadarColor: '#D4D4D496'
+      radarColor: '#D4D4D496'
   - uid: 197
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 25.5,-10.5
       parent: 1
+    - type: Docking
+      name: Почтарь
+      highlightedRadarColor: '#D4D4D496'
+      radarColor: '#D4D4D496'
 - proto: AirlockExternalGlassShuttleTransit
   entities:
   - uid: 125
@@ -8027,55 +8051,6 @@ entities:
       parent: 1
 - proto: AirlockFrontierCommandLocked
   entities:
-  - uid: 53
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -5.5,-21.5
-      parent: 1
-  - uid: 1587
-    components:
-    - type: Transform
-      pos: -4.5,-14.5
-      parent: 1
-    - type: AccessReader
-      access:
-      - - StationTrafficController
-  - uid: 5845
-    components:
-    - type: Transform
-      pos: -2.5,-12.5
-      parent: 1
-    - type: AccessReader
-      access:
-      - - StationTrafficController
-  - uid: 7087
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 3.5,-14.5
-      parent: 1
-    - type: AccessReader
-      access:
-      - - StationTrafficController
-  - uid: 7140
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -2.5,-14.5
-      parent: 1
-    - type: AccessReader
-      access:
-      - - StationTrafficController
-  - uid: 7142
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 5.5,-14.5
-      parent: 1
-    - type: AccessReader
-      access:
-      - - StationTrafficController
   - uid: 7406
     components:
     - type: Transform
@@ -8085,6 +8060,50 @@ entities:
     - type: AccessReader
       access:
       - - StationTrafficController
+- proto: AirlockFrontierLocked
+  entities:
+  - uid: 53
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 3.5,-14.5
+      parent: 1
+  - uid: 1587
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -5.5,-21.5
+      parent: 1
+  - uid: 2828
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -2.5,-14.5
+      parent: 1
+  - uid: 5845
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 3.5,-12.5
+      parent: 1
+  - uid: 7087
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -2.5,-12.5
+      parent: 1
+  - uid: 7140
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 5.5,-14.5
+      parent: 1
+  - uid: 7142
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -4.5,-14.5
+      parent: 1
 - proto: AirlockGlass
   entities:
   - uid: 137
@@ -8105,7 +8124,7 @@ entities:
       pos: 38.5,-20.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -90111.6
+      secondsUntilStateChange: -92737.84
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -8116,7 +8135,7 @@ entities:
       pos: 38.5,-19.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -90111.81
+      secondsUntilStateChange: -92738.055
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -8127,7 +8146,7 @@ entities:
       pos: 38.5,-18.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -90112.05
+      secondsUntilStateChange: -92738.29
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -8183,7 +8202,7 @@ entities:
       pos: 22.5,52.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -89527.12
+      secondsUntilStateChange: -92153.36
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -8194,7 +8213,7 @@ entities:
       pos: 23.5,52.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -89526.44
+      secondsUntilStateChange: -92152.68
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -8205,7 +8224,7 @@ entities:
       pos: 24.5,52.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -89526.95
+      secondsUntilStateChange: -92153.195
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -8502,33 +8521,55 @@ entities:
     - type: Transform
       pos: -57.5,-23.5
       parent: 1
+    - type: Docking
+      name: Наём/Эксп_3
+      highlightedRadarColor: '#006400FF'
+      radarColor: '#006400FF'
   - uid: 171
     components:
     - type: Transform
       pos: -56.5,-23.5
       parent: 1
     - type: Docking
-      name: 5A
+      name: Наём/Эксп_3
+      highlightedRadarColor: '#006400FF'
+      radarColor: '#006400FF'
   - uid: 178
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 19.5,53.5
       parent: 1
+    - type: Docking
+      name: Сервис
+      highlightedRadarColor: '#00FF00FF'
+      radarColor: '#00FF00FF'
   - uid: 179
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 19.5,54.5
       parent: 1
+    - type: Door
+      secondsUntilStateChange: -1931.6316
+      state: Opening
+    - type: DeviceLinkSource
+      lastSignals:
+        DoorStatus: True
     - type: Docking
-      name: 2A
+      name: Серв_3
+      highlightedRadarColor: '#00FF00FF'
+      radarColor: '#00FF00FF'
   - uid: 180
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 19.5,55.5
       parent: 1
+    - type: Docking
+      name: Серв_3
+      highlightedRadarColor: '#00FF00FF'
+      radarColor: '#00FF00FF'
   - uid: 182
     components:
     - type: Transform
@@ -8536,13 +8577,19 @@ entities:
       pos: 23.5,58.5
       parent: 1
     - type: Docking
-      name: 2B
+      name: Серв_2
+      highlightedRadarColor: '#00FF00FF'
+      radarColor: '#00FF00FF'
   - uid: 183
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 24.5,58.5
       parent: 1
+    - type: Docking
+      name: Серв_2
+      highlightedRadarColor: '#00FF00FF'
+      radarColor: '#00FF00FF'
   - uid: 184
     components:
     - type: Transform
@@ -8550,35 +8597,56 @@ entities:
       pos: 27.5,54.5
       parent: 1
     - type: Docking
-      name: 2C
+      name: Серв_1
+      highlightedRadarColor: '#00FF00FF'
+      radarColor: '#00FF00FF'
   - uid: 186
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 27.5,55.5
       parent: 1
+    - type: Docking
+      name: Серв_1
+      highlightedRadarColor: '#00FF00FF'
+      radarColor: '#00FF00FF'
   - uid: 187
     components:
     - type: Transform
       pos: 41.5,-23.5
       parent: 1
+    - type: Docking
+      name: Шахтёрский_1
+      highlightedRadarColor: '#FF8C00FF'
+      radarColor: '#FF8C00FF'
   - uid: 188
     components:
     - type: Transform
       pos: 39.5,-23.5
       parent: 1
+    - type: Docking
+      name: Шахтёрский_1
+      highlightedRadarColor: '#FF8C00FF'
+      radarColor: '#FF8C00FF'
   - uid: 189
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -0.5,29.5
       parent: 1
+    - type: Docking
+      name: ЭКСТРЕННЫЙ
+      highlightedRadarColor: '#DAA520FF'
+      radarColor: '#DAA520FF'
   - uid: 199
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -18.5,55.5
       parent: 1
+    - type: Docking
+      name: Научный_3
+      radarColor: '#FF00FFFF'
   - uid: 200
     components:
     - type: Transform
@@ -8586,25 +8654,37 @@ entities:
       pos: -18.5,54.5
       parent: 1
     - type: Docking
-      name: 3C
+      name: Научный_3
+      radarColor: '#FF00FFFF'
   - uid: 201
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -18.5,53.5
       parent: 1
+    - type: Docking
+      name: Научный_3
+      radarColor: '#FF00FFFF'
   - uid: 202
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 44.5,-18.5
       parent: 1
+    - type: Docking
+      name: Шахтёрский_2
+      highlightedRadarColor: '#FF8C00FF'
+      radarColor: '#FF8C00FF'
   - uid: 205
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 41.5,-15.5
       parent: 1
+    - type: Docking
+      name: Шахтёрский_3
+      highlightedRadarColor: '#FF8C00FF'
+      radarColor: '#FF8C00FF'
   - uid: 206
     components:
     - type: Transform
@@ -8612,19 +8692,29 @@ entities:
       pos: 40.5,-15.5
       parent: 1
     - type: Docking
-      name: 6C
+      name: Шахтёрский_3
+      highlightedRadarColor: '#FF8C00FF'
+      radarColor: '#FF8C00FF'
   - uid: 207
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 22.5,58.5
       parent: 1
+    - type: Docking
+      name: Серв_2
+      highlightedRadarColor: '#00FF00FF'
+      radarColor: '#00FF00FF'
   - uid: 208
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -55.5,-15.5
       parent: 1
+    - type: Docking
+      name: Наём/Эксп_3
+      highlightedRadarColor: '#006400FF'
+      radarColor: '#006400FF'
   - uid: 209
     components:
     - type: Transform
@@ -8632,42 +8722,68 @@ entities:
       pos: -56.5,-15.5
       parent: 1
     - type: Docking
-      name: 5C
+      name: Наём/Эксп_3
+      highlightedRadarColor: '#006400FF'
+      radarColor: '#006400FF'
   - uid: 210
     components:
     - type: Transform
       pos: -55.5,-23.5
       parent: 1
+    - type: Docking
+      name: Наём/Эксп_1
+      highlightedRadarColor: '#006400FF'
+      radarColor: '#006400FF'
   - uid: 213
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -60.5,-18.5
       parent: 1
+    - type: Docking
+      name: Наём/Эксп_2
+      highlightedRadarColor: '#006400FF'
+      radarColor: '#006400FF'
   - uid: 214
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -40.5,24.5
       parent: 1
+    - type: Docking
+      name: ДСБФ_1
+      highlightedRadarColor: '#B22222FF'
+      radarColor: '#B22222FF'
   - uid: 215
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -43.5,19.5
       parent: 1
+    - type: Docking
+      name: ДСБФ_2
+      highlightedRadarColor: '#B22222FF'
+      radarColor: '#B22222FF'
   - uid: 216
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -43.5,21.5
       parent: 1
+    - type: Docking
+      name: ДСБФ_2
+      highlightedRadarColor: '#B22222FF'
+      radarColor: '#B22222FF'
   - uid: 220
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 39.5,24.5
       parent: 1
+    - type: Docking
+      name: Мед_2
+      highlightedRadarColor: '#1E90FFFF'
+      radarColor: '#1E90FFFF'
   - uid: 221
     components:
     - type: Transform
@@ -8675,24 +8791,36 @@ entities:
       pos: 40.5,24.5
       parent: 1
     - type: Docking
-      name: 1A
+      name: Мед_2
+      highlightedRadarColor: '#1E90FFFF'
+      radarColor: '#1E90FFFF'
   - uid: 222
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 41.5,24.5
       parent: 1
+    - type: Docking
+      name: Мед_2
+      highlightedRadarColor: '#1E90FFFF'
+      radarColor: '#1E90FFFF'
   - uid: 229
     components:
     - type: Transform
       pos: -25.5,-8.5
       parent: 1
+    - type: Docking
+      highlightedRadarColor: '#B22222FF'
+      radarColor: '#B22222FF'
   - uid: 370
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -26.5,53.5
       parent: 1
+    - type: Docking
+      name: Научный_1
+      radarColor: '#FF00FFFF'
   - uid: 371
     components:
     - type: Transform
@@ -8700,31 +8828,45 @@ entities:
       pos: -26.5,54.5
       parent: 1
     - type: Docking
-      name: 3A
+      name: Научный_1
+      radarColor: '#FF00FFFF'
   - uid: 381
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -26.5,55.5
       parent: 1
+    - type: Docking
+      name: Научный_1
+      radarColor: '#FF00FFFF'
   - uid: 382
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -23.5,58.5
       parent: 1
+    - type: Docking
+      name: Научный_2
+      radarColor: '#FF00FFFF'
   - uid: 383
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -57.5,-15.5
       parent: 1
+    - type: Docking
+      name: Наём/Эксп_3
+      highlightedRadarColor: '#006400FF'
+      radarColor: '#006400FF'
   - uid: 384
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -21.5,58.5
       parent: 1
+    - type: Docking
+      name: Научный_2
+      radarColor: '#FF00FFFF'
   - uid: 385
     components:
     - type: Transform
@@ -8732,13 +8874,18 @@ entities:
       pos: -22.5,58.5
       parent: 1
     - type: Docking
-      name: 3B
+      name: Научный_2
+      radarColor: '#FF00FFFF'
   - uid: 398
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -60.5,-20.5
       parent: 1
+    - type: Docking
+      name: Наём/Эксп_2
+      highlightedRadarColor: '#006400FF'
+      radarColor: '#006400FF'
   - uid: 402
     components:
     - type: Transform
@@ -8746,13 +8893,19 @@ entities:
       pos: -60.5,-19.5
       parent: 1
     - type: Docking
-      name: 5B
+      name: Наём/Эксп_2
+      highlightedRadarColor: '#006400FF'
+      radarColor: '#006400FF'
   - uid: 407
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 44.5,21.5
       parent: 1
+    - type: Docking
+      name: Мед_1
+      highlightedRadarColor: '#1E90FFFF'
+      radarColor: '#1E90FFFF'
   - uid: 408
     components:
     - type: Transform
@@ -8760,32 +8913,48 @@ entities:
       pos: 44.5,20.5
       parent: 1
     - type: Docking
-      name: 1B
+      name: Мед_1
+      highlightedRadarColor: '#1E90FFFF'
+      radarColor: '#1E90FFFF'
   - uid: 409
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 44.5,19.5
       parent: 1
+    - type: Docking
+      name: Мед_1
+      highlightedRadarColor: '#1E90FFFF'
+      radarColor: '#1E90FFFF'
   - uid: 6757
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 39.5,-15.5
       parent: 1
+    - type: Docking
+      name: Шахтёрский_3
+      highlightedRadarColor: '#FF8C00FF'
+      radarColor: '#FF8C00FF'
   - uid: 7217
     components:
     - type: Transform
       pos: 40.5,-23.5
       parent: 1
     - type: Docking
-      name: 6A
+      name: Шахтёрский_1
+      highlightedRadarColor: '#FF8C00FF'
+      radarColor: '#FF8C00FF'
   - uid: 7218
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 1.5,29.5
       parent: 1
+    - type: Docking
+      name: ЭКСТРЕННЫЙ
+      highlightedRadarColor: '#DAA520FF'
+      radarColor: '#DAA520FF'
   - uid: 7219
     components:
     - type: Transform
@@ -8793,13 +8962,19 @@ entities:
       pos: 0.5,29.5
       parent: 1
     - type: Docking
-      name: ЭКС
+      name: ЭКСТРЕННЫЙ
+      highlightedRadarColor: '#DAA520FF'
+      radarColor: '#DAA520FF'
   - uid: 7228
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 27.5,53.5
       parent: 1
+    - type: Docking
+      name: Серв_1
+      highlightedRadarColor: '#00FF00FF'
+      radarColor: '#00FF00FF'
   - uid: 7278
     components:
     - type: Transform
@@ -8807,7 +8982,9 @@ entities:
       pos: -43.5,20.5
       parent: 1
     - type: Docking
-      name: 4B
+      name: ДСБФ_2
+      highlightedRadarColor: '#B22222FF'
+      radarColor: '#B22222FF'
   - uid: 7279
     components:
     - type: Transform
@@ -8815,127 +8992,213 @@ entities:
       pos: -39.5,24.5
       parent: 1
     - type: Docking
-      name: 4A
+      name: ДСБФ_1
+      highlightedRadarColor: '#B22222FF'
+      radarColor: '#B22222FF'
   - uid: 7280
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -38.5,24.5
       parent: 1
+    - type: Docking
+      name: ДСБФ_1
+      highlightedRadarColor: '#B22222FF'
+      radarColor: '#B22222FF'
   - uid: 7668
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 44.5,-19.5
       parent: 1
+    - type: Docking
+      name: Шахтёрский_2
+      highlightedRadarColor: '#FF8C00FF'
+      radarColor: '#FF8C00FF'
   - uid: 7669
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 44.5,-20.5
       parent: 1
+    - type: Docking
+      name: Шахтёрский_2
+      highlightedRadarColor: '#FF8C00FF'
+      radarColor: '#FF8C00FF'
   - uid: 7673
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 17.5,-51.5
       parent: 1
+    - type: Docking
+      name: Торг_правый_3
+      highlightedRadarColor: '#A0522DFF'
+      radarColor: '#A0522DFF'
   - uid: 7674
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 18.5,-51.5
       parent: 1
+    - type: Docking
+      name: Торг_правый_3
+      highlightedRadarColor: '#A0522DFF'
+      radarColor: '#A0522DFF'
   - uid: 7675
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 19.5,-51.5
       parent: 1
+    - type: Docking
+      name: Торг_правый_3
+      highlightedRadarColor: '#A0522DFF'
+      radarColor: '#A0522DFF'
   - uid: 7678
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 22.5,-54.5
       parent: 1
+    - type: Docking
+      name: Торг_правый_2
+      highlightedRadarColor: '#A0522DFF'
+      radarColor: '#A0522DFF'
   - uid: 7679
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 22.5,-55.5
       parent: 1
+    - type: Docking
+      name: Торг_правый_2
+      highlightedRadarColor: '#A0522DFF'
+      radarColor: '#A0522DFF'
   - uid: 7680
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 22.5,-56.5
       parent: 1
+    - type: Docking
+      name: Торг_правый_2
+      highlightedRadarColor: '#A0522DFF'
+      radarColor: '#A0522DFF'
   - uid: 7681
     components:
     - type: Transform
       pos: 19.5,-59.5
       parent: 1
+    - type: Docking
+      name: Торг_правый_1
+      highlightedRadarColor: '#A0522DFF'
+      radarColor: '#A0522DFF'
   - uid: 7682
     components:
     - type: Transform
       pos: 18.5,-59.5
       parent: 1
+    - type: Docking
+      name: Торг_правый_1
+      highlightedRadarColor: '#A0522DFF'
+      radarColor: '#A0522DFF'
   - uid: 7683
     components:
     - type: Transform
       pos: 17.5,-59.5
       parent: 1
+    - type: Docking
+      name: Торг_правый_1
+      highlightedRadarColor: '#A0522DFF'
+      radarColor: '#A0522DFF'
   - uid: 7685
     components:
     - type: Transform
       pos: -16.5,-59.5
       parent: 1
+    - type: Docking
+      name: Торг_левый_1
+      highlightedRadarColor: '#A0522DFF'
+      radarColor: '#A0522DFF'
   - uid: 7686
     components:
     - type: Transform
       pos: -17.5,-59.5
       parent: 1
+    - type: Docking
+      name: Торг_левый_1
+      highlightedRadarColor: '#A0522DFF'
+      radarColor: '#A0522DFF'
   - uid: 7687
     components:
     - type: Transform
       pos: -18.5,-59.5
       parent: 1
+    - type: Docking
+      name: Торг_левый_1
+      highlightedRadarColor: '#A0522DFF'
+      radarColor: '#A0522DFF'
   - uid: 7688
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -21.5,-56.5
       parent: 1
+    - type: Docking
+      name: Торг_левый_2
+      highlightedRadarColor: '#A0522DFF'
+      radarColor: '#A0522DFF'
   - uid: 7689
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -21.5,-55.5
       parent: 1
+    - type: Docking
+      name: Торг_левый_2
+      highlightedRadarColor: '#A0522DFF'
+      radarColor: '#A0522DFF'
   - uid: 7690
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -21.5,-54.5
       parent: 1
+    - type: Docking
+      name: Торг_левый_2
+      highlightedRadarColor: '#A0522DFF'
+      radarColor: '#A0522DFF'
   - uid: 7691
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -18.5,-51.5
       parent: 1
+    - type: Docking
+      name: Торг_левый_3
+      highlightedRadarColor: '#A0522DFF'
+      radarColor: '#A0522DFF'
   - uid: 7692
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -17.5,-51.5
       parent: 1
+    - type: Docking
+      name: Торг_левый_3
+      highlightedRadarColor: '#A0522DFF'
+      radarColor: '#A0522DFF'
   - uid: 7693
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -16.5,-51.5
       parent: 1
+    - type: Docking
+      name: Торг_левый_3
+      highlightedRadarColor: '#A0522DFF'
+      radarColor: '#A0522DFF'
 - proto: AirlockHatchMaintenance
   entities:
   - uid: 7755
@@ -9036,14 +9299,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -13.5,5.5
       parent: 1
-  - uid: 7313
-    components:
-    - type: Transform
-      pos: 3.5,-12.5
-      parent: 1
-    - type: AccessReader
-      access:
-      - - StationTrafficController
   - uid: 7828
     components:
     - type: Transform
@@ -21028,18 +21283,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 11.5,5.5
       parent: 1
-- proto: ClosetWallOrangeFilled
-  entities:
-  - uid: 2838
-    components:
-    - type: Transform
-      pos: -11.5,-7.5
-      parent: 1
-  - uid: 2839
-    components:
-    - type: Transform
-      pos: -11.5,-10.5
-      parent: 1
 - proto: ClothingBackpackDuffelSurgeryFilled
   entities:
   - uid: 2133
@@ -21547,9 +21790,9 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 2.5,-32.5
       parent: 1
-- proto: ComputerTabletopShuttleFrontierOutpostRemote
+- proto: ComputerTabletopShuttleFrontierOutpostLocal
   entities:
-  - uid: 2828
+  - uid: 7313
     components:
     - type: Transform
       rot: 3.141592653589793 rad
@@ -21931,7 +22174,7 @@ entities:
       parent: 1
     - type: NavMapBeacon
       color: '#FF00FFFF'
-      text: C3
+      text: Научный_1
   - uid: 2246
     components:
     - type: Transform
@@ -21940,7 +22183,7 @@ entities:
       parent: 1
     - type: NavMapBeacon
       color: '#FF8C00FF'
-      text: B6
+      text: Шахтёрский_2
   - uid: 2247
     components:
     - type: Transform
@@ -21949,7 +22192,7 @@ entities:
       parent: 1
     - type: NavMapBeacon
       color: '#FF00FFFF'
-      text: A3
+      text: Научный_3
   - uid: 2248
     components:
     - type: Transform
@@ -21958,7 +22201,7 @@ entities:
       parent: 1
     - type: NavMapBeacon
       color: '#FF00FFFF'
-      text: B3
+      text: Научный_2
   - uid: 2249
     components:
     - type: Transform
@@ -21967,7 +22210,7 @@ entities:
       parent: 1
     - type: NavMapBeacon
       color: '#00FF00FF'
-      text: B2
+      text: Сервисный_2
   - uid: 2250
     components:
     - type: Transform
@@ -21976,7 +22219,7 @@ entities:
       parent: 1
     - type: NavMapBeacon
       color: '#FF8C00FF'
-      text: A6
+      text: Шахтёрский_1
   - uid: 2251
     components:
     - type: Transform
@@ -21985,7 +22228,7 @@ entities:
       parent: 1
     - type: NavMapBeacon
       color: '#00FF00FF'
-      text: C2
+      text: Сервисный_3
   - uid: 2252
     components:
     - type: Transform
@@ -21994,7 +22237,7 @@ entities:
       parent: 1
     - type: NavMapBeacon
       color: '#FF8C00FF'
-      text: C6
+      text: Шахтёрский_3
   - uid: 2253
     components:
     - type: Transform
@@ -22011,7 +22254,7 @@ entities:
       parent: 1
     - type: NavMapBeacon
       color: '#00FF00FF'
-      text: A2
+      text: Сервисный_1
   - uid: 2255
     components:
     - type: Transform
@@ -22028,7 +22271,7 @@ entities:
       parent: 1
     - type: NavMapBeacon
       color: '#B22222FF'
-      text: 4A
+      text: ДСБФ_1
   - uid: 2257
     components:
     - type: Transform
@@ -22036,7 +22279,7 @@ entities:
       parent: 1
     - type: NavMapBeacon
       color: '#B22222FF'
-      text: 4B
+      text: ДСБФ_2
   - uid: 2258
     components:
     - type: Transform
@@ -22044,7 +22287,7 @@ entities:
       parent: 1
     - type: NavMapBeacon
       color: '#1E90FFFF'
-      text: A1
+      text: Мед_2
   - uid: 2259
     components:
     - type: Transform
@@ -22052,7 +22295,7 @@ entities:
       parent: 1
     - type: NavMapBeacon
       color: '#1E90FFFF'
-      text: B1
+      text: Мед_2
   - uid: 2260
     components:
     - type: Transform
@@ -22060,7 +22303,7 @@ entities:
       parent: 1
     - type: NavMapBeacon
       color: '#006400FF'
-      text: A5
+      text: Наём/Эксп_3
   - uid: 2261
     components:
     - type: Transform
@@ -22068,7 +22311,7 @@ entities:
       parent: 1
     - type: NavMapBeacon
       color: '#006400FF'
-      text: B5
+      text: Наём/Эксп_2
   - uid: 2262
     components:
     - type: Transform
@@ -22076,7 +22319,7 @@ entities:
       parent: 1
     - type: NavMapBeacon
       color: '#006400FF'
-      text: C5
+      text: Наём/Эксп_3
   - uid: 2263
     components:
     - type: Transform
@@ -22107,7 +22350,7 @@ entities:
       parent: 1
     - type: NavMapBeacon
       color: '#A0522DFF'
-      text: C8
+      text: Торг_левый_3
   - uid: 8329
     components:
     - type: Transform
@@ -22115,7 +22358,7 @@ entities:
       parent: 1
     - type: NavMapBeacon
       color: '#A0522DFF'
-      text: B8
+      text: Торг_левый_2
   - uid: 8330
     components:
     - type: Transform
@@ -22123,7 +22366,7 @@ entities:
       parent: 1
     - type: NavMapBeacon
       color: '#A0522DFF'
-      text: A8
+      text: Торг_левый_1
   - uid: 8331
     components:
     - type: Transform
@@ -22131,7 +22374,7 @@ entities:
       parent: 1
     - type: NavMapBeacon
       color: '#A0522DFF'
-      text: C9
+      text: Торг_правый_3
   - uid: 8332
     components:
     - type: Transform
@@ -22139,7 +22382,7 @@ entities:
       parent: 1
     - type: NavMapBeacon
       color: '#A0522DFF'
-      text: B9
+      text: Торг_правый_2
   - uid: 8333
     components:
     - type: Transform
@@ -22147,7 +22390,7 @@ entities:
       parent: 1
     - type: NavMapBeacon
       color: '#A0522DFF'
-      text: A9
+      text: Торг_правый_1
 - proto: DefaultStationBeaconBar
   entities:
   - uid: 7378
@@ -44067,7 +44310,7 @@ entities:
       pos: 17.5,22.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -181791.38
+      secondsUntilStateChange: -184417.62
       state: Opening
   - uid: 4983
     components:
@@ -44075,7 +44318,7 @@ entities:
       pos: 19.5,22.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -181791.75
+      secondsUntilStateChange: -184418
       state: Opening
   - uid: 4984
     components:
@@ -44088,7 +44331,7 @@ entities:
       pos: 20.5,18.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -181792.47
+      secondsUntilStateChange: -184418.72
       state: Opening
   - uid: 4986
     components:
@@ -44096,7 +44339,7 @@ entities:
       pos: 12.5,22.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -183257.44
+      secondsUntilStateChange: -185883.69
       state: Opening
   - uid: 4987
     components:
@@ -44104,7 +44347,7 @@ entities:
       pos: 14.5,22.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -183256.98
+      secondsUntilStateChange: -185883.23
       state: Opening
   - uid: 4989
     components:
@@ -44775,6 +45018,18 @@ entities:
     components:
     - type: Transform
       pos: 13.784564,1.5091149
+      parent: 1
+- proto: NFPrisonerClosetWallOrangeFilled
+  entities:
+  - uid: 2838
+    components:
+    - type: Transform
+      pos: -11.5,-7.5
+      parent: 1
+  - uid: 2839
+    components:
+    - type: Transform
+      pos: -11.5,-10.5
       parent: 1
 - proto: NitrogenCanister
   entities:
@@ -58993,7 +59248,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -125571.625
+      secondsUntilStateChange: -128197.87
       state: Opening
   - uid: 7074
     components:

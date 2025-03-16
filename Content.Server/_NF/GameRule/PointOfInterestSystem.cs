@@ -12,6 +12,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Content.Server._NF.Station.Systems;
 using Robust.Shared.EntitySerialization.Systems;
+using Robust.Server.GameObjects; /// Corvax-Frontier
 
 namespace Content.Server._NF.GameRule;
 
@@ -265,6 +266,7 @@ public sealed class PointOfInterestSystem : EntitySystem
             }
         }
     }
+    /// Corvax-Frontier end
 
     private bool TrySpawnPoiGrid(MapId mapUid, PointOfInterestPrototype proto, Vector2 offset, out EntityUid? gridUid, string? overrideName = null)
     {
