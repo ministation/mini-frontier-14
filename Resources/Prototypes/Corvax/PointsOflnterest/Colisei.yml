@@ -1,10 +1,22 @@
+# Author Info
+# GitHub: -
+# Discord: autsaider_m
+# License: CC-BY-NC-ND-3.0
+# Corvax_frontier
+
+# Maintainer Info
+# GitHub: https://github.com/mersen-tyn
+# Discord: mersen
+
+# Shuttle Notes:
+
 - type: pointOfInterest
   id: coliseum
   parent: BasePOI
   name: 'Колизей'
   minimumDistance: 750
   maximumDistance: 1000
-  spawnGroup: coliseiStations
+  spawnGroup: NewMapsgGrid
   gridPath: /Maps/Corvax/POI/coliseum.yml #CorvaxFrontier
   addComponents:
   - type: IFF

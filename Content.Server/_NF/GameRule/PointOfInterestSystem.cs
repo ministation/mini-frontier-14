@@ -241,7 +241,7 @@ public sealed class PointOfInterestSystem : EntitySystem
         }
     }
     /// Corvax-Frontier Добавил группу для спавна гридов на отдельной карте. Да, оно работает
-    public void Generatecolisei(MapId mapUid, List<PointOfInterestPrototype> poiPrototypes, out List<EntityUid> coliseiStations)
+    public void GeneratNewMapsgGrid(MapId mapUid, List<PointOfInterestPrototype> poiPrototypes, out List<EntityUid> coliseiStations)
     {
         coliseiStations = new List<EntityUid>();
 

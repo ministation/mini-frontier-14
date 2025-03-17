@@ -4,8 +4,8 @@ meta:
   engineVersion: 247.2.0
   forkId: ""
   forkVersion: ""
-  time: 03/16/2025 19:06:54
-  entityCount: 8374
+  time: 03/17/2025 15:35:07
+  entityCount: 8373
 maps:
 - 51
 grids:
@@ -7508,7 +7508,7 @@ entities:
       pos: -8.5,17.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -13828.543
+      secondsUntilStateChange: -14183.977
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -8124,7 +8124,7 @@ entities:
       pos: 38.5,-20.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -92737.84
+      secondsUntilStateChange: -93093.27
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -8135,7 +8135,7 @@ entities:
       pos: 38.5,-19.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -92738.055
+      secondsUntilStateChange: -93093.484
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -8146,7 +8146,7 @@ entities:
       pos: 38.5,-18.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -92738.29
+      secondsUntilStateChange: -93093.72
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -8202,7 +8202,7 @@ entities:
       pos: 22.5,52.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -92153.36
+      secondsUntilStateChange: -92508.79
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -8213,7 +8213,7 @@ entities:
       pos: 23.5,52.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -92152.68
+      secondsUntilStateChange: -92508.11
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -8224,7 +8224,7 @@ entities:
       pos: 24.5,52.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -92153.195
+      secondsUntilStateChange: -92508.625
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -8551,7 +8551,7 @@ entities:
       pos: 19.5,54.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -1931.6316
+      secondsUntilStateChange: -2287.0647
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -9041,6 +9041,12 @@ entities:
       rot: 3.141592653589793 rad
       pos: 18.5,-51.5
       parent: 1
+    - type: Door
+      secondsUntilStateChange: -110.20017
+      state: Opening
+    - type: DeviceLinkSource
+      lastSignals:
+        DoorStatus: True
     - type: Docking
       name: Торг_правый_3
       highlightedRadarColor: '#A0522DFF'
@@ -22164,233 +22170,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -2.5,-26.5
       parent: 1
-- proto: DefaultStationBeacon
-  entities:
-  - uid: 2245
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -25.5,54.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#FF00FFFF'
-      text: Научный_1
-  - uid: 2246
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 43.5,-19.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#FF8C00FF'
-      text: Шахтёрский_2
-  - uid: 2247
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -19.5,54.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#FF00FFFF'
-      text: Научный_3
-  - uid: 2248
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -22.5,57.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#FF00FFFF'
-      text: Научный_2
-  - uid: 2249
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 23.5,57.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#00FF00FF'
-      text: Сервисный_2
-  - uid: 2250
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 40.5,-22.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#FF8C00FF'
-      text: Шахтёрский_1
-  - uid: 2251
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 20.5,54.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#00FF00FF'
-      text: Сервисный_3
-  - uid: 2252
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 40.5,-16.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#FF8C00FF'
-      text: Шахтёрский_3
-  - uid: 2253
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 22.5,-9.5
-      parent: 1
-    - type: NavMapBeacon
-      text: Почтарь
-  - uid: 2254
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 26.5,54.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#00FF00FF'
-      text: Сервисный_1
-  - uid: 2255
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 0.5,28.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#DAA520FF'
-      text: A7
-  - uid: 2256
-    components:
-    - type: Transform
-      pos: -40.5,23.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#B22222FF'
-      text: ДСБФ_1
-  - uid: 2257
-    components:
-    - type: Transform
-      pos: -42.5,19.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#B22222FF'
-      text: ДСБФ_2
-  - uid: 2258
-    components:
-    - type: Transform
-      pos: 41.5,23.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#1E90FFFF'
-      text: Мед_2
-  - uid: 2259
-    components:
-    - type: Transform
-      pos: 43.5,19.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#1E90FFFF'
-      text: Мед_2
-  - uid: 2260
-    components:
-    - type: Transform
-      pos: -57.5,-22.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#006400FF'
-      text: Наём/Эксп_3
-  - uid: 2261
-    components:
-    - type: Transform
-      pos: -59.5,-18.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#006400FF'
-      text: Наём/Эксп_2
-  - uid: 2262
-    components:
-    - type: Transform
-      pos: -57.5,-16.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#006400FF'
-      text: Наём/Эксп_3
-  - uid: 2263
-    components:
-    - type: Transform
-      pos: -36.5,-4.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#BDB76BFF'
-      text: Транспорт
-  - uid: 2264
-    components:
-    - type: Transform
-      pos: -36.5,5.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#BDB76BFF'
-      text: Транспорт
-  - uid: 7376
-    components:
-    - type: Transform
-      pos: -12.5,-1.5
-      parent: 1
-    - type: NavMapBeacon
-      text: Бар
-  - uid: 8328
-    components:
-    - type: Transform
-      pos: -17.5,-52.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#A0522DFF'
-      text: Торг_левый_3
-  - uid: 8329
-    components:
-    - type: Transform
-      pos: -20.5,-55.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#A0522DFF'
-      text: Торг_левый_2
-  - uid: 8330
-    components:
-    - type: Transform
-      pos: -17.5,-58.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#A0522DFF'
-      text: Торг_левый_1
-  - uid: 8331
-    components:
-    - type: Transform
-      pos: 18.5,-52.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#A0522DFF'
-      text: Торг_правый_3
-  - uid: 8332
-    components:
-    - type: Transform
-      pos: 21.5,-55.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#A0522DFF'
-      text: Торг_правый_2
-  - uid: 8333
-    components:
-    - type: Transform
-      pos: 18.5,-58.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#A0522DFF'
-      text: Торг_правый_1
 - proto: DefaultStationBeaconBar
   entities:
   - uid: 7378
@@ -22398,97 +22177,274 @@ entities:
     - type: Transform
       pos: -12.5,-1.5
       parent: 1
-- proto: DefaultStationBeaconCommand
+- proto: DefaultStationBeaconFrontierATMCorvax
   entities:
-  - uid: 4473
-    components:
-    - type: Transform
-      pos: -0.5,-14.5
-      parent: 1
-    - type: NavMapBeacon
-      text: Мостик Аванпоста Фронтиры
-- proto: DefaultStationBeaconCryosleep
-  entities:
-  - uid: 7389
-    components:
-    - type: Transform
-      pos: 20.5,15.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#ADD8E6FF'
-      text: Криосон
-  - uid: 7392
-    components:
-    - type: Transform
-      pos: 18.5,22.5
-      parent: 1
-    - type: NavMapBeacon
-      color: '#ADD8E6FF'
-      text: Криосон
-- proto: DefaultStationBeaconEngineering
-  entities:
-  - uid: 5573
-    components:
-    - type: Transform
-      pos: -7.5,14.5
-      parent: 1
-    - type: NavMapBeacon
-      text: Инженерный отдел
-- proto: DefaultStationBeaconFrontierATM
-  entities:
-  - uid: 7379
-    components:
-    - type: Transform
-      pos: 0.5,-1.5
-      parent: 1
-    - type: NavMapBeacon
-      text: Банк
-  - uid: 7380
+  - uid: 2245
     components:
     - type: Transform
       pos: -1.5,-1.5
       parent: 1
-    - type: NavMapBeacon
-      text: Банк
-  - uid: 7381
+  - uid: 2246
+    components:
+    - type: Transform
+      pos: 0.5,-1.5
+      parent: 1
+  - uid: 2247
     components:
     - type: Transform
       pos: 2.5,-1.5
       parent: 1
-    - type: NavMapBeacon
-      text: Банк
-- proto: DefaultStationBeaconFrontierShipyard
+- proto: DefaultStationBeaconFrontierCorvax1
+  entities:
+  - uid: 2251
+    components:
+    - type: Transform
+      pos: -14.5,-12.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax10
+  entities:
+  - uid: 5572
+    components:
+    - type: Transform
+      pos: 23.5,57.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax11
+  entities:
+  - uid: 5573
+    components:
+    - type: Transform
+      pos: 20.5,54.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax12
+  entities:
+  - uid: 2258
+    components:
+    - type: Transform
+      pos: 43.5,20.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax13
+  entities:
+  - uid: 2259
+    components:
+    - type: Transform
+      pos: 40.5,23.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax14
+  entities:
+  - uid: 2260
+    components:
+    - type: Transform
+      pos: 14.5,9.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax15
+  entities:
+  - uid: 2254
+    components:
+    - type: Transform
+      pos: -6.5,14.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax16
+  entities:
+  - uid: 2255
+    components:
+    - type: Transform
+      pos: -21.5,14.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax17
+  entities:
+  - uid: 7395
+    components:
+    - type: Transform
+      pos: -56.5,-22.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax18
+  entities:
+  - uid: 7392
+    components:
+    - type: Transform
+      pos: -59.5,-19.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax19
+  entities:
+  - uid: 7389
+    components:
+    - type: Transform
+      pos: -56.5,-16.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax2
+  entities:
+  - uid: 7396
+    components:
+    - type: Transform
+      pos: -35.5,5.5
+      parent: 1
+  - uid: 8328
+    components:
+    - type: Transform
+      pos: -35.5,-4.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax20
+  entities:
+  - uid: 7380
+    components:
+    - type: Transform
+      pos: -17.5,-58.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax21
+  entities:
+  - uid: 7376
+    components:
+    - type: Transform
+      pos: -20.5,-55.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax22
+  entities:
+  - uid: 7379
+    components:
+    - type: Transform
+      pos: -17.5,-52.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax23
+  entities:
+  - uid: 7381
+    components:
+    - type: Transform
+      pos: 18.5,-58.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax24
+  entities:
+  - uid: 7385
+    components:
+    - type: Transform
+      pos: 21.5,-55.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax25
+  entities:
+  - uid: 7387
+    components:
+    - type: Transform
+      pos: 18.5,-52.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax26
+  entities:
+  - uid: 8332
+    components:
+    - type: Transform
+      pos: 40.5,-22.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax27
+  entities:
+  - uid: 8331
+    components:
+    - type: Transform
+      pos: 43.5,-19.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax28
+  entities:
+  - uid: 8330
+    components:
+    - type: Transform
+      pos: 40.5,-16.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax29
   entities:
   - uid: 7145
     components:
     - type: Transform
-      pos: 0.5,2.5
+      pos: 19.5,-14.5
       parent: 1
-    - type: NavMapBeacon
-      text: Банк
-  - uid: 7385
+- proto: DefaultStationBeaconFrontierCorvax3
+  entities:
+  - uid: 2252
+    components:
+    - type: Transform
+      pos: -39.5,23.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax30
+  entities:
+  - uid: 2256
+    components:
+    - type: Transform
+      pos: 20.5,15.5
+      parent: 1
+  - uid: 2257
+    components:
+    - type: Transform
+      pos: 18.5,22.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax4
+  entities:
+  - uid: 2253
+    components:
+    - type: Transform
+      pos: -42.5,20.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax5
+  entities:
+  - uid: 2262
+    components:
+    - type: Transform
+      pos: -25.5,54.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax6
+  entities:
+  - uid: 2263
+    components:
+    - type: Transform
+      pos: -22.5,57.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax7
+  entities:
+  - uid: 2264
+    components:
+    - type: Transform
+      pos: -19.5,54.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax8
+  entities:
+  - uid: 8329
+    components:
+    - type: Transform
+      pos: 0.5,28.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierCorvax9
+  entities:
+  - uid: 4473
+    components:
+    - type: Transform
+      pos: 26.5,54.5
+      parent: 1
+- proto: DefaultStationBeaconFrontierShipyardCorvax
+  entities:
+  - uid: 2248
     components:
     - type: Transform
       pos: -1.5,2.5
       parent: 1
-    - type: NavMapBeacon
-      text: Банк
-  - uid: 7387
+  - uid: 2249
+    components:
+    - type: Transform
+      pos: 0.5,2.5
+      parent: 1
+  - uid: 2250
     components:
     - type: Transform
       pos: 2.5,2.5
       parent: 1
-    - type: NavMapBeacon
-      text: Банк
-- proto: DefaultStationBeaconFrontierSROffice
+- proto: DefaultStationBeaconFrontierSROfficeCorvax
   entities:
   - uid: 7139
     components:
     - type: Transform
       pos: 1.5,-8.5
       parent: 1
-    - type: NavMapBeacon
-      text: Офис ПФ
+- proto: DefaultStationBeaconFrontierSRQuartersCorvax
+  entities:
+  - uid: 2261
+    components:
+    - type: Transform
+      pos: 0.5,-13.5
+      parent: 1
 - proto: DefaultStationBeaconJanitorsCloset
   entities:
   - uid: 5846
@@ -22496,33 +22452,6 @@ entities:
     - type: Transform
       pos: 9.5,1.5
       parent: 1
-- proto: DefaultStationBeaconMedbay
-  entities:
-  - uid: 7396
-    components:
-    - type: Transform
-      pos: 9.5,19.5
-      parent: 1
-    - type: NavMapBeacon
-      text: Медбей
-- proto: DefaultStationBeaconMorgue
-  entities:
-  - uid: 7395
-    components:
-    - type: Transform
-      pos: 14.5,10.5
-      parent: 1
-    - type: NavMapBeacon
-      text: Морг
-- proto: DefaultStationBeaconSecurity
-  entities:
-  - uid: 5572
-    components:
-    - type: Transform
-      pos: -14.5,-12.5
-      parent: 1
-    - type: NavMapBeacon
-      text: Отдел СБ
 - proto: DefibrillatorCabinetFilled
   entities:
   - uid: 2265
@@ -44310,7 +44239,7 @@ entities:
       pos: 17.5,22.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -184417.62
+      secondsUntilStateChange: -184773.06
       state: Opening
   - uid: 4983
     components:
@@ -44318,7 +44247,7 @@ entities:
       pos: 19.5,22.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -184418
+      secondsUntilStateChange: -184773.44
       state: Opening
   - uid: 4984
     components:
@@ -44331,7 +44260,7 @@ entities:
       pos: 20.5,18.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -184418.72
+      secondsUntilStateChange: -184774.16
       state: Opening
   - uid: 4986
     components:
@@ -44339,7 +44268,7 @@ entities:
       pos: 12.5,22.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -185883.69
+      secondsUntilStateChange: -186239.12
       state: Opening
   - uid: 4987
     components:
@@ -44347,7 +44276,7 @@ entities:
       pos: 14.5,22.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -185883.23
+      secondsUntilStateChange: -186238.67
       state: Opening
   - uid: 4989
     components:
@@ -59248,7 +59177,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -128197.87
+      secondsUntilStateChange: -128553.3
       state: Opening
   - uid: 7074
     components:
