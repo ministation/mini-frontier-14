@@ -39,9 +39,8 @@
   - type: Lathe
     idleState: icon
     runningState: icon
-    staticRecipes:
-      - ColiseumCoinExchangerRecipe
-      - HolyPlushieOrangeFoxRecipe
+    staticPacks:
+      - CorvaxExchangerStatic
   - type: MaterialStorage
     whitelist:
       tags:
