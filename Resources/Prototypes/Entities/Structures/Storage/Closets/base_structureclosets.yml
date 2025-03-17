@@ -5,6 +5,7 @@
   description: A standard-issue Nanotrasen storage unit.
   abstract: true
   components:
+  - type: Animateable
   - type: ResistLocker
   - type: Transform
     noRot: true
@@ -26,8 +27,8 @@
   - type: MovedByPressure
   - type: PaperLabel
     labelSlot:
-      insertVerbText: hand-labeler-remove-label-text #Corvax-Frontier
-      ejectVerbText: hand-labeler-add-label-text #Corvax-Frontier
+      insertVerbText: comp-paper-label-insert
+      ejectVerbText: comp-paper-label-eject
       whitelist:
         components:
         - Paper

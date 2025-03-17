@@ -13,7 +13,7 @@
   parent: BaseVessel
   name: NT Хунами
   description: Шаттл построенный по типу Обломка, Это всё же лучше чем ничего.
-  price: 11950
+  price: 18000
   category: Small
   group: Scrap
   shuttlePath: /Maps/Corvax/Shuttles/Scrap/hunami.yml

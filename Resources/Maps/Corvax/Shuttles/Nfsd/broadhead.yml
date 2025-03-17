@@ -28,6 +28,8 @@ entities:
       name: Broadhead
     - type: Transform
       parent: invalid
+    - type: BecomesStation
+      id: Broadhead
     - type: MapGrid
       chunks:
         0,0:
@@ -753,8 +755,6 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: NavMap
-    - type: BecomesStation
-      id: Broadhead
 - proto: AirAlarm
   entities:
   - uid: 262
@@ -3737,6 +3737,20 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 7.5,-18.5
       parent: 2
+- proto: NFHolopadShip
+  entities:
+  - uid: 743
+    components:
+    - type: Transform
+      pos: 7.5,-1.5
+      parent: 2
+- proto: NFWardrobePrisonFilled
+  entities:
+  - uid: 699
+    components:
+    - type: Transform
+      pos: -0.5,-5.5
+      parent: 2
 - proto: NitrogenCanister
   entities:
   - uid: 166
@@ -4310,13 +4324,6 @@ entities:
     - type: Transform
       pos: -0.5,-13.5
       parent: 2
-- proto: SignInterrogation
-  entities:
-  - uid: 742
-    components:
-    - type: Transform
-      pos: 3.5,-7.5
-      parent: 2
 - proto: SignMorgue
   entities:
   - uid: 510
@@ -4347,6 +4354,13 @@ entities:
     components:
     - type: Transform
       pos: 4.5,-11.5
+      parent: 2
+- proto: SignNfsdInterrogation
+  entities:
+  - uid: 742
+    components:
+    - type: Transform
+      pos: 3.5,-7.5
       parent: 2
 - proto: SignSpace
   entities:
@@ -5515,6 +5529,7 @@ entities:
     - type: Transform
       pos: -3.5,0.5
       parent: 2
+<<<<<<< HEAD
 - proto: WardrobePrisonFilled
   entities:
   - uid: 699
@@ -5522,6 +5537,8 @@ entities:
     - type: Transform
       pos: -0.5,-5.5
       parent: 2
+=======
+>>>>>>> master
 - proto: WarpPoint
   entities:
   - uid: 700

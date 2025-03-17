@@ -16,7 +16,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Boxes/magnum.rsi
+    sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/magnum.rsi # Frontier: add _NF prefix
   - type: MagazineVisuals
     magState: mag
     steps: 4
@@ -33,9 +33,6 @@
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnum
-  - type: Icon # Frontier
-    sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/magnum.rsi # Frontier
-    state: display # Frontier
   - type: Sprite
     layers:
     - state: base
@@ -50,9 +47,6 @@
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumPractice
-  - type: Icon # Frontier
-    sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/magnum.rsi # Frontier
-    state: practicedisplay # Frontier
   - type: Sprite
     layers:
     - state: base
@@ -63,14 +57,11 @@
 
 - type: entity
   id: MagazineBoxMagnumIncendiary
-  parent: BaseMagazineBoxMagnum
+  parent: [BaseMagazineBoxMagnum, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   name: ammunition box (.45 magnum incendiary)
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumIncendiary
-  - type: Icon # Frontier
-    sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/magnum.rsi # Frontier
-    state: incendiarydisplay # Frontier
   - type: Sprite
     layers:
     - state: base
@@ -81,14 +72,11 @@
 
 - type: entity
   id: MagazineBoxMagnumUranium
-  parent: BaseMagazineBoxMagnum
+  parent: [BaseMagazineBoxMagnum, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   name: ammunition box (.45 magnum uranium)
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumUranium
-  - type: Icon # Frontier
-    sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/magnum.rsi # Frontier
-    state: uraniumdisplay # Frontier
   - type: Sprite
     layers:
     - state: base
@@ -104,9 +92,6 @@
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumAP
-  - type: Icon # Frontier
-    sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/magnum.rsi # Frontier
-    state: piercingdisplay # Frontier
   - type: Sprite
     layers:
     - state: base
