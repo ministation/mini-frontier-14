@@ -106,6 +106,8 @@
     sprite: Corvax/Objects/Weapons/Guns/Shuttles/launcher.rsi
     layers:
     - state: exp-320g
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
   - type: BallisticAmmoProvider
     whitelist:
       tags:
@@ -122,6 +124,8 @@
     sprite: Corvax/Objects/Weapons/Guns/Shuttles/launcher.rsi
     layers:
     - state: exp-2100g
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
   - type: ItemSlots
     slots:
       gun_magazine:
