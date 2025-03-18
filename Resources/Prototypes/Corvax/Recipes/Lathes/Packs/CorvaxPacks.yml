@@ -61,3 +61,11 @@
   id: CorvaxMaterialsStatic
   recipes:
   - SheetMagmite1
+
+#Обменники
+
+- type: latheRecipePack
+  id: CorvaxExchangerStatic
+  recipes:
+  - ColiseumCoinExchangerRecipe
+  - HolyPlushieOrangeFoxRecipe
