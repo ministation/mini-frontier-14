@@ -302,6 +302,7 @@ entities:
             23: 5,-2
             24: 4,-2
             176: -5,-6
+            218: -2,-9
         - node:
             color: '#D4D4D428'
             id: FullTileOverlayGreyscale
@@ -777,7 +778,6 @@ entities:
       - 422
       - 323
       - 379
-      - 133
 - proto: Airlock
   entities:
   - uid: 305
@@ -1883,11 +1883,6 @@ entities:
     components:
     - type: Transform
       pos: -2.5,-8.5
-      parent: 1
-  - uid: 668
-    components:
-    - type: Transform
-      pos: -1.5,-8.5
       parent: 1
 - proto: CarpetBlack
   entities:
@@ -3230,14 +3225,6 @@ entities:
       parent: 1
     - type: AtmosPipeColor
       color: '#0055CCFF'
-  - uid: 382
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 0.5,9.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
   - uid: 403
     components:
     - type: Transform
@@ -3437,13 +3424,8 @@ entities:
   - uid: 133
     components:
     - type: Transform
-      pos: 0.5,10.5
+      pos: 0.5,9.5
       parent: 1
-    - type: DeviceNetwork
-      deviceLists:
-      - 516
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
   - uid: 323
     components:
     - type: Transform
@@ -3737,16 +3719,16 @@ entities:
       parent: 1
 - proto: Gyroscope
   entities:
-  - uid: 128
-    components:
-    - type: Transform
-      pos: 0.5,10.5
-      parent: 1
   - uid: 511
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 2.5,-1.5
+      parent: 1
+  - uid: 644
+    components:
+    - type: Transform
+      pos: 2.5,-2.5
       parent: 1
 - proto: HighSecCaptainLocked
   entities:
@@ -3828,6 +3810,13 @@ entities:
     - type: Transform
       pos: 3.5,-0.5
       parent: 1
+- proto: NFHolopadShip
+  entities:
+  - uid: 382
+    components:
+    - type: Transform
+      pos: 0.5,10.5
+      parent: 1
 - proto: NFSignDock
   entities:
   - uid: 655
@@ -3881,7 +3870,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: -2.5,6.5
       parent: 1
-- proto: PoweredlightColoredBlack
+- proto: PoweredlightBlack
   entities:
   - uid: 102
     components:
@@ -4059,10 +4048,10 @@ entities:
       parent: 1
 - proto: SalvageTechfabNF
   entities:
-  - uid: 644
+  - uid: 128
     components:
     - type: Transform
-      pos: 2.5,-2.5
+      pos: -1.5,-8.5
       parent: 1
 - proto: ShipyardBrigandInfo
   entities:
@@ -4302,8 +4291,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -4.5,3.5
       parent: 1
-    - type: Drink
-      solution: tank
 - proto: SMESBasic
   entities:
   - uid: 190
@@ -4319,19 +4306,12 @@ entities:
       rot: 3.141592653589793 rad
       pos: -1.5,-12.5
       parent: 1
-- proto: SpawnDungeonLootArmoryGuns
+- proto: SpawnDungeonLootSuitStorageUnitsMercenary
   entities:
-  - uid: 683
+  - uid: 234
     components:
     - type: Transform
-      pos: 4.5703125,6.480033
-      parent: 1
-- proto: SpawnDungeonLootVaultGuns
-  entities:
-  - uid: 684
-    components:
-    - type: Transform
-      pos: 2.4765625,7.542533
+      pos: 4.5,7.5
       parent: 1
 - proto: SpawnDungeonVendomatsClothes
   entities:
@@ -4402,13 +4382,6 @@ entities:
     components:
     - type: Transform
       pos: -3.5,-6.5
-      parent: 1
-- proto: SuitStorageMercenary
-  entities:
-  - uid: 234
-    components:
-    - type: Transform
-      pos: 4.5,7.5
       parent: 1
 - proto: SuitStorageWallmountCaptain
   entities:

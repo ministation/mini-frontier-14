@@ -15,7 +15,7 @@
   parent: BaseVessel
   name: NSF Большой скат
   description: Сверхогромный многофункциональный шаттл ДСБФ. Рекомендованный состав команды 10-16 человек.
-  price: 545500 #Appraisal value is 440000
+  price: 565500 #Appraisal value is 440000
   category: Large
   group: Security
   access: Frontier

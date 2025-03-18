@@ -13,7 +13,7 @@
   parent: BaseVessel
   name: NSF Шершень
   description: Крупногабаритный каторжный шаттл. Рекомендованный состав команды 8+ человек.
-  price: 135000
+  price: 155000
   category: Large
   group: Security
   access: Bailiff
@@ -31,7 +31,7 @@
   minPlayers: 0
   stations:
     Wasp:
-      stationProto: StandardFrontierExpeditionVessel
+      stationProto: StandardFrontierSecurityVessel
       components:
         - type: StationNameSetup
           mapNameTemplate: 'Шершень {1}'

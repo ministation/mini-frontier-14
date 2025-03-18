@@ -195,28 +195,30 @@ public sealed partial class SalvageExpeditionWindow : FancyWindow,
                 Margin = new Thickness(0f, 0f, 0f, 5f),
             });
 
-            lBox.AddChild(new Label()
             {
-                Text = Loc.GetString("salvage-expedition-window-rewards")
-            });
+                lBox.AddChild(new Label()
+                {
+                    Text = Loc.GetString("salvage-expedition-window-rewards")
+                });
 
-            var rewards = new Dictionary<string, int>();
-            foreach (var reward in mission.Rewards)
-            {
-                var name = _prototype.Index<EntityPrototype>(reward).Name;
-                var count = rewards.GetOrNew(name);
-                count++;
-                rewards[name] = count;
+                var rewards = new Dictionary<string, int>();
+                foreach (var reward in mission.Rewards)
+                {
+                    var name = _prototype.Index<EntityPrototype>(reward).Name;
+                    var count = rewards.GetOrNew(name);
+                    count++;
+                    rewards[name] = count;
+                }
+
+                // there will always be 3 or more rewards so no need for 0 check
+                lBox.AddChild(new Label()
+                {
+                    Text = string.Join("\n", rewards.Select(o => "- " + o.Key + (o.Value > 1 ? $" x {o.Value}" : ""))).TrimEnd(),
+                    FontColorOverride = StyleNano.ConcerningOrangeFore,
+                    HorizontalAlignment = HAlignment.Left,
+                    Margin = new Thickness(0f, 0f, 0f, 5f)
+                });
             }
-
-            // there will always be 3 or more rewards so no need for 0 check
-            lBox.AddChild(new Label()
-            {
-                Text = string.Join("\n", rewards.Select(o => "- " + o.Key + (o.Value > 1 ? $" x {o.Value}" : ""))).TrimEnd(),
-                FontColorOverride = StyleNano.ConcerningOrangeFore,
-                HorizontalAlignment = HAlignment.Left,
-                Margin = new Thickness(0f, 0f, 0f, 5f)
-            });
 
             // Claim
             var claimButton = new Button()
@@ -250,6 +252,7 @@ public sealed partial class SalvageExpeditionWindow : FancyWindow,
                 PanelOverride = new StyleBoxFlat(new Color(30, 30, 34)),
                 HorizontalExpand = true,
                 Margin = new Thickness(5f, 0f),
+                MinWidth = 280, // Frontier
                 Children =
                 {
                     new BoxContainer

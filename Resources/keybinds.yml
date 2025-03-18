@@ -584,3 +584,13 @@ binds:
   type: State
   key: MouseRight
   canFocus: true
+# region Frontier
+- function: SwapHandsPrevious
+  type: State
+  key: X
+  mod1: Shift
+# endregion Frontier
+
+- function: OfferItem # Corvax-Frontier
+  type: State
+  key: F

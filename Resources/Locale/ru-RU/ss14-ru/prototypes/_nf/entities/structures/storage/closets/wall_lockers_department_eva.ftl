@@ -36,3 +36,7 @@ ent-LockerWallEVAColorPrivateSec = настенный шкаф EVA телохр�
     .desc = { ent-LockerWallColorBase.desc }
 ent-LockerWallEVAColorGeneric = настенный шкаф EVA
     .desc = { ent-LockerWallColorBase.desc }
+ent-LockerWallEVAColorFsb = настенный шкаф EVA "FSB"
+    .desc = { ent-LockerWallColorBase.desc }
+ent-LockerWallEVAColorFsbFilled = { ent-LockerWallEVAColorFsb }
+    .desc = { ent-LockerWallColorBase.desc }

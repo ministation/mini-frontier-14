@@ -2104,7 +2104,7 @@ entities:
     - type: Transform
       pos: 20.5,23.5
       parent: 1
-- proto: BarSignMaltroach
+- proto: BarSignNFMaltroach
   entities:
   - uid: 2359
     components:

@@ -8,5 +8,5 @@ hand-labeler-successfully-removed = Этикетка успешно удален
 # Appended to the description of an object with a label on input
 hand-labeler-has-label = На объекте имеется этикетка "{ $label }"
 # Verb text
-hand-labeler-remove-label-text = Удалить этикетку
-hand-labeler-add-label-text = Наклеить этикетку
+comp-paper-label-eject = Удалить этикетку
+comp-paper-label-insert = Наклеить этикетку
