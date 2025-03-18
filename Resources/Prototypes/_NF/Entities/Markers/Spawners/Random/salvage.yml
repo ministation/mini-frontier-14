@@ -596,8 +596,8 @@
     - NFCrateSalvageAssortedGoodiesTrashCart
     chance: 0.95
     rarePrototypes:
-    - CrateTradeSecureNormal
-    - CrateTradeSecureHigh
+    - CrateTradeSecureNormalFilled
+    - CrateTradeSecureHighFilled
     - CrateSalvageEquipment
     - CrateTrashCartFilled
     - CrateArtifactContainer
@@ -821,37 +821,36 @@
   components:
   - type: RandomSpawner
     prototypes:
-    - SpawnMobCarp
-    - SpawnMobCarp
-    - SpawnMobCarp
-    - SpawnMobCarp
-    - SpawnMobCarp
+    - MobCarpSalvage
+    - MobCarpSalvage
+    - MobCarpSalvage
+    - MobCarpSalvage
+    - MobCarpSalvage
     - SpawnMobBearSalvage
     - SpawnMobSpiderSalvage
     - SpawnMobKangarooSalvage
     - PlushieCarp
     - DehydratedSpaceCarp
-    - NFMobTick
-    - NFMobTick
-    - NFMobTick
-    - SpawnMobCobraSalvage
+#    - MobTickSalvage
+#    - MobTickSalvage
+#    - MobTickSalvage
+#    - SpawnMobSmallPurpleSnake # Why are they xeno
     chance: 0.95
     rarePrototypes:
-    - NFMobShark
-    - NFMobShark
-    - NFMobShark
-    - NFMobShark
-    - NFMobShark
+    - MobSharkSalvage
+    - MobSharkSalvage
+    - MobSharkSalvage
+    - MobSharkSalvage
+    - MobSharkSalvage
     - NFPlushieSharkMinnow
     - DehydratedSharkMinnow
-    - SpawnMobCobraSalvage
+#    - SpawnMobPurpleSnake # Why are they xeno
     rareChance: 0.2
     offset: 0.0
 
 - type: entity
   id: NFSalvageChemicalBarrelSpawner
   parent: MarkerBase
-  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     layers:
@@ -888,7 +887,6 @@
 - type: entity
   id: NFSalvageServiceBarrelSpawner
   parent: MarkerBase
-  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     layers:
@@ -912,7 +910,6 @@
 - type: entity
   id: NFSalvageDrinkableBarrelSpawner
   parent: MarkerBase
-  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     layers:
@@ -943,7 +940,6 @@
 - type: entity
   id: NFSalvageEmptyBarrelSpawner
   parent: MarkerBase
-  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     layers:

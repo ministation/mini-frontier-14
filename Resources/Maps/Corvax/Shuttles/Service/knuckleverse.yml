@@ -374,7 +374,7 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: BecomesStation
-      id: KnuckleVerse
+      id: knuckleverse
 - proto: AirAlarm
   entities:
   - uid: 2

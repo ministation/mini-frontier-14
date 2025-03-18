@@ -5,7 +5,7 @@ pvs_range = 20.0
 pvs_priority_range = 30.0
 pvs_budget = 50
 pvs_enter_budget = 200
-tickrate = 60
+tickrate = 30
 lidgren_log_warning = false
 lidgren_log_error = false
 
@@ -32,6 +32,9 @@ space_wind = true
 space_wind_max_velocity = 22.0
 
 [game.panic_bunker]
+enabled = false
+
+[game.baby_jail]
 enabled = false
 
 [lookup]

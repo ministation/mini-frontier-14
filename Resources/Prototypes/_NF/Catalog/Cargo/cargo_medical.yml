@@ -10,7 +10,7 @@
 
 - type: cargoProduct
   id: CargoBarrel
-  name: Пустая бочка
+  name: barrel (empty)
   icon:
     sprite: _NF/Objects/Storage/Barrels/white.rsi
     state: icon
@@ -21,7 +21,7 @@
 
 - type: cargoProduct
   id: CargoBarrelCarbon
-  name: Бочка хим. элементов (углерод)
+  name: barrel of carbon
   abstract: true
   icon:
     sprite: _NF/Objects/Storage/Barrels/black.rsi
@@ -33,7 +33,7 @@
 
 - type: cargoProduct
   id: CargoBarrelIodine
-  name: Бочка хим. элементов (йод)
+  name: barrel of iodine
   abstract: true
   icon:
     sprite: _NF/Objects/Storage/Barrels/red.rsi
@@ -45,7 +45,7 @@
 
 - type: cargoProduct
   id: CargoBarrelFluorine
-  name: Бочка хим. элементов (фтор)
+  name: barrel of fluorine
 #  abstract: true
   icon:
     sprite: _NF/Objects/Storage/Barrels/blue.rsi
@@ -57,7 +57,7 @@
 
 - type: cargoProduct
   id: CargoBarrelChlorine
-  name: Бочка хим. элементов (хлор)
+  name: barrel of chlorine
   abstract: true
   icon:
     sprite: _NF/Objects/Storage/Barrels/green.rsi
@@ -69,7 +69,7 @@
 
 - type: cargoProduct
   id: CargoBarrelAluminium
-  name: Бочка хим. элементов (алюминий)
+  name: barrel of aluminium
 #  abstract: true
   icon:
     sprite: _NF/Objects/Storage/Barrels/white.rsi
@@ -81,7 +81,7 @@
 
 - type: cargoProduct
   id: CargoBarrelPhosphorus
-  name: Бочка хим. элементов (фосфор)
+  name: barrel of phosphorus
 #  abstract: true
   icon:
     sprite: _NF/Objects/Storage/Barrels/red.rsi
@@ -93,7 +93,7 @@
 
 - type: cargoProduct
   id: CargoBarrelSulfur
-  name: Бочка хим. элементов (сера)
+  name: barrel of sulfur
   abstract: true
   icon:
     sprite: _NF/Objects/Storage/Barrels/yellow.rsi
@@ -105,7 +105,7 @@
 
 - type: cargoProduct
   id: CargoBarrelSilicon
-  name: Бочка хим. элементов (кремний)
+  name: barrel of silicon
   abstract: true
   icon:
     sprite: _NF/Objects/Storage/Barrels/black.rsi
@@ -117,7 +117,7 @@
 
 - type: cargoProduct
   id: CargoBarrelHydrogen
-  name: Бочка хим. элементов (водород)
+  name: barrel of hydrogen
   abstract: true
   icon:
     sprite: _NF/Objects/Storage/Barrels/white.rsi
@@ -129,7 +129,7 @@
 
 - type: cargoProduct
   id: CargoBarrelLithium
-  name: Бочка хим. элементов (литий)
+  name: barrel of lithium
 #  abstract: true
   icon:
     sprite: _NF/Objects/Storage/Barrels/grey.rsi
@@ -141,7 +141,7 @@
 
 - type: cargoProduct
   id: CargoBarrelSodium
-  name: Бочка хим. элементов (натрий)
+  name: barrel of sodium
   abstract: true
   icon:
     sprite: _NF/Objects/Storage/Barrels/grey.rsi
@@ -153,7 +153,7 @@
 
 - type: cargoProduct
   id: CargoBarrelPotassium
-  name: Бочка хим. элементов (калий)
+  name: barrel of potassium
   abstract: true
   icon:
     sprite: _NF/Objects/Storage/Barrels/yellow.rsi
@@ -165,7 +165,7 @@
 
 - type: cargoProduct
   id: CargoBarrelRadium
-  name: Бочка хим. элементов (радий)
+  name: barrel of radium
 #  abstract: true
   icon:
     sprite: _NF/Objects/Storage/Barrels/green.rsi
@@ -177,7 +177,7 @@
 
 - type: cargoProduct
   id: CargoBarrelIron
-  name: Бочка хим. элементов (железо)
+  name: barrel of iron
   abstract: true
   icon:
     sprite: _NF/Objects/Storage/Barrels/grey.rsi
@@ -189,7 +189,7 @@
 
 - type: cargoProduct
   id: CargoBarrelCopper
-  name: Бочка хим. элементов (медь)
+  name: barrel of copper
 #  abstract: true
   icon:
     sprite: _NF/Objects/Storage/Barrels/red.rsi
@@ -201,7 +201,7 @@
 
 - type: cargoProduct
   id: CargoBarrelGold
-  name: Бочка хим. элементов (золото)
+  name: barrel of gold
   abstract: true
   icon:
     sprite: _NF/Objects/Storage/Barrels/yellow.rsi
@@ -213,7 +213,7 @@
 
 - type: cargoProduct
   id: CargoBarrelMercury
-  name: Бочка хим. элементов (ртуть)
+  name: barrel of mercury
 #  abstract: true
   icon:
     sprite: _NF/Objects/Storage/Barrels/grey.rsi
@@ -225,7 +225,7 @@
 
 - type: cargoProduct
   id: CargoBarrelSilver
-  name: Бочка хим. элементов (серебро)
+  name: barrel of silver
   abstract: true
   icon:
     sprite: _NF/Objects/Storage/Barrels/white.rsi
@@ -237,7 +237,7 @@
 
 - type: cargoProduct
   id: CargoBarrelEthanol
-  name: Бочка хим. элементов (этанол)
+  name: barrel of ethanol
 #  abstract: true
   icon:
     sprite: _NF/Objects/Storage/Barrels/blue.rsi
@@ -249,7 +249,7 @@
 
 - type: cargoProduct
   id: CargoBarrelSugar
-  name: Бочка хим. элементов (сахар)
+  name: barrel of sugar
   abstract: true
   icon:
     sprite: _NF/Objects/Storage/Barrels/white.rsi
@@ -261,7 +261,7 @@
 
 - type: cargoProduct
   id: CargoBarrelNitrogen
-  name: Бочка хим. элементов (азот)
+  name: barrel of nitrogen
 #  abstract: true
   icon:
     sprite: _NF/Objects/Storage/Barrels/red.rsi
@@ -273,7 +273,7 @@
 
 - type: cargoProduct
   id: CargoBarrelOxygen
-  name: Бочка хим. элементов (кислород)
+  name: barrel of oxygen
   abstract: true
   icon:
     sprite: _NF/Objects/Storage/Barrels/blue.rsi
@@ -285,7 +285,7 @@
 
 - type: cargoProduct
   id: CargoBarrelOil
-  name: Бочка хим. элементов (мало)
+  name: barrel of oil
   abstract: true
   icon:
     sprite: _NF/Objects/Storage/Barrels/black.rsi
@@ -297,7 +297,7 @@
 
 - type: cargoProduct
   id: CargoBarrelDiethylamine
-  name: Бочка хим. элементов (диэтиламин)
+  name: barrel of diethylamine
   abstract: true
   icon:
     sprite: _NF/Objects/Storage/Barrels/green.rsi

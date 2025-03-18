@@ -28,7 +28,7 @@
     state: pda
   - type: Pda
     paiSlot:
-      priority: -3 # Frontier: -2<-3
+      priority: -2
       whitelist:
         components:
         - PAI
@@ -38,15 +38,13 @@
       whitelist:
         tags:
         - Write
-    # Frontier: space law slot
-    bookSlot:
+    bookSlot: # Frontier
       startingItem: HyperlinkBookSpaceLaw
       priority: -2
       whitelist:
         tags:
         - BookSpaceLaw
         - BookNfsdSop
-    # End Frontier: space law slot
     idSlot:
       name: access-id-card-component-default
       ejectSound: /Audio/Machines/id_swipe.ogg
@@ -140,9 +138,6 @@
   - type: ToggleableGhostRole # Frontier: Literally only for the wipe verb and nothing else.
     wipeVerbText: pda-wipe-device-verb-text # Frontier
     wipeVerbPopup: pda-wiped-device # Frontier
-    mindRoles: [] # Frontier: no default value here
-  - type: ShipyardSellCondition # Frontier: Teleport to shipyard console on sale
-    preserveOnSale: true
 
 - type: entity
   parent: BasePDA
@@ -390,35 +385,11 @@
   components:
   - type: Pda
     id: MimeIDCard
-    paiSlot:
-      priority: -2
-      ejectSound: null
-      insertSound: null
-      whitelist:
-        components:
-        - PAI
-    idSlot:
-      name: access-id-card-component-default
-      ejectSound: null # mime is silent
-      insertSound: null
+    idSlot: #  rewrite without sound because mime
+      name: ID Card
       whitelist:
         components:
         - IdCard
-    penSlot:
-      startingItem: Pen
-      priority: -1
-      whitelist:
-        tags:
-        - Write
-      ejectSound: null
-      insertSound: null
-  - type: CartridgeLoader
-    cartridgeSlot:
-      ejectSound: null
-      insertSound: null
-      whitelist:
-        components:
-        - Cartridge
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:

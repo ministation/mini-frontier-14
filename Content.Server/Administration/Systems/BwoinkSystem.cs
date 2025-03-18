@@ -652,7 +652,7 @@ namespace Content.Server.Administration.Systems
             var personalChannel = senderSession.UserId == message.UserId;
             var senderAdmin = _adminManager.GetAdminData(senderSession);
             var senderAHelpAdmin = senderAdmin?.HasFlag(AdminFlags.Adminhelp) ?? false;
-            var authorized = personalChannel && !message.AdminOnly || senderAHelpAdmin;
+            var authorized = personalChannel || senderAHelpAdmin;
             if (!authorized)
             {
                 // Unauthorized bwoink (log?)
@@ -705,12 +705,14 @@ namespace Content.Server.Administration.Systems
                 bwoinkText = $"{senderName}";
             }
 
-            bwoinkText = $"{(fromWebhook ? Loc.GetString("bwoink-message-discord") : "")}{(message.AdminOnly ? Loc.GetString("bwoink-message-admin-only") : !message.PlaySound ? Loc.GetString("bwoink-message-silent") : "")} {bwoinkText}: {escapedText}";
+            if (fromWebhook)
+                bwoinkText = $"(DC) {bwoinkText}";
 
-            var senderAHelpAdmin = senderAdmin?.HasFlag(AdminFlags.Adminhelp) ?? false;
-            // If it's not an admin / admin chooses to keep the sound and message is not an admin only message, then play it.
-            var playSound = (!senderAHelpAdmin || message.PlaySound) && !message.AdminOnly;
-            var msg = new BwoinkTextMessage(message.UserId, senderId, bwoinkText, playSound: playSound, adminOnly: message.AdminOnly);
+            bwoinkText = $"{(message.PlaySound ? "" : "(S) ")}{bwoinkText}: {escapedText}";
+
+            // If it's not an admin / admin chooses to keep the sound then play it.
+            var playSound = senderAdmin == null || message.PlaySound;
+            var msg = new BwoinkTextMessage(message.UserId, senderId, bwoinkText, playSound: playSound);
 
             LogBwoink(msg);
 
@@ -733,7 +735,7 @@ namespace Content.Server.Administration.Systems
             }
 
             // Notify player
-            if (_playerManager.TryGetSessionById(message.UserId, out var session) && !message.AdminOnly)
+            if (_playerManager.TryGetSessionById(message.UserId, out var session))
             {
                 if (!admins.Contains(session.Channel))
                 {
@@ -796,7 +798,6 @@ namespace Content.Server.Administration.Systems
                     _gameTicker.RunLevel,
                     playedSound: playSound,
                     isDiscord: fromWebhook,
-                    adminOnly: message.AdminOnly,
                     noReceivers: nonAfkAdmins.Count == 0
                 );
                 _messageQueues[msg.UserId].Enqueue(GenerateAHelpMessage(messageParams));
@@ -813,7 +814,7 @@ namespace Content.Server.Administration.Systems
                 RaiseNetworkEvent(starMuteMsg, senderChannel);
             }
         }
-        // End Frontier: webhook text messages
+        // End Frontier:
 
         private IList<INetChannel> GetNonAfkAdmins()
         {
@@ -832,7 +833,7 @@ namespace Content.Server.Administration.Systems
                 .ToList();
         }
 
-        private DiscordRelayedData GenerateAHelpMessage(AHelpMessageParams parameters)
+        private static DiscordRelayedData GenerateAHelpMessage(AHelpMessageParams parameters)
         {
             var stringbuilder = new StringBuilder();
 
@@ -848,9 +849,11 @@ namespace Content.Server.Administration.Systems
             if (parameters.RoundTime != string.Empty && parameters.RoundState == GameRunLevel.InRound)
                 stringbuilder.Append($" **{parameters.RoundTime}**");
             if (!parameters.PlayedSound)
-                stringbuilder.Append($" **{(parameters.AdminOnly ? Loc.GetString("bwoink-message-admin-only") : Loc.GetString("bwoink-message-silent"))}**");
+                stringbuilder.Append(" **(S)**");
+
             if (parameters.IsDiscord) // Frontier - Discord Indicator
-                stringbuilder.Append($" **{Loc.GetString("bwoink-message-discord")}**"); // Frontier - Discord Indicator
+                stringbuilder.Append(" **(DC)**");
+
             if (parameters.Icon == null)
                 stringbuilder.Append($" **{parameters.Username}:** ");
             else
@@ -1062,7 +1065,6 @@ namespace Content.Server.Administration.Systems
         public string RoundTime { get; set; }
         public GameRunLevel RoundState { get; set; }
         public bool PlayedSound { get; set; }
-        public readonly bool AdminOnly;
         public bool NoReceivers { get; set; }
         public bool IsDiscord { get; set; } // Frontier
         public string? Icon { get; set; }
@@ -1075,7 +1077,6 @@ namespace Content.Server.Administration.Systems
             GameRunLevel roundState,
             bool playedSound,
             bool isDiscord = false, // Frontier
-            bool adminOnly = false,
             bool noReceivers = false,
             string? icon = null)
         {
@@ -1086,7 +1087,6 @@ namespace Content.Server.Administration.Systems
             RoundState = roundState;
             IsDiscord = isDiscord; // Frontier
             PlayedSound = playedSound;
-            AdminOnly = adminOnly;
             NoReceivers = noReceivers;
             Icon = icon;
         }

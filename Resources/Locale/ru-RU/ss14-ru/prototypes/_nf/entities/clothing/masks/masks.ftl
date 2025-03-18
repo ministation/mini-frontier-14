@@ -8,5 +8,3 @@ ent-ClothingMaskGasNfsd = противогаз ДСБФ
     .desc = Стандартный протифогаз ДСБФ.
 ent-ClothingMaskGasSheriff = противогаз шерифа ДСБФ
     .desc = Противогаз, достойный шерифа.
-ent-ClothingMaskClownBald = маска клоуна
-    .desc = Если клоунада не сработает, может быть, тебе удастся ограбить банк.

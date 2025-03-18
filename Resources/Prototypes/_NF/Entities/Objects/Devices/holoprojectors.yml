@@ -11,7 +11,7 @@
     signProto: HolosignNfsd
 
 - type: entity
-  parent: [HoloprojectorSecurityEmpty, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
+  parent: HoloprojectorSecurityEmpty
   id: HoloprojectorNfsdEmpty
   suffix: Empty
   components:

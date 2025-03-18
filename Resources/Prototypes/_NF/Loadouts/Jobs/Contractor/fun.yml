@@ -1,7 +1,7 @@
 #T1
 - type: loadout
   id: ContractorBriefcaseBrownFilled
-  name: коричневый чемодан (пустой) #Corvax-Frontier
+  name: brown briefcase (empty)
   effects:
   - !type:GroupLoadoutEffect
     proto: ContractorT1
@@ -11,7 +11,7 @@
 
 - type: loadout
   id: ContractorToolboxEmergency
-  name: аварийный ящик (пустой) #Corvax-Frontier
+  name: emergency toolbox (empty)
   effects:
   - !type:GroupLoadoutEffect
     proto: ContractorT1
@@ -21,7 +21,7 @@
 
 - type: loadout
   id: ContractorToolboxMechanical
-  name: технический ящик (пустой) #Corvax-Frontier
+  name: mechanical toolbox (empty)
   effects:
   - !type:GroupLoadoutEffect
     proto: ContractorT1
@@ -186,7 +186,7 @@
 
 - type: loadout
   id: ContractorEmotionalPetCarrier
-  name: эмоциональная поддержка #Corvax-Frontier
+  name: emotional support pet
   effects:
   - !type:GroupLoadoutEffect
     proto: ContractorT3

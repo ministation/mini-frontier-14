@@ -94,7 +94,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: GrenadeStinger
+      - id: GrenadeStingerNfsd
         amount: 4
 
 ## plastic explosives

@@ -407,13 +407,13 @@ namespace Content.Client.Lobby.UI
 
             #endregion Jobs
 
-            //TabContainer.SetTabTitle(2, Loc.GetString("humanoid-profile-editor-antags-tab")); // Frontier
+            TabContainer.SetTabTitle(2, Loc.GetString("humanoid-profile-editor-antags-tab"));
 
             RefreshTraits();
 
             #region Markings
 
-            TabContainer.SetTabTitle(3, Loc.GetString("humanoid-profile-editor-markings-tab")); // Frontier: 4<3
+            TabContainer.SetTabTitle(4, Loc.GetString("humanoid-profile-editor-markings-tab"));
 
             Markings.OnMarkingAdded += OnMarkingChange;
             Markings.OnMarkingRemoved += OnMarkingChange;
@@ -491,7 +491,7 @@ namespace Content.Client.Lobby.UI
             TraitsList.DisposeAllChildren();
 
             var traits = _prototypeManager.EnumeratePrototypes<TraitPrototype>().OrderBy(t => Loc.GetString(t.Name)).ToList();
-            TabContainer.SetTabTitle(2, Loc.GetString("humanoid-profile-editor-traits-tab")); // Frontier: 3<2
+            TabContainer.SetTabTitle(3, Loc.GetString("humanoid-profile-editor-traits-tab"));
 
             if (traits.Count < 1)
             {
@@ -629,8 +629,6 @@ namespace Content.Client.Lobby.UI
 
         public void RefreshAntags()
         {
-            // Frontier: no antags
-            /*
             AntagList.DisposeAllChildren();
             var items = new[]
             {
@@ -689,8 +687,6 @@ namespace Content.Client.Lobby.UI
 
                 AntagList.AddChild(antagContainer);
             }
-            */
-            // End Frontier: no antags
         }
 
         private void SetDirty()
@@ -852,7 +848,7 @@ namespace Content.Client.Lobby.UI
 
             foreach (var department in departments)
             {
-                var departmentName = Loc.GetString(department.Name);
+                var departmentName = Loc.GetString($"department-{department.ID}");
 
                 if (!_jobCategories.TryGetValue(department.ID, out var category))
                 {
@@ -1027,13 +1023,6 @@ namespace Content.Client.Lobby.UI
             // Refresh the buttons etc.
             _loadoutWindow.RefreshLoadouts(roleLoadout, session, collection);
             _loadoutWindow.OpenCenteredLeft();
-
-            _loadoutWindow.OnNameChanged += name =>
-            {
-                roleLoadout.EntityName = name;
-                Profile = Profile.WithLoadout(roleLoadout);
-                SetDirty();
-            };
 
             _loadoutWindow.OnLoadoutPressed += (loadoutGroup, loadoutProto) =>
             {

@@ -1,6 +1,6 @@
 - type: entity
   name: Typewriter
-  parent: [BaseWeaponSubMachineGun, BaseGunWieldable, BaseC1Contraband] # Frontier: added BaseC2Contraband #Corvax-Frontier КБ
+  parent: [BaseWeaponSubMachineGun, BaseGunWieldable, BaseC2Contraband] # Frontier: added BaseC2Contraband
   id: WeaponSubMachineGunTypewriter
   description: A modern take on the classic design used by mobsters throughout space and time. Types .35 auto ammo.
   components:
@@ -36,7 +36,6 @@
         whitelist:
           tags:
             - MagazinePistolSubMachineGun
-        whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
         startingItem: CartridgePistol

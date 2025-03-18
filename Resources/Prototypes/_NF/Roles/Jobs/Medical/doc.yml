@@ -30,7 +30,7 @@
 - type: startingGear
   id: DocGear
   equipment:
-    pocket1: HypoMini
+    pocket1: WeaponDisabler
     pocket2: MedicalAppraisalTool
   storage:
     back:

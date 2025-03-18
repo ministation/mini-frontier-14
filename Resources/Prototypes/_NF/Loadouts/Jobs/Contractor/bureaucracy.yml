@@ -23,8 +23,8 @@
 - type: loadout
   id: ContractorStampsApprovedDenied
   price: 1000
-  name: набор печатей "Одобрено" и "Отказано" #Corvax-Frontier
-  description: Пара печатей, используемых для проверки документов.
+  name: approved and denied stamps
+  description: A pair of stamps used for reviewing forms.
   previewEntity: RubberStampApproved
   storage:
     back:

@@ -19,7 +19,6 @@
     - map: [ "enum.EdgeLayer.West" ]
       state: rock_asteroid_west
     - state: rock_magmite
-      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
 
 - type: entity
   id: WallRockMagmite
@@ -42,7 +41,6 @@
       - map: [ "enum.EdgeLayer.West" ]
         state: rock_west
       - state: rock_magmite
-        map: [ "enum.MiningScannerVisualLayers.Overlay" ]
 
 - type: entity
   id: WallRockBasaltMagmite
@@ -65,7 +63,6 @@
       - map: [ "enum.EdgeLayer.West" ]
         state: rock_wall_west
       - state: rock_magmite
-        map: [ "enum.MiningScannerVisualLayers.Overlay" ]
 
 - type: entity
   id: WallRockAndesiteMagmite
@@ -88,7 +85,6 @@
       - map: [ "enum.EdgeLayer.West" ]
         state: rock_andesite_west
       - state: rock_magmite
-        map: [ "enum.MiningScannerVisualLayers.Overlay" ]
 
 - type: entity
   id: WallRockChromiteMagmite
@@ -111,4 +107,3 @@
       - map: [ "enum.EdgeLayer.West" ]
         state: rock_chromite_west
       - state: rock_magmite
-        map: [ "enum.MiningScannerVisualLayers.Overlay" ]

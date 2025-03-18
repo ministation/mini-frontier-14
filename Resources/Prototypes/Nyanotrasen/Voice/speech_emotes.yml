@@ -2,7 +2,7 @@
 - type: emote
   id: Hiss
   category: Vocal
-  name: chat-emote-name-hiss # Corvax-Localization
+  name: Hiss
   icon: Interface/Actions/scream.png
   available: false
   whitelist:
@@ -11,7 +11,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: ["chat-emote-msg-felinid-hiss"] # Corvax-Localization
+  chatMessages: [hisses.]
   chatTriggers:
     - hiss
     - hisses
@@ -31,7 +31,7 @@
 - type: emote
   id: Meow
   category: Vocal
-  name: chat-emote-name-meow # Corvax-Localization
+  name: Meow
   icon: Interface/Actions/scream.png
   available: false
   whitelist:
@@ -40,7 +40,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: ["chat-emote-msg-felinid-meow"] # Corvax-Localization
+  chatMessages: [meows.]
   chatTriggers:
     - meow
     - meows
@@ -98,7 +98,7 @@
 - type: emote
   id: Mew
   category: Vocal
-  name: chat-emote-name-mew # Corvax-Localization
+  name: Mew
   icon: Interface/Actions/scream.png
   available: false
   whitelist:
@@ -107,7 +107,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: ["chat-emote-msg-felinid-mew"] # Corvax-Localization
+  chatMessages: [mews.]
   chatTriggers:
     - mew
     - mews
@@ -133,7 +133,7 @@
 - type: emote
   id: Growl
   category: Vocal
-  name: chat-emote-name-growl # Corvax-Localization
+  name: Growl
   icon: Interface/Actions/scream.png
   available: false
   whitelist:
@@ -142,7 +142,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: ["chat-emote-msg-felinid-growl"] # Corvax-Localization
+  chatMessages: [growls.]
   chatTriggers:
     - growl
     - growls
@@ -154,9 +154,6 @@
     - ррр
     - ррр.
     - ррр!
-    - рычит
-    - рычит.
-    - рычит!
     - рыкает
     - рыкает.
     - рыкает!
@@ -165,7 +162,7 @@
 - type: emote
   id: Purr
   category: Vocal
-  name: chat-emote-name-purr # Corvax-Localization
+  name: Purr
   icon: Interface/Actions/scream.png
   available: false
   whitelist:
@@ -174,7 +171,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: ["chat-emote-msg-felinid-purr"] # Corvax-Localization
+  chatMessages: [purrs.]
   chatTriggers:
     - purr
     - purrs

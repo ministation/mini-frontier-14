@@ -80,17 +80,6 @@
     - id: MagazinePistol
       amount: 2
 
-- type: entity
-  parent: WeaponCaseShort
-  id: WeaponCaseShortAntiqueLaserExpedition
-  suffix: Dungeon, Antique Laser
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: StorageFill
-    contents:
-    - id: WeaponAntiqueLaser
-      amount: 1
-
 # Revolvers
 - type: entity
   parent: WeaponCaseShort
@@ -277,19 +266,6 @@
     - id: BoxLethalshot
       amount: 2
 
-- type: entity #CorvaxFrontier
-  parent: WeaponCaseLong
-  id: WeaponCaseLongKD12
-  suffix: Dungeon, KD12
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: StorageFill
-    contents:
-    - id: WeaponShotgunKD12Expedition
-      amount: 1
-    - id: BoxLethalshotKS23
-      amount: 4 #CorvaxFrontier
-
 # SMGs
 - type: entity
   parent: WeaponCaseLong
@@ -381,21 +357,6 @@
     - id: MagazineBoxVector22
       amount: 2 #CorvaxFrontier
 
-- type: entity #CorvaxFrontier
-  parent: WeaponCaseLong
-  id: WeaponCaseWeaponSubMachineP90LRK
-  suffix: Dungeon, SubMachineGunVector22
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: StorageFill
-    contents:
-    - id: WeaponSubMachineP90LRKExpedition
-      amount: 1
-    - id: MagazineP90LRK
-      amount: 2
-    - id: MagazineBoxPistol
-      amount: 2 #CorvaxFrontier
-
 # Rifles
 - type: entity
   parent: WeaponCaseLong
@@ -464,13 +425,13 @@
 
 - type: entity
   parent: WeaponCaseLong
-  id: WeaponCaseLongSVSExpedition
-  suffix: Dungeon, SVS
+  id: WeaponCaseLongSVTExpedition
+  suffix: Dungeon, SVT
   categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
-    - id: WeaponRifleSVS
+    - id: WeaponRifleSVT
       amount: 1
     - id: MagazineLightRifleLowCapacity
       amount: 2

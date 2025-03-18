@@ -114,14 +114,6 @@
     Plastic: 200 #50% of box cost
 
 - type: latheRecipe
-  parent: BaseAmmoRecipe
-  id: MagazinePistolSubMachineGunRubber
-  result: MagazinePistolSubMachineGunRubber
-  materials:
-    Steel: 150 #75% of box cost
-    Plastic: 300 #75% of box cost
-
-- type: latheRecipe
   id: MagazineBoxLightRifleRubber
   parent: BaseAmmoRecipe
   result: MagazineBoxLightRifleRubber
@@ -168,7 +160,6 @@
   materials:
     Steel: 250
     Plastic: 500
-
 - type: latheRecipe
   id: MagazineRifleRubber
   parent: BaseAmmoRecipe
@@ -191,8 +182,7 @@
 - type: latheRecipe
   id: WeaponPistolPollock
   result: WeaponPistolPollock
-  categories:
-  - Weapons
+  category: Weapons
   completetime: 3
   materials:
     Steel: 1000

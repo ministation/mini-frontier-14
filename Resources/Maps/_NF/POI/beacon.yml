@@ -71,11 +71,18 @@ entities:
           version: 6
     - type: Broadphase
     - type: Physics
+      bodyStatus: InAir
+      angularDamping: 999999
+      linearDamping: 999999
+      fixedRotation: False
+      bodyType: Dynamic
     - type: Fixtures
       fixtures: {}
     - type: OccluderTree
     - type: SpreaderGrid
     - type: Shuttle
+      angularDamping: 999999
+      linearDamping: 999999
     - type: GridPathfinding
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
@@ -4330,13 +4337,17 @@ entities:
     - type: Transform
       pos: 3.2850156,3.0394
       parent: 1
-- proto: FaxMachineNFBeacon
+- proto: FaxMachineBase
   entities:
   - uid: 1133
     components:
     - type: Transform
       pos: -6.5,3.5
       parent: 1
+    - type: FaxMachine
+      name: Omnichurch Beacon
+    missingComponents:
+    - Anchorable
 - proto: filingCabinetRandom
   entities:
   - uid: 1122

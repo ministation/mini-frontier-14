@@ -1,3 +1,4 @@
+using System.Linq;
 using Content.Shared.Dataset;
 using Content.Shared.Random;
 using Content.Shared.Random.Helpers;
@@ -6,7 +7,7 @@ using Content.Shared.Salvage.Expeditions.Modifiers;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Serialization;
-using System.Linq; // Frontier
+using Robust.Shared.Utility;
 
 namespace Content.Shared.Salvage;
 
@@ -77,7 +78,7 @@ public abstract partial class SharedSalvageSystem : EntitySystem
     /// </summary>
     public float GetSpawnCount(DifficultyRating difficulty)
     {
-        return ((int)difficulty + 1) * 2; // Frontier: add one to difficulty (no empty expeditions)
+        return (int) difficulty * 2;
     }
 
     public string GetFTLName(LocalizedDatasetPrototype dataset, int seed)
@@ -181,7 +182,6 @@ public abstract partial class SharedSalvageSystem : EntitySystem
     {
         var rewards = new List<string>(3);
         var ids = RewardsForDifficulty(difficulty);
-
         foreach (var id in ids)
         {
             // pick a random reward to give
@@ -206,9 +206,9 @@ public abstract partial class SharedSalvageSystem : EntitySystem
         switch (rating)
         {
             case DifficultyRating.Minimal:
-                return new string[] { t1 }; // Frontier - Update tiers // Frontier
+                return new string[] { t1 }; // Frontier - Update tiers
             case DifficultyRating.Minor:
-                return new string[] { t2 }; // Frontier - Update tiers // Frontier
+                return new string[] { t2 }; // Frontier - Update tiers
             case DifficultyRating.Moderate:
                 return new string[] { t3 }; // Frontier - Update tiers
             case DifficultyRating.Hazardous:

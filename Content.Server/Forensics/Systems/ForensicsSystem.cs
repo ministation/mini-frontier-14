@@ -10,7 +10,6 @@ using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Chemistry.Components.SolutionManager;
 using Content.Shared.DoAfter;
 using Content.Shared.Forensics;
-using Content.Shared.Forensics.Components;
 using Content.Shared.Interaction;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Inventory;
@@ -71,10 +70,9 @@ namespace Content.Server.Forensics
         }
         // End of DeltaV code
 
-        private void OnFingerprintInit(Entity<FingerprintComponent> ent, ref MapInitEvent args)
+        private void OnFingerprintInit(EntityUid uid, FingerprintComponent component, MapInitEvent args)
         {
-            ent.Comp.Fingerprint = GenerateFingerprint();
-            Dirty(ent);
+            component.Fingerprint = GenerateFingerprint();
         }
 
         private void OnDNAInit(EntityUid uid, DnaComponent component, MapInitEvent args)

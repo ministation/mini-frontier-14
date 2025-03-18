@@ -1,51 +1,39 @@
 - type: lobbyBackground
   id: BingGuss
-  background: /Textures/_NF/LobbyScreens/bingguss.webp
+  background: /Textures/_NF/LobbyScreens/bingguss.png
 
 - type: lobbyBackground
   id: Janigang
-  background: /Textures/_NF/LobbyScreens/janigang.webp
+  background: /Textures/_NF/LobbyScreens/janigang.png
 
 - type: lobbyBackground
   id: Xeeenoooossss
-  background: /Textures/_NF/LobbyScreens/xeeenoooossss.webp
+  background: /Textures/_NF/LobbyScreens/xeeenoooossss.png
 
 - type: lobbyBackground
   id: Secrun
-  background: /Textures/_NF/LobbyScreens/secrun.webp
+  background: /Textures/_NF/LobbyScreens/secrun.png
 
 - type: lobbyBackground
   id: TheSecStealers
-  background: /Textures/_NF/LobbyScreens/thesecstealers.webp
+  background: /Textures/_NF/LobbyScreens/thesecstealers.png
 
 - type: lobbyBackground
   id: HandsomeKiller
-  background: /Textures/_NF/LobbyScreens/handsomekiller.webp
+  background: /Textures/_NF/LobbyScreens/handsomekiller.png
 
 - type: lobbyBackground
   id: CaughtUp
-  background: /Textures/_NF/LobbyScreens/caughtup.webp
+  background: /Textures/_NF/LobbyScreens/caughtup.png
 
 - type: lobbyBackground
   id: Rebirth
-  background: /Textures/_NF/LobbyScreens/rebirth.webp
+  background: /Textures/_NF/LobbyScreens/rebirth.png
 
 - type: lobbyBackground
   id: BrownPants
-  background: /Textures/_NF/LobbyScreens/brownpants.webp
+  background: /Textures/_NF/LobbyScreens/brownpants.png
 
 - type: lobbyBackground
   id: Cattrio
-  background: /Textures/_NF/LobbyScreens/cattrio.webp
-
-- type: lobbyBackground
-  id: Paramedicrash
-  background: /Textures/_NF/LobbyScreens/paramedicrash.webp
-
-# - type: lobbyBackground
-  # id: StaresBlankly
-  # background: /Textures/_NF/LobbyScreens/staresblankly.webp
-
-# - type: lobbyBackground
-  # id: WyvernShipyards
-  # background: /Textures/_NF/LobbyScreens/wyvernshipyards.webp
+  background: /Textures/_NF/LobbyScreens/cattrio.png

@@ -3,7 +3,8 @@ using Content.Shared.Containers.ItemSlots;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
-using Content.Shared.Roles; // Frontier
+using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.List;
+using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Access.Components;
 
@@ -29,9 +30,9 @@ public sealed partial class IdCardConsoleComponent : Component
         public readonly string FullName;
         public readonly string JobTitle;
         public readonly List<ProtoId<AccessLevelPrototype>> AccessList;
-        public readonly ProtoId<JobPrototype> JobPrototype; // Frontier: AccessPrototype<JobPrototype
+        public readonly ProtoId<AccessLevelPrototype> JobPrototype;
 
-        public WriteToTargetIdMessage(string fullName, string jobTitle, List<ProtoId<AccessLevelPrototype>> accessList, ProtoId<JobPrototype> jobPrototype) // Frontier: jobProtoype - AccessPrototype<JobPrototype
+        public WriteToTargetIdMessage(string fullName, string jobTitle, List<ProtoId<AccessLevelPrototype>> accessList, ProtoId<AccessLevelPrototype> jobPrototype)
         {
             FullName = fullName;
             JobTitle = jobTitle;
@@ -97,7 +98,7 @@ public sealed partial class IdCardConsoleComponent : Component
         public readonly string?[]? TargetShuttleNameParts; // Frontier
         public readonly List<ProtoId<AccessLevelPrototype>>? TargetIdAccessList;
         public readonly List<ProtoId<AccessLevelPrototype>>? AllowedModifyAccessList;
-        public readonly ProtoId<JobPrototype> TargetIdJobPrototype; // Frontier: AccessLevelPrototype<JobPrototype
+        public readonly ProtoId<AccessLevelPrototype> TargetIdJobPrototype;
 
         public IdCardConsoleBoundUserInterfaceState(bool isPrivilegedIdPresent,
             bool isPrivilegedIdAuthorized,
@@ -108,7 +109,7 @@ public sealed partial class IdCardConsoleComponent : Component
             string?[]? targetShuttleNameParts,
             List<ProtoId<AccessLevelPrototype>>? targetIdAccessList,
             List<ProtoId<AccessLevelPrototype>>? allowedModifyAccessList,
-            ProtoId<JobPrototype> targetIdJobPrototype, // Frontier: AccessLevelPrototype<JobPrototype
+            ProtoId<AccessLevelPrototype> targetIdJobPrototype,
             string privilegedIdName,
             string targetIdName)
         {

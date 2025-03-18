@@ -132,7 +132,7 @@
   id: MagazineNovaliteC1
 
 - type: Tag
-  id: NFTrackingDart
+  id: TrackingDart
 
 - type: Tag
   id: SpeedLoaderRifleHeavy
@@ -166,6 +166,3 @@
 
 - type: Tag
   id: NFPaperStampProtected
-
-- type: Tag
-  id: MagazineLightRifleLowCapacity

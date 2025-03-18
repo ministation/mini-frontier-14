@@ -3165,7 +3165,7 @@ entities:
     - pos: 2.6242924,1.4949044
       parent: 391
       type: Transform
-- proto: WindoorSecureSecurityLocked
+- proto: WindoorSecurityLocked
   entities:
   - uid: 239
     components:

@@ -7,6 +7,3 @@ ent-CratePirateChestGrapeShot = Сундук картечи
 ent-CratePirateChestGlassShot = Сундук стеклянной картечи
     .suffix = Заполненный
     .desc = { ent-CratePirateGrey.desc }
-ent-CratePirateChestCannonBallEmp = Сундук ЭМИ ядер
-    .suffix = Заполненный
-    .desc = { ent-CratePirateGrey.desc }

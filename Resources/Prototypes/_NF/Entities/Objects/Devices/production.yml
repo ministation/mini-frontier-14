@@ -87,7 +87,7 @@
 # TechFab
 - type: entity
   id: NfsdTechFabCircuitboard
-  parent: [SecurityTechFabCircuitboard, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
+  parent: SecurityTechFabCircuitboard
   name: NFSD techfab machine board
   description: A machine printed circuit board for an NFSD techfab.
   components:
@@ -226,37 +226,15 @@
       Cable: 2
 
 - type: entity
-  id: PortableGeneratorDKMachineCircuitboard
-  parent: [ BaseMachineCircuitboard, BaseC2ContrabandUnredeemable ]
-  name: D-K-type portable generator machine board
-  description: A machine printed circuit board for a D-K-type portable generator.
+  id: PortableGeneratorHyperPacmanMachineCircuitboard
+  parent: BaseMachineCircuitboard
+  name: H.Y.P.E.R.P.A.C.M.A.N.-type portable generator machine board
+  description: A machine printed circuit board for a shredder.
   components:
     - type: Sprite
       state: engineering
     - type: MachineBoard
-      prototype: PortableGeneratorDK
-      requirements:
-        Capacitor: 2
-      stackRequirements:
-        CableHV: 10
-    - type: PhysicalComposition
-      materialComposition:
-        Glass: 200
-      chemicalComposition:
-        Silicon: 20
-    - type: StaticPrice
-      price: 40
-
-- type: entity
-  id: PortableGeneratorDKJrMachineCircuitboard
-  parent: [ BaseMachineCircuitboard, BaseC1Contraband ]
-  name: D-K Jr.-type portable generator machine board
-  description: A machine printed circuit board for a D-K Jr.-type portable generator.
-  components:
-    - type: Sprite
-      state: engineering
-    - type: MachineBoard
-      prototype: PortableGeneratorDKJr
+      prototype: PortableGeneratorHyperPacman
       requirements:
         Capacitor: 2
       stackRequirements:
@@ -373,7 +351,7 @@
 
 - type: entity
   id: CondimentDispenserCircuitboard
-  parent: BaseMachineCircuitboard
+  parent: BaseMachineCircuitboard  
   name: condiment dispenser machine board
   description: A machine printed circuit board for a condiment dispenser.
   components:

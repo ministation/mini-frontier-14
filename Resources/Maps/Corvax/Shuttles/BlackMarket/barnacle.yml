@@ -48,6 +48,9 @@ entities:
       bodyType: Dynamic
     - type: Fixtures
       fixtures: {}
+    - type: IFF
+      color: '#FFC000FF'
+      flags: HideLabel
     - type: OccluderTree
     - type: Shuttle
     - type: GridPathfinding
@@ -168,7 +171,7 @@ entities:
       - 227
       - 213
       - 215
-- proto: AirlockExternalGlassPirateLocked
+- proto: AirlockExternalGlass
   entities:
   - uid: 142
     components:
@@ -180,7 +183,7 @@ entities:
     - type: Transform
       pos: -4.5,0.5
       parent: 201
-- proto: AirlockGlassShuttleSyndicatePirateLocked
+- proto: AirlockGlassShuttle
   entities:
   - uid: 18
     components:
@@ -518,52 +521,34 @@ entities:
       parent: 201
 - proto: CannonBall
   entities:
-  - uid: 15
-    components:
-    - type: Transform
-<<<<<<< HEAD
-      pos: 1.2770476,-0.4926232
-=======
-      rot: 1.5707963267948966 rad
-      pos: 1.8835673,-2.403088
->>>>>>> master
-      parent: 201
-  - uid: 19
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 1.6648173,-2.262463
-      parent: 201
   - uid: 72
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 1.6023173,-2.512463
+      pos: 1.4037349,-2.3940208
       parent: 201
-- proto: CannonBallGlassshot
+- proto: CannonBallEmp
   entities:
+  - uid: 15
+    components:
+    - type: Transform
+      pos: 1.2770476,-0.4926232
+      parent: 201
   - uid: 17
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 1.3054423,-2.449963
+      pos: 1.6433182,-2.362749
       parent: 201
   - uid: 20
     components:
     - type: Transform
-<<<<<<< HEAD
       pos: 1.6364226,-0.2738732
-=======
-      rot: 1.5707963267948966 rad
-      pos: 1.4616923,-2.137463
->>>>>>> master
       parent: 201
-- proto: CannonBallGrapeshot
+- proto: CannonBallGlassshot
   entities:
-  - uid: 76
+  - uid: 19
     components:
     - type: Transform
-      pos: 1.5241923,-2.309338
+      pos: 1.7579015,-2.602499
       parent: 201
   - uid: 273
     components:
@@ -1217,23 +1202,6 @@ entities:
     - type: Transform
       pos: 1.6025628,-4.4469357
       parent: 201
-<<<<<<< HEAD
-=======
-- proto: Gyroscope
-  entities:
-  - uid: 139
-    components:
-    - type: Transform
-      pos: -4.5,2.5
-      parent: 201
-- proto: HandLabeler
-  entities:
-  - uid: 238
-    components:
-    - type: Transform
-      pos: -0.38987,3.5138426
-      parent: 201
->>>>>>> master
 - proto: LockerWallMaterialsFuelPlasmaFilled
   entities:
   - uid: 120
@@ -1256,13 +1224,6 @@ entities:
     components:
     - type: Transform
       pos: 1.6783751,-4.3457556
-      parent: 201
-- proto: NFHolopadShipAntag
-  entities:
-  - uid: 229
-    components:
-    - type: Transform
-      pos: -0.5,1.5
       parent: 201
 - proto: NitrogenCanister
   entities:
@@ -1384,18 +1345,11 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 1.5,-2.5
       parent: 201
-<<<<<<< HEAD
   - uid: 272
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 1.5,-0.5
-=======
-  - uid: 225
-    components:
-    - type: Transform
-      pos: -0.5,3.5
->>>>>>> master
       parent: 201
 - proto: ReinforcedWindow
   entities:

@@ -30,7 +30,7 @@
       swap: false
       whitelist:
         components:
-        - Cash
+          - Currency
   - type: ActivatableUI
     key: enum.BankATMMenuUiKey.ATM
   - type: UserInterface
@@ -58,7 +58,7 @@
   - type: UserInterface
     interfaces:
       enum.BankATMMenuUiKey.ATM:
-        type: BankATMWithdrawOnlyMenuBoundUserInterface
+        type: WithdrawBankATMMenuBoundUserInterface
 
 - type: entity
   parent: [BaseStructureDisableToolUse, BaseStructureIndestructible, ComputerBankATMDeposit]
@@ -99,10 +99,10 @@
     netsync: false
     sprite: _NF/Structures/Machines/atm/wall_atm.rsi
     layers:
-    - map: ["computerLayerBody"]
-      state: icon
-    - map: ["computerLayerScreen"]
-      state: unshaded
+      - map: ["computerLayerBody"]
+        state: icon
+      - map: ["computerLayerScreen"]
+        state: unshaded
 
 - type: entity
   suffix: Wallmount
@@ -113,10 +113,10 @@
     netsync: false
     sprite: _NF/Structures/Machines/atm/wall_atm.rsi
     layers:
-    - map: ["computerLayerBody"]
-      state: icon
-    - map: ["computerLayerScreen"]
-      state: unshaded
+      - map: ["computerLayerBody"]
+        state: icon
+      - map: ["computerLayerScreen"]
+        state: unshaded
   - type: Computer
     board: ComputerWithdrawBankATMComputerCircuitboard
 
@@ -198,13 +198,13 @@
       swap: false
       whitelist:
         components:
-        - Cash
+          - Currency
   - type: ActivatableUI
     key: enum.BankATMMenuUiKey.ATM
   - type: UserInterface
     interfaces:
       enum.BankATMMenuUiKey.ATM:
-        type: StationAdminConsoleBoundUserInterface
+        type: StationBankATMMenuBoundUserInterface
   - type: ActivatableUIRequiresAccess
   - type: ActivatableUIRequiresPower
   - type: ItemSlots

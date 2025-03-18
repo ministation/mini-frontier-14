@@ -55,7 +55,7 @@
   abstract: true # Frontier
   icon:
     sprite: Objects/Consumable/Smokeables/Cigarettes/Cartons/green.rsi
-    state: icon
+    state: closed
   product: CrateServiceSmokeables
   cost: 1500
   category: cargoproduct-category-name-service
@@ -65,7 +65,7 @@
   id: ServiceCustomSmokable
   icon:
     sprite: Objects/Consumable/Smokeables/Cigarettes/Cartons/green.rsi
-    state: icon
+    state: closed
   product: CrateServiceCustomSmokable
   cost: 1000
   category: cargoproduct-category-name-service

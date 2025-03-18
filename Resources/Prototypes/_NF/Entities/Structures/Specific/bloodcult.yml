@@ -224,7 +224,7 @@
       shader: unshaded
 
 - type: entity
-  parent: [Autolathe, BaseC3Contraband] #Corvax-Frontier КБ
+  parent: Autolathe
   id: BloodCultProp02
   name: blood cult forge
   description: A forge for weapon and armor production.
@@ -252,11 +252,27 @@
     idleState: icon
     runningState: icon
     unlitRunningState: unlit-building
-    staticPacks:
-    - NFBloodCultStatic
+    staticRecipes:
+    - RitualDagger
+    - EldritchBlade
+    - UnholyHalberd
+    - WizardStaffMeleeBlood
+    - SpearBone
+    - ClothingHeadHelmetCultJanitor
+    - ClothingMaskCultJanitor
+    - ClothingOuterCoatCultJanitor
+    - ClothingHeadHelmetCult
+    - ClothingOuterArmorCult
+    - ClothingShoesCult
+    - ClothingOuterCoatBloodCultRobes
+    - ClothingHeadHelmetBone
+    - ClothingOuterArmorBone
+    - ClothingBackpackMessengerBloodCult
+    - PumpkinLanternSmall
+    - CandleRedInfinite
 
 - type: entity
-  parent: [BloodCultProp01, BaseC3Contraband] #Corvax-Frontier КБ
+  parent: BloodCultProp01
   id: BloodCultProp03
   name: blood cult shrine
   description: An occult shrine for imbuing objects with vile energies.
@@ -269,7 +285,7 @@
       shader: unshaded
 
 - type: entity
-  parent: [BloodCultProp01, BaseC3Contraband] #Corvax-Frontier КБ
+  parent: BloodCultProp01
   id: BloodCultProp04
   name: blood cult workbench
   description: An occult workbench with handy drawers. There is a severed hand in one.

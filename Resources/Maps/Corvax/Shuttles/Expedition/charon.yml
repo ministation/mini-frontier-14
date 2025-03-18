@@ -1,17 +1,6 @@
 meta:
-  format: 7
-  category: Grid
-  engineVersion: 247.2.0
-  forkId: ""
-  forkVersion: ""
-  time: 03/13/2025 12:26:39
-  entityCount: 1182
-maps: []
-grids:
-- 1
-orphans:
-- 1
-nullspace: []
+  format: 6
+  postmapinit: false
 tilemap:
   0: Space
   33: FloorDark
@@ -2649,10 +2638,10 @@ entities:
       parent: 1
 - proto: CargoPallet
   entities:
-  - uid: 1180
+  - uid: 894
     components:
     - type: Transform
-      pos: -10.5,-12.5
+      pos: -10.5,11.5
       parent: 1
 - proto: CarpetPurple
   entities:
@@ -3934,13 +3923,6 @@ entities:
     components:
     - type: Transform
       pos: -2.5,10.5
-      parent: 1
-- proto: DefibrillatorCabinetFilled
-  entities:
-  - uid: 894
-    components:
-    - type: Transform
-      pos: -6.5,4.5
       parent: 1
 - proto: DrinkMugMetal
   entities:
@@ -5869,13 +5851,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -5.511345,11.336839
       parent: 1
-- proto: NFHolopadShip
-  entities:
-  - uid: 1135
-    components:
-    - type: Transform
-      pos: -10.5,11.5
-      parent: 1
 - proto: NitrogenCanister
   entities:
   - uid: 949
@@ -6863,6 +6838,8 @@ entities:
     - type: Transform
       pos: -5.5,11.5
       parent: 1
+    - type: Drink
+      solution: tank
 - proto: SinkWide
   entities:
   - uid: 785
@@ -6871,6 +6848,8 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -3.5,9.5
       parent: 1
+    - type: Drink
+      solution: tank
 - proto: SMESBasic
   entities:
   - uid: 187
@@ -7259,56 +7238,56 @@ entities:
     - type: DeviceLinkSource
       linkedPorts:
         1091:
-        - Left: Forward
-        - Right: Reverse
+        - Left: Reverse
+        - Right: Forward
         - Middle: Off
         488:
-        - Left: Forward
-        - Right: Reverse
+        - Left: Reverse
+        - Right: Forward
         - Middle: Off
         582:
-        - Left: Forward
-        - Right: Reverse
+        - Left: Reverse
+        - Right: Forward
         - Middle: Off
         1089:
-        - Left: Forward
-        - Right: Reverse
+        - Left: Reverse
+        - Right: Forward
         - Middle: Off
         1088:
-        - Left: Forward
-        - Right: Reverse
+        - Left: Reverse
+        - Right: Forward
         - Middle: Off
         1087:
-        - Left: Forward
-        - Right: Reverse
+        - Left: Reverse
+        - Right: Forward
         - Middle: Off
         1086:
-        - Left: Forward
-        - Right: Reverse
+        - Left: Reverse
+        - Right: Forward
         - Middle: Off
         1085:
-        - Left: Forward
-        - Right: Reverse
+        - Left: Reverse
+        - Right: Forward
         - Middle: Off
         491:
-        - Left: Forward
-        - Right: Reverse
+        - Left: Reverse
+        - Right: Forward
         - Middle: Off
         490:
-        - Left: Forward
-        - Right: Reverse
+        - Left: Reverse
+        - Right: Forward
         - Middle: Off
         1004:
-        - Left: Forward
-        - Right: Reverse
+        - Left: Reverse
+        - Right: Forward
         - Middle: Off
         477:
-        - Left: Forward
-        - Right: Reverse
+        - Left: Reverse
+        - Right: Forward
         - Middle: Off
         36:
-        - Left: Forward
-        - Right: Reverse
+        - Left: Reverse
+        - Right: Forward
         - Middle: Off
   - uid: 1109
     components:
@@ -7318,56 +7297,56 @@ entities:
     - type: DeviceLinkSource
       linkedPorts:
         39:
-        - Left: Forward
-        - Right: Reverse
+        - Left: Reverse
+        - Right: Forward
         - Middle: Off
         48:
-        - Left: Forward
-        - Right: Reverse
+        - Right: Forward
+        - Left: Reverse
         - Middle: Off
         1098:
-        - Left: Forward
-        - Right: Reverse
+        - Left: Reverse
+        - Right: Forward
         - Middle: Off
         1097:
-        - Left: Forward
-        - Right: Reverse
+        - Left: Reverse
+        - Right: Forward
         - Middle: Off
         1096:
-        - Left: Forward
-        - Right: Reverse
+        - Right: Forward
+        - Left: Reverse
         - Middle: Off
         1095:
-        - Left: Forward
-        - Right: Reverse
+        - Left: Reverse
+        - Right: Forward
         - Middle: Off
         1094:
-        - Left: Forward
-        - Right: Reverse
+        - Left: Reverse
+        - Right: Forward
         - Middle: Off
         1093:
-        - Left: Forward
-        - Right: Reverse
+        - Left: Reverse
+        - Right: Forward
         - Middle: Off
         1092:
-        - Left: Forward
-        - Right: Reverse
+        - Left: Reverse
+        - Right: Forward
         - Middle: Off
         1028:
-        - Left: Forward
-        - Right: Reverse
+        - Left: Reverse
+        - Right: Forward
         - Middle: Off
         1101:
-        - Left: Forward
-        - Right: Reverse
+        - Left: Reverse
+        - Right: Forward
         - Middle: Off
         1100:
-        - Left: Forward
-        - Right: Reverse
+        - Left: Reverse
         - Middle: Off
+        - Right: Forward
         1099:
-        - Left: Forward
-        - Right: Reverse
+        - Left: Reverse
+        - Right: Forward
         - Middle: Off
 - proto: VendingMachineCargoDrobe
   entities:
@@ -8291,6 +8270,8 @@ entities:
     - type: Transform
       pos: 3.5,-11.5
       parent: 1
+    - type: Drink
+      solution: tank
 - proto: Window
   entities:
   - uid: 18

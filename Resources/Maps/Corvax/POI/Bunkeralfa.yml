@@ -6415,7 +6415,7 @@ entities:
     - type: Transform
       pos: 36.5,51.5
       parent: 2
-- proto: BarSignNFMaltroach
+- proto: BarSignMaltroach
   entities:
   - uid: 1830
     components:
@@ -6780,6 +6780,13 @@ entities:
     components:
     - type: Transform
       pos: 56.781914,39.587807
+      parent: 2
+- proto: BorgModuleWeapon
+  entities:
+  - uid: 2358
+    components:
+    - type: Transform
+      pos: 58.32879,38.900307
       parent: 2
 - proto: ButtonFrameCautionSecurity
   entities:

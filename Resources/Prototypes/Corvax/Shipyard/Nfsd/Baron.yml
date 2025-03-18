@@ -15,7 +15,7 @@
   parent: BaseVessel
   name: NSF Барон
   description: Сверхогромный многофункциональный шаттл ДСБФ. Рекомендованный состав команды 5-15 человек.
-  price: 570500 #Appraisal value is 320000
+  price: 720500 #Appraisal value is 440000
   category: Large
   group: Security
   access: Frontier

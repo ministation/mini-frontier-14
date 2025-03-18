@@ -1,5 +1,5 @@
 - type: entity
-  parent: [FoodEggBase, BaseC3Contraband] #Corvax-Frontier КБ
+  parent: FoodEggBase
   id: DragonEgg
   name: dragon egg
   description: How many did you kill just to get one of these eggs.
@@ -44,8 +44,6 @@
     description: ghost-role-information-baby-dragon-description
     rules: ghost-role-information-baby-dragon-rules
     prototype: BabyDragon
-    mindRoles:
-    - MindRoleGhostRoleFamiliar
   - type: GhostRoleMobSpawner
     prototype: MobSpawnBabyDragon
   - type: SolutionContainerManager

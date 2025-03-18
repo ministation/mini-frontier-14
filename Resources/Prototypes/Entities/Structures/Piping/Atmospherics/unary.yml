@@ -1,5 +1,5 @@
 - type: entity
-  parent: [RecyclableItemSteelSmall, GasPipeBase] # Frontier: add RecyclableItemSteelSmall
+  parent: GasPipeBase
   abstract: true
   id: GasUnaryBase
   placement:
@@ -71,11 +71,7 @@
     - type: Weldable
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasVentOpening
-    - type: GuideHelp
-      guides:
-      - AirVent
-      - DeviceMonitoringAndControl
-
+      
 - type: entity
   parent: GasUnaryBase
   id: GasPassiveVent
@@ -102,10 +98,7 @@
       node: passivevent
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasVentOpening
-    - type: GuideHelp
-      guides:
-      - PassiveVent
-
+      
 - type: entity
   parent: [GasUnaryBase, AirSensorBase]
   id: GasVentScrubber
@@ -157,11 +150,7 @@
     - type: Weldable
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasVentScrubber
-    - type: GuideHelp
-      guides:
-      - AirScrubber
-      - DeviceMonitoringAndControl
-
+      
 - type: entity
   parent: GasUnaryBase
   id: GasOutletInjector
@@ -202,10 +191,7 @@
       - enum.LightLayers.Unshaded
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasVentOpening
-    - type: GuideHelp
-      guides:
-      - AirInjector
-
+      
 - type: entity
   parent: [ BaseMachinePowered, ConstructibleMachine ]
   id: BaseGasThermoMachine
@@ -251,10 +237,7 @@
     - type: PowerSwitch
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: Thermoregulator
-    - type: GuideHelp
-      guides:
-      - Thermomachines
-
+      
 - type: entity
   parent: BaseGasThermoMachine
   id: GasThermoMachineFreezer
@@ -461,6 +444,3 @@
   - type: PowerSwitch
   - type: AtmosMonitoringConsoleDevice
     navMapBlip: Thermoregulator
-  - type: GuideHelp
-    guides:
-    - GasCondensing

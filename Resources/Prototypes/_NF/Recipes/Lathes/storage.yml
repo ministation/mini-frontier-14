@@ -3,8 +3,7 @@
 - type: latheRecipe
   abstract: true
   id: NFBaseToolboxRecipe
-  categories:
-  - StorageNF
+  category: StorageNF
   completetime: 4
   materials:
     Steel: 300

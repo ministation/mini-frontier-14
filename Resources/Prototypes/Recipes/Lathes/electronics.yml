@@ -3,8 +3,7 @@
 - type: latheRecipe
   abstract: true
   id: BaseElectronicsRecipe
-  categories:
-  - Circuitry
+  category: Circuitry
   completetime: 2
   materials:
     Steel: 100
@@ -588,6 +587,12 @@
   id: ShuttleGunDusterCircuitboard
   result: ShuttleGunDusterCircuitboard
   completetime: 12
+
+- type: latheRecipe
+  parent: BaseGoldCircuitboardRecipe
+  id: StationAnchorCircuitboard
+  result: StationAnchorCircuitboard
+  completetime: 8
 
 - type: latheRecipe
   parent: BaseGoldCircuitboardRecipe

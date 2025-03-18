@@ -162,10 +162,7 @@
       prob: 0.6
     - id: PonderingOrb
       orGroup: Staff
-      prob: 0.27
-    - id: PonderingOrbWizard
-      orGroup: Staff
-      prob: 0.03
+      prob: 0.3
     - id: RGBStaff
       orGroup: Staff
       prob: 0.1
@@ -1610,31 +1607,25 @@
       # Bugs (weight: 2)
       - id: MobCockroach
         orGroup: Critter
-        prob: 0.34
+        prob: 0.36
       - id: MobSlug
         orGroup: Critter
-        prob: 0.34
+        prob: 0.36
+      - id: MobArgocyteSlurva # honorary bug?
+        orGroup: Critter
+        prob: 0.36
       - id: MobBee
         orGroup: Critter
-        prob: 0.34
+        prob: 0.36
       - id: MobButterfly
         orGroup: Critter
-        prob: 0.34
-      - id: MobSnail
-        orGroup: Critter
-        prob: 0.34
+        prob: 0.36
         # Uncommon
       - id: MobMothroach
         orGroup: Critter
         prob: 0.15
         # Rare
       - id: MobRosyMothroach
-        orGroup: Critter
-        prob: 0.05
-      - id: MobSnailMoth
-        orGroup: Critter
-        prob: 0.05
-      - id: MobSnailSpeed
         orGroup: Critter
         prob: 0.05
       # Small reptiles (weight: 1)
@@ -1921,7 +1912,6 @@
         orGroup: Mask
       - id: ClothingMaskScaredMime
         orGroup: Mask
-      - id: MimePowersImplanter
 
 # Base Nyano mail
 

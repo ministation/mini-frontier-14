@@ -784,9 +784,6 @@
       reagents:
       - ReagentId: JuicePotato
         Quantity: 10
-  - type: SliceableFood # Frontier
-    count: 1 # Frontier
-    slice: FoodPotatoSlice # Frontier
   - type: Tag
     tags:
     - Potato
@@ -1123,7 +1120,9 @@
     juiceSolution:
       reagents:
       - ReagentId: Cornoil
-        Quantity: 5
+        Quantity: 3
+      - ReagentId: Enzyme
+        Quantity: 2
   - type: FoodSequenceElement
     entries:
       Burger: Corn
@@ -1393,7 +1392,7 @@
         reagents:
           - ReagentId: Nutriment
             Quantity: 4
-          - ReagentId: FrostOil
+          - ReagentId: Frostoil
             Quantity: 10
           - ReagentId: Vitamin
             Quantity: 4

@@ -133,6 +133,11 @@ entities:
           version: 6
     - type: Broadphase
     - type: Physics
+      bodyStatus: InAir
+      angularDamping: 0.05
+      linearDamping: 0.05
+      fixedRotation: False
+      bodyType: Dynamic
     - type: Fixtures
       fixtures: {}
     - type: OccluderTree
@@ -1998,7 +2003,7 @@ entities:
             0: 65535
           -3,8:
             0: 13105
-            2: 34944
+            4: 34944
           -2,5:
             0: 30579
           -2,6:
@@ -2049,7 +2054,7 @@ entities:
             0: 65407
           3,8:
             0: 15
-            2: 65280
+            4: 65280
           4,4:
             0: 61183
           4,5:
@@ -2080,10 +2085,10 @@ entities:
             1: 3840
           -6,2:
             1: 15
-            3: 28672
+            2: 28672
           -6,3:
-            3: 7
-            4: 30464
+            2: 7
+            3: 30464
           -6,-1:
             0: 65280
             1: 15
@@ -2142,17 +2147,17 @@ entities:
           9,0:
             0: 3
           -4,8:
-            2: 13104
+            4: 13104
             0: 34944
           -5,8:
-            2: 52416
+            4: 52416
             0: 1
             1: 4368
           -4,9:
-            2: 51
+            4: 51
             1: 63616
           -5,9:
-            2: 204
+            4: 204
             1: 61713
           -4,10:
             1: 15
@@ -2161,13 +2166,13 @@ entities:
           -3,9:
             0: 1
             1: 62256
-            2: 136
+            4: 136
           -3,10:
             1: 15
           -2,8:
-            2: 30576
+            4: 30576
           -2,9:
-            2: 119
+            4: 119
             1: 61440
           -2,10:
             1: 15
@@ -2192,29 +2197,29 @@ entities:
           2,11:
             1: 15
           3,9:
-            2: 255
+            4: 255
             1: 61440
           3,10:
             1: 15
           4,8:
             0: 139
-            2: 13056
+            4: 13056
             1: 34816
           4,9:
-            2: 51
+            4: 51
             1: 63624
           4,10:
             1: 15
           -6,4:
-            2: 1904
+            4: 1904
           -6,5:
-            2: 119
+            4: 119
             5: 28672
           -6,6:
             5: 7
-            2: 30464
+            4: 30464
           -6,7:
-            2: 1904
+            4: 1904
           5,5:
             0: 56792
           5,6:
@@ -2312,21 +2317,6 @@ entities:
         - volume: 2500
           temperature: 293.15
           moles:
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.15
-          moles:
           - 6666.982
           - 0
           - 0
@@ -2344,6 +2334,21 @@ entities:
           moles:
           - 0
           - 6666.982
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.15
+          moles:
+          - 0
+          - 0
           - 0
           - 0
           - 0
@@ -11736,7 +11741,7 @@ entities:
     - type: Transform
       pos: 12.5,12.5
       parent: 2
-- proto: ComputerWallmountBankATM
+- proto: ComputerWallmountWithdrawBankATM
   entities:
   - uid: 3182
     components:
@@ -19093,7 +19098,7 @@ entities:
     - type: Transform
       pos: -5.5,24.5
       parent: 2
-- proto: GasSaleConsoleHigh
+- proto: GasSaleConsole
   entities:
   - uid: 4274
     components:
@@ -21441,13 +21446,6 @@ entities:
     components:
     - type: Transform
       pos: 11.61501,9.490756
-      parent: 2
-- proto: NFHolopadEdisonReception
-  entities:
-  - uid: 4321
-    components:
-    - type: Transform
-      pos: 0.5,-4.5
       parent: 2
 - proto: NitrogenCanister
   entities:

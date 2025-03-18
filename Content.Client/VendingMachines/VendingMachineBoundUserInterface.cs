@@ -1,13 +1,11 @@
 using Content.Client.UserInterface.Controls;
 using Content.Client.VendingMachines.UI;
 using Content.Shared.VendingMachines;
+using Content.Shared.Bank.Components;
 using Robust.Client.UserInterface;
 using Robust.Shared.Input;
 using System.Linq;
 using Robust.Client.GameObjects;
-using Content.Shared._NF.Bank.Components; // Frontier
-using Content.Shared.Containers.ItemSlots; // Frontier
-using Content.Shared.Stacks; // Frontier
 
 namespace Content.Client.VendingMachines
 {
@@ -21,14 +19,12 @@ namespace Content.Client.VendingMachines
 
         // Frontier: market price modifier & balance
         private UserInterfaceSystem _uiSystem = default!;
-        private ItemSlotsSystem _itemSlots = default!;
+        private IEntityManager _entMan = default!;
 
         [ViewVariables]
         private float _mod = 1f;
         [ViewVariables]
         private int _balance = 0;
-        [ViewVariables]
-        private int _cashSlotBalance = 0;
         // End Frontier
 
         public VendingMachineBoundUserInterface(EntityUid owner, Enum uiKey) : base(owner, uiKey)
@@ -39,21 +35,19 @@ namespace Content.Client.VendingMachines
         {
             base.Open();
 
-            // Frontier: state, market modifier, balance status
-            _uiSystem = EntMan.System<UserInterfaceSystem>();
-            _itemSlots = EntMan.System<ItemSlotsSystem>();
+            var entMan = IoCManager.Resolve<IEntityManager>();
 
-            if (EntMan.TryGetComponent<MarketModifierComponent>(Owner, out var market))
+            // Frontier: state, market modifier, balance status
+            _entMan = entMan;
+            _uiSystem = entMan.System<UserInterfaceSystem>();
+
+            if (entMan.TryGetComponent<MarketModifierComponent>(Owner, out var market))
                 _mod = market.Mod;
             // End Frontier
 
-            _menu = this.CreateWindowCenteredLeft<VendingMachineMenu>();
-            // Frontier: no exceptions
-            if (EntMan.TryGetComponent(Owner, out MetaDataComponent? meta))
-                _menu.Title = meta.EntityName;
-            else
-                _menu.Title = Loc.GetString("vending-machine-nf-fallback-title");
-            // End Frontier: no exceptions
+            _menu = this.CreateWindow<VendingMachineMenu>();
+            _menu.OpenCenteredLeft();
+            _menu.Title = EntMan.GetComponent<MetaDataComponent>(Owner).EntityName;
             _menu.OnItemSelected += OnItemSelected;
             Refresh();
         }
@@ -67,23 +61,12 @@ namespace Content.Client.VendingMachines
             var uiUsers = _uiSystem.GetActors(Owner, UiKey);
             foreach (var uiUser in uiUsers)
             {
-                if (EntMan.TryGetComponent<BankAccountComponent>(uiUser, out var bank))
+                if (_entMan.TryGetComponent<BankAccountComponent>(uiUser, out var bank))
                     _balance = bank.Balance;
-            }
-            int? cashSlotValue = null;
-            if (EntMan.TryGetComponent<VendingMachineComponent>(Owner, out var vendingMachine))
-            {
-                _cashSlotBalance = vendingMachine.CashSlotBalance;
-                if (vendingMachine.CashSlotName != null)
-                    cashSlotValue = _cashSlotBalance;
-            }
-            else
-            {
-                _cashSlotBalance = 0;
             }
             // End Frontier
 
-            _menu?.Populate(_cachedInventory, _mod, _balance, cashSlotValue); // Frontier: add _balance
+            _menu?.Populate(_cachedInventory, _mod, _balance); // Frontier: add _balance
         }
 
         private void OnItemSelected(GUIBoundKeyEventArgs args, ListData data)

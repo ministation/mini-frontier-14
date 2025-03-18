@@ -15,35 +15,34 @@
     # TODO: Fill this out more.
     # whitelist: # Frontier: commented out whitelist
       # tags:
-      #   - Powerdrill
-      #   - Wirecutter
-      #   - Crowbar
-      #   - Screwdriver
-      #   - Flashlight
-      #   - Wrench
-      #   - GeigerCounter
-      #   - Flare
-      #   - CableCoil
-      #   - CigPack
-      #   - Radio
-      #   - HolofanProjector
-      #   - Multitool
-      #   - AppraisalTool
-      #   - JawsOfLife
-      #   - GPS
-      #   - WeldingMask
+        # - Powerdrill
+        # - Wirecutter
+        # - Crowbar
+        # - Screwdriver
+        # - Flashlight
+        # - Wrench
+        # - GeigerCounter
+        # - Flare
+        # - CableCoil
+        # - CigPack
+        # - Radio
+        # - HolofanProjector
+        # - Multitool
+        # - AppraisalTool
+        # - JawsOfLife
+        # - GPS
+        # - WeldingMask
       # components:
-      #   - StationMap
-      #   - SprayPainter
-      #   - NetworkConfigurator
-      #   - RCD
-      #   - RCDAmmo
-      #   - Welder
-      #   - PowerCell
-      #   - Geiger
-      #   - TrayScanner
-      #   - GasAnalyzer
-      #   - HandLabeler
+        # - SprayPainter
+        # - NetworkConfigurator
+        # - RCD
+        # - RCDAmmo
+        # - Welder
+        # - PowerCell
+        # - Geiger
+        # - TrayScanner
+        # - GasAnalyzer
+        # - HandLabeler
   - type: ItemMapper
     mapLayers:
       drill:
@@ -96,35 +95,34 @@
     #- 0,0,9,1 # Frontier
     # TODO: Fill this out more.
     # whitelist: # Frontier: commented out whitelist
-    #   tags:
-    #     - Wirecutter
-    #     - Crowbar
-    #     - Screwdriver
-    #     - Flashlight
-    #     - Wrench
-    #     - GeigerCounter
-    #     - Flare
-    #     - CableCoil
-    #     - Powerdrill
-    #     - JawsOfLife
-    #     - CigPack
-    #     - Radio
-    #     - HolofanProjector
-    #     - Multitool
-    #     - AppraisalTool
-    #   components:
-    #     - StationMap
-    #     - SprayPainter
-    #     - NetworkConfigurator
-    #     - RCD
-    #     - RCDAmmo
-    #     - Welder
-    #     - Flash
-    #     - Handcuff
-    #     - PowerCell
-    #     - Geiger
-    #     - TrayScanner
-    #     - GasAnalyzer
+      # tags:
+        # - Wirecutter
+        # - Crowbar
+        # - Screwdriver
+        # - Flashlight
+        # - Wrench
+        # - GeigerCounter
+        # - Flare
+        # - CableCoil
+        # - Powerdrill
+        # - JawsOfLife
+        # - CigPack
+        # - Radio
+        # - HolofanProjector
+        # - Multitool
+        # - AppraisalTool
+      # components:
+        # - SprayPainter
+        # - NetworkConfigurator
+        # - RCD
+        # - RCDAmmo
+        # - Welder
+        # - Flash
+        # - Handcuff
+        # - PowerCell
+        # - Geiger
+        # - TrayScanner
+        # - GasAnalyzer
   - type: ItemMapper
     mapLayers:
       drill:
@@ -460,7 +458,7 @@
   - type: Appearance
 
 - type: entity
-  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase] #Corvax-Frontier удалена строка КБ
+  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseC1Contraband] # Frontier: BaseRestrictedContraband<BaseC1Contraband
   id: ClothingBeltSecurity
   name: security belt
   description: Can hold security gear like handcuffs and flashes.
@@ -512,7 +510,7 @@
   - type: Appearance
 
 - type: entity
-  parent: [ClothingBeltBase, ClothingSlotBase] #Corvax-Frontier удалена строка КБ
+  parent: [ClothingBeltBase, ClothingSlotBase, BaseC1Contraband] # Frontier: BaseCommandContraband<BaseC1Contraband
   id: ClothingBeltSheath
   name: sabre sheath
   description: An ornate sheath designed to hold an officer's blade.
@@ -546,7 +544,7 @@
 # Belts without visualizers
 
 - type: entity
-  parent: [ClothingBeltAmmoProviderBase] #Corvax-Frontier удалена строка КБ
+  parent: [ClothingBeltAmmoProviderBase, BaseC1Contraband] # Frontier: BaseRestrictedContraband<BaseC1Contraband
   id: ClothingBeltBandolier
   name: bandolier
   description: A bandolier for holding shotgun ammunition.
@@ -593,7 +591,7 @@
     # - 0,0,3,1 # Frontier: commented out
 
 - type: entity
-  parent: [NFClothingBeltStorageBase, BaseC1Contraband, ContrabandClothing] # Frontier: ClothingBeltStorageBase<NFClothingBeltStorageBase, BaseSyndicateContraband<BaseC3SyndicateContraband, added ContrabandClothing as parent #Corvax-Frontier КБ
+  parent: [NFClothingBeltStorageBase, BaseC3SyndicateContraband, ContrabandClothing] # Frontier: ClothingBeltStorageBase<NFClothingBeltStorageBase, BaseSyndicateContraband<BaseC3SyndicateContraband, added ContrabandClothing as parent
   id: ClothingBeltSyndieHolster
   name: syndicate shoulder holster
   description: A deep shoulder holster capable of holding many types of ballistics.
@@ -648,7 +646,7 @@
     sprite: Clothing/Belt/salvagewebbing.rsi
 
 - type: entity
-  parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase] #Corvax-Frontier удалена строка КБ
+  parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseC1Contraband] # Frontier: ClothingBeltStorageBase<NFClothingBeltStorageBase, BaseSyndicateContraband<BaseC1Contraband
   id: ClothingBeltMilitaryWebbing
   name: chest rig
   description: A set of tactical webbing worn by boarding parties. # Frontier
@@ -702,7 +700,7 @@
     sprite: Clothing/Belt/suspenders_black.rsi
 
 - type: entity
-  parent: [NFClothingBeltStorageBase, BaseC3WizardContraband, ContrabandClothing] # Frontier: ClothingBeltStorageBase<NFClothingBeltStorageBase, BaseMagicalContraband<BaseC3WizardContraband, ContrabandClothing as parent
+  parent: [NFClothingBeltStorageBase, BaseC3WizardContraband, ContrabandClothing] # Frontier: ClothingBeltStorageBase<NFClothingBeltStorageBase, added BaseC3WizardContraband, ContrabandClothing as parent
   id: ClothingBeltWand
   name: wizard belt # Frontier: changed the name from 'wand belt' -> 'wizard belt'
   description: A belt designed to hold various rods of power. A veritable fanny pack of exotic magic.

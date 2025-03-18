@@ -1,5 +1,8 @@
 - type: loadout
   id: PirateJumpsuit
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: PantsCapableNF
   price: 0
   equipment:
     jumpsuit: ClothingUniformJumpsuitPirate
@@ -12,12 +15,18 @@
 
 - type: loadout
   id: PirateClothingUniformJumpsuitPirateSlops
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: PantsCapableNF
   price: 0
   equipment:
     jumpsuit: ClothingUniformJumpsuitPirateSlops
 
 - type: loadout
   id: PirateClothingUniformJumpsuitPirateLuffy
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: PantsCapableNF
   price: 0
   equipment:
     jumpsuit: ClothingUniformJumpsuitPirateLuffy

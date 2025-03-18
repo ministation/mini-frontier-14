@@ -136,14 +136,9 @@
   - type: Speech
     speechVerb: Slime
     speechSounds: Slime
-    allowedEmotes: ['Squish', 'Bubble', 'Pop'] # Imp: add Bubble, Pop
+    allowedEmotes: ['Squish']
   - type: TypingIndicator
     proto: slime
-  - type: Vocal # Imp
-    sounds: # Imp
-      Male: AnimalSlime # Imp
-      Female: AnimalSlime # Imp
-      Unsexed: AnimalSlime # Imp
   - type: NpcFactionMember
     factions:
     - SimpleNeutral
@@ -175,8 +170,6 @@
     - type: GhostRole
       description: ghost-role-information-angry-slimes-description
       rules: ghost-role-information-angry-slimes-rules
-      mindRoles:
-      - MindRoleGhostRoleTeamAntagonist
       raffle:
         settings: short
 
@@ -215,8 +208,6 @@
     - type: GhostRole
       description: ghost-role-information-angry-slimes-description
       rules: ghost-role-information-angry-slimes-rules
-      mindRoles:
-      - MindRoleGhostRoleTeamAntagonist
       raffle:
         settings: short
 
@@ -254,7 +245,5 @@
     - type: GhostRole
       description: ghost-role-information-angry-slimes-description
       rules: ghost-role-information-angry-slimes-rules
-      mindRoles:
-      - MindRoleGhostRoleTeamAntagonist
       raffle:
         settings: short

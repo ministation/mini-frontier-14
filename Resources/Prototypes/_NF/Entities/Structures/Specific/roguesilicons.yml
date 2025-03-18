@@ -1,7 +1,7 @@
 - type: entity
   parent: XenoWardingTower
   id: RogueAiNode
-  name: rogue AI node
+  name: rogue ai node
   description: "Contains portion of rogue AI database."
   components:
   - type: Sprite

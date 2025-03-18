@@ -289,15 +289,6 @@
 # Service
 - type: entity
   parent: BaseNFFlatpack
-  id: NFHolopadShipFlatpack
-  name: bluespace holopad flatpack
-  description: A flatpack used for constructing a bluespace holopad for ship to ship communication.
-  components:
-  - type: Flatpack
-    entity: NFHolopadShip
-
-- type: entity
-  parent: BaseNFFlatpack
   id: UniformPrinterFlatpack
   name: uniform printer flatpack
   description: A flatpack used for constructing an uniform printer.
@@ -348,15 +339,6 @@
   components:
   - type: Flatpack
     entity: CutterMachine
-
-- type: entity
-  parent: UniformPrinterFlatpack
-  id: TelevisionFlatpack
-  name: television flatpack
-  description: A flatpack used for constructing a television.
-  components:
-  - type: Flatpack
-    entity: ComputerTelevision
 
 - type: entity
   parent: UniformPrinterFlatpack
@@ -834,7 +816,7 @@
     price: 2000
 
 - type: entity
-  parent: [UniformPrinterFlatpack, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
+  parent: UniformPrinterFlatpack
   id: NfsdTechFabFlatpack
   name: NFSD techfab flatpack
   description: A flatpack used for constructing an NFSD techfab.
@@ -885,7 +867,7 @@
     price: 75
 
 - type: entity
-  parent: [HoverbikeFlatpack, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
+  parent: HoverbikeFlatpack
   id: HoverbikeNfsdFlatpack
   name: NFSD hoverbike flatpack
   description: A flatpack used for constructing a hoverbike. Keys already slotted in the ignition.
@@ -896,7 +878,7 @@
     price: 750
 
 - type: entity
-  parent: [HoverbikeFlatpack, BaseC3Contraband] #Corvax-Frontier КБ
+  parent: HoverbikeFlatpack
   id: HoverbikeSyndicateFlatpack
   name: syndicate hoverbike flatpack
   description: A flatpack used for constructing a hoverbike. Keys already slotted in the ignition.
@@ -986,7 +968,7 @@
     price: 500
 
 - type: entity
-  parent: [VendingMachineBoozeFlatpack, BaseC3Contraband] #Corvax-Frontier КБ
+  parent: VendingMachineBoozeFlatpack
   id: VendingMachineSyndieContrabandFlatpack
   name: contravend flatpack
   description: A flatpack used for constructing a contravend vendomat.

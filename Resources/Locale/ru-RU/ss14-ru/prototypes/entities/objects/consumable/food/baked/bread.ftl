@@ -72,7 +72,3 @@ ent-FoodBreadChallah = хала с медом
     .desc = Скрученный хлеб, посыпанный маком.
 ent-FoodBreadChallahSlice = ломтик халы с медом
     .desc = Кусочек мака с медом, о боже!
-ent-FoodBreadBaguetteCotton = хлопковый багет
-    .desc = Бон аз-з-зетит!
-ent-FoodBreadBaguetteCottonSlice = хлопковый кростини
-    .desc = Бон аз-з-зетит!

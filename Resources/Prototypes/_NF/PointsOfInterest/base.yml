@@ -9,5 +9,6 @@
   - type: IFF
     color: "#ffa600"
     readOnly: true
-  # Prevent gravity changes
-  - type: ForceAnchor
+  - type: Shuttle
+    angularDamping: 999999
+    linearDamping: 999999

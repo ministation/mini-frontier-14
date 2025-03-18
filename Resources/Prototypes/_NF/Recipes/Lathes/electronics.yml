@@ -55,10 +55,9 @@
     Glass: 500
 
 - type: latheRecipe
-  parent: BaseGoldCircuitboardRecipe
+  parent: StationAnchorCircuitboard
   id: MiniStationAnchorCircuitboard
   result: MiniStationAnchorCircuitboard
-  completetime: 8
 
 # Thrusters
 - type: latheRecipe
@@ -114,17 +113,9 @@
 
 # Generators
 - type: latheRecipe
-  id: PortableGeneratorDKMachineCircuitboard
+  id: PortableGeneratorHyperPacmanMachineCircuitboard
   parent: BaseCircuitboardRecipe
-  result: PortableGeneratorDKMachineCircuitboard
-  materials:
-     Steel: 350
-     Glass: 350
-
-- type: latheRecipe
-  id: PortableGeneratorDKJrMachineCircuitboard
-  parent: BaseCircuitboardRecipe
-  result: PortableGeneratorDKJrMachineCircuitboard
+  result: PortableGeneratorHyperPacmanMachineCircuitboard
   materials:
      Steel: 350
      Glass: 350

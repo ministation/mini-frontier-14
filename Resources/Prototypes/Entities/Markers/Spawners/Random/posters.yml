@@ -92,24 +92,20 @@
       - PosterContrabandInterdyne
       - PosterContrabandWaffleCorp
       - PosterContrabandMissingSpacepen
-        # Frontier: Start
-      - NFPosterContrabandLvhiStation
-      - NFPosterContrabandLvhiShuttle
-      - NFPosterContrabandLvhiSpace
-      - NFPosterContrabandLvhiMountains
-      - NFPosterContrabandLvhiPlanetCore
-      - NFPosterContrabandLvhiLogo
-      - NFPosterContrabandFsbLogo
-      - NFPosterContrabandFsbStasis
-      - NFPosterContrabandFsbApothecary
-      - NFPosterContrabandEatShrooms
-      - NFPosterContrabandKillerFashion
-      - NFPosterContrabandGoblinFront
-      - NFPosterContrabandGoblinate
-      - NFPosterContrabandFsbRubicon
-      - NFPosterContrabandWyvernShipyards
-      - NFPosterContrabandRatvarLives
-        # Frontier: Ending
+      - NFPosterContrabandLvhiStation # Frontier
+      - NFPosterContrabandLvhiShuttle # Frontier
+      - NFPosterContrabandLvhiSpace # Frontier
+      - NFPosterContrabandLvhiMountains # Frontier
+      - NFPosterContrabandLvhiPlanetCore # Frontier
+      - NFPosterContrabandLvhiLogo # Frontier
+      - NFPosterContrabandFsbLogo # Frontier
+      - NFPosterContrabandFsbStasis # Frontier
+      - NFPosterContrabandFsbApothecary # Frontier
+      - NFPosterContrabandEatShrooms # Frontier
+      - NFPosterContrabandKillerFashion # Frontier
+      - NFPosterContrabandGoblinFront # Frontier
+      - NFPosterContrabandGoblinate # Frontier
+      - NFPosterContrabandFsbRubicon # Frontier
     chance: 1
 
 - type: entity
@@ -175,13 +171,8 @@
       - PosterLegitSafetyMothHardhat
       - PosterLegitSafetyMothSSD
       - PosterLegitOppenhopper
-        # Frontier: Start
-      - NFPosterLegitMagnusWatching
-      - NFPosterLegitGoblinTinkerer
-      - NFPosterLegitBahamaMama
-      - NFPosterLegitWinnerWinner
-      - NFPosterLegitWantedClarpy
-      - NFPosterLegitMothPlease
-      - NFPosterLegitHaveYouSeenThisEgg
-        # Frontier: Ending
+      - NFPosterLegitMagnusWatching # Frontier
+      - NFPosterLegitGoblinTinkerer # Frontier
+      - NFPosterLegitBahamaMama # Frontier
+      - NFPosterLegitWinnerWinner # Frontier
     chance: 1

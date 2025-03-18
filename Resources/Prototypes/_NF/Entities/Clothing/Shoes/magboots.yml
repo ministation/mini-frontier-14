@@ -1,19 +1,22 @@
 - type: entity
   parent: [ClothingShoesBootsMag, ClothingShoesBootsCombat]
-  id: ClothingShoesBootsMagSecurity
-  name: security magboots
-  description: Security magnetic boots, often used during extravehicular activity to ensure the user remains safely attached to the vehicle.
+  id: ClothingShoesBootsMagCombat
+  name: combat magboots
+  description: Combat magnetic boots, often used during extravehicular activity to ensure the user remains safely attached to the vehicle.
   components:
   - type: Sprite
-    sprite: Corvax/Clothing/Shoes/Boots/magboots-combat.rsi #Corvax-Frontier респрайт
+    sprite: _NF/Clothing/Shoes/Boots/magboots-combat.rsi
     state: icon
   - type: Clothing
-    sprite: Corvax/Clothing/Shoes/Boots/magboots-combat.rsi #Corvax-Frontier респрайт
+    sprite: _NF/Clothing/Shoes/Boots/magboots-combat.rsi
   - type: Magboots
-    magbootsAlert: MagbootsSecurity
+    magbootsAlert: MagbootsCombat
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.9
 
 - type: entity
-  parent: [ClothingShoesBootsMagSecurity, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
+  parent: ClothingShoesBootsMagCombat
   id: ClothingShoesBootsMagNfsd
   name: NFSD magboots
   components:
@@ -24,12 +27,23 @@
     sprite: _NF/Clothing/Shoes/Boots/magboots-nfsd.rsi
   - type: Magboots
     magbootsAlert: MagbootsNfsd
-  - type: ClothingSpeedModifier
-    walkModifier: 0.95
-    sprintModifier: 0.9
 
 - type: entity
-  parent: ClothingShoesBootsMagSecurity
+  parent: [BaseC3PirateContraband, ClothingShoesBootsMagCombat]
+  id: ClothingShoesBootsMagPirate
+  name: pirate magboots
+  description: Pirate magnetic boots, often used during extravehicular activity to ensure the user remains safely attached to the vehicle.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Shoes/Boots/magboots-pirate.rsi
+    state: icon
+  - type: Clothing
+    sprite: _NF/Clothing/Shoes/Boots/magboots-pirate.rsi
+  - type: Magboots
+    magbootsAlert: MagbootsPirate
+
+- type: entity
+  parent: ClothingShoesBootsMagCombat
   id: ClothingShoesBootsMagMercenary
   name: mercenary magboots
   description: Mercenary magnetic boots, often used during extravehicular activity to ensure the user remains safely attached to the vehicle.
@@ -45,8 +59,8 @@
 - type: entity
   parent: ClothingShoesBootsMag
   id: ClothingShoesBootsMagGaloshes
-  name: magnaloshes
-  description: Magnetic galoshes, often used during cleaning activity to ensure the user remains safely attached to the floor.
+  name: galoshes magboots
+  description: Galoshes magnetic boots, often used during cleaning activity to ensure the user remains safely attached to the floor.
   components:
   - type: Sprite
     sprite: _NF/Clothing/Shoes/Boots/magboots-galoshes.rsi
@@ -56,17 +70,3 @@
   - type: Magboots
     magbootsAlert: MagbootsGaloshes
   - type: NoSlip
-
-- type: entity
-  parent: [BaseC1Contraband, ClothingShoesBootsMagNfsd] #Corvax-Frontier КБ
-  id: ClothingShoesBootsMagPirate
-  name: pirate magboots
-  description: Pirate magnetic boots, often used during extravehicular activity to ensure the user remains safely attached to the vehicle.
-  components:
-  - type: Sprite
-    sprite: _NF/Clothing/Shoes/Boots/magboots-pirate.rsi
-    state: icon
-  - type: Clothing
-    sprite: _NF/Clothing/Shoes/Boots/magboots-pirate.rsi
-  - type: Magboots
-    magbootsAlert: MagbootsPirate

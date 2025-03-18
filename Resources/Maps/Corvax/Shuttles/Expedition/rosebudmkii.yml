@@ -7060,7 +7060,7 @@ entities:
       joinedGrid: 1
     - type: AtmosPipeColor
       color: '#990000FF'
-- proto: GoldenPlunger
+- proto: GoldenRose
   entities:
   - uid: 195
     components:

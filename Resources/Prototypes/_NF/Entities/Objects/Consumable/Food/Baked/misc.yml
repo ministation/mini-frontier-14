@@ -3,7 +3,7 @@
   parent: FoodBakedBase
   id: FoodBakedCookieDivine
   description: This cookie looks incredibly delicious. Whoever made it must really appreciate you.
-  categories: [ DoNotMap ]
+  suffix: DO NOT MAP
   components:
   - type: Sprite
     state: cookie-sugar

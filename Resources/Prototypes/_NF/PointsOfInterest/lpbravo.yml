@@ -23,9 +23,6 @@
     flags: [HideLabel, Hide]
     readOnly: false
   - type: SyndicateFOB # For pinpointer
-  - type: SolarPoweredGrid
-    trackOnInit: true
-    doNotCull: true
 
 - type: gameMap
   id: LPBravo

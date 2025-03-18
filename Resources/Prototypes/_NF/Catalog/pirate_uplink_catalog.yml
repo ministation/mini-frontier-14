@@ -289,7 +289,7 @@
   name:  uplink-pirate-revolverammo-name
   description: uplink-pirate-revolverammo-desc
   productEntity: MagazineBoxMagnum
-  icon: { sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/magnum.rsi, state: base }
+  icon: { sprite: Objects/Weapons/Guns/Ammunition/Boxes/magnum.rsi, state: base }
   cost:
     Doubloon: 2
   categories:
@@ -305,7 +305,7 @@
   name:  uplink-pirate-flintlockammo-name
   description: uplink-pirate-flintlockammo-desc
   productEntity: MagazineBoxAntiMateriel
-  icon: { sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/anti_materiel.rsi, state: base }
+  icon: { sprite: Objects/Weapons/Guns/Ammunition/Boxes/anti_materiel.rsi, state: base }
   cost:
     Doubloon: 2
   categories:
@@ -389,7 +389,7 @@
   cost:
     Doubloon: 4
   categories:
-    - UplinkPirateWeapons
+    - UplinkPirateWeapons 
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
@@ -434,7 +434,7 @@
   description: Коробка винтовочных патрон используемых некоторым пиратским оружием, пускай и не такие мощные, зато какие дешёвые!
   productEntity: MagazineBoxLightRifle
   cost:
-    Doubloon: 2
+    Doubloon: 2 
   categories:
     - UplinkPirateAmmo
   conditions:
@@ -460,7 +460,7 @@
 #          - PirateUplink
 #    - !type:BuyerJobCondition
 #      whitelist:
-#        - PirateCaptain
+#        - PirateCaptain 
 
 - type: listing #CorvaxFrontier
   id: UplinkPiratBoxT2SuperCapacitor
@@ -478,7 +478,7 @@
           - PirateUplink
     - !type:BuyerJobCondition
       whitelist:
-        - PirateCaptain
+        - PirateCaptain 
 
 - type: listing #CorvaxFrontier
   id: UplinkPiratBoxZiptiePirat
@@ -494,39 +494,6 @@
       whitelist:
         tags:
           - PirateUplink
-    - !type:BuyerJobCondition
-      whitelist:
-        - PirateCaptain
-
-- type: listing
-  id: UplinkPirateAccessConfigurator
-  name:  uplink-pirate-accessconfigurator-captain-name
-  description: uplink-pirate-accessconfigurator-captain-desc
-  productEntity: AccessConfiguratorAntag
-  icon: { sprite: _NF/Objects/Tools/antag_access_configurator.rsi, state: icon }
-  cost:
-    Doubloon: 3
-  categories:
-    - UplinkPirateUtility
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - PirateUplink
-    - !type:BuyerJobCondition
-      whitelist:
-        - PirateCaptain
-
-- type: listing
-  id: UplinkRadioImplanterFreelance
-  name: uplink-pirate-radio-implanter-name
-  description: uplink-pirate-radio-implanter-desc
-  productEntity: RadioImplanterFreelance
-  icon: { sprite: /Textures/Objects/Devices/encryption_keys.rsi, state: pirate_label }
-  cost:
-    Doubloon: 2
-  categories:
-  - UplinkPirateUtility
 
 - type: listing #CorvaxFrontier
   id: UplinkPiratBoxDeathRattleImplantsPirat
@@ -544,4 +511,4 @@
           - PirateUplink
     - !type:BuyerJobCondition
       whitelist:
-        - PirateCaptain
+        - PirateCaptain 

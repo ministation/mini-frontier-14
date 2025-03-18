@@ -14,7 +14,7 @@
 
 - type: entity
   id: TorsoGoblin
-  name: "goblin torso"
+  name: "Goblin torso"
   parent: [PartGoblin, BaseTorso]
   components:
   - type: Sprite
@@ -30,7 +30,7 @@
 
 - type: entity
   id: HeadGoblin
-  name: "goblin head"
+  name: "Goblin head"
   parent: [PartGoblin, BaseHead]
   components:
   - type: Sprite
@@ -46,7 +46,7 @@
 
 - type: entity
   id: LeftArmGoblin
-  name: "left goblin arm"
+  name: "left Goblin arm"
   parent: [PartGoblin, BaseLeftArm]
   components:
   - type: Sprite
@@ -55,7 +55,7 @@
 
 - type: entity
   id: RightArmGoblin
-  name: "right goblin arm"
+  name: "right Goblin arm"
   parent: [PartGoblin, BaseRightArm]
   components:
   - type: Sprite
@@ -64,7 +64,7 @@
 
 - type: entity
   id: LeftHandGoblin
-  name: "left goblin hand"
+  name: "left Goblin hand"
   parent: [PartGoblin, BaseLeftHand]
   components:
   - type: Sprite
@@ -73,7 +73,7 @@
 
 - type: entity
   id: RightHandGoblin
-  name: "right goblin hand"
+  name: "right Goblin hand"
   parent: [PartGoblin, BaseRightHand]
   components:
   - type: Sprite
@@ -82,7 +82,7 @@
 
 - type: entity
   id: LeftLegGoblin
-  name: "left goblin leg"
+  name: "left Goblin leg"
   parent: [PartGoblin, BaseLeftLeg]
   components:
   - type: Sprite
@@ -91,7 +91,7 @@
 
 - type: entity
   id: RightLegGoblin
-  name: "right goblin leg"
+  name: "right Goblin leg"
   parent: [PartGoblin, BaseRightLeg]
   components:
   - type: Sprite
@@ -100,7 +100,7 @@
 
 - type: entity
   id: LeftFootGoblin
-  name: "left goblin foot"
+  name: "left Goblin foot"
   parent: [PartGoblin, BaseLeftFoot]
   components:
   - type: Sprite
@@ -109,7 +109,7 @@
 
 - type: entity
   id: RightFootGoblin
-  name: "right goblin foot"
+  name: "right Goblin foot"
   parent: [PartGoblin, BaseRightFoot]
   components:
   - type: Sprite

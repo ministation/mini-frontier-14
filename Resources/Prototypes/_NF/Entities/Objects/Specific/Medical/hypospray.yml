@@ -12,7 +12,7 @@
   - type: SolutionContainerManager
     solutions:
       hypospray:
-        maxVol: 10
+        maxVol: 5
   - type: RefillableSolution
     solution: hypospray
   - type: ExaminableSolution
@@ -63,24 +63,8 @@
     sprite: _NF/Objects/Specific/Medical/medipen.rsi
 
 - type: entity
-  parent: ChemicalMedipen
-  id: NFChemicalMedipen
-  abstract: true
-  components:
-  - type: SolutionContainerVisuals
-    maxFillLevels: 1
-    changeColor: false
-  - type: Hypospray
-    solutionName: pen
-    onlyAffectsMobs: false
-    injectOnly: true
-    transferAmount: 15 # Explicitly redefined in case parent changes
-  - type: Tag
-    tags: []
-
-- type: entity
   name: hemostasis auto-injector
-  parent: NFChemicalMedipen
+  parent: ChemicalMedipen
   id: HemostasisAutoInjector
   description: A rapid dose of coagulants and circulatory fluids. Contains tranexamic acid and saline.
   components:
@@ -90,9 +74,14 @@
     - state: hemostasispen
       map: ["enum.SolutionContainerLayers.Fill"]
   - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
     emptySpriteName: hemostasispen_empty
   - type: Hypospray
+    solutionName: pen
     transferAmount: 20
+    onlyAffectsMobs: false
+    injectOnly: true
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -102,10 +91,12 @@
           Quantity: 5
         - ReagentId: Saline
           Quantity: 15
+  - type: Tag
+    tags: []
 
 - type: entity
   name: stimulant auto-injector
-  parent: NFChemicalMedipen
+  parent: ChemicalMedipen
   id: StimulantAutoInjector
   description: A rapid dose of potent stimulants and governing agents. Contains desoxyephedrine and dylovene. Use with extreme caution.
   components:
@@ -115,9 +106,14 @@
     - state: stimulantpen
       map: ["enum.SolutionContainerLayers.Fill"]
   - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
     emptySpriteName: stimulantpen_empty
   - type: Hypospray
+    solutionName: pen
     transferAmount: 20
+    onlyAffectsMobs: false
+    injectOnly: true
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -127,10 +123,12 @@
           Quantity: 10
         - ReagentId: Dylovene
           Quantity: 10
+  - type: Tag
+    tags: []
 
 - type: entity
   name: crisis auto-injector
-  parent: NFChemicalMedipen
+  parent: ChemicalMedipen
   id: CrisisAutoInjector
   description: A rapid dose of stabilizers and vasodialaters for use on critically injured patients. Contains inaprovaline and dexalin plus.
   components:
@@ -140,9 +138,14 @@
     - state: crisispen
       map: ["enum.SolutionContainerLayers.Fill"]
   - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
     emptySpriteName: crisispen_empty
   - type: Hypospray
+    solutionName: pen
     transferAmount: 20
+    onlyAffectsMobs: false
+    injectOnly: true
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -152,10 +155,12 @@
           Quantity: 10
         - ReagentId: DexalinPlus
           Quantity: 10
+  - type: Tag
+    tags: []
 
 - type: entity
   name: lacerinol auto-injector
-  parent: NFChemicalMedipen
+  parent: ChemicalMedipen
   id: LacerAutoInjector
   description: A rapid dose of lacerinol and tranexamic acid, intended for combat applications.
   components:
@@ -165,7 +170,14 @@
     - state: lacerpen
       map: ["enum.SolutionContainerLayers.Fill"]
   - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
     emptySpriteName: lacerpen_empty
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 15
+    onlyAffectsMobs: false
+    injectOnly: true
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -175,10 +187,12 @@
           Quantity: 10
         - ReagentId: TranexamicAcid
           Quantity: 5
+  - type: Tag
+    tags: []
 
 - type: entity
   name: bruizine auto-injector
-  parent: NFChemicalMedipen
+  parent: ChemicalMedipen
   id: BruizAutoInjector
   description: A rapid dose of bruizine and tranexamic acid, intended for combat applications.
   components:
@@ -188,7 +202,14 @@
     - state: bruizpen
       map: ["enum.SolutionContainerLayers.Fill"]
   - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
     emptySpriteName: bruizpen_empty
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 15
+    onlyAffectsMobs: false
+    injectOnly: true
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -198,49 +219,5 @@
           Quantity: 10
         - ReagentId: TranexamicAcid
           Quantity: 5
-
-- type: entity
-  name: polypyrylium oligomers auto-injector
-  parent: NFChemicalMedipen
-  id: PolyAutoInjector
-  description: A rapid dose of polyp... polypyryl... polypyryliu.... It contains extract of spaceman's trumpet. Intended to address brute damage and asphyxiation.
-  components:
-  - type: Sprite
-    sprite: _NF/Objects/Specific/Medical/medipen.rsi
-    layers:
-    - state: polypen
-      map: ["enum.SolutionContainerLayers.Fill"]
-  - type: SolutionContainerVisuals
-    emptySpriteName: polypen_empty
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 15
-        reagents:
-        - ReagentId: PolypyryliumOligomers
-          Quantity: 15
-
-- type: entity
-  name: barkeeper's friend auto-injector
-  parent: NFChemicalMedipen
-  id: EthylredoxrazineAutoInjector
-  description: A rapid dose of ethanol neutralizers and anti-toxins for customers who have maybe had enough for the night. Contains ethylredoxrazine and dylovene.
-  components:
-  - type: Sprite
-    sprite: _NF/Objects/Specific/Medical/medipen.rsi
-    layers:
-    - state: barkeepersfriend
-      map: ["enum.SolutionContainerLayers.Fill"]
-  - type: SolutionContainerVisuals
-    emptySpriteName: barkeepersfriend_empty
-  - type: Hypospray
-    transferAmount: 20
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 20
-        reagents:
-        - ReagentId: Ethylredoxrazine
-          Quantity: 15
-        - ReagentId: Dylovene
-          Quantity: 5
+  - type: Tag
+    tags: []

@@ -44,9 +44,6 @@
     deleteOrgans: true
     gib: false
     useArgumentEntity: true
-  - type: MovementSpeedModifier
-    baseWalkSpeed : 4.5
-    baseSprintSpeed : 4.5
 
 # Humans
 # Syndicate Captain, "armed" with AP Python
@@ -511,28 +508,23 @@
   id: MobExperimentationVictim
   categories: [ HideSpawnMenu ]
   components:
-  - type: NameIdentifier
-    group: GenericNumber
-  - type: NpcFactionMember
-    factions:
-      - SimpleHostile
-  - type: Loadout
-    prototypes:
-      - SyndicateVictimInsaneGear
-  - type: InputMover
-  - type: MobMover
-  - type: HTN
-    rootTask:
-      task: SimpleHumanoidHostileCompound
-  - type: NFSalvageMobRestrictions
-    despawnIfOffLinkedGrid: false
-    addComponentsOnDeath: []
-    removeComponentsOnDeath:
-    - type: Prying
-    - type: Tool
-  - type: MovementSpeedModifier
-    baseWalkSpeed : 4.5
-    baseSprintSpeed : 4.5
+    - type: NameIdentifier
+      group: GenericNumber
+    - type: NpcFactionMember
+      factions:
+        - SimpleHostile
+    - type: Loadout
+      prototypes:
+        - SyndicateVictimInsaneGear
+    - type: InputMover
+    - type: MobMover
+    - type: HTN
+      rootTask:
+        task: SimpleHumanoidHostileCompound
+    - type: NFSalvageMobRestrictions
+      despawnIfOffLinkedGrid: false
+      addComponentsOnDeath: []
+      removeComponentsOnDeath: []
 
 # Syndicate Commander, "armed" with AK
 - type: entity

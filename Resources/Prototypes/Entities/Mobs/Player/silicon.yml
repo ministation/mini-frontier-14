@@ -96,7 +96,6 @@
     interfaces:
       enum.SiliconLawsUiKey.Key:
         type: SiliconLawBoundUserInterface
-  - type: ShowJobIcons
 
 # Ai
 - type: entity
@@ -407,7 +406,8 @@
 - type: entity
   id: StationAiBrain
   parent: PositronicBrain
-  categories: [ HideSpawnMenu, DoNotMap ]
+  categories: [ HideSpawnMenu ]
+  suffix: DO NOT MAP
   components:
   - type: Sprite
     # Once it's in a core it's pretty much an abstract entity at that point.
@@ -442,9 +442,6 @@
     - HideContextMenu
     - StationAi
     - NoConsoleSound
-  - type: StartingMindRole
-    mindRole: "MindRoleSiliconBrain"
-    silent: true
 
 # Hologram projection that the AI's eye tracks.
 - type: entity
@@ -454,7 +451,8 @@
   id: StationAiHolo
   name: AI eye
   description: The AI's viewer.
-  categories: [ HideSpawnMenu, DoNotMap ]
+  categories: [ HideSpawnMenu ]
+  suffix: DO NOT MAP
   components:
   - type: NoFTL
   - type: WarpPoint
@@ -475,7 +473,8 @@
   id: StationAiHoloLocal
   name: AI hologram
   description: A holographic representation of an AI.
-  categories: [ HideSpawnMenu, DoNotMap ]
+  categories: [ HideSpawnMenu ]
+  suffix: DO NOT MAP
   components:
   - type: Transform
     anchored: true
@@ -500,15 +499,12 @@
   - type: ContainerFill
     containers:
       borg_brain:
-      - PositronicBrain
+        - MMIFilled
   - type: ItemSlots
     slots:
       cell_slot:
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellMedium
-  - type: StartingMindRole
-    mindRole: "MindRoleSiliconBrain"
-    silent: true
 
 - type: entity
   id: PlayerBorgSyndicateAssaultBattery
@@ -603,8 +599,7 @@
         - PositronicBrain
       borg_module:
         - BorgModuleTool
-        # - BorgModuleFireExtinguisher # Frontier
-        - BorgModuleJetpack # Frontier
+        - BorgModuleFireExtinguisher
         - BorgModuleGPS
   - type: ItemSlots
     slots:
@@ -612,7 +607,7 @@
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellHigh
   - type: RandomMetadata
-    nameSegments: [NFNamesBorgUnlocalized] # Frontier: names_borg<NFNamesBorgUnlocalized
+    nameSegments: [names_borg]
 
 - type: entity
   id: PlayerBorgDerelictGhostRole

@@ -28,31 +28,29 @@
       collection: HarpyGrowls
     Purr:
       collection: HarpyPurrs
-    HarpyRing:
+    Ring:
       collection: HarpyRings
-    HarpyHonk:
-      collection: HarpyHonks
-      params: # Frontier
-        volume: -5 # Frontier
-    HarpyPew:
+    Pew:
       collection: HarpyPews
-    HarpyBang:
+    Bang:
       collection: HarpyBangs
       params: # Frontier
         volume: -5 # Frontier
-    HarpyBeep:
+    Beep:
       collection: HarpyBeeps
-    HarpyRev:
+    Rev:
       collection: HarpyRevs
       params: # Frontier
         volume: -5 # Frontier
     Click:
       collection: HarpyClicks
+    Squish: # Frontier
+      collection: HarpySquishes # Frontier
     Chitter:
       collection: HarpyChitter
     Squeak:
       collection: HarpySqueak
-    HarpyCaw:
+    Caw:
       collection: HarpyCaws
     Chirp:
       collection: HarpyChirps
@@ -66,20 +64,18 @@
       collection: VulpkaninHowls
     Awoo:
       collection: VulpkaninHowls
-#    Honk:
-#      collection: BikeHorn
+    Honk:
+      collection: HarpyHonks
+      params: # Frontier
+        volume: -5 # Frontier
     Weh:
       collection: Weh
-    Hew:
-      collection: Hew
-    Gasp:
-      collection: HarpyGasp
-    DefaultDeathgasp:
-      collection: DeathGasp
     Belch: # Frontier
       collection: Belch # Frontier
-    Squish: # Frontier
-      collection: HarpySquishes # Frontier
+    Gasp: # Frontier
+      collection: HarpyGasp # Frontier
+    DefaultDeathgasp: # Frontier
+      collection: DeathGasp # Frontier
 
 - type: emoteSounds
   id: MaleVulpkanin
@@ -108,8 +104,6 @@
       collection: Whistles
     Weh:
       collection: Weh
-    Hew:
-      collection: Hew
     Growl:
       collection: VulpkaninGrowls
     Snarl:
@@ -126,8 +120,6 @@
       collection: MaleGasp
     DefaultDeathgasp:
       collection: MaleDeathGasp
-    Belch: # Frontier
-      collection: Belch # Frontier
 
 - type: emoteSounds
   id: FemaleVulpkanin
@@ -156,8 +148,6 @@
       collection: Whistles
     Weh:
       collection: Weh
-    Hew:
-      collection: Hew
     Growl:
       collection: VulpkaninGrowls
     Snarl:
@@ -174,8 +164,6 @@
       collection: FemaleGasp
     DefaultDeathgasp:
       collection: FemaleDeathGasp
-    Belch: # Frontier
-      collection: Belch # Frontier
 
 - type: emoteSounds
   id: MobDog
@@ -222,16 +210,14 @@
       collection: Whistles
     Weh:
       collection: Weh
-    Hew:
-      collection: Hew
     Squeak:
       path: /Audio/Animals/mouse_squeak.ogg
+    Belch: # Frontier
+      collection: Belch # Frontier
     Gasp:
       collection: MaleGasp
     DefaultDeathgasp:
       collection: MaleDeathGasp
-    Belch: # Frontier
-      collection: Belch # Frontier
 
 - type: emoteSounds
   id: FemaleRodentia
@@ -260,13 +246,11 @@
       collection: Whistles
     Weh:
       collection: Weh
-    Hew:
-      collection: Hew
     Squeak:
       path: /Audio/Animals/mouse_squeak.ogg
+    Belch: # Frontier
+      collection: Belch # Frontier
     Gasp:
       collection: FemaleGasp
     DefaultDeathgasp:
       collection: FemaleDeathGasp
-    Belch: # Frontier
-      collection: Belch # Frontier

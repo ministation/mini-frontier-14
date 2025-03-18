@@ -61,7 +61,6 @@ public sealed partial class CryoPodSystem : SharedCryoPodSystem
         SubscribeLocalEvent<CryoPodComponent, ComponentInit>(OnComponentInit);
         SubscribeLocalEvent<CryoPodComponent, GetVerbsEvent<AlternativeVerb>>(AddAlternativeVerbs);
         SubscribeLocalEvent<CryoPodComponent, GotEmaggedEvent>(OnEmagged);
-        SubscribeLocalEvent<CryoPodComponent, GotUnEmaggedEvent>(OnUnemagged); // Frontier
         SubscribeLocalEvent<CryoPodComponent, CryoPodDragFinished>(OnDragFinished);
         SubscribeLocalEvent<CryoPodComponent, CryoPodPryFinished>(OnCryoPodPryFinished);
 
@@ -214,8 +213,7 @@ public sealed partial class CryoPodSystem : SharedCryoPodSystem
                 : 0,
             null,
             null,
-            null,
-            null // Frontier
+            null
         ));
     }
 

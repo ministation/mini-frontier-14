@@ -1,6 +1,6 @@
 using Robust.Shared.Network;
 
-namespace Content.Server._NF.CryoSleep;
+namespace Content.Server.CryoSleep;
 
 public abstract class BaseCryosleepEvent : EntityEventArgs
 {

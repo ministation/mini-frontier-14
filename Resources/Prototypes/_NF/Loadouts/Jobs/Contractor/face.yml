@@ -35,7 +35,7 @@
 
 - type: loadout
   id: ContractorClothingMaskPunkHalf
-  name: маска панка (случайно) #Corvax-Frontier
+  name: punk halfmask (random)
   effects:
   - !type:GroupLoadoutEffect
     proto: ContractorT1
@@ -124,14 +124,3 @@
   storage:
     back:
     - ClothingMaskClown
-
-- type: loadout
-  id: ContractorClothingMaskClownBald
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: ContractorT2
-  price: 2500
-  storage:
-    back:
-    - ClothingMaskClownBald
-

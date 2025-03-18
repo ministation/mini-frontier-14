@@ -23,8 +23,6 @@ entities:
     - type: Transform
       pos: -0.4375,-1.703125
       parent: invalid
-    - type: BecomesStation
-      id: Bocakillo
     - type: MapGrid
       chunks:
         0,0:
@@ -52,6 +50,8 @@ entities:
       bodyType: Dynamic
     - type: Fixtures
       fixtures: {}
+    - type: IFF
+      flags: HideLabel
     - type: OccluderTree
     - type: SpreaderGrid
     - type: Shuttle
@@ -230,17 +230,19 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
+    - type: BecomesStation
+      id: Bocakillo
 - proto: AirCanister
   entities:
-  - uid: 24
+  - uid: 126
     components:
     - type: Transform
       anchored: True
-      pos: 0.5,0.5
+      pos: -0.5,0.5
       parent: 2
     - type: Physics
       bodyType: Static
-- proto: AirlockExternalGlassPirateLocked
+- proto: AirlockExternalGlass
   entities:
   - uid: 11
     components:
@@ -252,21 +254,18 @@ entities:
     - type: Transform
       pos: 1.5,-0.5
       parent: 2
-<<<<<<< HEAD
     - type: Door
       secondsUntilStateChange: -708.32196
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
-=======
->>>>>>> master
   - uid: 59
     components:
     - type: Transform
       pos: 2.5,2.5
       parent: 2
-- proto: AirlockHatchPirateLocked
+- proto: AirlockHatch
   entities:
   - uid: 58
     components:
@@ -278,7 +277,7 @@ entities:
     - type: Transform
       pos: 0.5,3.5
       parent: 2
-- proto: AirlockShuttleSyndicatePirateLocked
+- proto: AirlockShuttleSyndicate
   entities:
   - uid: 247
     components:
@@ -308,7 +307,6 @@ entities:
   - uid: 18
     components:
     - type: Transform
-<<<<<<< HEAD
       pos: -0.5,-3.5
       parent: 2
   - uid: 25
@@ -317,30 +315,16 @@ entities:
       pos: 0.5,-3.5
       parent: 2
   - uid: 246
-=======
-      pos: 0.5,-3.5
-      parent: 2
-  - uid: 164
->>>>>>> master
     components:
     - type: Transform
       pos: 1.5,-3.5
       parent: 2
-<<<<<<< HEAD
 - proto: AtmosDeviceFanTiny
   entities:
   - uid: 248
-=======
-  - uid: 197
->>>>>>> master
     components:
     - type: Transform
-      pos: -0.5,-3.5
-      parent: 2
-  - uid: 198
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
+      rot: -1.5707963267948966 rad
       pos: 2.5,4.5
       parent: 2
 - proto: AtmosFixBlockerMarker
@@ -467,6 +451,15 @@ entities:
     - type: Transform
       pos: -2.5,0.5
       parent: 2
+- proto: BoxBodyBag
+  entities:
+  - uid: 192
+    components:
+    - type: Transform
+      parent: 191
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: ButtonFrameCaution
   entities:
   - uid: 213
@@ -973,6 +966,39 @@ entities:
     - type: Transform
       pos: -0.5,12.5
       parent: 2
+- proto: ClosetWall
+  entities:
+  - uid: 191
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 3.5,1.5
+      parent: 2
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14923
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 192
 - proto: ComputerIFF
   entities:
   - uid: 195
@@ -1088,7 +1114,7 @@ entities:
       pos: -0.5,10.5
       parent: 2
     - type: AtmosPipeColor
-      color: '#0055CCFF'
+      color: '#0088FFFF'
   - uid: 111
     components:
     - type: Transform
@@ -1114,6 +1140,14 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#FF1111FF'
+  - uid: 26
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -0.5,0.5
+      parent: 2
+    - type: AtmosPipeColor
+      color: '#0088FFFF'
   - uid: 28
     components:
     - type: Transform
@@ -1121,7 +1155,7 @@ entities:
       pos: -0.5,8.5
       parent: 2
     - type: AtmosPipeColor
-      color: '#0055CCFF'
+      color: '#0088FFFF'
   - uid: 36
     components:
     - type: Transform
@@ -1159,7 +1193,7 @@ entities:
       pos: -0.5,3.5
       parent: 2
     - type: AtmosPipeColor
-      color: '#0055CCFF'
+      color: '#0088FFFF'
   - uid: 91
     components:
     - type: Transform
@@ -1175,7 +1209,7 @@ entities:
       pos: -0.5,9.5
       parent: 2
     - type: AtmosPipeColor
-      color: '#0055CCFF'
+      color: '#0088FFFF'
   - uid: 108
     components:
     - type: Transform
@@ -1191,7 +1225,7 @@ entities:
       pos: -0.5,4.5
       parent: 2
     - type: AtmosPipeColor
-      color: '#0055CCFF'
+      color: '#0088FFFF'
   - uid: 113
     components:
     - type: Transform
@@ -1199,7 +1233,7 @@ entities:
       pos: -0.5,5.5
       parent: 2
     - type: AtmosPipeColor
-      color: '#0055CCFF'
+      color: '#0088FFFF'
   - uid: 114
     components:
     - type: Transform
@@ -1207,7 +1241,7 @@ entities:
       pos: -0.5,7.5
       parent: 2
     - type: AtmosPipeColor
-      color: '#0055CCFF'
+      color: '#0088FFFF'
   - uid: 117
     components:
     - type: Transform
@@ -1231,7 +1265,7 @@ entities:
       pos: -0.5,1.5
       parent: 2
     - type: AtmosPipeColor
-      color: '#0055CCFF'
+      color: '#0088FFFF'
   - uid: 130
     components:
     - type: Transform
@@ -1239,17 +1273,9 @@ entities:
       pos: -0.5,-0.5
       parent: 2
     - type: AtmosPipeColor
-      color: '#0055CCFF'
+      color: '#0088FFFF'
 - proto: GasPipeTJunction
   entities:
-  - uid: 26
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -0.5,0.5
-      parent: 2
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
   - uid: 34
     components:
     - type: Transform
@@ -1257,7 +1283,7 @@ entities:
       pos: -0.5,6.5
       parent: 2
     - type: AtmosPipeColor
-      color: '#0055CCFF'
+      color: '#0088FFFF'
   - uid: 41
     components:
     - type: Transform
@@ -1273,7 +1299,7 @@ entities:
       pos: -0.5,2.5
       parent: 2
     - type: AtmosPipeColor
-      color: '#0055CCFF'
+      color: '#0088FFFF'
   - uid: 49
     components:
     - type: Transform
@@ -1292,14 +1318,18 @@ entities:
       color: '#FF1111FF'
 - proto: GasPort
   entities:
-  - uid: 126
+  - uid: 131
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 0.5,0.5
+      anchored: False
+      rot: 3.141592653589793 rad
+      pos: -0.5,0.5
       parent: 2
     - type: AtmosPipeColor
-      color: '#0055CCFF'
+      color: '#0088FFFF'
+    - type: Physics
+      canCollide: True
+      bodyType: Dynamic
 - proto: GasVentPump
   entities:
   - uid: 23
@@ -1309,7 +1339,7 @@ entities:
       pos: -0.5,-1.5
       parent: 2
     - type: AtmosPipeColor
-      color: '#0055CCFF'
+      color: '#0088FFFF'
   - uid: 132
     components:
     - type: Transform
@@ -1317,7 +1347,7 @@ entities:
       pos: 0.5,10.5
       parent: 2
     - type: AtmosPipeColor
-      color: '#0055CCFF'
+      color: '#0088FFFF'
   - uid: 141
     components:
     - type: Transform
@@ -1325,7 +1355,7 @@ entities:
       pos: 0.5,2.5
       parent: 2
     - type: AtmosPipeColor
-      color: '#0055CCFF'
+      color: '#0088FFFF'
   - uid: 142
     components:
     - type: Transform
@@ -1333,7 +1363,7 @@ entities:
       pos: 0.5,6.5
       parent: 2
     - type: AtmosPipeColor
-      color: '#0055CCFF'
+      color: '#0088FFFF'
 - proto: GasVentScrubber
   entities:
   - uid: 33
@@ -1381,47 +1411,15 @@ entities:
     - type: Transform
       pos: -0.5,5.5
       parent: 2
-<<<<<<< HEAD
 - proto: LockerWallMedical
   entities:
   - uid: 149
-=======
-- proto: HandLabeler
-  entities:
-  - uid: 199
-    components:
-    - type: Transform
-      pos: -0.35075927,11.096759
-      parent: 2
-- proto: LockerWallMaterialsFuelPlasmaFilled
-  entities:
-  - uid: 191
->>>>>>> master
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 1.5,5.5
       parent: 2
-<<<<<<< HEAD
 - proto: LuxuryPen
-=======
-- proto: LockerWallMedicalFilled
-  entities:
-  - uid: 188
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 3.5,1.5
-      parent: 2
-- proto: NFHolopadShipAntag
-  entities:
-  - uid: 192
-    components:
-    - type: Transform
-      pos: -0.5,9.5
-      parent: 2
-- proto: PirateFlag
->>>>>>> master
   entities:
   - uid: 22
     components:
@@ -1515,7 +1513,7 @@ entities:
       parent: 2
 - proto: PortableGeneratorPacmanShuttle
   entities:
-  - uid: 131
+  - uid: 24
     components:
     - type: Transform
       pos: -0.5,6.5
@@ -1582,7 +1580,6 @@ entities:
     - type: Transform
       pos: 3.5,-2.5
       parent: 2
-<<<<<<< HEAD
 - proto: RemoteSignaller
   entities:
   - uid: 235
@@ -1602,8 +1599,6 @@ entities:
     - type: Transform
       pos: -0.5,6.5
       parent: 2
-=======
->>>>>>> master
 - proto: ShuttleGunPirateCannon
   entities:
   - uid: 86
@@ -1954,7 +1949,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 1.5,7.5
       parent: 2
-<<<<<<< HEAD
   - uid: 181
     components:
     - type: Transform
@@ -2022,8 +2016,6 @@ entities:
     - type: Transform
       pos: 1.5,7.5
       parent: 2
-=======
->>>>>>> master
 - proto: WarpPoint
   entities:
   - uid: 93

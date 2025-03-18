@@ -1,7 +1,7 @@
 - type: entity
   id: BaseCartridgeMagnum
   name: cartridge (.45 magnum)
-  parent: [ BaseCartridge, BaseC1Contraband ] # Frontier: BaseSecurityContraband<BaseC1Contraband
+  parent: [ BaseCartridge, BaseC1Contraband ] # Frontier: BaseRestrictedContraband<BaseC1Contraband
   abstract: true
   components:
   - type: Tag
@@ -46,7 +46,7 @@
 - type: entity
   id: CartridgeMagnumIncendiary
   name: cartridge (.45 magnum incendiary)
-  parent: [BaseCartridgeMagnum, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
+  parent: BaseCartridgeMagnum
   components:
   - type: CartridgeAmmo
     proto: BulletMagnumIncendiary
@@ -76,7 +76,7 @@
 - type: entity
   id: CartridgeMagnumUranium
   name: cartridge (.45 magnum uranium)
-  parent: [BaseCartridgeMagnum, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
+  parent: BaseCartridgeMagnum
   components:
   - type: CartridgeAmmo
     proto: BulletMagnumUranium

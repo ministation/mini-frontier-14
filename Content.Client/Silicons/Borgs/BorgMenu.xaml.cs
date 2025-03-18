@@ -55,12 +55,8 @@ public sealed partial class BorgMenu : FancyWindow
             NameIdentifierLabel.Text = nameIdentifierComponent.FullIdentifier;
 
             var fullName = _entity.GetComponent<MetaDataComponent>(Entity).EntityName;
-            // Frontier: prevent exceptions
-            if (fullName.Contains(nameIdentifierComponent.FullIdentifier))
-                NameLineEdit.Text = fullName.Substring(0, fullName.Length - nameIdentifierComponent.FullIdentifier.Length - 1);
-            else
-                NameLineEdit.Text = fullName;
-            // End Frontier
+            var name = fullName.Substring(0, fullName.Length - nameIdentifierComponent.FullIdentifier.Length - 1);
+            NameLineEdit.Text = name;
         }
         else
         {

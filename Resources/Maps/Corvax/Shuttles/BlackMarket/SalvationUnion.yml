@@ -1786,25 +1786,12 @@ entities:
         - Pressed: Trigger
 - proto: ShuttleGunPirateCannonNoUse
   entities:
-<<<<<<< HEAD
-=======
-  - uid: 28
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 0.5,8.5
-      parent: 2
-    missingComponents:
-    - Anchorable
->>>>>>> master
   - uid: 29
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 0.5,10.5
       parent: 2
-    missingComponents:
-    - Anchorable
 - proto: ShuttleSMGRifle
   entities:
   - uid: 79
@@ -1831,8 +1818,6 @@ entities:
           showEnts: False
           occludes: True
           ent: 80
-    missingComponents:
-    - Anchorable
 - proto: ShuttleSmgRifleAmmoBox
   entities:
   - uid: 80

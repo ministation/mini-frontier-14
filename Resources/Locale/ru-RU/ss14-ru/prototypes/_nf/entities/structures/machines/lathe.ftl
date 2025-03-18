@@ -15,6 +15,3 @@ ent-BlueprintLithograph = литографическая машина
 
 ent-ScrapProcessor = переработчик лома
     .desc = Производит необходимые материалы из старого лома.
-ent-BiogeneratorFill = { ent-Biogenerator }
-    .suffix = Биомасса, 50
-    .desc = { ent-Biogenerator.desc }

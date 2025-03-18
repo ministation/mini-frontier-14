@@ -49,11 +49,11 @@
   id: ComputerShipyard
   components:
   - type: ShipyardConsole
-    newJobTitle: Капитан
+    newJobTitle: Captain
 
 - type: entity
   id: ComputerShipyardSecurity
-  parent: [BaseStructureDisableToolUse, BaseStructureIndestructible, ComputerShipyardBase, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
+  parent: [BaseStructureDisableToolUse, BaseStructureIndestructible, ComputerShipyardBase]
   name: security shipyard console
   description: Used to enlist into Nanotrasen Security Forces
   components:
@@ -80,7 +80,7 @@
 
 - type: entity
   id: ComputerShipyardNfsd
-  parent: [BaseStructureDisableToolUse, BaseStructureIndestructible, ComputerShipyardBase, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
+  parent: [BaseStructureDisableToolUse, BaseStructureIndestructible, ComputerShipyardBase]
   name: NFSD shipyard console
   description: Used to buy NFSD patrol vessels.
   components:
@@ -107,9 +107,9 @@
 
 - type: entity
   id: ComputerShipyardSyndicate
-  parent: [BaseStructureDisableToolUse, BaseStructureDestructible, ComputerShipyardBase, BaseC3Contraband] #Corvax-Frontier КБ
+  parent: [BaseStructureDisableToolUse, BaseStructureDestructible, ComputerShipyardBase]
   name: syndicate shipyard console
-  description: Used to buy ships not available through other means.
+  description: Used to buy ships not available through other means. Has a sticker that says SALES TAX 30%
   components:
   - type: ActivatableUI
     key: enum.ShipyardConsoleUiKey.Syndicate
@@ -132,15 +132,14 @@
     shipyardChannel: Syndicate
     secretShipyardChannel: Nfsd
     taxAccounts:
-      Invalid: 0.30
-    ignoreBaseSaleRate: true # Fixed 70% sale rate.
+      Frontier: 0.3 # The scandal!
     canTransferDeed: false
 
 - type: entity
   id: ComputerShipyardBlackMarket
-  parent: [BaseStructureDisableToolUse, BaseStructureDestructible, ComputerShipyardBase, BaseC3Contraband] #Corvax-Frontier КБ
+  parent: [BaseStructureDisableToolUse, BaseStructureDestructible, ComputerShipyardBase]
   name: black market shipyard console
-  description: Used to buy ships not available through other means.
+  description: Used to buy ships not available through other means. Has a sticker that says SALES TAX 30%
   components:
   - type: ActivatableUI
     key: enum.ShipyardConsoleUiKey.BlackMarket
@@ -163,8 +162,7 @@
     shipyardChannel: Freelance
     secretShipyardChannel: Nfsd
     taxAccounts:
-      Invalid: 0.30
-    ignoreBaseSaleRate: true # Fixed 70% sale rate.
+      Frontier: 0.3 # The scandal!
     canTransferDeed: false
 
 - type: entity
@@ -214,7 +212,7 @@
       state: shipyard_blackmarket
     - map: ["computerLayerKeys"]
       state: blackmarket_key
-
+      
 - type: entity
   id: ComputerShipyardMedical
   parent: [BaseStructureDisableToolUse, BaseStructureIndestructible, ComputerShipyard]

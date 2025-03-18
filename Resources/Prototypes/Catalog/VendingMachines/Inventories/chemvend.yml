@@ -2,7 +2,6 @@
   id: ChemVendInventory
   startingInventory:
     Jug: 8
-    # Frontier: all values to 4
     JugAluminium: 4
     JugCarbon: 4
     JugChlorine: 4
@@ -23,10 +22,6 @@
     JugSodium: 4
     JugSugar: 4
     JugSulfur: 4
-    # End Frontier
-  contrabandInventory:
-    DrinkLithiumFlask: 1
-    StrangePill: 3
   emaggedInventory:
     ToxinChemistryBottle: 4
 
@@ -55,9 +50,6 @@
     JugSugar: 3
     JugSulfur: 1
     JugWeldingFuel: 1
-  contrabandInventory:
-    DrinkLithiumFlask: 1
-    StrangePill: 3
   emaggedInventory:
     PaxChemistryBottle: 3
     MuteToxinChemistryBottle: 3

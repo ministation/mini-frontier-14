@@ -17,12 +17,6 @@
   abstract: true
   components:
   - type: StationRenameFaxes
-  
-- type: entity
-  id: BaseStationRenameHolopads
-  abstract: true
-  components:
-  - type: StationRenameHolopads
 
 - type: entity
   id: BaseStationRenameWarpPoints
@@ -50,12 +44,6 @@
   abstract: true
   components:
   - type: StationDampening
-
-- type: entity
-  id: NFBaseStationCargo
-  abstract: true
-  components:
-    - type: StationCargoOrderDatabase
 
 - type: entity
   id: BaseStationCargoMarket

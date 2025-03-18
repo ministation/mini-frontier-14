@@ -36,6 +36,7 @@
   - type: Clothing
     slots: [innerclothing]
     femaleMask: UniformTop
+  - type: HarpyClothing # Frontier - Harpy
 
 - type: entity
   abstract: true
@@ -59,3 +60,4 @@
   - type: Clothing
     slots: [innerclothing]
     femaleMask: UniformTop
+  - type: HarpyClothing # Frontier - Harpy

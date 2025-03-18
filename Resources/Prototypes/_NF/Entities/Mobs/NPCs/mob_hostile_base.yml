@@ -1,6 +1,6 @@
 - type: entity
   save: false
-  id: NFMobAtmos
+  id: MobAtmosNF
   abstract: true
   components:
   - type: Temperature
@@ -9,11 +9,11 @@
     currentTemperature: 310.15
     coldDamage: #per second, scales with temperature & other constants
       types:
-        Cold: 0.1
+        Cold : 0.1
     specificHeat: 42
     heatDamage: #per second, scales with temperature & other constants
       types:
-        Heat: 1.5
+        Heat : 1.5
   - type: ThermalRegulator
     metabolismHeat: 800
     radiatedHeat: 100
@@ -148,7 +148,6 @@
     - type: Tool
     - type: Prying
     - type: MovementIgnoreGravity
-    - type: Access
     addComponentsOnRevival:
 #    - type: Pullable # TODO: This makes the mob stuck to your hand if it dies when you pull it
     - type: Carriable # Carrying system from nyanotrasen.
@@ -156,12 +155,14 @@
       speedModifier: 1.5
       qualities:
         - Prying
-    - type: Prying # Open door from xeno.yml.
-      pryPowered: true
-      force: true
-      speedModifier: 1.5
+    - type: Prying
+      pryPowered: !type:Bool
+        true
+      force: !type:Bool
+        true
       useSound:
         path: /Audio/Items/crowbar.ogg
+      speedModifier: 10.0
     - type: MovementIgnoreGravity
     removeComponentsOnRevival:
     - type: Strippable
@@ -237,16 +238,39 @@
     speedModifier: 1.5
     qualities:
       - Prying
-    hideQualities: true
   - type: Prying
-    pryPowered: true
-    force: true
-    speedModifier: 1.5
+    pryPowered: !type:Bool
+      true
+    force: !type:Bool
+      true
     useSound:
       path: /Audio/Items/crowbar.ogg
-#  - type: Access
-#    groups:
-#    - AllAccess
+    speedModifier: 10.0
+  #- type: Access # Turning AA off for the time being
+    #groups:
+    #- AllAccess
+
+- type: entity
+  abstract: true
+  id: MobIncorporealBase
+  name: incorporeal entity
+  description: You can't touch it, but it can touch you.
+  components:
+  - type: FootstepModifier
+    footstepSoundCollection:
+      path: /Audio/_NF/Effects/silence.ogg
+  - type: CanMoveInAir
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.4
+        density: 10
+        mask:
+        - FlyingMobMask
+        layer:
+        - Opaque
 
 # Dungeon boss
 - type: entity
@@ -261,6 +285,9 @@
   - type: Puller
   - type: Stamina
     critThreshold: 999
+  - type: MobPrice
+    price: 4000
+    deathPenalty: 0.5
   - type: Tag
     tags:
     - CanPilot
@@ -342,10 +369,11 @@
 
 # Human NPC, uses equipment, immune to vacuum/low pressure
 - type: entity
+  name: Human NPC
   suffix: AI, Hostile
   abstract: true
   parent:
-  - NFMobAtmos
+  - MobAtmosNF
   - MobBloodstream
   - MobFlammable
   - MobEnhancedMovement
@@ -354,6 +382,9 @@
   - BaseC3MobHuman
   id: MobHumanoidHostileBase
   components:
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 4.5
+    baseSprintSpeed : 4.5
   - type: NPCRetaliation
     attackMemoryLength: 10
   - type: MobMover
@@ -381,6 +412,9 @@
     factions:
     - SimpleHostile
   - type: Carriable # Carrying system from nyanotrasen.
+  - type: MobPrice
+    price: 1500
+    deathPenalty: 0.5
   - type: Advertise
     pack: syndicatehumanoidchatter
     minimumWait: 120 # 1 * 2
@@ -397,13 +431,14 @@
 
 # NonHuman NPC base, no equipment, immune to vacuum/low pressure
 - type: entity
+  name: Mob NPC
   suffix: AI, Hostile
   abstract: true
   parent:
   - BaseMob
   - MobDamageable
   - MobCombat
-  - NFMobAtmos
+  - MobAtmosNF
   - MobBloodstream
   - MobFlammable
   - MobEnhancedMovement
@@ -411,6 +446,9 @@
   - BaseC3MobCreature
   id: MobNonHumanHostileBase
   components:
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 4.5
+    baseSprintSpeed : 4.5
   - type: NPCRetaliation
     attackMemoryLength: 10
   - type: Reactive
@@ -457,47 +495,13 @@
     factions:
     - SimpleHostile
   - type: Carriable # Carrying system from nyanotrasen.
+  - type: MobPrice
+    price: 1500
+    deathPenalty: 0.5
   - type: Tag
     tags:
     - CanPilot
     - FootstepSound
     - DoorBumpOpener
     - CannotSuicide
-  - type: FTLKnockdownImmune
-
-# A simpler base for extending existing mobs (e.g. carp, kangaroos, snakes, xenos)
-- type: entity
-  suffix: Frontier, Hostile
-  abstract: true
-  parent:
-  - MobFlammable
-  - MobEnhancedMovement
-  - MobHumanoidHostileAISimpleMelee
-  - BaseC3MobCreature
-  id: NFMobSimpleHostileBase
-  components:
-  - type: NPCRetaliation
-    attackMemoryLength: 10
-  - type: Reactive
-    groups:
-      Flammable: [Touch]
-      Extinguish: [Touch]
-      Acidic: [Touch, Ingestion]
-  - type: StatusEffects
-    allowed:
-    - SlowedDown
-    - Stutter
-    - Electrocution
-    - ForcedSleep
-    - TemporaryBlindness
-    - Pacified
-    - Drowsiness
-    - Adrenaline
-  - type: ZombieImmune
-  - type: NameIdentifier
-    group: GenericNumber
-  - type: NpcFactionMember
-    factions:
-    - SimpleHostile
-  - type: Carriable # Kept for consistency with other mobs
   - type: FTLKnockdownImmune

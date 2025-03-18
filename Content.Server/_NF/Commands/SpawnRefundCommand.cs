@@ -11,7 +11,7 @@ using Robust.Shared.Console;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
-namespace Content.Server._NF.Commands;
+namespace Content.Server.NF14.Commands;
 
 [AdminCommand(AdminFlags.Admin)]
 public sealed class SpawnRefundCommand : IConsoleCommand

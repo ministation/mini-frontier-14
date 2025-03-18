@@ -20,8 +20,6 @@ entities:
     - type: Transform
       pos: -0.48958334,-0.5208333
       parent: invalid
-    - type: BecomesStation
-      id: Menace
     - type: MapGrid
       chunks:
         0,0:
@@ -52,6 +50,9 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
     - type: Shuttle
+    - type: IFF
+      color: '#FFC000FF'
+      flags: HideLabel
     - type: GridPathfinding
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
@@ -236,7 +237,9 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
-- proto: AirlockExternalGlassPirateLocked
+    - type: BecomesStation
+      id: Menace
+- proto: AirlockExternalGlass
   entities:
   - uid: 8
     components:
@@ -248,26 +251,7 @@ entities:
     - type: Transform
       pos: 5.5,2.5
       parent: 1
-<<<<<<< HEAD
 - proto: AirlockGlassShuttleSyndicate
-=======
-  - uid: 70
-    components:
-    - type: Transform
-      pos: 6.5,-1.5
-      parent: 1
-  - uid: 91
-    components:
-    - type: Transform
-      pos: -0.5,-1.5
-      parent: 1
-  - uid: 92
-    components:
-    - type: Transform
-      pos: 0.5,-1.5
-      parent: 1
-- proto: AirlockGlassShuttleSyndicatePirateLocked
->>>>>>> master
   entities:
   - uid: 250
     components:
@@ -701,11 +685,6 @@ entities:
       parent: 1
 - proto: CannonBall
   entities:
-  - uid: 101
-    components:
-    - type: Transform
-      pos: 1.0542351,4.114599
-      parent: 1
   - uid: 225
     components:
     - type: Transform
@@ -715,6 +694,18 @@ entities:
     components:
     - type: Transform
       pos: 1.352911,4.131369
+      parent: 1
+- proto: CannonBallEmp
+  entities:
+  - uid: 101
+    components:
+    - type: Transform
+      pos: 0.7694856,4.3385043
+      parent: 1
+  - uid: 146
+    components:
+    - type: Transform
+      pos: 0.97781897,4.0883307
       parent: 1
 - proto: Catwalk
   entities:
@@ -1158,13 +1149,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 3.5,-2.5
       parent: 1
-- proto: HandLabeler
-  entities:
-  - uid: 243
-    components:
-    - type: Transform
-      pos: 2.6809242,-0.52966756
-      parent: 1
 - proto: LockerWallMaterialsFuelPlasmaFilled
   entities:
   - uid: 77
@@ -1241,13 +1225,6 @@ entities:
     components:
     - type: Transform
       pos: 1.1555657,3.5919085
-      parent: 1
-- proto: NFHolopadShipAntag
-  entities:
-  - uid: 146
-    components:
-    - type: Transform
-      pos: 1.5,-0.5
       parent: 1
 - proto: NitrogenCanister
   entities:

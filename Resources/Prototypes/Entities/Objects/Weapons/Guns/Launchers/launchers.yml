@@ -57,7 +57,7 @@
 
 - type: entity
   name: RPG-7
-  parent: [ BaseWeaponLauncher, BaseC2ContrabandUnredeemable ] # Frontier: BaseMajorContraband<BaseC3Contraband #Corvax-Frontier КБ
+  parent: [ BaseWeaponLauncher, BaseC3Contraband ] # Frontier: BaseMajorContraband<BaseC3Contraband
   id: WeaponLauncherRocket
   description: A modified ancient rocket-propelled grenade launcher.
   components:
@@ -121,7 +121,7 @@
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
   - type: MagazineVisuals
     magState: mag
-    steps: 2
+    steps: 1
     zeroVisible: true
   - type: Appearance
 

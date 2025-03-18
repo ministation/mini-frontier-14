@@ -6,7 +6,3 @@ contraband-examine-text-GrandTheft = [color=red]Этот предмет явля
 contraband-examine-text-Syndicate = [color=crimson]Этот предмет является крайне незаконной контрабандой Синдиката![/color]
 contraband-examine-text-avoid-carrying-around = [color=red][italic]Вероятно, вы не захотите носить это с собой на виду без уважительной причины.[/italic][/color]
 contraband-examine-text-in-the-clear = [color=green][italic]Вам должно быть разрешено носить это на виду.[/italic][/color]
-contraband-examinable-verb-text = Законность
-contraband-examinable-verb-message = Проверить на законность.
-contraband-department-plural = {$department}
-contraband-job-plural = {MAKEPLURAL($job)}

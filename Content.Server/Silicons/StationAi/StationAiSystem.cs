@@ -40,13 +40,13 @@ public sealed class StationAiSystem : SharedStationAiSystem
         var query = EntityManager.EntityQueryEnumerator<StationAiCoreComponent, TransformComponent>();
         while (query.MoveNext(out var ent, out var entStationAiCore, out var entXform))
         {
-            var stationAiCore = new Entity<StationAiCoreComponent?>(ent, entStationAiCore);
+            var stationAiCore = new Entity<StationAiCoreComponent>(ent, entStationAiCore);
 
-            if (!TryGetHeld(stationAiCore, out var insertedAi) || !TryComp(insertedAi, out ActorComponent? actor))
-                continue;
+            if (!TryGetInsertedAI(stationAiCore, out var insertedAi) || !TryComp(insertedAi, out ActorComponent? actor))
+                return;
 
-            if (stationAiCore.Comp?.RemoteEntity == null || stationAiCore.Comp.Remote)
-                continue;
+            if (stationAiCore.Comp.RemoteEntity == null || stationAiCore.Comp.Remote)
+                return;
 
             var xform = Transform(stationAiCore.Comp.RemoteEntity.Value);
 

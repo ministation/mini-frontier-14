@@ -1,3 +1,3 @@
-ent-NFPrisonerClosetWallOrangeFilled = { ent-ClosetWallOrange }
+ent-ClosetWallOrangeFilled = { ent-ClosetWallOrange }
     .suffix = Заполненный
     .desc = { ent-ClosetWallOrange.desc }

@@ -4,7 +4,3 @@ ent-CrateMaterialMetalRods = ящик стержней
     .desc = Содержит 90 металлических стержней для любых ваших экспериментов.
 ent-CrateMaterialBiomass = ящик биомассы
     .desc = Содержит 300 единиц биомассы. Вкусняшка.
-ent-CrateMaterialsBasic10Filled = { ent-CrateGenericSteel }
-    .desc = { ent-CrateGenericSteel.desc }
-ent-CrateMaterialsBasicFilled = { ent-CrateGenericSteel }
-    .desc = { ent-CrateGenericSteel.desc }

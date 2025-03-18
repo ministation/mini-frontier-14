@@ -1,6 +1,6 @@
 - type: entity
   name: station representative's rubber stamp
-  parent: [RubberStampHop, BaseCommandContraband]
+  parent: RubberStampHop
   id: RubberStampSr
   components:
   - type: Stamp
@@ -15,7 +15,7 @@
   name: station traffic controller's rubber stamp
   parent: RubberStampBase
   id: RubberStampStc
-  categories: [ DoNotMap ]
+  suffix: DO NOT MAP
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-stc
@@ -27,9 +27,9 @@
 
 - type: entity
   name: sheriff's rubber stamp
-  parent: [RubberStampBase, BaseCommandContraband]
+  parent: RubberStampBase
   id: RubberStampSheriff
-  categories: [ DoNotMap ]
+  suffix: DO NOT MAP
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-hos
@@ -70,7 +70,7 @@
   name: public affairs liaison's rubber stamp
   parent: RubberStampBase
   id: RubberStampPal
-  categories: [ DoNotMap ]
+  suffix: DO NOT MAP
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-pal
@@ -79,12 +79,12 @@
   - type: Sprite
     sprite: _NF/Objects/Misc/stamps.rsi
     state: stamp-pal
-
+        
 - type: entity
   name: director of care's rubber stamp
-  parent: [RubberStampBase, BaseCommandContraband]
+  parent: RubberStampBase
   id: RubberStampDoc
-  categories: [ DoNotMap ]
+  suffix: DO NOT MAP
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-doc
@@ -93,17 +93,3 @@
   - type: Sprite
     sprite: _NF/Objects/Misc/stamps.rsi
     state: stamp-doc
-
-- type: entity
-  name: bailiff's rubber stamp
-  parent: RubberStampBase
-  id: RubberStampBailiff
-  categories: [ DoNotMap ]
-  components:
-  - type: Stamp
-    stampedName: stamp-component-stamped-name-bailiff
-    stampedColor: "#51703b"
-    stampState: "paper_stamp-nf-bailiff"
-  - type: Sprite
-    sprite: _NF/Objects/Misc/stamps.rsi
-    state: stamp-bailiff

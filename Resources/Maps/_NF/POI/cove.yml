@@ -86,6 +86,11 @@ entities:
           version: 6
     - type: Broadphase
     - type: Physics
+      bodyStatus: InAir
+      angularDamping: 999999
+      linearDamping: 999999
+      fixedRotation: False
+      bodyType: Dynamic
     - type: Fixtures
       fixtures: {}
     - type: IFF
@@ -94,6 +99,8 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
     - type: Shuttle
+      angularDamping: 999999
+      linearDamping: 999999
     - type: GridPathfinding
     - type: DecalGrid
       chunkCollection:
@@ -1088,7 +1095,7 @@ entities:
     - type: Transform
       pos: 8.5,5.5
       parent: 1
-- proto: AirlockHatchPirateLocked
+- proto: AirlockHatch
   entities:
   - uid: 36
     components:
@@ -1160,7 +1167,7 @@ entities:
     - type: Transform
       pos: 11.5,22.5
       parent: 1
-- proto: AirlockShuttleSyndicatePirateLocked
+- proto: AirlockShuttleSyndicate
   entities:
   - uid: 130
     components:

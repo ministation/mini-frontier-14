@@ -36,5 +36,3 @@
           mapNameTemplate: 'Торговый Аванпост'
         - type: StationDeadDrop
           maxDeadDrops: 3 # Many here, it's huge.
-        - type: TradeCrateDestination
-          destinationProto: Trade

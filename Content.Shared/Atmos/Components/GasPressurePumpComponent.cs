@@ -1,4 +1,3 @@
-using Content.Shared.Guidebook;
 using Robust.Shared.GameStates;
 using Content.Shared.Atmos.Piping.Binary.Components; // Frontier
 
@@ -23,7 +22,6 @@ public sealed partial class GasPressurePumpComponent : Component
     ///     Max pressure of the target gas (NOT relative to source).
     /// </summary>
     [DataField]
-    [GuidebookData]
     public float MaxTargetPressure = Atmospherics.MaxOutputPressure;
 
     /// <summary>

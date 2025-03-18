@@ -1,7 +1,7 @@
 - type: entity
   id: BaseCartridgeRifle
   name: cartridge (.20 rifle)
-  parent: [ BaseCartridge, BaseC1Contraband ] # Frontier: BaseSecurityContraband<BaseC1Contraband
+  parent: [ BaseCartridge, BaseC1Contraband ] # Frontier: BaseRestrictedContraband<BaseC1Contraband
   abstract: true
   components:
   - type: Tag
@@ -46,7 +46,7 @@
 - type: entity
   id: CartridgeRifleIncendiary
   name: cartridge (.20 rifle incendiary)
-  parent: [BaseCartridgeRifle, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
+  parent: BaseCartridgeRifle
   components:
   - type: CartridgeAmmo
     proto: BulletRifleIncendiary
@@ -61,7 +61,7 @@
 - type: entity
   id: CartridgeRifleUranium
   name: cartridge (.20 rifle uranium)
-  parent: [BaseCartridgeRifle, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
+  parent: BaseCartridgeRifle
   components:
   - type: CartridgeAmmo
     proto: BulletRifleUranium

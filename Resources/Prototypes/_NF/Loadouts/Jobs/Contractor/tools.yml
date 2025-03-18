@@ -128,8 +128,8 @@
 
 - type: loadout
   id: ContractorBible
-  name: библия и имплантер веры
-  description: Для начинающего священника. Творите чудеса, обращайте в свою веру и увеличивайте свою паству.
+  name: bible and faith implanter
+  description: For the budding Chaplain.  Perform miracles, proselytize, and grow your flock.
   previewEntity: Bible
   effects:
   - !type:GroupLoadoutEffect
@@ -142,21 +142,9 @@
       - BibleUserImplanter
 
 - type: loadout
-  id: ContractorMimePowersImplanter
-  name: имплантер клятвы мима
-  description: Для начинающего мима. Принеси свою клятву сегодня.
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: ContractorT2
-  price: 5000
-  storage:
-    back:
-      - MimePowersImplanter
-
-- type: loadout
   id: ContractorMonkeyCubeWrapped
-  name: кубик обезьяны #Corvax-Frontier
-  description: Разверни его, чтобы получить кубик с обезьяной.
+  name: monkey cube
+  description: Unwrap this to get a monkey cube.
   previewEntity: MonkeyCubeWrapped
   effects:
   - !type:GroupLoadoutEffect
@@ -167,8 +155,8 @@
 
 - type: loadout
   id: ContractorKoboldCubeWrapped
-  name: кубик кобольда #Corvax-Frontier
-  description: Разверни его, чтобы получить кубик с кобольдом.
+  name: kobold cube
+  description: Unwrap this to get a kobold cube.
   previewEntity: KoboldCubeWrapped
   effects:
   - !type:GroupLoadoutEffect

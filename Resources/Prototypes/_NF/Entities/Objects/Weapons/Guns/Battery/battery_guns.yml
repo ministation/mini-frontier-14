@@ -105,7 +105,6 @@
     magState: charge-level
     steps: 6
     zeroVisible: true
-  - type: Appearance
 
 - type: entity
   id: WeaponLaserPistolNF

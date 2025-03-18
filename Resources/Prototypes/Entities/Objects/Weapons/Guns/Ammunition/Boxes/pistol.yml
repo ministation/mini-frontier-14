@@ -17,7 +17,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi # Frontier: _NF prefix
+    sprite: Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi
   - type: MagazineVisuals
     magState: mag
     steps: 3
@@ -34,6 +34,9 @@
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistol
+  - type: Icon # Frontier
+    sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi # Frontier
+    state: display # Frontier
   - type: Sprite
     layers:
     - state: base
@@ -48,6 +51,9 @@
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistolPractice
+  - type: Icon # Frontier
+    sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi # Frontier
+    state: practicedisplay # Frontier
   - type: Sprite
     layers:
     - state: base
@@ -57,12 +63,15 @@
     - state: practice
 
 - type: entity
-  parent: [BaseMagazineBoxPistol, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
+  parent: BaseMagazineBoxPistol
   id: MagazineBoxPistolIncendiary
   name: ammunition box (.35 auto incendiary)
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistolIncendiary
+  - type: Icon # Frontier
+    sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi # Frontier
+    state: incendiarydisplay # Frontier
   - type: Sprite
     layers:
     - state: base
@@ -73,11 +82,14 @@
 
 - type: entity
   id: MagazineBoxPistolUranium
-  parent: [BaseMagazineBoxPistol, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
+  parent: BaseMagazineBoxPistol
   name: ammunition box (.35 auto uranium)
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistolUranium
+  - type: Icon # Frontier
+    sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi # Frontier
+    state: uraniumdisplay # Frontier
   - type: Sprite
     layers:
     - state: base

@@ -38,7 +38,6 @@ namespace Content.Server.Chemistry.EntitySystems
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
         [Dependency] private readonly OpenableSystem _openable = default!;
         [Dependency] private readonly LabelSystem _label = default!; // Frontier
-        [Dependency] private readonly SharedContainerSystem _containers = default!; // Frontier
 
         public override void Initialize()
         {
@@ -280,10 +279,8 @@ namespace Content.Server.Chemistry.EntitySystems
             {
                 for (var i = 0; i < packPrototype.Inventory.Count && i < component.StorageSlots.Count; i++)
                 {
-                    if (component.StorageSlots[i].ContainerSlot == null)
-                        continue;
                     var item = Spawn(packPrototype.Inventory[i], Transform(uid).Coordinates);
-                    if (!_containers.Insert(item, component.StorageSlots[i].ContainerSlot!)) // ContainerSystem.Insert is silent.
+                    if (!_itemSlotsSystem.TryInsert(uid, component.StorageSlots[i].ID!, item, null, excludeUserAudio: true))
                         QueueDel(item);
                 }
             }

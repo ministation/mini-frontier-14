@@ -52,5 +52,3 @@ ent-FoodTartPearCheese = пирог с грушей и сыром
     .desc = Самая великолепная пара.
 ent-FoodPieAppleHoneySlice = кусочек пирога с грушей и сыром
     .desc = Ломтик яблока в медовой глазури, запеченный с рассыпчатой овсяной начинкой для штрейзеля.
-ent-FoodPiePumpkinSlice = кусок тыквенного пирога
-    .desc = { ent-FoodPieSliceBase.desc }

@@ -18,36 +18,31 @@
   # This is not roundstart since its a direct upgrade
   - WeaponCrusherGlaive
 
-# Frontier: restricted arsenal research
-
-# - type: technology
-#   id: DraconicMunitions
-#   name: research-technology-draconic-munitions
-#   icon:
-#     sprite: Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi
-#     state: incendiarydisplay
-#   discipline: Arsenal
-#   tier: 1
-#   cost: 10000
-#   recipeUnlocks:
-#   - BoxShotgunIncendiary
-#   - MagazineRifleIncendiary
-#   - MagazinePistolIncendiary
-#   - MagazinePistolSubMachineGunIncendiary
-#   - MagazineLightRifleIncendiary
-#   - SpeedLoaderMagnumIncendiary
-#   - MagazineShotgunIncendiary
-#   - MagazineBoxPistolIncendiary
-#   - MagazineBoxMagnumIncendiary
-#   - MagazineBoxLightRifleIncendiary
-#   - MagazineBoxRifleIncendiary
-# #   - SpeedLoaderRifleHeavyIncendiary # Frontier
-#   - MagazineVector22Incendiary #CorvaxFrontier
-#   - MagazineBoxVector22Incendiary #CorvaxFrontier
-#   - MagazineVector45Incendiary #CorvaxFrontier
-#   - MagazineBoxVector45Incendiary #CorvaxFrontier
-
-# End Frontier: restricted arsenal research
+#- type: technology
+#  id: DraconicMunitions
+#  name: research-technology-draconic-munitions
+#  icon:
+#    sprite: Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi
+#    state: incendiarydisplay
+#  discipline: Arsenal
+#  tier: 1
+#  cost: 10000
+#  recipeUnlocks:
+#  - BoxShotgunIncendiary
+#  - MagazineRifleIncendiary
+#  - MagazinePistolIncendiary
+#  - MagazineLightRifleIncendiary
+#  - SpeedLoaderMagnumIncendiary
+#  - MagazineShotgunIncendiary
+#  - MagazineBoxPistolIncendiary
+#  - MagazineBoxMagnumIncendiary
+#  - MagazineBoxLightRifleIncendiary
+#  - MagazineBoxRifleIncendiary
+#  - SpeedLoaderRifleHeavyIncendiary # Frontier
+#  - MagazineVector22Incendiary #CorvaxFrontier
+#  - MagazineBoxVector22Incendiary #CorvaxFrontier
+#  - MagazineVector45Incendiary #CorvaxFrontier
+#  - MagazineBoxVector45Incendiary #CorvaxFrontier
 
 - type: technology
   id: WeaponizedLaserManipulation
@@ -86,35 +81,30 @@
   - MagazineBoxVector45Practice #CorvaxFrontier
   - MagazineVector45Practice #CorvaxFrontier
 
-# Frontier: restricted arsenal research
-
-# - type: technology
-#   id: UraniumMunitions
-#   name: research-technology-uranium-munitions
-#   icon:
-#     sprite: Objects/Materials/Sheets/other.rsi
-#     state: uranium
-#   discipline: Arsenal
-#   tier: 1
-#   cost: 7500
-#   recipeUnlocks:
-#   - MagazineRifleUranium
-#   - MagazinePistolUranium
-#   - MagazinePistolSubMachineGunUranium
-#   - MagazineLightRifleUranium
-#   - SpeedLoaderMagnumUranium
-#   - MagazineBoxPistolUranium
-#   - MagazineBoxMagnumUranium
-#   - MagazineBoxLightRifleUranium
-#   - MagazineBoxRifleUranium
-#   - BoxShotgunUranium
-# #  - SpeedLoaderRifleHeavyUranium # Frontier
-#   - MagazineBoxVector22Uranium #CorvaxFrontier
-#   - MagazineVector22Uranium #CorvaxFrontier
-#   - MagazineBoxVector45Uranium #CorvaxFrontier
-#   - MagazineVector45Uranium #CorvaxFrontier
-
-# End Frontier: restricted arsenal research
+#- type: technology
+#  id: UraniumMunitions
+#  name: research-technology-uranium-munitions
+#  icon:
+#    sprite: Objects/Materials/Sheets/other.rsi
+#    state: uranium
+#  discipline: Arsenal
+#  tier: 1
+#  cost: 7500
+#  recipeUnlocks:
+#  - MagazineRifleUranium
+#  - MagazinePistolUranium
+#  - MagazineLightRifleUranium
+#  - SpeedLoaderMagnumUranium
+#  - MagazineBoxPistolUranium
+#  - MagazineBoxMagnumUranium
+#  - MagazineBoxLightRifleUranium
+#  - MagazineBoxRifleUranium
+#  - BoxShotgunUranium
+#  - SpeedLoaderRifleHeavyUranium # Frontier
+#  - MagazineBoxVector22Uranium #CorvaxFrontier
+#  - MagazineVector22Uranium #CorvaxFrontier
+#  - MagazineBoxVector45Uranium #CorvaxFrontier
+#  - MagazineVector45Uranium #CorvaxFrontier
 
 - type: technology
   id: AdvancedRiotControl
@@ -226,6 +216,8 @@
   recipeUnlocks:
   - WeaponAdvancedLaser
   - PortableRecharger
+  - WeaponAntiqueLaserNF # Frontier
+  - NFBlueprintWeaponAntiqueLaser # Frontier
   - NFBlueprintPortableRecharger # Frontier
 
 - type: technology
@@ -294,3 +286,4 @@
   technologyPrerequisites:
   - SalvageWeapons
   - MagnetsTech
+  

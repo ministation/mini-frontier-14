@@ -32,8 +32,6 @@ entities:
     - type: Transform
       pos: 0.22101265,1.687084
       parent: invalid
-    - type: BecomesStation
-      id: Wasp
     - type: MapGrid
       chunks:
         0,0:
@@ -813,13 +811,8 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
-- proto: AirlockChemistryGlassLocked
-  entities:
-  - uid: 16
-    components:
-    - type: Transform
-      pos: -6.5,-3.5
-      parent: 1
+    - type: BecomesStation
+      id: Wasp
 - proto: AirlockCommand
   entities:
   - uid: 2
@@ -905,6 +898,13 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 13.5,5.5
+      parent: 1
+- proto: AirlockMedicalGlassLockedSecurity
+  entities:
+  - uid: 16
+    components:
+    - type: Transform
+      pos: -6.5,-3.5
       parent: 1
 - proto: AirlockNfsdGlass
   entities:
@@ -4213,6 +4213,32 @@ entities:
     - type: Transform
       pos: -4.5,-2.5
       parent: 1
+- proto: ClosetWallMaintenanceFilledRandom
+  entities:
+  - uid: 646
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -2.5,0.5
+      parent: 1
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.1496
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
 - proto: ClothingBeltUtilityEngineering
   entities:
   - uid: 647
@@ -5086,18 +5112,18 @@ entities:
       parent: 1
 - proto: FaxMachineShip
   entities:
-  - uid: 61
+  - uid: 751
     components:
     - type: Transform
-      pos: 0.5,15.5
+      pos: 0.5,14.5
       parent: 1
 - proto: FireAxeCabinetFilled
   entities:
-  - uid: 64
+  - uid: 752
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
-      pos: -2.5,0.5
+      pos: -2.5,-0.5
       parent: 1
 - proto: Firelock
   entities:
@@ -5970,6 +5996,14 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 0.5,12.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 882
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 0.5,13.5
       parent: 1
     - type: AtmosPipeColor
       color: '#0055CCFF'
@@ -7112,11 +7146,6 @@ entities:
       color: '#990000FF'
 - proto: GasVentPump
   entities:
-  - uid: 60
-    components:
-    - type: Transform
-      pos: 0.5,13.5
-      parent: 1
   - uid: 1030
     components:
     - type: Transform
@@ -7153,6 +7182,13 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -1.5,9.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 1035
+    components:
+    - type: Transform
+      pos: 0.5,14.5
       parent: 1
     - type: AtmosPipeColor
       color: '#0055CCFF'
@@ -8294,11 +8330,11 @@ entities:
       parent: 1
 - proto: LockerWallMaterialsFuelAmeJarFilled
   entities:
-  - uid: 65
+  - uid: 1004
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -2.5,-0.5
+      rot: -1.5707963267948966 rad
+      pos: 3.5,-1.5
       parent: 1
 - proto: MedicalBed
   entities:
@@ -8345,13 +8381,6 @@ entities:
     - type: Transform
       pos: -6.358609,-8.515163
       parent: 1
-- proto: NFHolopadShip
-  entities:
-  - uid: 62
-    components:
-    - type: Transform
-      pos: 0.5,14.5
-      parent: 1
 - proto: NfsdTechFab
   entities:
   - uid: 1215
@@ -8359,31 +8388,6 @@ entities:
     - type: Transform
       pos: -1.5,9.5
       parent: 1
-<<<<<<< HEAD
-=======
-- proto: NFWardrobePrisonFilled
-  entities:
-  - uid: 66
-    components:
-    - type: Transform
-      pos: 6.5,-22.5
-      parent: 1
-  - uid: 67
-    components:
-    - type: Transform
-      pos: 2.5,-22.5
-      parent: 1
-  - uid: 68
-    components:
-    - type: Transform
-      pos: -1.5,-22.5
-      parent: 1
-  - uid: 69
-    components:
-    - type: Transform
-      pos: -5.5,-22.5
-      parent: 1
->>>>>>> master
 - proto: NitrogenCanister
   entities:
   - uid: 1216
@@ -9665,10 +9669,10 @@ entities:
       parent: 1
 - proto: SpacemenFigureSpawner
   entities:
-  - uid: 63
+  - uid: 1428
     components:
     - type: Transform
-      pos: -3.5,11.5
+      pos: 0.5,15.5
       parent: 1
 - proto: SpawnPointLatejoin
   entities:
@@ -10160,6 +10164,11 @@ entities:
     - type: Transform
       pos: 0.5,15.5
       parent: 1
+  - uid: 1492
+    components:
+    - type: Transform
+      pos: 0.5,14.5
+      parent: 1
   - uid: 1493
     components:
     - type: Transform
@@ -10217,7 +10226,7 @@ entities:
     - type: Transform
       pos: 5.5,-16.5
       parent: 1
-- proto: TelecomServerFilledNfsd
+- proto: TelecomServerFilledSecurity
   entities:
   - uid: 1504
     components:
@@ -11747,7 +11756,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 5.5,4.5
       parent: 1
-<<<<<<< HEAD
 - proto: WardrobePrisonFilled
   entities:
   - uid: 1778
@@ -11842,8 +11850,6 @@ entities:
         - 0
         - 0
         - 0
-=======
->>>>>>> master
 - proto: WarpPoint
   entities:
   - uid: 1782

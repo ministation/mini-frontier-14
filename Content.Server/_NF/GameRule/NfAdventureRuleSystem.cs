@@ -8,7 +8,6 @@ using Content.Server._NF.Bank;
 using Content.Server._NF.GameRule.Components;
 using Content.Server._NF.GameTicking.Events;
 using Content.Server.Cargo.Components;
-using Content.Server.Discord;
 using Content.Server.GameTicking;
 using Content.Server.GameTicking.Presets;
 using Content.Server.GameTicking.Rules;
@@ -16,14 +15,12 @@ using Content.Shared._NF.Bank;
 using Content.Shared._NF.CCVar;
 using Content.Shared.GameTicking;
 using Content.Shared.GameTicking.Components;
-using Robust.Server;
 using Robust.Server.Player;
 using Robust.Shared.Configuration;
 using Robust.Shared.Enums;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Timing;
 
 namespace Content.Server._NF.GameRule;
 
@@ -38,8 +35,6 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
     [Dependency] private readonly BankSystem _bank = default!;
     [Dependency] private readonly GameTicker _ticker = default!;
     [Dependency] private readonly PointOfInterestSystem _poi = default!;
-    [Dependency] private readonly IBaseServer _baseServer = default!;
-    [Dependency] private readonly IEntitySystemManager _entSys = default!;
 
     private readonly HttpClient _httpClient = new();
 
@@ -247,10 +242,6 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
         if (webhookUrl == string.Empty)
             return;
 
-        var serverName = _baseServer.ServerName;
-        var gameTicker = _entSys.GetEntitySystemOrNull<GameTicker>();
-        var runId = gameTicker != null ? gameTicker.RoundId : 0;
-
         var payload = new WebhookPayload
         {
             Embeds = new List<Embed>
@@ -260,13 +251,6 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
                     Title = Loc.GetString("adventure-webhook-list-start"),
                     Description = message,
                     Color = color,
-                    Footer = new EmbedFooter
-                    {
-                        Text = Loc.GetString(
-                            "adventure-webhook-footer",
-                            ("serverName", serverName),
-                            ("roundId", runId)),
-                    },
                 },
             },
         };
@@ -284,10 +268,6 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
             return;
         Logger.InfoS("discord", ledgerPrintout);
 
-        var serverName = _baseServer.ServerName;
-        var gameTicker = _entSys.GetEntitySystemOrNull<GameTicker>();
-        var runId = gameTicker != null ? gameTicker.RoundId : 0;
-
         var payload = new WebhookPayload
         {
             Embeds = new List<Embed>
@@ -297,13 +277,6 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
                     Title = Loc.GetString("adventure-webhook-ledger-start"),
                     Description = ledgerPrintout,
                     Color = color,
-                    Footer = new EmbedFooter
-                    {
-                        Text = Loc.GetString(
-                            "adventure-webhook-footer",
-                            ("serverName", serverName),
-                            ("roundId", runId)),
-                    },
                 },
             },
         };

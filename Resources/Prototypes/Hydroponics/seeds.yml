@@ -1136,7 +1136,7 @@
   idealLight: 9
   idealHeat: 298
   chemicals:
-    FrostOil:
+    Frostoil:
       Min: 1
       Max: 10
       PotencyDivisor: 10
@@ -1432,10 +1432,6 @@
       Min: 1
       Max: 5
       PotencyDivisor: 20
-  seedless: true # Frontier
-  preventSwabbing: true # Frontier
-  preventClipping: true # Frontier
-  permanentlySeedless: true # Frontier
 
 - type: seed
   id: fakeCapfruit
@@ -1462,10 +1458,6 @@
       Min: 1
       Max: 5
       PotencyDivisor: 20
-  seedless: true # Frontier
-  preventSwabbing: true # Frontier
-  preventClipping: true # Frontier
-  permanentlySeedless: true # Frontier
 
 - type: seed
   id: realCapfruit
@@ -1492,10 +1484,6 @@
       Min: 1
       Max: 5
       PotencyDivisor: 20
-  seedless: true # Frontier
-  preventSwabbing: true # Frontier
-  preventClipping: true # Frontier
-  permanentlySeedless: true # Frontier
 
 - type: seed
   id: rice

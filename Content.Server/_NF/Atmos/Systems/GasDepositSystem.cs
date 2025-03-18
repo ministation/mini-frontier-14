@@ -17,7 +17,7 @@ using Content.Shared._NF.Atmos.Systems;
 using Content.Shared._NF.Atmos.Visuals;
 using Content.Shared.Atmos;
 using Content.Shared.Atmos.Piping.Binary.Components;
-using Content.Shared._NF.Bank.Components;
+using Content.Shared.Bank.Components;
 using Content.Shared.Database;
 using Content.Shared.Power;
 using Robust.Server.Audio;
@@ -110,9 +110,7 @@ public sealed class GasDepositSystem : SharedGasDepositSystem
         for (var i = 0; i < depositPrototype.Gases.Length && i < Atmospherics.TotalNumberOfGases; i++)
         {
             var gasRange = depositPrototype.Gases[i];
-            var gasAmount = gasRange[0] + _random.NextFloat() * (gasRange[1] - gasRange[0]);
-            gasAmount *= ent.Comp.Scale;
-            deposit.Deposit.SetMoles(i, gasAmount);
+            deposit.Deposit.SetMoles(i, gasRange[0] + _random.NextFloat() * (gasRange[1] - gasRange[0]));
         }
 
         deposit.LowMoles = deposit.Deposit.TotalMoles * LowMoleCoefficient;
@@ -215,13 +213,14 @@ public sealed class GasDepositSystem : SharedGasDepositSystem
     private void OnSalePointUpdate(Entity<GasSalePointComponent> ent, ref AtmosDeviceUpdateEvent args)
     {
         if (TryComp<ApcPowerReceiverComponent>(ent, out var power) && !power.Powered
-            || !_nodeContainer.TryGetNode(ent.Owner, ent.Comp.InletPipePortName, out PipeNode? port))
+            || !_nodeContainer.TryGetNode(ent.Owner, ent.Comp.InletPipePortName, out PipeNode? port)
+            || port.NodeGroup is not PipeNet { NodeCount: > 1 } net)
             return;
 
-        if (port.Air.TotalMoles > 0)
+        if (net.Air.TotalMoles > 0)
         {
-            _atmosphere.Merge(ent.Comp.GasStorage, port.Air);
-            port.Air.Clear();
+            _atmosphere.Merge(ent.Comp.GasStorage, net.Air);
+            net.Air.Clear();
         }
     }
 
@@ -246,13 +245,14 @@ public sealed class GasDepositSystem : SharedGasDepositSystem
             return;
         }
 
-        var amount = 0.0;
+        var mixture = new GasMixture();
         foreach (var salePoint in GetNearbySalePoints(ent, gridUid))
         {
-            amount += _atmosphere.GetPrice(salePoint.Comp.GasStorage);
+            _atmosphere.Merge(mixture, salePoint.Comp.GasStorage);
             salePoint.Comp.GasStorage.Clear();
         }
 
+        var amount = _atmosphere.GetPrice(mixture);
         if (TryComp<MarketModifierComponent>(ent, out var priceMod))
             amount *= priceMod.Mod;
 
@@ -286,13 +286,13 @@ public sealed class GasDepositSystem : SharedGasDepositSystem
     private void GetNearbyMixtures(EntityUid consoleUid, EntityUid gridUid, out GasMixture mixture, out double value)
     {
         mixture = new GasMixture();
-        value = 0.0;
 
         foreach (var salePoint in GetNearbySalePoints(consoleUid, gridUid))
         {
             _atmosphere.Merge(mixture, salePoint.Comp.GasStorage);
-            value += _atmosphere.GetPrice(salePoint.Comp.GasStorage);
         }
+
+        value = _atmosphere.GetPrice(mixture);
     }
 
     private List<Entity<GasSalePointComponent>> GetNearbySalePoints(EntityUid consoleUid, EntityUid gridUid)

@@ -1,7 +1,7 @@
-ent-ClothingShoesBootsMagSecurity = боевые магнитные сапоги
+ent-ClothingShoesBootsMagCombat = боевые магнитные сапоги
     .desc = Магнитные сапоги, используемые во время работы вне корабля, чтобы оставаться надёжно прикреплённым к поверхности.
 ent-ClothingShoesBootsMagNfsd = магнитные сапоги ДСБФ
-    .desc = { ent-ClothingShoesBootsMagSecurity.desc }
+    .desc = { ent-ClothingShoesBootsMagCombat.desc }
 ent-ClothingShoesBootsMagMercenary = магнитные сапоги наёмника
     .desc = Магнитные сапоги, используемые во время работы вне корабля, чтобы оставаться надёжно прикреплённым к поверхности.
 ent-ClothingShoesBootsMagPirate = пиратские магнитные сапоги

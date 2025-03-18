@@ -24,7 +24,6 @@ using Robust.Shared.Input;
 using Robust.Shared.Map;
 using static Content.Client.Inventory.ClientInventorySystem;
 using static Robust.Client.UserInterface.Control;
-using Content.Shared._EE.Strip.Components; // EE
 
 namespace Content.Client.Inventory
 {
@@ -65,9 +64,11 @@ namespace Content.Client.Inventory
         {
             base.Open();
 
-            _strippingMenu = this.CreateWindowCenteredLeft<StrippingMenu>();
+            _strippingMenu = this.CreateWindow<StrippingMenu>();
             _strippingMenu.OnDirty += UpdateMenu;
             _strippingMenu.Title = Loc.GetString("strippable-bound-user-interface-stripping-menu-title", ("ownerName", Identity.Name(Owner, EntMan)));
+
+            _strippingMenu?.OpenCenteredLeft();
         }
 
         protected override void Dispose(bool disposing)
@@ -171,9 +172,7 @@ namespace Content.Client.Inventory
                     button.BlockedRect.MouseFilter = MouseFilterMode.Ignore;
             }
 
-            // Goobstation: use virtual entity if hidden
-            UpdateEntityIcon(button, EntMan.HasComponent<StripMenuHiddenComponent>(hand.HeldEntity) ? _virtualHiddenEntity : hand.HeldEntity);
-            // End Goobstation
+            UpdateEntityIcon(button, hand.HeldEntity);
             _strippingMenu!.HandsContainer.AddChild(button);
         }
 
@@ -214,11 +213,6 @@ namespace Content.Client.Inventory
             // this does not work for modified clients because they are still sent the real entity
             if (entity != null && _strippable.IsStripHidden(slotDef, _player.LocalEntity))
                 entity = _virtualHiddenEntity;
-
-            // Goobstation/EE: hide strip menu items
-            if (entity != null && EntMan.HasComponent<StripMenuHiddenComponent>(entity))
-                entity = _virtualHiddenEntity;
-            // End Goobstation/EE
 
             var button = new SlotButton(new SlotData(slotDef, container));
             button.Pressed += SlotPressed;

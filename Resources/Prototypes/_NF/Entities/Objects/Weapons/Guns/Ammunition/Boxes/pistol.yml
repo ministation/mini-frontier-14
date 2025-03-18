@@ -6,8 +6,10 @@
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistolRubber
-  - type: Sprite
+  - type: Icon
     sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi
+    state: rubberdisplay
+  - type: Sprite
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -17,14 +19,16 @@
 
 # Frontier
 - type: entity
-  parent: [BaseMagazineBoxPistol, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
+  parent: BaseMagazineBoxPistol
   id: MagazineBoxPistolEmp
   name: ammunition box (.35 auto emp)
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistolEmp
-  - type: Sprite
+  - type: Icon
     sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi
+    state: empdisplay
+  - type: Sprite
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]

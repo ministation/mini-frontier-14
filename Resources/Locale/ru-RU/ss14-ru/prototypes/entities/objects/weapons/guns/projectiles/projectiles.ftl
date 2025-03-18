@@ -88,5 +88,3 @@ ent-ProjectileEmp = эми снаряд
     .desc = { ent-BaseBulletTrigger.desc }
 ent-BulletEnergyGunLaser = энергетический снаряд
     .desc = { ent-BaseBullet.desc }
-ent-CannonBallEmp = ЭМИ ядро
-    .desc = { ent-BaseBulletTrigger.desc }

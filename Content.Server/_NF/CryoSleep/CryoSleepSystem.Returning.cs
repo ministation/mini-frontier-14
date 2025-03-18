@@ -11,7 +11,7 @@ using Content.Shared.Players;
 using Robust.Shared.Configuration;
 using Robust.Shared.Network;
 
-namespace Content.Server._NF.CryoSleep;
+namespace Content.Server.CryoSleep;
 
 public sealed partial class CryoSleepSystem
 {

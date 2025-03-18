@@ -227,12 +227,12 @@ entities:
         tiles:
           0,0:
             0: 12799
-            2: 32768
+            1: 32768
           0,-1:
             0: 63094
           -1,0:
             0: 33018
-            2: 8192
+            1: 8192
           0,1:
             0: 3
             1: 64
@@ -241,7 +241,7 @@ entities:
             1: 64
           -1,-1:
             0: 61644
-            2: 16
+            1: 16
           -1,-2:
             1: 512
             0: 49152
@@ -249,28 +249,13 @@ entities:
             0: 24576
             1: 2048
           1,-1:
-            2: 16
+            1: 16
         uniqueMixes:
         - volume: 2500
           temperature: 293.15
           moles:
           - 21.824879
           - 82.10312
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.15
-          moles:
-          - 0
-          - 0
           - 0
           - 0
           - 0
@@ -577,20 +562,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 0.5,3.5
       parent: 2
-- proto: ClothingBeltPilotFilled
-  entities:
-  - uid: 188
-    components:
-    - type: Transform
-      pos: -0.054038495,4.7225556
-      parent: 2
-- proto: ClothingNeckScarfPilot
-  entities:
-  - uid: 197
-    components:
-    - type: Transform
-      pos: -0.03320512,4.6704726
-      parent: 2
 - proto: ComputerTabletopShuttle
   entities:
   - uid: 157
@@ -620,6 +591,19 @@ entities:
       rot: 3.141592653589793 rad
       pos: -2.5,-1.5
       parent: 2
+    - type: ContainerContainer
+      containers:
+        board: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
+        bank-ATM-cashSlot: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+    - type: Physics
+      canCollide: False
+    - type: ItemSlots
 - proto: CrateFreezer
   entities:
   - uid: 61
@@ -770,13 +754,6 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#990000FF'
-  - uid: 105
-    components:
-    - type: Transform
-      pos: 1.5,3.5
-      parent: 2
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
   - uid: 108
     components:
     - type: Transform
@@ -968,11 +945,10 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
-  - uid: 198
+  - uid: 105
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 0.5,3.5
+      pos: 1.5,3.5
       parent: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
@@ -1126,13 +1102,12 @@ entities:
     - type: Transform
       pos: 3.5,2.5
       parent: 2
-- proto: LockerWallColorGenericBlack
+- proto: LockerPilotFilled
   entities:
   - uid: 119
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 2.5,3.5
+      pos: 1.5,3.5
       parent: 2
 - proto: LockerWallMaterialsFuelPlasmaFilled
   entities:
@@ -1141,13 +1116,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 0.5,-4.5
-      parent: 2
-- proto: NFHolopadShip
-  entities:
-  - uid: 199
-    components:
-    - type: Transform
-      pos: 1.5,3.5
       parent: 2
 - proto: NitrogenCanister
   entities:
@@ -1188,6 +1156,10 @@ entities:
     - type: Transform
       pos: -0.5,-4.5
       parent: 2
+    - type: FuelGenerator
+      on: False
+    - type: Physics
+      bodyType: Static
 - proto: PottedPlantRandom
   entities:
   - uid: 195
@@ -1565,7 +1537,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: 3.5,-5.5
       parent: 2
-- proto: WarpPoint
+- proto: WarpPointShip
   entities:
   - uid: 164
     components:

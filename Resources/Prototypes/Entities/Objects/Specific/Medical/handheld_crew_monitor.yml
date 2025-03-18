@@ -1,8 +1,8 @@
 - type: entity
   name: handheld crew monitor
-  # categories: [ DoNotMap ] # Frontier
+  # suffix: DO NOT MAP # Frontier
   parent: BaseHandheldComputer # Frontier: remove BaseGrandTheftContraband
-  # CMO-only bud, don't add more.
+  # CMO-only bud, don't add more. #on frontier who gaf
   id: HandheldCrewMonitor
   description: A hand-held crew monitor displaying the status of suit sensors.
   components:

@@ -3,8 +3,7 @@
 - type: latheRecipe
   abstract: true
   id: NFBaseEVASuitRecipe
-  categories:
-  - EVASuits
+  category: EVASuits
   applyMaterialDiscount: false
   completetime: 5
   materials:
@@ -379,9 +378,9 @@
   result: ClothingShoesBootsMagAdv
 
 - type: latheRecipe
-  id: ClothingShoesBootsMagSecurity
+  id: ClothingShoesBootsMagCombat
   parent: NFBaseMagBootsRecipe
-  result: ClothingShoesBootsMagSecurity
+  result: ClothingShoesBootsMagCombat
 
 - type: latheRecipe
   id: ClothingShoesBootsMagMercenary

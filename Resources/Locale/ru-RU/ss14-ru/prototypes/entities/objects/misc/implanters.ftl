@@ -55,15 +55,6 @@ ent-DeathAcidifierImplanter = { ent-Implanter }
 ent-MindShieldImplanter = { ent-Implanter }
     .desc = { ent-BaseImplantOnlyImplanter.desc }
     .suffix = Щит разума
-ent-FakeMindShieldImplanter = { ent-BaseImplantOnlyImplanterSyndi }
-    .suffix = Поддельный
-    .desc = { ent-BaseImplantOnlyImplanterSyndi.desc }
 
 # Corvax anti-meta localization end
 
-ent-RadioImplanter = { ent-BaseImplantOnlyImplanterSyndi }
-    .suffix = радио Синдикат
-    .desc = { ent-BaseImplantOnlyImplanterSyndi.desc }
-ent-RadioImplanterCentcomm = { ent-BaseImplantOnlyImplanter }
-    .suffix = радио Центком
-    .desc = { ent-BaseImplantOnlyImplanter.desc }

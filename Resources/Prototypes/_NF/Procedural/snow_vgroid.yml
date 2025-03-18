@@ -261,13 +261,13 @@
     minCount: 8
     maxCount: 15
     groups:
-    - id: NFSpawnMobXenoT2
+    - id: SpawnMobXenoT2
       amount: 1
   - !type:MobsDunGen
     minCount: 0
     maxCount: 1
     groups:
-    - id: NFSpawnMobXenoQueen
+    - id: SpawnMobXenoQueenDungeon
       amount: 1
 
 #- type: dungeonConfig

@@ -48,7 +48,7 @@
 
 # Uplinks
 - type: entity
-  parent: [ BaseItem, StorePresetSecurityUplink, BaseC2ContrabandUnredeemable ] #Corvax-Frontier КБ
+  parent: [ BaseItem, StorePresetSecurityUplink ]
   id: BaseSecurityUplinkRadio
   name: NFSD uplink
   description: Retro looking old radio...

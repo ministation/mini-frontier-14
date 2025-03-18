@@ -4,11 +4,10 @@ using Content.Shared.Dataset;
 using Content.Shared.Procedural;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
-using Content.Shared._NF.Bank.Components;
+using Content.Shared.Bank.Components;
 using Robust.Shared.Map;
-using Content.Server._NF.StationEvents.Events;
 
-namespace Content.Server._NF.StationEvents.Components;
+namespace Content.Server.StationEvents.Components;
 
 [RegisterComponent, Access(typeof(BluespaceErrorRule), typeof(ShuttleSystem))]
 public sealed partial class BluespaceErrorRuleComponent : Component
@@ -36,12 +35,6 @@ public sealed partial class BluespaceErrorRuleComponent : Component
     /// All the added maps that should be removed on event end
     /// </summary>
     public List<MapId> MapsUid = new();
-
-    /// <summary>
-    /// If true, the grids are anchored after warping in.
-    /// </summary>
-    [DataField]
-    public bool AnchorAfterWarp = true;
 
     /// <summary>
     /// If true, the grids are deleted at the end of the event.  If false, the grids are left in the map.

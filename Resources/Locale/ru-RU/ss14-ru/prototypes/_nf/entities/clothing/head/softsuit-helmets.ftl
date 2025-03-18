@@ -44,5 +44,3 @@ ent-ClothingHeadEVAHelmetPrivateSec = шлем скафандра EVA телох
     .desc = { ent-ClothingHeadEVAHelmetBase.desc }
 ent-ClothingHeadEVAHelmetNfsd = шлем скафандра EVA ДСБФ
     .desc = { ent-ClothingHeadEVAHelmetBase.desc }
-ent-ClothingHeadHelmetHardsuitFSB = пустотный шлем EVA "Far Star Biotech"
-    .desc = Лёгкий шлем EVA костюма, который не стесняет движений головы. Он достаточно лёгкий!

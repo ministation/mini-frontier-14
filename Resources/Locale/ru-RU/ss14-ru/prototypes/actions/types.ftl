@@ -54,5 +54,3 @@ ent-ActionToggleEyes = Открыть/закрыть глаза
     .desc = Закройте глаза, чтобы защитить их, или откройте, чтобы насладиться яркими цветами.
 ent-ActionToggleWagging = action-name-toggle-wagging
     .desc = action-description-toggle-wagging
-ent-ActionToggleParamedicSiren = Включить сирену парамедика
-  .desc = Включает и выключает сирену парамедика. Вииу-вииу.

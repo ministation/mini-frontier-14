@@ -70,11 +70,6 @@
   id: NFBlueprintConstructionBagOfHolding
   result: NFBlueprintConstructionBagOfHolding
 
-- type: latheRecipe
-  parent: NFBaseBlueprintLatheRecipe
-  id: NFBlueprintPortableGeneratorDKJr
-  result: NFBlueprintPortableGeneratorDKJr
-
 ## Medical
 
 - type: latheRecipe
@@ -164,6 +159,11 @@
   result: NFBlueprintPlantBagOfHolding
 
 ## Armory
+
+- type: latheRecipe
+  parent: NFBaseBlueprintLatheRecipe
+  id: NFBlueprintWeaponAntiqueLaser
+  result: NFBlueprintWeaponAntiqueLaser
 
 - type: latheRecipe
   parent: NFBaseBlueprintLatheRecipe

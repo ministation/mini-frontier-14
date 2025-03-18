@@ -110,34 +110,6 @@ public abstract partial class SharedMoverController : VirtualController
         UsedMobMovement.Clear();
     }
 
-    // Upstream - #34016
-    protected void HandleRelayMovement(Entity<MovementRelayTargetComponent?, InputMoverComponent?> entity)
-    {
-        if (!Resolve(entity, ref entity.Comp1, ref entity.Comp2))
-            return;
-
-        var relayTarget = entity.Comp1;
-        var mover = entity.Comp2;
-
-        var canMove = true;
-
-        if (_mobState.IsIncapacitated(relayTarget.Source) ||
-            TryComp<SleepingComponent>(relayTarget.Source, out _) ||
-            !MoverQuery.TryGetComponent(relayTarget.Source, out var relayedMover))
-        {
-            canMove = false;
-        }
-        else
-        {
-            mover.RelativeEntity = relayedMover.RelativeEntity;
-            mover.RelativeRotation = relayedMover.RelativeRotation;
-            mover.TargetRelativeRotation = relayedMover.TargetRelativeRotation;
-        }
-
-        mover.CanMove = canMove;
-    }
-    // End Upstream - #34016
-
     /// <summary>
     ///     Movement while considering actionblockers, weightlessness, etc.
     /// </summary>
@@ -150,23 +122,21 @@ public abstract partial class SharedMoverController : VirtualController
         float frameTime)
     {
         var canMove = mover.CanMove;
-        // Upstream - #34016
-        // if (RelayTargetQuery.TryGetComponent(uid, out var relayTarget))
-        // {
-        //     if (_mobState.IsIncapacitated(relayTarget.Source) ||
-        //         TryComp<SleepingComponent>(relayTarget.Source, out _) ||
-        //         !MoverQuery.TryGetComponent(relayTarget.Source, out var relayedMover))
-        //     {
-        //         canMove = false;
-        //     }
-        //     else
-        //     {
-        //         mover.RelativeEntity = relayedMover.RelativeEntity;
-        //         mover.RelativeRotation = relayedMover.RelativeRotation;
-        //         mover.TargetRelativeRotation = relayedMover.TargetRelativeRotation;
-        //     }
-        // }
-        // End Upstream - #34016
+        if (RelayTargetQuery.TryGetComponent(uid, out var relayTarget))
+        {
+            if (_mobState.IsIncapacitated(relayTarget.Source) ||
+                TryComp<SleepingComponent>(relayTarget.Source, out _) ||
+                !MoverQuery.TryGetComponent(relayTarget.Source, out var relayedMover))
+            {
+                canMove = false;
+            }
+            else
+            {
+                mover.RelativeEntity = relayedMover.RelativeEntity;
+                mover.RelativeRotation = relayedMover.RelativeRotation;
+                mover.TargetRelativeRotation = relayedMover.TargetRelativeRotation;
+            }
+        }
 
         // Update relative movement
         if (mover.LerpTarget < Timing.CurTime)
@@ -294,8 +264,7 @@ public abstract partial class SharedMoverController : VirtualController
                     .WithVariation(sound.Params.Variation ?? mobMover.FootstepVariation);
 
                 // If we're a relay target then predict the sound for all relays.
-                // if (relayTarget != null) // Upstream - #34016
-                if (RelayTargetQuery.TryGetComponent(uid, out var relayTarget)) // Upstream - #34016
+                if (relayTarget != null)
                 {
                     _audio.PlayPredicted(sound, uid, relayTarget.Source, audioParams);
                 }
