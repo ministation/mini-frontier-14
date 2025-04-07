@@ -6906,6 +6906,7 @@ entities:
       preventRCDUse: True
       preventFloorPlacement: True
       preventFloorRemoval: True
+      noGridCollision: True
     - type: IFF
       readOnly: True
   - uid: 51

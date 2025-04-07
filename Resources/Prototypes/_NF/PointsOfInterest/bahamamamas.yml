@@ -22,6 +22,8 @@
   - type: SolarPoweredGrid
     trackOnInit: true
     doNotCull: true
+  - type: ProtectedGrid
+    noGridCollision: true #CorvaxFrontier
 
 - type: gameMap
   id: Bahama

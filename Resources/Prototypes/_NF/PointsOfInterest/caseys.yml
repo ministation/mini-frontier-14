@@ -22,6 +22,8 @@
   - type: Shuttle
     angularDamping: 999999
     linearDamping: 999999
+  - type: ProtectedGrid
+    noGridCollision: true #CorvaxFrontier
 
 - type: gameMap
   id: CaseysCasino

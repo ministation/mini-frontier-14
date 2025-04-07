@@ -18,6 +18,8 @@
   gridPath: /Maps/_NF/POI/tinnia.yml
   addComponents:
   - type: StationTransit
+  - type: ProtectedGrid
+    noGridCollision: true #CorvaxFrontier
   - type: SolarPoweredGrid
     trackOnInit: true
     doNotCull: true

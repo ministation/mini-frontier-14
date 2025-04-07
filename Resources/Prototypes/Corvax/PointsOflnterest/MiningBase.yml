@@ -22,6 +22,15 @@
   - type: IFF
     color: "#a68614"
   - type: StationTransit
+  - type: ProtectedGrid
+    preventArtifactTriggers: True
+    preventExplosions: True
+    preventEmpEvents: True
+    preventRCDUse: True
+    preventFloorPlacement: True
+    preventFloorRemoval: True
+    killHostileMobs: True
+    noGridCollision: True
 
 - type: gameMap
   id: MiningBase

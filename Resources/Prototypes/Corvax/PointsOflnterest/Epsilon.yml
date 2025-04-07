@@ -23,6 +23,12 @@
   - type: Shuttle
     angularDamping: 999999
     linearDamping: 999999
+  - type: ProtectedGrid
+    preventEmpEvents: True
+    preventRCDUse: True
+    preventFloorPlacement: True
+    preventFloorRemoval: True
+    noGridCollision: True
 
 - type: gameMap
   id: Epsilon

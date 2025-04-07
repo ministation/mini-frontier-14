@@ -22,6 +22,8 @@
     doNotCull: true
   - type: IFF
     color: "#ffa600"
+  - type: ProtectedGrid
+    noGridCollision: true #CorvaxFrontier
 
 - type: gameMap
   id: ThePit

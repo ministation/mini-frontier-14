@@ -22,3 +22,5 @@
   - type: IFF
     color: "#C83737"
     flags: [HideLabel]
+  - type: ProtectedGrid
+    noGridCollision: true #CorvaxFrontier
