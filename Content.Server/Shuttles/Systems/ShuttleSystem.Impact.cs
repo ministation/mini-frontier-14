@@ -20,7 +20,7 @@ public sealed partial class ShuttleSystem
     /// <summary>
     /// Минимальная разница скоростей между двумя телами, при которой происходит "удар" шаттла.
     /// </summary>
-    private const int MinimumImpactVelocity = 10;
+    private const int MinimumImpactVelocity = 25;
 
     /// <summary>
     /// Кинетическая энергия, необходимая для разрушения одной плитки.
@@ -59,7 +59,11 @@ public sealed partial class ShuttleSystem
         var ourXform = Transform(uid);
         if (ourXform.MapUid == null)
             return;
-
+        // Проверка на null для ourBody и otherBody
+        if (ourBody == null || otherBody == null)
+        {
+            return;
+        }
         var otherXform = Transform(args.OtherEntity);
 
         var ourPoint = _transform.GetInvWorldMatrix(ourXform).Translation;
@@ -108,7 +112,7 @@ public sealed partial class ShuttleSystem
     private void ProcessTile(EntityUid uid, MapGridComponent grid, Vector2i tile, double energy, Vector2 dir)
     {
         DamageSpecifier damage = new();
-        damage.DamageDict = new() { { "Blunt", energy } };
+        damage.DamageDict = new() { { "Blunt", energy * 3f} };
 
         foreach (EntityUid localUid in _lookup.GetLocalEntitiesIntersecting(uid, tile, gridComp: grid))
         {
