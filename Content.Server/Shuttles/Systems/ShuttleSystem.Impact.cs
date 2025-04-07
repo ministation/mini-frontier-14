@@ -112,7 +112,7 @@ public sealed partial class ShuttleSystem
     private void ProcessTile(EntityUid uid, MapGridComponent grid, Vector2i tile, double energy, Vector2 dir)
     {
         DamageSpecifier damage = new();
-        damage.DamageDict = new() { { "Blunt", energy * 3f} };
+        damage.DamageDict = new() { { "Blunt", energy} };
 
         foreach (EntityUid localUid in _lookup.GetLocalEntitiesIntersecting(uid, tile, gridComp: grid))
         {
