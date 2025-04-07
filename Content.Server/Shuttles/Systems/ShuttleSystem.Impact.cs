@@ -20,7 +20,7 @@ public sealed partial class ShuttleSystem
     /// <summary>
     /// Минимальная разница скоростей между двумя телами, при которой происходит "удар" шаттла.
     /// </summary>
-    private const int MinimumImpactVelocity = 25;
+    private const int MinimumImpactVelocity = 20;
 
     /// <summary>
     /// Кинетическая энергия, необходимая для разрушения одной плитки.
