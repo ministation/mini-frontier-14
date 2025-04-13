@@ -57,7 +57,6 @@
           type: LatheBoundUserInterface
     - type: Craftable
     - type: Storage
-      containerId: item
       craft: true
       maxItemSize: Ginormous
       grid:
