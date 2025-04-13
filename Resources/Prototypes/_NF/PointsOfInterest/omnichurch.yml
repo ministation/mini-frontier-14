@@ -16,8 +16,6 @@
   maximumDistance: 4900
   gridPath: /Maps/_NF/POI/beacon.yml
   addComponents:
-  - type: ProtectedGrid
-    noGridCollision: true #CorvaxFrontier
   - type: SolarPoweredGrid
     trackOnInit: true
     doNotCull: true

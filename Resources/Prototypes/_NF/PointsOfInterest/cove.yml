@@ -23,8 +23,6 @@
     color: "#C83737"
     flags: [HideLabel]
     readOnly: false
-  - type: ProtectedGrid
-    noGridCollision: true #CorvaxFrontier
 
 - type: gameMap
   id: Cove

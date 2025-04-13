@@ -23,12 +23,6 @@
     angularDamping: 999999
     linearDamping: 999999
   - type: SyndicateFOB # For pinpointer
-  - type: ProtectedGrid
-    preventEmpEvents: True
-    preventRCDUse: True
-    preventFloorPlacement: True
-    preventFloorRemoval: True
-    noGridCollision: True
 
 
 - type: gameMap

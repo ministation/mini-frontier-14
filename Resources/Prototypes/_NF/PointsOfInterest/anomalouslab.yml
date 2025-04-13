@@ -23,8 +23,6 @@
   - type: IFF
     color: "#ffa600"
     readOnly: true
-  - type: ProtectedGrid
-    noGridCollision: true #CorvaxFrontier
 
 - type: gameMap
   id: AnomalousLab

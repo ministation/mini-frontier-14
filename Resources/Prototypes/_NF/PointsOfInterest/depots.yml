@@ -21,7 +21,6 @@
     color: "#37C837"
   - type: ProtectedGrid
     preventArtifactTriggers: true
-    noGridCollision: true #CorvaxFrontier
   - type: SolarPoweredGrid
     trackOnInit: true
     doNotCull: true
@@ -39,7 +38,6 @@
     color: "#37C837"
   - type: ProtectedGrid
     preventArtifactTriggers: true
-    noGridCollision: true #CorvaxFrontier
   - type: SolarPoweredGrid
     trackOnInit: true
     doNotCull: true
