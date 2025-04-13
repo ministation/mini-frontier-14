@@ -53,12 +53,6 @@ public sealed class CraftingPrototype : IPrototype
     [DataField("requiredWorkbench")]
     public string? RequiredWorkbench;
 
-    // /// <summary>
-    // /// Minimum intelligence required to craft this recipe.
-    // /// </summary>
-    // [DataField("requiredIntelligence")] // Corvax-Change
-    // public int RequiredIntelligence = 0;
-
     /// <summary>
     /// A list of job IDs that are permitted to use this crafting recipe.
     /// If this list is not empty, only characters with one of the specified jobs can craft the item.
