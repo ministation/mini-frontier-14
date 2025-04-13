@@ -9,8 +9,8 @@ license:
   please contact TornadoTech (Maltsev Daniil), JerryImMouse, LordVladimer (Valdis Fedorov)
   at Discord (https://discord.com/invite/pu6DEPGjsN).
 */
-
 using System.Linq;
+using Content.Shared.Construction.Components;
 using Content.Shared.Crafting.Components;
 using Content.Shared.Crafting.Events;
 using Content.Shared.Crafting.Prototypes;
@@ -308,7 +308,6 @@ public sealed class SharedCraftingSystem : EntitySystem
         if (!DictEquals(proto.Items, items, container.ContainedEntities.ToList(), proto))
             return false;
 
-        // Check if the recipe requires a specific workbench
         if (!string.IsNullOrEmpty(proto.RequiredWorkbench) && workbenchId != null)
         {
             if (workbenchId != proto.RequiredWorkbench)

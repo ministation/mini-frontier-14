@@ -2,8 +2,8 @@
   id: AKMSRECIPE
   resultProtos:
     - WeaponRifleAk
-  requiredWorkbench: FrontierWorkbenchWeaponbench
+  requiredWorkbench: FrontierWorkbench
   craftTime: 10
   items:
     WeaponRifleGestio:
-      amount: 2
+      amount: 1
