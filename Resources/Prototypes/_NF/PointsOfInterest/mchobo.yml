@@ -20,8 +20,6 @@
   addComponents:
   - type: IFF
     color: "#ffa600"
-  - type: ProtectedGrid
-    noGridCollision: true #CorvaxFrontier
 
 - type: gameMap
   id: McHobo
