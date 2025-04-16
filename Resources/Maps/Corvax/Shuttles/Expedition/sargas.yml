@@ -4,8 +4,8 @@ meta:
   engineVersion: 247.2.0
   forkId: ""
   forkVersion: ""
-  time: 04/16/2025 01:42:56
-  entityCount: 1163
+  time: 04/16/2025 11:49:36
+  entityCount: 1170
 maps: []
 grids:
 - 1
@@ -626,7 +626,7 @@ entities:
       pos: 7.5,-11.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -4023.4414
+      secondsUntilStateChange: -4372.259
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2902,6 +2902,15 @@ entities:
         927:
           position: 0,0
           _rotation: South
+        934:
+          position: 8,0
+          _rotation: East
+        1164:
+          position: 8,1
+          _rotation: South
+        1165:
+          position: 3,2
+          _rotation: South
     - type: ContainerContainer
       containers:
         storagebase: !type:Container
@@ -2911,8 +2920,11 @@ entities:
           - 929
           - 927
           - 928
-          - 914
           - 74
+          - 914
+          - 934
+          - 1164
+          - 1165
     - type: GroupExamine
       group:
       - hoverMessage: ""
@@ -3413,17 +3425,36 @@ entities:
     - type: Transform
       pos: 6.5,-3.5
       parent: 1
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14923
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
     - type: ContainerContainer
       containers:
         entity_storage: !type:Container
           showEnts: False
           occludes: True
           ents:
-          - 826
-          - 825
-          - 824
-          - 823
           - 822
+          - 823
+          - 824
+          - 825
+          - 826
+          - 1166
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -3433,17 +3464,36 @@ entities:
     - type: Transform
       pos: 6.5,-4.5
       parent: 1
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14923
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
     - type: ContainerContainer
       containers:
         entity_storage: !type:Container
           showEnts: False
           occludes: True
           ents:
-          - 828
-          - 829
-          - 830
-          - 831
           - 832
+          - 831
+          - 830
+          - 829
+          - 828
+          - 1167
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -3453,27 +3503,45 @@ entities:
     - type: Transform
       pos: 6.5,-5.5
       parent: 1
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14923
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
     - type: ContainerContainer
       containers:
         entity_storage: !type:Container
           showEnts: False
           occludes: True
           ents:
-          - 834
-          - 835
-          - 836
-          - 837
           - 838
+          - 837
+          - 836
+          - 835
+          - 834
+          - 1168
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
           ent: null
 - proto: DefibrillatorCabinetFilled
   entities:
-  - uid: 934
+  - uid: 1169
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
       pos: -8.5,-13.5
       parent: 1
 - proto: DisposalBend
@@ -3879,6 +3947,27 @@ entities:
     components:
     - type: Transform
       parent: 948
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 1166
+    components:
+    - type: Transform
+      parent: 821
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 1167
+    components:
+    - type: Transform
+      parent: 827
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 1168
+    components:
+    - type: Transform
+      parent: 833
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
@@ -6069,8 +6158,8 @@ entities:
         immutable: False
         temperature: 293.14923
         moles:
-        - 1.7459903
-        - 6.568249
+        - 1.8856695
+        - 7.0937095
         - 0
         - 0
         - 0
@@ -6087,19 +6176,19 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 926
-          - 915
-          - 930
-          - 917
-          - 916
-          - 925
-          - 924
-          - 923
-          - 922
-          - 921
-          - 920
-          - 919
           - 918
+          - 919
+          - 920
+          - 921
+          - 922
+          - 924
+          - 925
+          - 916
+          - 917
+          - 930
+          - 915
+          - 923
+          - 926
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -6882,6 +6971,14 @@ entities:
       rot: 3.141592653589793 rad
       pos: 6.5,-0.5
       parent: 1
+- proto: ReagentGrinderMachineCircuitboard
+  entities:
+  - uid: 914
+    components:
+    - type: Transform
+      parent: 923
+    - type: Physics
+      canCollide: False
 - proto: ReinforcedPlasmaWindow
   entities:
   - uid: 874
@@ -7038,9 +7135,25 @@ entities:
     - type: Transform
       pos: -6.5643444,-15.243608
       parent: 1
-- proto: ShredderMachineCircuitboard
+- proto: SeedExtractorMachineCircuitboard
   entities:
-  - uid: 914
+  - uid: 934
+    components:
+    - type: Transform
+      parent: 923
+    - type: Physics
+      canCollide: False
+- proto: SheetGlass
+  entities:
+  - uid: 1165
+    components:
+    - type: Transform
+      parent: 923
+    - type: Physics
+      canCollide: False
+- proto: SheetSteel
+  entities:
+  - uid: 1164
     components:
     - type: Transform
       parent: 923
@@ -7758,6 +7871,13 @@ entities:
     components:
     - type: Transform
       pos: -4.5,-11.5
+      parent: 1
+- proto: VendingMachineTankDispenserEVA
+  entities:
+  - uid: 1170
+    components:
+    - type: Transform
+      pos: 4.5,-11.5
       parent: 1
 - proto: WallReinforced
   entities:
