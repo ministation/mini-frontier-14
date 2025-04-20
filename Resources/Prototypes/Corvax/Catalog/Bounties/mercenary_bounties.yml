@@ -3,7 +3,7 @@
   description: mercenary-bounty-description-generic
   reward: 3
   entries:
-  - name: mercenary-bounty-item-meat-dragon1
+  - name: mercenary-bounty-item-meat-dragon
     amount: 1
     id: MeatDragon
 
@@ -12,7 +12,7 @@
   description: mercenary-bounty-description-generic
   reward: 3
   entries:
-  - name: mercenary-bounty-item-meat-dragon2
+  - name: mercenary-bounty-item-meat-dragon
     amount: 2
     id: MeatDragon
 
@@ -39,7 +39,7 @@
   description: mercenary-bounty-description-generic
   reward: 4
   entries:
-  - name: mercenary-bounty-item-staff-dark-bolt1
+  - name: mercenary-bounty-item-staff-dark-bolt
     amount: 1
     id: StaffDarkBolt
 
@@ -48,7 +48,7 @@
   description: mercenary-bounty-description-generic
   reward: 5
   entries:
-  - name: mercenary-bounty-item-staff-dark-bolt2
+  - name: mercenary-bounty-item-staff-dark-bolt
     amount: 2
     id: StaffDarkBolt
 
@@ -57,7 +57,7 @@
   description: mercenary-bounty-description-generic
   reward: 5
   entries:
-  - name: mercenary-bounty-item-staff-dark-bolt3
+  - name: mercenary-bounty-item-staff-dark-bolt
     amount: 3
     id: StaffDarkBolt
 
@@ -66,7 +66,7 @@
   description: mercenary-bounty-description-generic
   reward: 1
   entries:
-  - name: mercenary-bounty-item-quadratic-capacitor1
+  - name: mercenary-bounty-item-quadratic-capacitor
     amount: 1
     id: QuadraticCapacitor
 
@@ -75,7 +75,7 @@
   description: mercenary-bounty-description-generic
   reward: 2
   entries:
-  - name: mercenary-bounty-item-quadratic-capacitor2
+  - name: mercenary-bounty-item-quadratic-capacitor
     amount: 2
     id: QuadraticCapacitor
 
@@ -84,7 +84,7 @@
   description: mercenary-bounty-description-generic
   reward: 3
   entries:
-  - name: mercenary-bounty-item-quadratic-capacitor3
+  - name: mercenary-bounty-item-quadratic-capacitor
     amount: 3
     id: QuadraticCapacitor
 
@@ -93,7 +93,7 @@
   description: mercenary-bounty-description-generic
   reward: 4
   entries:
-  - name: mercenary-bounty-item-quadratic-capacitor4
+  - name: mercenary-bounty-item-quadratic-capacitor
     amount: 4
     id: QuadraticCapacitor
 
@@ -102,7 +102,7 @@
   description: mercenary-bounty-description-generic
   reward: 1
   entries:
-  - name: mercenary-bounty-item-femto-manipulator1
+  - name: mercenary-bounty-item-femto-manipulator
     amount: 1
     id: FemtoManipulator
 
@@ -111,7 +111,7 @@
   description: mercenary-bounty-description-generic
   reward: 2
   entries:
-  - name: mercenary-bounty-item-femto-manipulator2
+  - name: mercenary-bounty-item-femto-manipulator
     amount: 2
     id: FemtoManipulator
 
@@ -120,7 +120,7 @@
   description: mercenary-bounty-description-generic
   reward: 3
   entries:
-  - name: mercenary-bounty-item-femto-manipulator3
+  - name: mercenary-bounty-item-femto-manipulator
     amount: 3
     id: FemtoManipulator
 
@@ -129,7 +129,7 @@
   description: mercenary-bounty-description-generic
   reward: 4
   entries:
-  - name: mercenary-bounty-item-femto-manipulator4
+  - name: mercenary-bounty-item-femto-manipulator
     amount: 4
     id: FemtoManipulator
 
@@ -138,7 +138,7 @@
   description: mercenary-bounty-description-generic
   reward: 1
   entries:
-  - name: mercenary-bounty-item-bluespace-matter-bin1
+  - name: mercenary-bounty-item-bluespace-matter-bin
     amount: 1
     id: BluespaceMatterBin
 
@@ -147,7 +147,7 @@
   description: mercenary-bounty-description-generic
   reward: 2
   entries:
-  - name: mercenary-bounty-item-bluespace-matter-bin2
+  - name: mercenary-bounty-item-bluespace-matter-bin
     amount: 2
     id: BluespaceMatterBin
 
@@ -156,7 +156,7 @@
   description: mercenary-bounty-description-generic
   reward: 3
   entries:
-  - name: mercenary-bounty-item-bluespace-matter-bin3
+  - name: mercenary-bounty-item-bluespace-matter-bin
     amount: 3
     id: BluespaceMatterBin
 
@@ -165,7 +165,7 @@
   description: mercenary-bounty-description-generic
   reward: 4
   entries:
-  - name: mercenary-bounty-item-bluespace-matter-bin4
+  - name: mercenary-bounty-item-bluespace-matter-bin
     amount: 4
     id: BluespaceMatterBin
 
@@ -192,7 +192,7 @@
   description: mercenary-bounty-description-generic
   reward: 2
   entries:
-  - name: mercenary-bounty-item-datadisk-encrypted1
+  - name: mercenary-bounty-item-datadisk-encrypted
     amount: 1
     id: DatadiskEncrypted
 
@@ -201,7 +201,7 @@
   description: mercenary-bounty-description-generic
   reward: 2
   entries:
-  - name: mercenary-bounty-item-datadisk-encrypted2
+  - name: mercenary-bounty-item-datadisk-encrypted
     amount: 2
     id: DatadiskEncrypted
 
@@ -210,7 +210,7 @@
   description: mercenary-bounty-description-generic
   reward: 2
   entries:
-  - name: mercenary-bounty-item-datadisk-encrypted3
+  - name: mercenary-bounty-item-datadisk-encrypted
     amount: 3
     id: DatadiskEncrypted
 
@@ -237,7 +237,7 @@
   description: mercenary-bounty-description-generic
   reward: 2
   entries:
-  - name: mercenary-bounty-item-mercenary-fab-hacked-circuitboard1
+  - name: mercenary-bounty-item-mercenary-fab-hacked-circuitboard
     amount: 1
     id: MercenaryFabHackedCircuitboard
 
@@ -246,7 +246,7 @@
   description: mercenary-bounty-description-generic
   reward: 3
   entries:
-  - name: mercenary-bounty-item-mercenary-fab-hacked-circuitboard2
+  - name: mercenary-bounty-item-mercenary-fab-hacked-circuitboard
     amount: 1
     id: MercenaryFabHackedCircuitboard
 
@@ -255,7 +255,7 @@
   description: mercenary-bounty-description-generic
   reward: 2
   entries:
-  - name: mercenary-bounty-item-armor-heavy1
+  - name: mercenary-bounty-item-armor-heavy
     amount: 1
     id: ArmorHeavy
 
@@ -264,7 +264,7 @@
   description: mercenary-bounty-description-generic
   reward: 3
   entries:
-  - name: mercenary-bounty-item-armor-heavy2
+  - name: mercenary-bounty-item-armor-heavy
     amount: 1
     id: ArmorHeavy
 
@@ -273,7 +273,7 @@
   description: mercenary-bounty-description-generic
   reward: 2
   entries:
-  - name: mercenary-bounty-item-fire-axe1
+  - name: mercenary-bounty-item-fire-axe
     amount: 1
     id: FireAxe
 
@@ -282,7 +282,7 @@
   description: mercenary-bounty-description-generic
   reward: 3
   entries:
-  - name: mercenary-bounty-item-fire-axe2
+  - name: mercenary-bounty-item-fire-axe
     amount: 1
     id: FireAxe
     
@@ -300,7 +300,7 @@
   description: mercenary-bounty-description-generic
   reward: 2
   entries:
-  - name: mercenary-bounty-item-bluespace-beaker1
+  - name: mercenary-bounty-item-bluespace-beaker
     amount: 1
     id: BluespaceBeaker
 
@@ -309,7 +309,7 @@
   description: mercenary-bounty-description-generic
   reward: 4
   entries:
-  - name: mercenary-bounty-item-bluespace-beaker2
+  - name: mercenary-bounty-item-bluespace-beaker
     amount: 2
     id: BluespaceBeaker
 
@@ -318,7 +318,7 @@
   description: mercenary-bounty-description-generic
   reward: 2
   entries:
-  - name: mercenary-bounty-item-syringe-bluespace1
+  - name: mercenary-bounty-item-syringe-bluespace
     amount: 1
     id: SyringeBluespace
 
@@ -327,7 +327,7 @@
   description: mercenary-bounty-description-generic
   reward: 4
   entries:
-  - name: mercenary-bounty-item-syringe-bluespace2
+  - name: mercenary-bounty-item-syringe-bluespace
     amount: 2
     id: SyringeBluespace
 
@@ -345,7 +345,7 @@
   description: mercenary-bounty-description-generic
   reward: 3
   entries:
-  - name: mercenary-bounty-item-coat-syndie1
+  - name: mercenary-bounty-item-coat-syndie
     amount: 1
     id: CoatSyndieArmored
 
@@ -354,7 +354,7 @@
   description: mercenary-bounty-description-generic
   reward: 6
   entries:
-  - name: mercenary-bounty-item-coat-syndie2
+  - name: mercenary-bounty-item-coat-syndie
     amount: 2
     id: CoatSyndieArmored
 

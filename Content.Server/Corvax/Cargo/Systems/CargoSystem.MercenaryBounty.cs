@@ -35,21 +35,15 @@ public sealed partial class CargoSystem
 
         SubscribeLocalEvent<MercenaryBountyRedemptionConsoleComponent, MercenaryBountyRedemptionMessage>(OnRedeemBounty);
 
-        SubscribeLocalEvent<SectorMercenaryBountyDatabaseComponent, MapInitEvent>(OnMercenaryMapInit);
+        SubscribeLocalEvent<MercenaryBountyConsoleComponent, MapInitEvent>(OnMercenaryMapInit);
 
         _mercenaryBountyLabelQuery = GetEntityQuery<MercenaryBountyLabelComponent>();
     }
 
     private void OnMercenaryBountyConsoleOpened(EntityUid uid, MercenaryBountyConsoleComponent component, BoundUIOpenedEvent args)
     {
-        var service = _sectorService.GetServiceEntity();
-        if (!TryComp<SectorMercenaryBountyDatabaseComponent>(service, out var bountyDb))
-        {
-            return;
-        }
-
-        var untilNextSkip = bountyDb.NextSkipTime - _timing.CurTime;
-        _uiSystem.SetUiState(uid, MercenaryConsoleUiKey.Bounty, new MercenaryBountyConsoleState(bountyDb.Bounties, untilNextSkip));
+        var untilNextSkip = component.NextSkipTime - _timing.CurTime;
+        _uiSystem.SetUiState(uid, MercenaryConsoleUiKey.Bounty, new MercenaryBountyConsoleState(component.Bounties, untilNextSkip));
     }
 
     private void OnMercenaryBountyAccept(EntityUid uid, MercenaryBountyConsoleComponent component, MercenaryBountyAcceptMessage args)
@@ -91,10 +85,8 @@ public sealed partial class CargoSystem
     private void OnSkipMercenaryBountyMessage(EntityUid uid, MercenaryBountyConsoleComponent component, MercenaryBountySkipMessage args)
     {
         var service = _sectorService.GetServiceEntity();
-        if (!TryComp<SectorMercenaryBountyDatabaseComponent>(service, out var db))
-            return;
 
-        if (_timing.CurTime < db.NextSkipTime)
+        if (_timing.CurTime < component.NextSkipTime)
             return;
 
         if (!TryGetMercenaryBountyFromId(service, args.BountyId, out var bounty))
@@ -115,12 +107,12 @@ public sealed partial class CargoSystem
 
         FillMercenaryBountyDatabase(service);
         if (bounty.Value.Accepted)
-            db.NextSkipTime = _timing.CurTime + db.SkipDelay;
+            component.NextSkipTime = _timing.CurTime + component.SkipDelay;
         else
-            db.NextSkipTime = _timing.CurTime + db.CancelDelay;
+            component.NextSkipTime = _timing.CurTime + component.CancelDelay;
 
-        var untilNextSkip = db.NextSkipTime - _timing.CurTime;
-        _uiSystem.SetUiState(uid, MercenaryConsoleUiKey.Bounty, new MercenaryBountyConsoleState(db.Bounties, untilNextSkip));
+        var untilNextSkip = component.NextSkipTime - _timing.CurTime;
+        _uiSystem.SetUiState(uid, MercenaryConsoleUiKey.Bounty, new MercenaryBountyConsoleState(component.Bounties, untilNextSkip));
         _audio.PlayPvs(component.SkipSound, uid);
     }
 
@@ -191,7 +183,7 @@ public sealed partial class CargoSystem
         return true;
     }
 
-    private void OnMercenaryMapInit(EntityUid uid, SectorMercenaryBountyDatabaseComponent component, MapInitEvent args)
+    private void OnMercenaryMapInit(EntityUid uid, MercenaryBountyConsoleComponent component, MapInitEvent args)
     {
         FillMercenaryBountyDatabase(uid, component);
     }
@@ -199,7 +191,7 @@ public sealed partial class CargoSystem
     /// <summary>
     /// Fills up the bounty database with random bounties.
     /// </summary>
-    public void FillMercenaryBountyDatabase(EntityUid serviceId, SectorMercenaryBountyDatabaseComponent? component = null)
+    public void FillMercenaryBountyDatabase(EntityUid serviceId, MercenaryBountyConsoleComponent? component = null)
     {
         if (!Resolve(serviceId, ref component))
             return;
@@ -214,7 +206,7 @@ public sealed partial class CargoSystem
     }
 
     [PublicAPI]
-    public bool TryAddMercenaryBounty(EntityUid serviceId, SectorMercenaryBountyDatabaseComponent? component = null)
+    public bool TryAddMercenaryBounty(EntityUid serviceId, MercenaryBountyConsoleComponent? component = null)
     {
         if (!Resolve(serviceId, ref component))
             return false;
@@ -235,7 +227,7 @@ public sealed partial class CargoSystem
     }
 
     [PublicAPI]
-    public bool TryAddMercenaryBounty(EntityUid serviceId, string bountyId, SectorMercenaryBountyDatabaseComponent? component = null)
+    public bool TryAddMercenaryBounty(EntityUid serviceId, string bountyId, MercenaryBountyConsoleComponent? component = null)
     {
         if (!_protoMan.TryIndex<MercenaryBountyPrototype>(bountyId, out var bounty))
         {
@@ -245,7 +237,7 @@ public sealed partial class CargoSystem
         return TryAddMercenaryBounty(serviceId, bounty, component);
     }
 
-    public bool TryAddMercenaryBounty(EntityUid serviceId, MercenaryBountyPrototype bounty, SectorMercenaryBountyDatabaseComponent? component = null)
+    public bool TryAddMercenaryBounty(EntityUid serviceId, MercenaryBountyPrototype bounty, MercenaryBountyConsoleComponent? component = null)
     {
         if (!Resolve(serviceId, ref component))
             return false;
@@ -261,7 +253,7 @@ public sealed partial class CargoSystem
     }
 
     [PublicAPI]
-    public bool TryRemoveMercenaryBounty(EntityUid serviceId, string dataId, SectorMercenaryBountyDatabaseComponent? component = null)
+    public bool TryRemoveMercenaryBounty(EntityUid serviceId, string dataId, MercenaryBountyConsoleComponent? component = null)
     {
         if (!TryGetMercenaryBountyFromId(serviceId, dataId, out var data, component))
             return false;
@@ -269,7 +261,7 @@ public sealed partial class CargoSystem
         return TryRemoveMercenaryBounty(serviceId, data.Value, component);
     }
 
-    public bool TryRemoveMercenaryBounty(EntityUid serviceId, MercenaryBountyData data, SectorMercenaryBountyDatabaseComponent? component = null)
+    public bool TryRemoveMercenaryBounty(EntityUid serviceId, MercenaryBountyData data, MercenaryBountyConsoleComponent? component = null)
     {
         if (!Resolve(serviceId, ref component))
             return false;
@@ -290,7 +282,7 @@ public sealed partial class CargoSystem
         EntityUid uid,
         string id,
         [NotNullWhen(true)] out MercenaryBountyData? bounty,
-        SectorMercenaryBountyDatabaseComponent? component = null)
+        MercenaryBountyConsoleComponent? component = null)
     {
         bounty = null;
         if (!Resolve(uid, ref component))
@@ -310,7 +302,7 @@ public sealed partial class CargoSystem
     private bool TryOverwriteMercenaryBountyFromId(
         EntityUid uid,
         MercenaryBountyData bounty,
-        SectorMercenaryBountyDatabaseComponent? component = null)
+        MercenaryBountyConsoleComponent? component = null)
     {
         if (!Resolve(uid, ref component))
             return false;
@@ -331,13 +323,13 @@ public sealed partial class CargoSystem
         var query = EntityQueryEnumerator<MercenaryBountyConsoleComponent, UserInterfaceComponent>();
 
         var serviceId = _sectorService.GetServiceEntity();
-        if (!TryComp<SectorMercenaryBountyDatabaseComponent>(serviceId, out var db))
+        if (!TryComp<MercenaryBountyConsoleComponent>(serviceId, out var mercenaryBounty))
             return;
 
         while (query.MoveNext(out var uid, out _, out var ui))
         {
-            var untilNextSkip = db.NextSkipTime - _timing.CurTime;
-            _uiSystem.SetUiState((uid, ui), MercenaryConsoleUiKey.Bounty, new MercenaryBountyConsoleState(db.Bounties, untilNextSkip));
+            var untilNextSkip = mercenaryBounty.NextSkipTime - _timing.CurTime;
+            _uiSystem.SetUiState((uid, ui), MercenaryConsoleUiKey.Bounty, new MercenaryBountyConsoleState(mercenaryBounty.Bounties, untilNextSkip));
         }
     }
 
@@ -373,12 +365,12 @@ public sealed partial class CargoSystem
             return;
 
         // 1. Separate out accepted crate and non-crate bounties.  Create a tracker for non-crate bounties.
-        if (!TryComp<SectorMercenaryBountyDatabaseComponent>(_sectorService.GetServiceEntity(), out var bountyDb))
+        if (!TryComp<MercenaryBountyConsoleComponent>(_sectorService.GetServiceEntity(), out var _mercenaryBounty))
             return;
 
         MercenaryBountyEntitySearchState bountySearchState = new MercenaryBountyEntitySearchState();
 
-        foreach (var bounty in bountyDb.Bounties)
+        foreach (var bounty in _mercenaryBounty.Bounties)
         {
             if (bounty.Accepted)
             {

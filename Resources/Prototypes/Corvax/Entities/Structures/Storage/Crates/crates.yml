@@ -26,3 +26,5 @@
     sprite: _NF/Structures/Storage/Crates/secure_mercenary.rsi
     state: icon
   - type: MercenaryBountyLabel
+  - type: DisableToolUse
+    anchoring: true
