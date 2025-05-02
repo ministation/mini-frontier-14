@@ -1,33 +1,33 @@
 <Document>
-  # Cargo Hauling
+  # Грузоперевозки
 
-One of the ways you can make money on the Frontier is by moving shipments of [color=peru]trading crates[/color].
+Один из способов заработать деньги в секторе - перевозка [color=peru]Ящиков с товарами[/color].
 
   <Box>
     <GuideEntityEmbed Entity="CrateTradeSecureNormal"/>
     <GuideEntityEmbed Entity="CrateTradeContrabandSecure1"/>
   </Box>
 
-You can find these by:
-  * Buying them at [color=peru]cargo request computers[/color] at the [color=darkgreen]Trade Outpost[/color]
-  * Salvaging them from [color=#88b0d1]space wrecks[/color]
-  * Finding [color=#c83737]contraband crates[/color] to be smuggled (ask around to find out how)
+Вы можете найти их:
+  * Купив в  [color=peru]консоли заказа грузов[/color] на [color=darkgreen]Торговом аванпосте[/color]
+  * Найдя в качестве добычи на [color=#88b0d1]космических обломках[/color]
+  * Найти [color=#c83737]Ящик с контрабандой[/color], незаконно ввезенные в сектор (поспрашивайте, чтобы узнать как их достать)
 
-Each trading crate will have a destination symbol on the right side of the crate. Examining the crate (Shift+Click) shows the name of the station it should be delivered to.
+Каждый ящик будет иметь символ на правой стороне. Осмотр (Shift+ЛКМ) покажет пункт назначения данного ящика.
 
-Selling a crate at its destination station will result in receiving more money than the crate's worth, while selling it at other stations will result in less.
+Продажа ящика на его пункте назначения повысит доход, а продажа на другой точке, наоборот - понизит
 
-## Express Deliveries
+## Экспресс-доставки
 
-Some crates are labelled as [color=yellow]express deliveries[/color].  These provide a bonus if delivered [italic]to the destination[/italic] on time.
+Некоторые ящики помечены [color=yellow]Экспресс-доставкой[/color]. Вы получите бонус, если успеете доставить ящик [italic]на его пункт назначения[/italic] в срок.
 
   <Box>
     <GuideEntityEmbed Entity="CrateTradeSecureHigh"/>
     <GuideEntityEmbed Entity="CrateTradeContrabandSecure2"/>
   </Box>
 
-To make deliveries in time, make sure to keep your cargo bay organized so the crates for each destination can be removed from the cargo bay in order.
+Чтобы упеть доставить груз вовремя, обязательно правильно организуйте место для их хранения, дабы доставать каждый ящик для каждого пункта назначения по порядку
 
-Remember, more hands make light work, so crew up to help deliveries run smoothly!
+Помните, чем больше рук - тем легче работать! Соберите команду, чтобы перевозки проходили гладко!
 
 </Document>
