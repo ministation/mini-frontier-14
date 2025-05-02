@@ -5,9 +5,10 @@ namespace Content.Shared._Corvax.BSDash;
 [Serializable, NetSerializable]
 public sealed class BSDashEvent : EntityEventArgs
 {
-    public NetEntity User { get; }
-    public BSDashEvent(NetEntity user)
+    public NetEntity Shuttle { get; }
+
+    public BSDashEvent(NetEntity shuttle)
     {
-        User = user;
+        Shuttle = shuttle;
     }
 }

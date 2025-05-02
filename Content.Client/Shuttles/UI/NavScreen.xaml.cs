@@ -38,16 +38,11 @@ public sealed partial class NavScreen : BoxContainer
         DockToggle.OnToggled += OnDockTogglePressed;
         DockToggle.Pressed = NavRadar.ShowDocks;
 
-        BSDash.OnToggled += OnBSDashPressed;
+        BSDash.OnButtonUp += _ => OnBSDashPressed();
 
         NfInitialize(); // Frontier Initialization for the NavScreen
     }
 
-    private void OnBSDashPressed(BaseButton.ButtonEventArgs args)
-    {
-        var netEntity = _entManager.GetNetEntity(_playerManager.LocalSession?.AttachedEntity ?? EntityUid.Invalid);
-        _entityNetworkManager.SendSystemNetworkMessage(new BSDashEvent(netEntity));
-    }
     // Frontier - IFF search
     private void OnIffSearchChanged(string text)
     {
@@ -91,6 +86,14 @@ public sealed partial class NavScreen : BoxContainer
     {
         NavRadar.ShowDocks ^= true;
         args.Button.Pressed = NavRadar.ShowDocks;
+    }
+
+    private void OnBSDashPressed()
+    {
+        if (_shuttleEntity == null)
+            return;
+
+        _entityNetworkManager.SendSystemNetworkMessage(new BSDashEvent(_entManager.GetNetEntity(_shuttleEntity.Value)));
     }
 
     public void UpdateState(NavInterfaceState scc)

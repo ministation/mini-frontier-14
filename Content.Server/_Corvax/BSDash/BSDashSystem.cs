@@ -3,30 +3,30 @@ using Content.Shared._Corvax.BSDash;
 using Robust.Server.GameObjects;
 using Robust.Shared.Physics.Components;
 
-public sealed class BSDashClassSystem : EntitySystem
+namespace Content.Server._Corvax.BSDash;
+
+public sealed class BSDashSystem : EntitySystem
 {
     [Dependency] private readonly PhysicsSystem _physics = default!;
+
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeNetworkEvent<BSDashEvent>(Uwi);
+
+        SubscribeNetworkEvent<BSDashEvent>(OnBSDash);
     }
-    private void BSDash(EntityUid uid)
+
+    private void OnBSDash(BSDashEvent args)
     {
-        var xform = Transform(uid);
+        var shuttle = GetEntity(args.Shuttle);
+        var xform = Transform(shuttle);
         Vector2 direction = xform.LocalRotation.ToWorldVec();
 
-        if (TryComp<PhysicsComponent>(uid, out var physics))
+        if (TryComp<PhysicsComponent>(shuttle, out var physics))
         {
-            float forceMagnitude = 1000000f; // Настройка силы
-            Vector2 force = direction * forceMagnitude;
-            _physics.ApplyLinearImpulse(uid, force, body: physics);
+            float forceMagnitude = 50f; // Настройка силы
+            Vector2 force = -direction * forceMagnitude;
+            _physics.ApplyLinearImpulse(shuttle, force, body: physics);
         }
-    }
-    private void Uwi(BSDashEvent mew)
-    {
-        if (!TryComp(GetEntity(mew.User), out TransformComponent? transform) || transform.GridUid == null)
-            return;
-        BSDash(transform.GridUid.Value);
     }
 }
