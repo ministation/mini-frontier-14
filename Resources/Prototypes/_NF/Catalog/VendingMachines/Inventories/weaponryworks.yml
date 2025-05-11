@@ -2,9 +2,9 @@
   id: WeaponryWorksVendInventory
   startingInventory:
     SurvivalKnife: 1
-    WeaponBrassKnuckles: 1 
-    WeaponLaserPistolNF: 1 
-    WeaponRifleGestio: 1 
+    WeaponBrassKnuckles: 1
+    WeaponNFLaserPistol: 1
+    WeaponRifleGestio: 1
     WeaponRifleNovaliteC1: 1
     WeaponSubMachineGunVector45: 1 #CorvaxFrontier
     WeaponShotgunDoubleBarreled: 1
