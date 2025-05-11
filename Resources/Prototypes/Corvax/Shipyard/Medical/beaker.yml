@@ -15,7 +15,7 @@
   description: Малогабаритная химическая лаборатория. Рекомендованный состав команды 1-2 человека.
   price: 65000
   category: Small
-  group: Shipyard
+  group: Medical
   shuttlePath: /Maps/Corvax/Shuttles/Medical/beaker.yml
   guidebookPage: Null
   class:

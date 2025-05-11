@@ -1594,7 +1594,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 25.5,20.5
       parent: 1
-- proto: BarSignMaltroach
+- proto: BarSignNFMaltroach
   entities:
   - uid: 1336
     components:

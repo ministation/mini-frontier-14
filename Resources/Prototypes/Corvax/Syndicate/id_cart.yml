@@ -1,0 +1,11 @@
+- type: entity
+  parent: [IDCardStandard, BaseC3SyndicateContraband] # Frontier: added BaseC3SyndicateContraband
+  id: SyndicateIDCardSmuggler
+  name: syndicate ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: syndie
+  - type: Access
+    tags:
+    - SyndicateAgent

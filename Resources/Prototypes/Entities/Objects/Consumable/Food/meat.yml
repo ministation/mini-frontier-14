@@ -381,6 +381,8 @@
       reagents:
       - ReagentId: Ichor
         Quantity: 10
+  - type: MercenaryBountyItem # Corvax-Frontier
+    id: MeatDragon
 
 - type: entity
   name: raw rat meat
@@ -663,9 +665,9 @@
     - Meat
   - type: Sprite
     state: meatball
-  - type: Construction # Frontier: Cookable meatball. Delicious.
-    graph: meatballNF # Frontier: Cookable meatball. Delicious.
-    node: start # Frontier: Cookable meatball. Delicious.
+  - type: Construction
+    graph: MeatMeatballCooked
+    node: start
 
 - type: entity
   name: slimeball
@@ -1181,11 +1183,9 @@
     entries:
       Burger: MeatBall
       Taco: MeatBall
-  # Frontier: Cookable meatball. Delicious.
   - type: Construction
-    graph: meatballNF
-    node: cooked
-  # End Frontier
+    graph: MeatMeatballCooked
+    node: meatball cooked
 
 - type: entity
   name: boiled snail

@@ -15,7 +15,7 @@
   description: Среднегабаритный медико-инженерный шаттл. Рекомендованный размер команды 3-5 человек.
   price: 67950
   category: Medium
-  group: Shipyard
+  group: Medical
   shuttlePath: /Maps/Corvax/Shuttles/Medical/eagle.yml
   guidebookPage: Null
   class:

@@ -15,8 +15,10 @@
   - type: Body
     prototype: Vox
     requiredLegs: 2
-  - type:  HumanoidAppearance
+  - type: HumanoidAppearance
     species: Vox
+    undergarmentTop: UndergarmentTopTanktopVox
+    undergarmentBottom: UndergarmentBottomBoxersVox
     #- type: VoxAccent # Not yet coded
   - type: Speech
     speechVerb: Vox
@@ -75,6 +77,8 @@
     - map: [ "enum.HumanoidVisualLayers.LArm" ]
     - map: [ "enum.HumanoidVisualLayers.RLeg" ]
     - map: [ "enum.HumanoidVisualLayers.LLeg" ]
+    - map: [ "enum.HumanoidVisualLayers.UndergarmentBottom" ]
+    - map: [ "enum.HumanoidVisualLayers.UndergarmentTop" ]
     - map: [ "jumpsuit" ]
     - map: [ "enum.HumanoidVisualLayers.LFoot" ]
     - map: [ "enum.HumanoidVisualLayers.RFoot" ]
@@ -146,6 +150,17 @@
           32:
             sprite: Mobs/Species/Vox/displacement.rsi
             state: shoes
+  - type: Hands
+    leftHandDisplacement:
+      sizeMaps:
+        32:
+          sprite: Mobs/Species/Vox/displacement.rsi
+          state: hand_l
+    rightHandDisplacement:
+      sizeMaps:
+        32:
+          sprite: Mobs/Species/Vox/displacement.rsi
+          state: hand_r
 
 - type: entity
   parent: BaseSpeciesDummy
@@ -154,6 +169,8 @@
   components:
   - type: HumanoidAppearance
     species: Vox
+    undergarmentTop: UndergarmentTopTanktopVox
+    undergarmentBottom: UndergarmentBottomBoxersVox
   - type: Body
     prototype: Vox
   - type: Inventory
@@ -194,3 +211,14 @@
           32:
             sprite: Mobs/Species/Vox/displacement.rsi
             state: shoes
+  - type: Hands
+    leftHandDisplacement:
+      sizeMaps:
+        32:
+          sprite: Mobs/Species/Vox/displacement.rsi
+          state: hand_l
+    rightHandDisplacement:
+      sizeMaps:
+        32:
+          sprite: Mobs/Species/Vox/displacement.rsi
+          state: hand_r

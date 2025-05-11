@@ -105,12 +105,12 @@
       - id: WeaponRifleM90GrenadeLauncher
       - id: MagazineRifle
         amount: 2
-      - id: GrenadeBlast
-        amount: 2
-      - id: GrenadeFlash
-        amount: 2
-      - id: GrenadeFrag
-        amount: 2
+#      - id: GrenadeBlast #Corvax Frontier
+#        amount: 2 #Corvax Frontier
+#      - id: GrenadeFlash #Corvax Frontier
+#        amount: 2 #Corvax Frontier
+#      - id: GrenadeFrag #Corvax Frontier
+#        amount: 2 #Corvax Frontier
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateAmmo
@@ -211,7 +211,7 @@
         - id: ClothingShoesChameleon
         - id: BarberScissors
     - type: StaticPrice #CorvaxFrontier
-      price: 300 
+      price: 300
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
@@ -228,7 +228,7 @@
       - id: DoubleEmergencyOxygenTankFilled
       - id: DoubleEmergencyNitrogenTankFilled
   - type: StaticPrice #CorvaxFrontier
-    price: 700 
+    price: 700
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle

@@ -7,3 +7,5 @@ job-supervisors-prisoner = всему персоналу ДСБФ
 job-supervisors-nfsd = шерифу, помощнику шерифа  и капралам
 job-supervisors-pirate = боцману и капитану
 job-supervisors-nobody = никому
+job-supervisors-syndicate = Командиру Синдиката
+job-supervisors-MMO = Менеджеру Медицинских Операций

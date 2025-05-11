@@ -23,6 +23,9 @@
   - type: Shuttle
     angularDamping: 999999
     linearDamping: 999999
+  - type: ProtectedGrid
+    preventArtifactTriggers: True
+    noGridCollision: True
 
 - type: gameMap
   id: Bar

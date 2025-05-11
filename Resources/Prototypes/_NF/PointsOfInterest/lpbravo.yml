@@ -15,7 +15,7 @@
   minimumDistance: 4000
   maximumDistance: 6000
   spawnGroup: SyndicateFOB
-  gridPath: /Maps/_NF/POI/lpbravo.yml
+  gridPath: /Maps/Corvax/POI/lpbravo.yml #CorvaxFrontier
   hideWarp: true
   addComponents:
   - type: IFF
@@ -26,11 +26,13 @@
   - type: SolarPoweredGrid
     trackOnInit: true
     doNotCull: true
+  - type: ProtectedGrid
+    noGridCollision: true #CorvaxFrontier
 
 - type: gameMap
   id: LPBravo
   mapName: 'Прослушивающий пункт Браво'
-  mapPath: /Maps/_NF/POI/lpbravo.yml
+  mapPath: /Maps/Corvax/POI/lpbravo.yml #CorvaxFrontier
   minPlayers: 0
   stations:
     LPBravo:
@@ -42,3 +44,4 @@
         - type: StationJobs
           availableJobs: {}
         - type: StationDeadDropHintExempt
+        - type: BindToStationVariationPassExemption

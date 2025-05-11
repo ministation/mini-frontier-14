@@ -2,12 +2,13 @@
   id: Shipyard
   name: guide-entry-shipyard
   text: "/ServerInfo/_NF/Guidebook/Shipyard.xml"
-  priority: 6
+  priority: 7
   children:
   - ShipyardAkupara
   - ShipyardAmbition
   - ShipyardApothecary
   - ShipyardBarge
+  - ShipyardBaroness
   - ShipyardBazaar
   - ShipyardBocadillo
   - ShipyardBodkin
@@ -37,6 +38,7 @@
   - ShipyardLoader
   - ShipyardMcCargo
   - ShipyardMcDelivery
+  - ShipyardNightlight
   - ShipyardPathfinder
   - ShipyardPhoenix
   - ShipyardPioneer
@@ -49,6 +51,7 @@
   - ShipyardStasis
   - ShipyardTide
   - ShipyardVagabond
+  - ShipyardVitalis
 
 - type: guideEntry
   id: ShipyardAkupara
@@ -69,6 +72,11 @@
   id: ShipyardBarge
   name: guide-entry-shipyard-barge
   text: "/ServerInfo/_NF/Guidebook/Shipyard/Barge.xml"
+
+- type: guideEntry
+  id: ShipyardBaroness
+  name: guide-entry-shipyard-baroness
+  text: "/ServerInfo/_NF/Guidebook/Shipyard/Baroness.xml"
 
 - type: guideEntry
   id: ShipyardBazaar
@@ -216,6 +224,11 @@
   text: "/ServerInfo/_NF/Guidebook/Shipyard/McDelivery.xml"
 
 - type: guideEntry
+  id: ShipyardNightlight
+  name: guide-entry-shipyard-nightlight
+  text: "/ServerInfo/_NF/Guidebook/Shipyard/Nightlight.xml"
+
+- type: guideEntry
   id: ShipyardPathfinder
   name: guide-entry-shipyard-pathfinder
   text: "/ServerInfo/_NF/Guidebook/Shipyard/Pathfinder.xml"
@@ -269,8 +282,13 @@
   id: ShipyardVagabond
   name: guide-entry-shipyard-vagabond
   text: "/ServerInfo/_NF/Guidebook/Shipyard/Vagabond.xml"
-  
+
 - type: guideEntry
   id: ShipyardTide
   name: guide-entry-shipyard-tide
   text: "/ServerInfo/_NF/Guidebook/Shipyard/Tide.xml"
+
+- type: guideEntry
+  id: ShipyardVitalis
+  name: guide-entry-shipyard-vitalis
+  text: "/ServerInfo/_NF/Guidebook/Shipyard/Vitalis.xml"

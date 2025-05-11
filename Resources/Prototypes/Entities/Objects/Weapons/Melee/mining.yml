@@ -37,11 +37,12 @@
   - type: UseDelay
   - type: StaticPrice #CorvaxFrontier
     price: 10
-  - type: Clothing #CorvaxFrontier
-    quickEquip: false #CorvaxFrontier
-    slots: #CorvaxFrontier
-    - Back #CorvaxFrontierв
-    - suitStorage #CorvaxFrontier
+  - type: Clothing
+    quickEquip: false
+    sprite: Objects/Tanks/generic.rsi
+    slots:
+    - Back
+    - suitStorage
 
 - type: entity
   name: mining drill

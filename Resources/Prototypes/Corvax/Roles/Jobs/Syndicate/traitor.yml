@@ -1,0 +1,10 @@
+- type: startingGear
+  id: SyndicateReinforcementSpySmugger
+  parent: SyndicateOperativeClothing
+  equipment:
+    id: SyndiPDACadet
+    mask: ClothingMaskGasVoiceChameleon
+    pocket1: WeaponPistolViper
+  storage:
+    back:
+    - ToolboxKadet

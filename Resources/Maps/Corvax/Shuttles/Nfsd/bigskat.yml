@@ -42645,7 +42645,7 @@ entities:
     - type: Transform
       pos: 4.5,2.5
       parent: 1
-- proto: PaintingMothBigCatch
+- proto: PaintingTheSonOfMan
   entities:
   - uid: 383
     components:
@@ -50381,13 +50381,6 @@ entities:
         - Left: Forward
         - Right: Reverse
         - Middle: Off
-- proto: UniformJabroni
-  entities:
-  - uid: 1701
-    components:
-    - type: Transform
-      pos: -18.608353,12.675162
-      parent: 1
 - proto: UniformShortsRed
   entities:
   - uid: 2787

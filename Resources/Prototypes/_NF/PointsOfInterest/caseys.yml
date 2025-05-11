@@ -22,6 +22,11 @@
   - type: Shuttle
     angularDamping: 999999
     linearDamping: 999999
+  - type: ProtectedGrid
+    noGridCollision: true #CorvaxFrontier
+  - type: StationTransit
+    routes:
+      MinorPointsOfInterest: 20
 
 - type: gameMap
   id: CaseysCasino

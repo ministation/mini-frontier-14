@@ -12,7 +12,7 @@
     weight: 5
     duration: 1350
     maxDuration: 1560
-    reoccurrenceDelay: 480 # 8 hours
+    reoccurrenceDelay: 360 # 6 hours
     requiredJobs:
       Sheriff: 1
   - type: BluespaceErrorRule
@@ -35,7 +35,7 @@
         - type: PreventPilot
         - type: ForceAnchor # Added post-FTL, so anchoring is fine.
         paths:
-        - /Maps/Corvax/Bluespace/cache.yml #Corvax-Frontier
+        - /Maps/Corvax/Events/Periodic/Syndicate/syndicateVault.yml #Corvax-Frontier
     rewardAccounts:
       Nfsd: 1.0
 
@@ -53,7 +53,7 @@
     weight: 5
     duration: 1020
     maxDuration: 1350
-    reoccurrenceDelay: 480 # 8 hours
+    reoccurrenceDelay: 360 # 6 hours
     requiredJobs:
       Sheriff: 1
   - type: BluespaceErrorRule
@@ -75,7 +75,7 @@
         - type: PreventPilot
         - type: ForceAnchor
         paths:
-        - /Maps/Corvax/Bluespace/vault.yml #Corvax-Frontier
+        - /Maps/Corvax/Events/Periodic/NanoTrasen/storageNt.yml #Corvax-Frontier
     rewardAccounts:
       Nfsd: 1.0
 
@@ -94,7 +94,7 @@
     weight: 5
     duration: 590
     maxDuration: 780
-    reoccurrenceDelay: 480 # 8 hours
+    reoccurrenceDelay: 360 # 6 hours
     requiredJobs:
       Sheriff: 1
   - type: BluespaceErrorRule
@@ -116,7 +116,7 @@
         - type: PreventPilot
         - type: ForceAnchor
         paths:
-        - /Maps/Corvax/Bluespace/vaultsmall.yml #Corvax-Frontier
+        - /Maps/Corvax/Events/Periodic/NanoTrasen/storageNtSmall.yml #Corvax-Frontier
     rewardAccounts:
       Nfsd: 1.0
 
@@ -135,7 +135,7 @@
     weight: 1
     duration: 1800
     maxDuration: 2400
-    reoccurrenceDelay: 480 # Only once per shift possible
+    reoccurrenceDelay: 360 # 6 hours
   - type: BluespaceErrorRule
     groups:
       grid: !type:GridSpawnGroup
@@ -155,7 +155,7 @@
         - type: PreventPilot
         - type: ForceAnchor
         paths:
-        - /Maps/Corvax/Bluespace/syndieftlintercept.yml #Corvax-Frontier
+        - /Maps/Corvax/Events/Periodic/Syndicate/syndieftlintercept.yml #Corvax-Frontier
 
 - type: entity
   id: BluespaceWizardFederationScout
@@ -172,7 +172,7 @@
     weight: 1
     duration: 900
     maxDuration: 1200
-    reoccurrenceDelay: 480 # 8 hours
+    reoccurrenceDelay: 360 # 6 hours
   - type: BluespaceErrorRule
     groups:
       grid: !type:GridSpawnGroup
@@ -192,7 +192,7 @@
         - type: PreventPilot
         - type: ForceAnchor
         paths:
-        - /Maps/Corvax/Bluespace/wizardprobealt.yml #Corvax-Frontier
+        - /Maps/Corvax/Events/Periodic/Magic/shuttleFederationMages.yml #Corvax-Frontier
 
 - type: entity
   id: BluespaceBloodMoon
@@ -209,7 +209,7 @@
     weight: 1
     duration: 1800
     maxDuration: 2400
-    reoccurrenceDelay: 480 # 8 hours
+    reoccurrenceDelay: 360 # 6 hours
   - type: BluespaceErrorRule
     groups:
       grid: !type:GridSpawnGroup
@@ -229,7 +229,7 @@
         - type: PreventPilot
         - type: ForceAnchor
         paths:
-        - /Maps/Corvax/Bluespace/bloodmoon.yml #Corvax-Frontier
+        - /Maps/Corvax/Events/Periodic/Cult/bloodmoon.yml #Corvax-Frontier
 
 - type: entity
   id: BluespaceCave
@@ -264,10 +264,10 @@
         - type: PreventPilot
         - type: ForceAnchor
         paths:
-        - /Maps/Corvax/Bluespace/cave.yml #Corvax-Frontier
+        - /Maps/Corvax/Events/Periodic/Caves/cave.yml #Corvax-Frontier
 
 - type: entity
-  id: BluespaceBrokenMcDelivery
+  id: NFBluespaceBrokenMcDelivery
   parent: BaseStationEventShortDelay
   components:
   - type: StationEvent
@@ -298,4 +298,4 @@
           preventArtifactTriggers: true
         - type: PreventPilot
         paths:
-        - /Maps/Corvax/Bluespace/mcevent.yml #Corvax-Frontier
+        - /Maps/Corvax/Events/Periodic/Cargo/mcevent.yml #Corvax-Frontier

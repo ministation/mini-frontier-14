@@ -15,7 +15,7 @@
   description: Малогабаритный шаттл психолога. Рекомендуемый состав команды 1 человек.
   price: 20000
   category: Small
-  group: Shipyard
+  group: Medical
   shuttlePath: /Maps/Corvax/Shuttles/Medical/placebo.yml
   guidebookPage: Null
   class:

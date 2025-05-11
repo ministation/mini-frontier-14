@@ -10,24 +10,25 @@
 # The local Science lab
 - type: pointOfInterest
   id: AnomalousGeode
-  parent: BasePOI
   name: 'Аномальная Жеода'
   minimumDistance: 2100
   maximumDistance: 3800
   spawnGroup: ScienceLab
   gridPath: /Maps/_NF/POI/anomalousgeode.yml
   addComponents:
-  - type: SolarPoweredGrid
-    trackOnInit: true
-    doNotCull: true
   - type: IFF
     color: "#ffa600"
     readOnly: true
+  - type: Shuttle
+    angularDamping: 999999
+    linearDamping: 999999
+  - type: ProtectedGrid
+    noGridCollision: true #CorvaxFrontier
 
 - type: gameMap
   id: AnomalousGeode
   mapName: 'Аномальная Жеода'
-  mapPath: /Maps/_NF/POI/anomalousgeode.yml
+  mapPath: /Maps/_NF/POI/anomalouslab.yml
   minPlayers: 0
   stations:
     AnomalousGeode:

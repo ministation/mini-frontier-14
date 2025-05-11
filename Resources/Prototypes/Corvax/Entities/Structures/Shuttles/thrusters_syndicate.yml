@@ -1,0 +1,41 @@
+- type: entity
+  id: ThrusterSyndicate
+  parent: ThrusterSecurity
+  suffix: Syndicate
+  components:
+  - type: Sprite
+    sprite: Corvax/Structures/Shuttles/thrustersyndicate.rsi
+  - type: Machine
+    board: ThrusterSyndicateMachineCircuitboard
+
+- type: entity
+  id: DebugThrusterSyndicate
+  parent: DebugThrusterSecurity
+  suffix: DEBUG, Syndicate
+  components:
+  - type: Sprite
+    sprite: Corvax/Structures/Shuttles/thrustersyndicate.rsi
+  - type: Machine
+    board: ThrusterSyndicateMachineCircuitboard
+  
+- type: entity
+  id: GyroscopeSyndicate
+  parent: GyroscopeSecurity
+  suffix: Syndicate
+  components:
+  - type: Sprite
+    sprite: Corvax/Structures/Shuttles/syndicategyroscope.rsi
+    snapCardinals: true
+  - type: Machine
+    board: GyroscopeSyndicateMachineCircuitboard
+
+- type: entity
+  id: DebugGyroscopeSyndicate
+  parent: DebugGyroscopeSecurity
+  suffix: DEBUG, Syndicate
+  components:
+  - type: Sprite
+    sprite: Corvax/Structures/Shuttles/syndicategyroscope.rsi
+    snapCardinals: true
+  - type: Machine
+    board: GyroscopeSyndicateMachineCircuitboard

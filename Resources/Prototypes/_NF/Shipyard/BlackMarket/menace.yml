@@ -37,4 +37,5 @@
             # !type:NanotrasenNameGenerator
             # prefixCreator: '14'
         # - type: StationJobs
-          # availableJobs: {}
+          # availableJobs:
+           # NFPirate: [ 0, 0 ]

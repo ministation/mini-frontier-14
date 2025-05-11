@@ -17,6 +17,10 @@
   category: Small
   group: Syndicate
   shuttlePath: /Maps/Corvax/Shuttles/Syndicate/hunter.yml
+  addComponents:
+  - type: IFF
+    color: "#850d09"
+    flags: [HideLabel]
   guidebookPage: Null
   class:
   - Syndicate

@@ -11,8 +11,8 @@
 - type: vessel
   id: Whiskey
   parent: BaseVessel
-  name: NSF Whiskey
-  description: A heavy duty NSFD rescue ship, suited for one to two brigmedics and a pilot.
+  name: NSF Виски
+  description: Среднегабаритный спасательный шаттл NSF, рассчитанное на одного-двух бригмедиков и пилота.
   price: 55000
   category: Medium
   group: Security
@@ -32,7 +32,7 @@
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Whiskey {1}'
+          mapNameTemplate: 'Виски {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

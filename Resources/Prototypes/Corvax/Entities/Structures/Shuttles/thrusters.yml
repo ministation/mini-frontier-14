@@ -11,6 +11,18 @@
     anchored: true
   - type: Sprite
     sprite: Corvax/Structures/Shuttles/thrusternfsd.rsi
+    layers:
+    - state: base
+      map: ["enum.ThrusterVisualLayers.Base"]
+    - state: thrust
+      map: ["enum.ThrusterVisualLayers.ThrustOn"]
+      shader: unshaded
+      visible: false
+    - state: thrust_burn_unshaded
+      map: ["enum.ThrusterVisualLayers.ThrustingUnshaded"]
+      shader: unshaded
+      visible: false
+      offset: 0, 3
   - type: Machine
     board: ThrusterNfsdMachineCircuitboard
   - type: Thruster
@@ -55,6 +67,7 @@
         - LargeMobMask
         layer:
         - WallLayer
+
 - type: entity
   name: Большой гироскоп ДСБФ
   id: GyroscopeNfsdAss
@@ -67,10 +80,27 @@
     anchored: true
   - type: Sprite
     scale: 3, 3
-    sprite: _NF/Structures/Shuttles/nfsdgyroscope.rsi
-    snapCardinals: true
+    sprite: _NF/Structures/Shuttles/gyroscope.rsi
+    layers: &secGyroLayers
+    - state: base_sec
+      map: ["enum.ThrusterVisualLayers.Base"]
+    - state: thrust
+      map: ["enum.ThrusterVisualLayers.ThrustOn"]
+      shader: unshaded
+      visible: false
+    - state: thrust_burn_sec
+      map: [ "enum.ThrusterVisualLayers.Thrusting" ]
+      visible: false
+    - state: thrust_burn_unshaded
+      map: ["enum.ThrusterVisualLayers.ThrustingUnshaded"]
+      shader: unshaded
+      visible: false
   - type: Machine
-    board: GyroscopeNfsdMachineCircuitboard
+    board: GyroscopeSecurityMachineCircuitboard
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container # FIXME: Why do these need to be defined here?  What's missing?
+      machine_parts: !type:Container
   - type: Thruster
     thrusterType: Angular
     requireSpace: false

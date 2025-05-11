@@ -12,7 +12,7 @@
    description: Малогабаритный медицинский шаттл. Рекомендованный состав команды 1-2 человека.
    price: 20500
    category: Small
-   group: Shipyard
+   group: Medical
    shuttlePath: /Maps/Corvax/Shuttles/Medical/pulse.yml
    guidebookPage: Null
    class:

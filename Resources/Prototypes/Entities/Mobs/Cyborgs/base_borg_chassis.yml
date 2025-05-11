@@ -156,6 +156,7 @@
     sounds:
       Unsexed: UnisexSilicon
     screamAction: null
+  - type: DamagedSiliconAccent
   - type: UnblockableSpeech
   - type: FootstepModifier
     footstepSoundCollection:
@@ -246,6 +247,8 @@
       flatReductions:
         Heat: 10 # capable of touching light bulbs and stoves without feeling pain!
   - type: PreventDropOnDowned # Frontier: borgs don't drop items when falling (e.g. critical/dead)
+  - type: SpeechSynthesis # Corvax-Frontier-Barks
+    voice: BarksCitadelSynthetic2 # Corvax-Frontier-Barks
 
 - type: entity
   abstract: true
@@ -283,8 +286,7 @@
   components:
   - type: RandomMetadata
     nameSegments:
-      # - names_borg # Frontier
-      - NFNamesBorgUnlocalized # Frontier
+      - NFNamesBorg # Frontier: use NF variant
   - type: NpcFactionMember
     factions:
     - NanoTrasen
@@ -292,6 +294,8 @@
     enabled: false
     groups:
     - AllAccess
+    tags:
+    - Borg
 #  - type: AccessReader
 #    access: [["Command"], ["Research"]]
   - type: ShowJobIcons

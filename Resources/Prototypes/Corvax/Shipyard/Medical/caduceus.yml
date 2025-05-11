@@ -15,7 +15,7 @@
   description: Крупногабаритный медицинский шаттл. Рекомендованный размер команды 4-8 человек.
   price: 135000
   category: Large
-  group: Shipyard
+  group: Medical
   shuttlePath: /Maps/Corvax/Shuttles/Medical/caduceus.yml
   guidebookPage: Null
   class:

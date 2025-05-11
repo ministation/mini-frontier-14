@@ -11,11 +11,11 @@
 - type: vessel
   id: Helix
   parent: BaseVessel
-  name: NM Helix
-  description: A medium, modular hospital. Standard issue equipped with chem lab, cloning, and treatment ward
+  name: NM Спираль
+  description: Средний медицинский шаттл, оборудован химической лабораторией, клонирование и лечебным отделом.
   price: 48000 # +5800 from 15% markup
   category: Medium
-  group: Shipyard
+  group: Medical
   shuttlePath: /Maps/Corvax/Shuttles/Medical/helix.yml
   guidebookPage: Null
   class:
@@ -32,7 +32,7 @@
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Helix {1}'
+          mapNameTemplate: 'Спираль {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

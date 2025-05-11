@@ -1833,7 +1833,7 @@ entities:
     - type: Transform
       pos: 5.5,9.5
       parent: 1
-- proto: AsteroidRockBluespace
+- proto: NFAsteroidRockBluespace
   entities:
   - uid: 195
     components:

@@ -51,6 +51,7 @@
   - type: RadiationBlocker
     resistance: 2
   - type: BlockWeather
+  - type: SunShadowCast
 
 - type: entity
   parent: BaseWall
@@ -80,7 +81,7 @@
         acts: [ "Destruction" ]
 
   - type: IconSmooth
-    key: bricks
+    key: walls
     base: brick
 
 - type: entity
@@ -462,7 +463,7 @@
         - Wall
     - type: Sprite
       sprite: Structures/Walls/plastitanium.rsi
-      color: "#cdf3cd" # Frontier
+#      color: "#cdf3cd" # Frontier #CorvaxFrontier
     - type: Icon
       sprite: Structures/Walls/plastitanium.rsi
     - type: IconSmooth
@@ -477,7 +478,7 @@
   suffix: ""
   components:
     - type: Sprite # Frontier
-      color: "#ffffff" # Frontier
+#      color: "#ffffff" #CorvaxFrontier
     - type: Tag
       tags:
         - Wall
@@ -559,7 +560,7 @@
     - Wall
     - Diagonal
   - type: Sprite
-    color: "#cdf3cd" # Frontier
+#    color: "#cdf3cd" #CorvaxFrontier
     drawdepth: Walls
     sprite: Structures/Walls/plastitanium_diagonal.rsi
     state: state0

@@ -20,6 +20,10 @@
   - type: IFF
     color: "#00b7eb"
   - type: StationTransit
+    routes:
+      SpawnPoints: 30
+  - type: ProtectedGrid
+    noGridCollision: true #CorvaxFrontier
 
 - type: gameMap
   id: Medical
@@ -40,8 +44,7 @@
         - type: StationJobs
           availableJobs:
             DirectorOfCare: [ 1, 1 ]
-            Pilot: [ -1, -1 ]
-            Mercenary: [ -1, -1 ]
+            paraMedical: [ -1, -1 ]
           tags:
           - HeadOfPersonnel
           - HeadOfSecurity

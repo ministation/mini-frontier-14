@@ -29,6 +29,7 @@
     preventFloorPlacement: True
     preventFloorRemoval: True
     killHostileMobs: True
+    noGridCollision: True
 
 
 - type: gameMap

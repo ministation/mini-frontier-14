@@ -29,8 +29,8 @@
   components:
   - type: StorageFill
     contents:
-      - id: AloeSeeds
-        amount: 3
+#      - id: AloeSeeds
+#        amount: 3
       - id: AmbrosiaVulgarisSeeds
         amount: 3
       - id: GalaxythistleSeeds
@@ -56,11 +56,9 @@
       - id: HydroponicsToolScythe
       - id: HydroponicsToolSpade
       - id: HydroponicsToolHatchet
-#      - id: ClothingOuterApronBotanist # Frontier
-#      - id: ClothingHandsGlovesLeather # Frontier
-      - id: HydroponicsToolClippers # Frontier
-      - id: HydroponicsToolSpade # Frontier
-      - id: EZNutrientChemistryBottle
+      # - id: ClothingOuterApronBotanist # Frontier
+      # - id: ClothingHandsGlovesLeather # Frontier
+      - id: ChemistryBottleEZNutrient
         amount: 2
 
 - type: entity

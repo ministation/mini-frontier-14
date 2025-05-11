@@ -22,6 +22,7 @@
     price: 500
   - type: Gun #Corvax-Frontier
     fireRate: 1.1
+    examineCaliber: gun-examine-caliber-45 # Frontier
   - type: BallisticAmmoProvider
     whitelist:
       tags:

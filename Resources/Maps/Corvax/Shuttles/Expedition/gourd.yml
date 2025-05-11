@@ -1,6 +1,17 @@
 meta:
-  format: 6
-  postmapinit: false
+  format: 7
+  category: Grid
+  engineVersion: 247.2.0
+  forkId: ""
+  forkVersion: ""
+  time: 05/06/2025 12:20:07
+  entityCount: 2019
+maps: []
+grids:
+- 1
+orphans:
+- 1
+nullspace: []
 tilemap:
   0: Space
   14: FloorBar
@@ -12236,6 +12247,18 @@ entities:
     components:
     - type: Transform
       pos: 1.5,-4.5
+      parent: 1
+- proto: SpawnDungeonLootVaultGuns
+  entities:
+  - uid: 1977
+    components:
+    - type: Transform
+      pos: -4.5302243,26.520817
+      parent: 1
+  - uid: 1978
+    components:
+    - type: Transform
+      pos: 2.6572752,28.677069
       parent: 1
 - proto: SpawnPointLatejoin
   entities:

@@ -23,3 +23,26 @@
           amount: 1
         - id: PlumberClothingOuterWitch
           amount: 1
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ClothingBackpackDuffelSyndicateFilledHristov
+  name: Набор "Христов"
+  description: "Снайперская винтовка Христов в комплекте с одной коробкой патронов, на случей если у вас на пути встало что-то крупнее наёмника"
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponSniperHristov
+      - id: MagazineBoxAntiMateriel
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ClothingBackpackDuffelSyndicateFilledAtreides
+  name: Набор "Атрэйдес"
+  description: "Изрешети всех непоорных! В комплекте ПП-Атрэйдес и 2 магазина к ней"
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponSubMachineGunAtreides
+      - id: MagazinePistolSubMachineGun
+        amount: 2

@@ -11,6 +11,7 @@
     - Snout
     - HeadTop
     - HeadSide
+    undergarmentBottom: UndergarmentBottomBoxersReptilian
   - type: Hunger # Corvax-Frontier
     starvationDamage:
       types:
@@ -101,6 +102,7 @@
     - Snout
     - HeadTop
     - HeadSide
+    undergarmentBottom: UndergarmentBottomBoxersReptilian
   - type: Inventory
     speciesId: reptilian
     femaleDisplacements:

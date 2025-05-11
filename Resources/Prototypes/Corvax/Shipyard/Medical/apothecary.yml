@@ -15,7 +15,7 @@
   description: Малогабаритный медицинский шаттл. Рекомендованный состав команды 1-2 человека.
   price: 45000
   category: Small
-  group: Shipyard
+  group: Medical
   shuttlePath: /Maps/Corvax/Shuttles/Medical/apothecary.yml
   guidebookPage: ShipyardApothecary
   class:
