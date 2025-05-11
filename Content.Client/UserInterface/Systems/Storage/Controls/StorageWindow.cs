@@ -64,6 +64,11 @@ public sealed class StorageWindow : BaseWindow
     private Texture? _exitTexture;
     private readonly string _backTexturePath = "Storage/back";
     private Texture? _backTexture;
+    // Corvax-Change-Start
+    public event Action? OnCraftButtonPressed;
+    private readonly string _craftTexturePath = "Storage/craft";
+    private Texture? _craftTexture;
+    // Corvax-Change-End
     private readonly string _sidebarTopTexturePath = "Storage/sidebar_top";
     private Texture? _sidebarTopTexture;
     private readonly string _sidebarMiddleTexturePath = "Storage/sidebar_mid";
@@ -272,6 +277,31 @@ public sealed class StorageWindow : BaseWindow
 
         _sidebar.AddChild(exitContainer);
         var offset = 2;
+        // Corvax-Change-Start: Кнопка крафта
+        if (comp.Craft)
+        {
+            offset++;
+            var craftButton = new TextureButton
+            {
+                TextureNormal = _craftTexture,
+                Scale = new Vector2(2, 2),
+                Visible = true
+            };
+            craftButton.OnPressed += _ => OnCraftButtonPressed?.Invoke();
+            var craftContainer = new BoxContainer
+            {
+                Children =
+                {
+                    new TextureRect
+                    {
+                        Texture = rows == 1 ? _sidebarBottomTexture : _sidebarMiddleTexture,
+                        TextureScale = new Vector2(2, 2),
+                        Children = { craftButton }
+                    }
+                }
+            };
+            _sidebar.AddChild(craftContainer);
+        } // Corvax-Change-End
 
         if (_entity.System<StorageSystem>().NestedStorage && rows > 0)
         {
@@ -318,6 +348,7 @@ public sealed class StorageWindow : BaseWindow
             };
 
             _sidebar.AddChild(backContainer);
+            offset++;
         }
 
         var fillerRows = rows - offset;
