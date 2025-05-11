@@ -1,11 +1,13 @@
-﻿using System.IO;
+using System.IO;
 using System.Linq;
 using System.Numerics;
 using Content.Server.Atmos.Components;
 using Content.Server.Corvax.ShuttleSerialize.Serializers;
 using Content.Shared.Atmos;
 using Content.Shared.Containers;
+using Content.Shared.Decals;
 using Robust.Server.GameObjects;
+using Robust.Shared.Console;
 using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
@@ -55,6 +57,17 @@ public sealed partial class GridSerializationSystem : EntitySystem
 
             for (var i = 0; i < Atmospherics.AdjustedNumberOfGases; i++)
                 UnmanagedSerializer.Serialize(stream, gas[i]);
+        }
+
+        var decals = Comp<DecalGridComponent>(grid);
+        var decalCollection = decals.ChunkCollection.ChunkCollection;
+        foreach (var tile in tiles)
+        {
+            var decal = decals.ChunkCollection.ChunkCollection[new Vector2i(tile.X, tile.Y)];
+            Console.WriteLine("decal" + decal);
+            Console.WriteLine("decal.Decals" + decal.Decals);
+            Console.WriteLine("decal.Decals.Values" + decal.Decals.Values);
+            Console.WriteLine("decal.Decals.Values.Count " + decal.Decals.Values.Count);
         }
 
         List<(EntityUid Entity, BaseContainer Container)> containers = [];
