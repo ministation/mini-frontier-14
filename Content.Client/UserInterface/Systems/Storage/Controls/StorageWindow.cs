@@ -173,6 +173,7 @@ public sealed class StorageWindow : BaseWindow
         _blockedOpaqueTexture = Theme.ResolveTextureOrNull(_blockedOpaqueTexturePath)?.Texture;
         _exitTexture = Theme.ResolveTextureOrNull(_exitTexturePath)?.Texture;
         _backTexture = Theme.ResolveTextureOrNull(_backTexturePath)?.Texture;
+        _craftTexture = Theme.ResolveTextureOrNull(_craftTexturePath)?.Texture; // Corvax-Change
         _sidebarTopTexture = Theme.ResolveTextureOrNull(_sidebarTopTexturePath)?.Texture;
         _sidebarMiddleTexture = Theme.ResolveTextureOrNull(_sidebarMiddleTexturePath)?.Texture;
         _sidebarBottomTexture = Theme.ResolveTextureOrNull(_sidebarBottomTexturePath)?.Texture;
