@@ -3,6 +3,7 @@ using System.Linq;
 using System.Numerics;
 using Content.Server.Atmos.Components;
 using Content.Server.Corvax.ShuttleSerialize.Serializers;
+using Content.Server.Decals;
 using Content.Shared.Atmos;
 using Content.Shared.Containers;
 using Content.Shared.Decals;
@@ -21,7 +22,7 @@ public sealed partial class GridSerializationSystem : EntitySystem
     [Dependency] private readonly ITileDefinitionManager _tile = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly SharedContainerSystem _container = default!;
-
+    [Dependency] private readonly DecalSystem _decalSystem = default!;
     public override void Initialize()
     {
         InitializeComponents();
@@ -59,15 +60,43 @@ public sealed partial class GridSerializationSystem : EntitySystem
                 UnmanagedSerializer.Serialize(stream, gas[i]);
         }
 
-        var decals = Comp<DecalGridComponent>(grid);
-        var decalCollection = decals.ChunkCollection.ChunkCollection;
-        foreach (var tile in tiles)
+        /*var decalGridComponent = Comp<DecalGridComponent>(grid);
+        var chunks = decalGridComponent.ChunkCollection.ChunkCollection;
+        UnmanagedSerializer.Serialize(stream, chunks.Count);
+
+        foreach (var (chunkPos, chunk) in chunks)
         {
-            var decal = decals.ChunkCollection.ChunkCollection[new Vector2i(tile.X, tile.Y)];
-            Console.WriteLine("decal" + decal);
-            Console.WriteLine("decal.Decals" + decal.Decals);
-            Console.WriteLine("decal.Decals.Values" + decal.Decals.Values);
-            Console.WriteLine("decal.Decals.Values.Count " + decal.Decals.Values.Count);
+            UnmanagedSerializer.Serialize(stream, chunkPos);
+            UnmanagedSerializer.Serialize(stream, chunk.Decals.Count);
+
+            foreach (var (uid, decal) in chunk.Decals)
+            {
+                UnmanagedSerializer.Serialize(stream, uid);
+                StringSerializer.Serialize(stream, decal.Id); // ID прототипа
+                UnmanagedSerializer.Serialize(stream, decal.Coordinates);
+                UnmanagedSerializer.Serialize(stream, decal.ZIndex);
+                Serializer.Serialize(stream, decal.Color);
+                UnmanagedSerializer.Serialize(stream, decal.Cleanable);
+            }
+        }*/
+
+        var decalGridComponent = Comp<DecalGridComponent>(grid);
+        var chunks = decalGridComponent.ChunkCollection.ChunkCollection;
+
+        foreach (var (chunkPos, chunk) in chunks)
+        {
+            foreach (var (uid, decal) in chunk.Decals)
+            {
+                Console.WriteLine("======SERIALIZATION=====");
+                StringSerializer.Serialize(stream, decal.Id);
+                UnmanagedSerializer.Serialize(stream, decal.Coordinates);
+                StringSerializer.Serialize(stream, decal.Color.HasValue.ToString());
+                StringSerializer.Serialize(stream, decal.ZIndex.ToString());
+                UnmanagedSerializer.Serialize(stream, decal.Angle);
+                UnmanagedSerializer.Serialize(stream, decal.Cleanable);
+
+                Console.WriteLine($"{decal.Id} - {decal.Coordinates}");
+            }
         }
 
         List<(EntityUid Entity, BaseContainer Container)> containers = [];
@@ -141,6 +170,49 @@ public sealed partial class GridSerializationSystem : EntitySystem
             var atmosphereTiles = atmosphere.Tiles;
 
             atmosphereTiles.Add(tile, new(grid, tile, new(moles, temperature)));
+        }
+
+
+        foreach (var tile in tiles)
+        {
+
+            var component = Comp<DecalGridComponent>(grid);
+            component.ChunkCollection.ChunkCollection.Clear();
+            _decalSystem.RemoveAllDecals(grid);
+
+            Console.WriteLine("=========DESERIALIZE==========");
+            var chunkCount = UnmanagedSerializer.Deserialize<int>(stream);
+            Console.WriteLine("chunkCount: " + chunkCount);
+
+            for (var i = 0; i < chunkCount; i++)
+            {
+                var chunkPos = UnmanagedSerializer.Deserialize<Vector2i>(stream);
+                var decalCount = UnmanagedSerializer.Deserialize<int>(stream);
+
+                var chunk = new DecalGridComponent.DecalChunk();
+
+                for (var j = 0; j < decalCount; j++)
+                {
+                    var uid = UnmanagedSerializer.Deserialize<uint>(stream);
+                    var mainId = StringSerializer.Deserialize(stream);
+                    var pos = UnmanagedSerializer.Deserialize<Vector2>(stream);
+                    var z = UnmanagedSerializer.Deserialize<int>(stream);
+                    var rot = UnmanagedSerializer.Deserialize<Angle>(stream);
+                    var color = (Color)Serializer.Deserialize(stream)!;
+                    var clean = UnmanagedSerializer.Deserialize<bool>(stream);
+
+                    var decal = new Decal(pos, mainId, color, rot, z, clean);
+                    chunk.Decals[uid] = decal;
+                    _decalSystem.TryAddDecal(decal.Id,
+                        new EntityCoordinates(grid, pos),
+                        out var decalId,
+                        color,
+                        rot,
+                        z,
+                        clean);
+                }
+                //component.ChunkCollection.ChunkCollection[chunkPos] = chunk;
+            }
         }
 
         Dictionary<int, EntityUid> entities = [];

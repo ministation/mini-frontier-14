@@ -319,6 +319,22 @@ namespace Content.Server.Decals
         public override bool RemoveDecal(EntityUid gridId, uint decalId, DecalGridComponent? component = null)
             => RemoveDecalInternal(gridId, decalId, out _, component);
 
+        public void RemoveAllDecals(EntityUid gridId, DecalGridComponent? component = null)
+        {
+            if (!Resolve(gridId, ref component))
+                return;
+
+            foreach (var (chunkIndices, chunk) in component.ChunkCollection.ChunkCollection)
+            {
+                DirtyChunk(gridId, chunkIndices, chunk); // Вызовем "protected" внутри класса
+            }
+
+            component.ChunkCollection.ChunkCollection.Clear();
+            component.DecalIndex.Clear();
+
+            Dirty(gridId, component);
+        }
+
         public override HashSet<(uint Index, Decal Decal)> GetDecalsInRange(EntityUid gridId, Vector2 position, float distance = 0.75f, Func<Decal, bool>? validDelegate = null)
         {
             var decalIds = new HashSet<(uint, Decal)>();
