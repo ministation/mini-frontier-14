@@ -24,10 +24,6 @@ namespace Content.Server.Corvax.Elzuosa
 
         public bool SelfEmagged;
 
-        public StaminaComponent? StaminaComponent;
-        public HungerComponent? HungerComponent;
-        private PointLightComponent? _pointLightComponent;
-
         public override void Initialize()
         {
             base.Initialize();
@@ -38,85 +34,103 @@ namespace Content.Server.Corvax.Elzuosa
         public override void Update(float frameTime)
         {
             base.Update(frameTime);
+
             var query = EntityQueryEnumerator<ElzuosaColorComponent, HungerComponent>();
-            while (query.MoveNext(out var uid, out var elzuosaColorComponent, out var hungerComponent))
+            while (query.MoveNext(out var uid, out var elzuosa, out var hungerComp))
             {
+                var hunger = _hunger.GetHunger(hungerComp);
 
-                var hunger = _hunger.GetHunger(hungerComponent);
-                if (TryComp(uid, out _pointLightComponent))
-                    //Да простит меня боженька...
-                    //Я не прощу @Zekins
-                    if(hunger <= 50)
-                        _pointLightSystem.SetRadius(uid,(float)0.5);
-                    else if(hunger <= 55)
-                        _pointLightSystem.SetRadius(uid,(float)1.05);
-                    else if(hunger <= 60)
-                        _pointLightSystem.SetRadius(uid,(float)1.1);
-                    else if(hunger <= 65)
-                        _pointLightSystem.SetRadius(uid,(float)1.2);
-                    else if(hunger <= 70)
-                        _pointLightSystem.SetRadius(uid,(float)1.4);
-                    else if(hunger <= 75)
-                        _pointLightSystem.SetRadius(uid,(float)1.6);
-                    else if(hunger <= 80)
-                        _pointLightSystem.SetRadius(uid,(float)1.8);
-                    else if(hunger <= 85)
-                        _pointLightSystem.SetRadius(uid,(float)2);
-                    else if(hunger > 90)
-                        _pointLightSystem.SetRadius(uid,(float)2.3);
-
-                if (elzuosaColorComponent.StannedByEmp)
+                if (TryComp<PointLightComponent>(uid, out var _))
                 {
-                    _stamina.TakeStaminaDamage(uid,120,StaminaComponent);
-                    elzuosaColorComponent.StannedByEmp = false;
+                    var radius = GetRadiusByHunger(hunger);
+                    if (radius != null)
+                        _pointLightSystem.SetRadius(uid, radius.Value);
+                }
+
+                if (elzuosa.StannedByEmp)
+                {
+                    _stamina.TakeStaminaDamage(uid, 120);
+                    elzuosa.StannedByEmp = false;
                 }
             }
         }
 
+        private float? GetRadiusByHunger(float hunger)
+        {
+            return hunger switch
+            {
+                <= 50 => 0.5f,
+                <= 55 => 1.05f,
+                <= 60 => 1.1f,
+                <= 65 => 1.2f,
+                <= 70 => 1.4f,
+                <= 75 => 1.6f,
+                <= 80 => 1.8f,
+                <= 85 => 2f,
+                > 90 => 2.3f,
+                _ => null
+            };
+        }
+
         private void OnEmagged(EntityUid uid, ElzuosaColorComponent comp, ref GotEmaggedEvent args)
         {
-            if ((args.UserUid == uid))
-                SelfEmagged = true;
-            else
-                SelfEmagged = false;
-
+            SelfEmagged = args.UserUid == uid;
             comp.Hacked = !comp.Hacked;
 
-
+            var user = args.UserUid;
+            var target = uid;
 
             if (SelfEmagged)
             {
-                if (comp.Hacked)
-                {
-                    _popupSystem.PopupEntity(Loc.GetString("elzuosa-selfemag-success"),uid);
-                    var rgb = EnsureComp<RgbLightControllerComponent>(uid);
-                    _rgbSystem.SetCycleRate(uid, comp.CycleRate, rgb);
-                }
-                else
-                {
-                    _popupSystem.PopupEntity(Loc.GetString("elzuosa-selfdeemag-success"),uid);
-                    RemComp<RgbLightControllerComponent>(uid);
-                }
+                HandleEmagLocal(target, comp.Hacked, comp.CycleRate);
             }
             else
             {
-                if (comp.Hacked)
-                {
-                    _popupSystem.PopupEntity(Loc.GetString("elzuosa-emag-success",("target", Identity.Entity(uid, EntityManager))),uid,
-                        args.UserUid);
-                    _popupSystem.PopupEntity(Loc.GetString("elzuosa-emagged-success",("user", Identity.Entity(args.UserUid, EntityManager))),args.UserUid,
-                        uid);
-                    var rgb = EnsureComp<RgbLightControllerComponent>(uid);
-                    _rgbSystem.SetCycleRate(uid, comp.CycleRate, rgb);
-                }
-                else
-                {
-                    _popupSystem.PopupEntity(Loc.GetString("elzuosa-deemag-success",("target", Identity.Entity(uid, EntityManager))),uid,
-                        args.UserUid);
-                    _popupSystem.PopupEntity(Loc.GetString("elzuosa-deemagged-success",("user", Identity.Entity(args.UserUid, EntityManager))),args.UserUid,
-                        uid);
-                    RemComp<RgbLightControllerComponent>(uid);
-                }
+                HandleEmagRemote(user, target, comp.Hacked, comp.CycleRate);
+            }
+        }
+
+        private void HandleEmagLocal(EntityUid uid, bool hacked, float cycleRate)
+        {
+            if (hacked)
+            {
+                _popupSystem.PopupEntity(Loc.GetString("elzuosa-selfemag-success"), uid);
+                var rgb = EnsureComp<RgbLightControllerComponent>(uid);
+                _rgbSystem.SetCycleRate(uid, cycleRate, rgb);
+            }
+            else
+            {
+                _popupSystem.PopupEntity(Loc.GetString("elzuosa-selfdeemag-success"), uid);
+                RemComp<RgbLightControllerComponent>(uid);
+            }
+        }
+
+        private void HandleEmagRemote(EntityUid user, EntityUid target, bool hacked, float cycleRate)
+        {
+            if (hacked)
+            {
+                _popupSystem.PopupEntity(
+                    Loc.GetString("elzuosa-emag-success", ("target", Identity.Entity(target, EntityManager))),
+                    target, user);
+
+                _popupSystem.PopupEntity(
+                    Loc.GetString("elzuosa-emagged-success", ("user", Identity.Entity(user, EntityManager))),
+                    user, target);
+
+                var rgb = EnsureComp<RgbLightControllerComponent>(target);
+                _rgbSystem.SetCycleRate(target, cycleRate, rgb);
+            }
+            else
+            {
+                _popupSystem.PopupEntity(
+                    Loc.GetString("elzuosa-deemag-success", ("target", Identity.Entity(target, EntityManager))),
+                    target, user);
+
+                _popupSystem.PopupEntity(
+                    Loc.GetString("elzuosa-deemagged-success", ("user", Identity.Entity(user, EntityManager))),
+                    user, target);
+
+                RemComp<RgbLightControllerComponent>(target);
             }
         }
 
@@ -124,19 +138,16 @@ namespace Content.Server.Corvax.Elzuosa
         {
             if (!HasComp<HumanoidAppearanceComponent>(uid))
                 return;
-            if (args == null)
-                return;
+
             var profile = args.Profile;
-            SetEntityPointLightColor(uid, profile);
+            if (profile != null)
+                SetEntityPointLightColor(uid, profile);
         }
 
-        public void SetEntityPointLightColor(EntityUid uid, HumanoidCharacterProfile? profile)
+        public void SetEntityPointLightColor(EntityUid uid, HumanoidCharacterProfile profile)
         {
-            if (profile == null)
-                return;
-
             var color = profile.Appearance.SkinColor;
-            _pointLightSystem.SetColor(uid,color);
+            _pointLightSystem.SetColor(uid, color);
         }
     }
 }
