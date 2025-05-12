@@ -4,8 +4,8 @@ meta:
   engineVersion: 251.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/11/2025 12:10:48
-  entityCount: 2500
+  time: 05/12/2025 06:52:55
+  entityCount: 2502
 maps: []
 grids:
 - 2
@@ -5135,6 +5135,16 @@ entities:
     components:
     - type: Transform
       pos: 6.5,-0.5
+      parent: 2
+  - uid: 2493
+    components:
+    - type: Transform
+      pos: 13.5,-0.5
+      parent: 2
+  - uid: 2502
+    components:
+    - type: Transform
+      pos: 13.5,0.5
       parent: 2
 - proto: CableTerminal
   entities:
@@ -11641,7 +11651,7 @@ entities:
   - uid: 2494
     components:
     - type: Transform
-      pos: 25.568882,5.4974833
+      pos: 25.540668,5.5016847
       parent: 2
 - proto: NitrogenCanister
   entities:
@@ -14197,13 +14207,6 @@ entities:
     - type: Transform
       pos: -10.349688,0.45384032
       parent: 2
-- proto: SyndicateDataMiner
-  entities:
-  - uid: 2493
-    components:
-    - type: Transform
-      pos: 25.5,5.5
-      parent: 2
 - proto: SyndicateKitchenElectricRange
   entities:
   - uid: 2032
@@ -14242,6 +14245,8 @@ entities:
     - type: Transform
       pos: 24.5,5.5
       parent: 2
+    missingComponents:
+    - Anchorable
 - proto: SyndieFlag
   entities:
   - uid: 819
@@ -14620,6 +14625,18 @@ entities:
       pos: 10.5,-3.5
       parent: 2
     - type: Emagged
+- proto: VendingMachineFuelVend
+  entities:
+  - uid: 2500
+    components:
+    - type: Transform
+      pos: -16.5,2.5
+      parent: 2
+  - uid: 2501
+    components:
+    - type: Transform
+      pos: -16.5,-7.5
+      parent: 2
 - proto: VendingMachineMedical Syndicate
   entities:
   - uid: 2408
