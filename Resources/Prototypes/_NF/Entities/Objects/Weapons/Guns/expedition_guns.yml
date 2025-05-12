@@ -207,13 +207,6 @@
   categories: [ HideSpawnMenu ]
   id: WeaponShotgunKammererExpedition
 
-## Rifles
-- type: entity
-  parent:
-  - BaseC3ExpeditionContraband
-  - WeaponShotgunEnforcer
-  categories: [ HideSpawnMenu ]
-  id: WeaponShotgunEnforcerExpedition
 
 - type: entity #CorvaxFrontier
   parent:
@@ -223,12 +216,6 @@
   id: WeaponShotgunKD12Expedition #CorvaxFrontier
 
 # Rifles
-- type: entity
-  parent:
-  - BaseC2ExpeditionContraband
-  - WeaponRifleGestio
-  categories: [ HideSpawnMenu ]
-  id: WeaponRifleGestioExpedition
 
 - type: entity
   parent:

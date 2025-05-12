@@ -1,6 +1,6 @@
 #T0
 - type: loadout
-  id: ContractorBoxSurvivalNFOxygen
+  id: ContractorNFBoxSurvival
   name: аварийный запас (кислород) #Corvax-Frontier
   hideEffects:
   - !type:GroupLoadoutEffect
@@ -10,7 +10,7 @@
     - NFBoxSurvival
 
 - type: loadout
-  id: ContractorBoxSurvivalNFNitrogen
+  id: ContractorNFBoxSurvivalNitrogen
   name: аварийный запас (азот) #Corvax-Frontier
   hideEffects:
   - !type:GroupLoadoutEffect
@@ -31,7 +31,7 @@
 
 #T1
 - type: loadout
-  id: ContractorBoxSurvivalNFOxygenExtended
+  id: ContractorNFBoxSurvivalExtended
   name: расширенный аварийный запас (кислород) #Corvax-Frontier
   effects:
   - !type:GroupLoadoutEffect
@@ -45,7 +45,7 @@
     - NFBoxSurvivalExtended
 
 - type: loadout
-  id: ContractorBoxSurvivalNFNitrogenExtended
+  id: ContractorNFBoxSurvivalExtendedNitrogen
   name: расширенный аварийный запас (азот) #Corvax-Frontier
   effects:
   - !type:GroupLoadoutEffect

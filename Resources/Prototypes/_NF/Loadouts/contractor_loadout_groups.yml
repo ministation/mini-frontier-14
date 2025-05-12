@@ -872,7 +872,6 @@
   - ContractorNFBoxSurvival
   - ContractorNFBoxSurvivalNitrogen
   - ContractorNFBoxSurvivalExtended
-  - ContractorNFBoxSurvivalExtendedNitrogen
   - ContractorNFBoxSurvivalSheleg
   - ContractorNFBoxSurvivalExtendedSheleg
   fallbacks:
