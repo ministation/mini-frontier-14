@@ -1,10 +1,10 @@
 meta:
   format: 7
   category: Grid
-  engineVersion: 247.2.0
+  engineVersion: 251.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/22/2025 10:57:46
+  time: 05/13/2025 09:55:29
   entityCount: 694
 maps: []
 grids:
@@ -712,9 +712,11 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: MercenaryBountyDatabase
+      bounties: []
     - type: RadiationGridResistance
     - type: BecomesStation
       id: Corvet
+    - type: ShuttleImpact
 - proto: AirAlarm
   entities:
   - uid: 2
@@ -2203,14 +2205,6 @@ entities:
     - type: Transform
       pos: 5.5,-3.5
       parent: 1
-- proto: ComputerMercenaryBounty
-  entities:
-  - uid: 275
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -3.5,-3.5
-      parent: 1
 - proto: ComputerTabletopShuttle
   entities:
   - uid: 273
@@ -3451,6 +3445,11 @@ entities:
       parent: 1
 - proto: MachineFrame
   entities:
+  - uid: 275
+    components:
+    - type: Transform
+      pos: -3.5,-3.5
+      parent: 1
   - uid: 276
     components:
     - type: Transform
@@ -3586,7 +3585,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -3.5,-0.5
       parent: 1
-- proto: PosterLegitSMHardhats
+- proto: PosterLegitSafetyMothHardhat
   entities:
   - uid: 448
     components:
