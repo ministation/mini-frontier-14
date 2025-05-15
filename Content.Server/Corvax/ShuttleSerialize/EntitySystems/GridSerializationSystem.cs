@@ -60,7 +60,7 @@ public sealed partial class GridSerializationSystem : EntitySystem
                 UnmanagedSerializer.Serialize(stream, gas[i]);
         }
 
-        /*var decalGridComponent = Comp<DecalGridComponent>(grid);
+        var decalGridComponent = Comp<DecalGridComponent>(grid);
         var chunks = decalGridComponent.ChunkCollection.ChunkCollection;
         UnmanagedSerializer.Serialize(stream, chunks.Count);
 
@@ -71,30 +71,22 @@ public sealed partial class GridSerializationSystem : EntitySystem
 
             foreach (var (uid, decal) in chunk.Decals)
             {
+                Console.WriteLine("======SERIALIZATION=====");
                 UnmanagedSerializer.Serialize(stream, uid);
                 StringSerializer.Serialize(stream, decal.Id); // ID прототипа
                 UnmanagedSerializer.Serialize(stream, decal.Coordinates);
                 UnmanagedSerializer.Serialize(stream, decal.ZIndex);
-                Serializer.Serialize(stream, decal.Color);
-                UnmanagedSerializer.Serialize(stream, decal.Cleanable);
-            }
-        }*/
-
-        var decalGridComponent = Comp<DecalGridComponent>(grid);
-        var chunks = decalGridComponent.ChunkCollection.ChunkCollection;
-
-        foreach (var (chunkPos, chunk) in chunks)
-        {
-            foreach (var (uid, decal) in chunk.Decals)
-            {
-                Console.WriteLine("======SERIALIZATION=====");
-                StringSerializer.Serialize(stream, decal.Id);
-                UnmanagedSerializer.Serialize(stream, decal.Coordinates);
-                StringSerializer.Serialize(stream, decal.Color.HasValue.ToString());
-                StringSerializer.Serialize(stream, decal.ZIndex.ToString());
                 UnmanagedSerializer.Serialize(stream, decal.Angle);
+                if (decal.Color.HasValue)
+                {
+                    UnmanagedSerializer.Serialize(stream, true);             // пишем флаг: цвет есть
+                    UnmanagedSerializer.Serialize(stream, decal.Color.Value); // само Color (unmanaged)
+                }
+                else
+                {
+                    UnmanagedSerializer.Serialize(stream, false);            // пишем флаг: цвета нет
+                }
                 UnmanagedSerializer.Serialize(stream, decal.Cleanable);
-
                 Console.WriteLine($"{decal.Id} - {decal.Coordinates}");
             }
         }
@@ -172,65 +164,75 @@ public sealed partial class GridSerializationSystem : EntitySystem
             atmosphereTiles.Add(tile, new(grid, tile, new(moles, temperature)));
         }
 
+        //var component = Comp<DecalGridComponent>(grid);
+        //component.ChunkCollection.ChunkCollection.Clear();
+        //_decalSystem.RemoveAllDecals(grid);
 
-        foreach (var tile in tiles)
+        Console.WriteLine("Started decal deserialization");
+        Console.WriteLine("=========DESERIALIZE==========");
+        var chunkCount = UnmanagedSerializer.Deserialize<int>(stream);
+        Console.WriteLine("chunkCount: " + chunkCount);
+
+        for (var i = 0; i < chunkCount; i++)
         {
-
-            var component = Comp<DecalGridComponent>(grid);
-            component.ChunkCollection.ChunkCollection.Clear();
-            _decalSystem.RemoveAllDecals(grid);
-
-            Console.WriteLine("=========DESERIALIZE==========");
-            var chunkCount = UnmanagedSerializer.Deserialize<int>(stream);
-            Console.WriteLine("chunkCount: " + chunkCount);
-
-            for (var i = 0; i < chunkCount; i++)
+            var chunkPos = UnmanagedSerializer.Deserialize<Vector2i>(stream);
+            Console.WriteLine($"chunkPos: {chunkPos}");
+            var decalCount = UnmanagedSerializer.Deserialize<int>(stream);
+            Console.WriteLine($"decalCount: {decalCount}");
+            var chunk = new DecalGridComponent.DecalChunk();
+            Console.WriteLine($"chunk: {decalCount}");
+            for (var j = 0; j < decalCount; j++)
             {
-                var chunkPos = UnmanagedSerializer.Deserialize<Vector2i>(stream);
-                var decalCount = UnmanagedSerializer.Deserialize<int>(stream);
+                var uid = UnmanagedSerializer.Deserialize<uint>(stream);
+                Console.WriteLine($"uid: {uid}");
+                var mainId = StringSerializer.Deserialize(stream);
+                Console.WriteLine($"mainId: {mainId}");
+                var pos = UnmanagedSerializer.Deserialize<Vector2>(stream);
+                Console.WriteLine($"pos: {pos}");
+                var z = UnmanagedSerializer.Deserialize<int>(stream);
+                Console.WriteLine($"z: {z}");
+                var rot = UnmanagedSerializer.Deserialize<Angle>(stream);
+                Console.WriteLine($"rot: {rot}");
+                var hasColor = UnmanagedSerializer.Deserialize<bool>(stream);
+                Color? color = hasColor
+                    ? UnmanagedSerializer.Deserialize<Color>(stream)
+                    : null;
+                Console.WriteLine($"color: {color}");
+                var clean = UnmanagedSerializer.Deserialize<bool>(stream);
+                Console.WriteLine($"clean: {clean}");
 
-                var chunk = new DecalGridComponent.DecalChunk();
-
-                for (var j = 0; j < decalCount; j++)
-                {
-                    var uid = UnmanagedSerializer.Deserialize<uint>(stream);
-                    var mainId = StringSerializer.Deserialize(stream);
-                    var pos = UnmanagedSerializer.Deserialize<Vector2>(stream);
-                    var z = UnmanagedSerializer.Deserialize<int>(stream);
-                    var rot = UnmanagedSerializer.Deserialize<Angle>(stream);
-                    var color = (Color)Serializer.Deserialize(stream)!;
-                    var clean = UnmanagedSerializer.Deserialize<bool>(stream);
-
-                    var decal = new Decal(pos, mainId, color, rot, z, clean);
-                    chunk.Decals[uid] = decal;
-                    _decalSystem.TryAddDecal(decal.Id,
-                        new EntityCoordinates(grid, pos),
-                        out var decalId,
-                        color,
-                        rot,
-                        z,
-                        clean);
-                }
-                //component.ChunkCollection.ChunkCollection[chunkPos] = chunk;
+                var decal = new Decal(pos, mainId, color, rot, z, clean);
+                Console.WriteLine($"decal: {decal}");
+                chunk.Decals[uid] = decal;
+                _decalSystem.TryAddDecal(decal.Id,
+                    new EntityCoordinates(grid, pos),
+                    out var decalId,
+                    color,
+                    rot,
+                    z,
+                    clean);
             }
         }
+        Console.WriteLine("Ended decal deserialization");
 
         Dictionary<int, EntityUid> entities = [];
 
-        var count = UnmanagedSerializer.Deserialize<int>(stream);
 
+
+        var count = UnmanagedSerializer.Deserialize<int>(stream);
+        Console.WriteLine($"count: {count}");
         for (var i = 0; i < count; i++)
         {
             var entityUid = UnmanagedSerializer.Deserialize<int>(stream);
-
+            Console.WriteLine($"entityUid: {entityUid}");
             var entity = EntityManager.CreateEntityUninitialized(StringSerializer.Deserialize(stream));
-
+            Console.WriteLine($"entity: {entity}");
             var transform = Transform(entity);
-
+            Console.WriteLine($"transform: {transform}");
             var coordinates = UnmanagedSerializer.Deserialize<Vector2>(stream);
-
+            Console.WriteLine($"coordinates: {coordinates}");
             var anchored = UnmanagedSerializer.Deserialize<bool>(stream);
-
+            Console.WriteLine($"anchored: {anchored}");
             _transform.SetCoordinates(entity, transform, new(grid, coordinates), unanchor: !anchored);
 
             transform.LocalRotation = UnmanagedSerializer.Deserialize<Angle>(stream);
@@ -248,7 +250,7 @@ public sealed partial class GridSerializationSystem : EntitySystem
 
             entities.Add(entityUid, entity);
         }
-
+        Console.WriteLine($"entities: {entities.Count}");
         count = UnmanagedSerializer.Deserialize<int>(stream);
 
         for (var i = 0; i < count; i++)
