@@ -1,6 +1,4 @@
 name: Publish
-
-
 concurrency:
   group: publish
 
