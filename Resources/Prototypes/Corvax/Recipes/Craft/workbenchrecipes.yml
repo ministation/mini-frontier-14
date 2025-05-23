@@ -1,0 +1,60 @@
+- type: craftRecipe
+  id: WeaponMakeshiftLaserCraft
+  resultProtos:
+  - WeaponMakeshiftLaser
+  craftTime: 15
+  items:
+    SheetGlass:
+      amount: 5
+    SheetSteel:
+      amount: 5
+    Wirecutter:
+      amount: 1
+      catalyzer: true
+
+- type: craftRecipe
+  id: WeaponPistol10mmPIPECraft
+  resultProtos:
+  - WeaponPistol10mmPIPE
+  craftTime: 15
+  items:
+    SheetSteel:
+      amount: 5
+    Wirecutter:
+      amount: 1
+      catalyzer: true
+
+
+- type: craftRecipe
+  id: WeaponRiflPipeCraft
+  resultProtos:
+  - WeaponRiflPipe
+  craftTime: 15
+  items:
+    SheetGlass:
+      amount: 5
+    SheetSteel:
+      amount: 5
+    Wirecutter:
+      amount: 1
+      catalyzer: true
+    Screwdriver:
+      amount: 1
+      catalyzer: true
+
+- type: craftRecipe
+  id: WeaponShotgunPipeCraft
+  resultProtos:
+  - WeaponShotgunPipe
+  craftTime: 15
+  items:
+    SheetGlass:
+      amount: 5
+    SheetSteel:
+      amount: 5
+    Wirecutter:
+      amount: 1
+      catalyzer: true
+    Wrench:
+      amount: 1
+      catalyzer: true

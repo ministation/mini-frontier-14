@@ -67,3 +67,26 @@
         - ShellKS23
       capacity: 3
       proto: ShellKS23Beanbag
+
+- type: entity
+  name: Самодельный дробовик
+  parent: BaseWeaponShotgun
+  id: WeaponShotgunPipe
+  description: Самодельный дрообовик
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Objects/Weapons/Guns/Shotguns/pipe_shotgun.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Nuclear14/Objects/Weapons/Guns/Shotguns/pipe_shotgun.rsi
+  - type: Item
+    size: Small
+    sprite: _Nuclear14/Objects/Weapons/Guns/Shotguns/pipe_shotgun.rsi
+  - type: Gun
+    fireRate: 1.5
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - ShellKS23
+    capacity: 2
+    proto: ShellKS23Base
