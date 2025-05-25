@@ -29,7 +29,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_trait_profile_id",
+                name: "ix_trait_profile_id",
                 table: "trait",
                 column: "profile_id");
         }

@@ -874,7 +874,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasName("PK_trait");
 
                     b.HasIndex("ProfileId")
-                        .HasDatabaseName("IX_trait_profile_id");
+                        .HasDatabaseName("ix_trait_profile_id");
 
                     b.ToTable("trait", (string)null);
                 });
