@@ -30,7 +30,7 @@ namespace Content.Server.Database.Migrations.Postgres
                 });
 
             migrationBuilder.CreateIndex(
-                name: "ix_trait_profile_id",
+                name: "IX_trait_profile_id",
                 table: "trait",
                 column: "profile_id");
         }
