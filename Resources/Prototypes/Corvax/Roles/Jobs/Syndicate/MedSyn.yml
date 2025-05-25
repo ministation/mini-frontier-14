@@ -10,7 +10,7 @@
     - !type:OverallPlaytimeRequirement
       time: 1 # 48 hours
     - !type:RoleTimeRequirement
-      role: JobParamedic
+      role: JobparaMedical
       time: 36000 # 10 hours
  # whitelisted: true
   startingGear: MedSynGear
